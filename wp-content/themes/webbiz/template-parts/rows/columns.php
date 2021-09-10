@@ -13,9 +13,11 @@
   $classes = $padding . ' ' . $margin;
 ?>
 
-<?php if( have_rows('columns') ) : ?>
+
   <div class="column-section <?= $classes; ?>">
     <div class="container">
+			<h2><?= get_sub_field('sec_title'); ?></h2>
+			<?php if( have_rows('columns') ) : ?>
       <div class="row justify-content-center <?= $vert_align; ?>">
 
         <?php while( have_rows('columns') ) : the_row(); ?>
@@ -32,6 +34,7 @@
         <?php endwhile; ?>
 
       </div>
+			<?php endif; ?>
     </div>
   </div>
-<?php endif; ?>
+

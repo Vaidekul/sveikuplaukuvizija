@@ -1,5 +1,19 @@
-$font__main: sans-serif;
+// font-family: 'Roboto Slab', serif !important; 
+// font-family: 'Cormorant Garamond', serif !important;
+
+$font__main: 'Roboto', sans-serif;
+$font__heading : 'Cormorant Garamond', serif !important;
 $font__code: Monaco, Consolas, "Andale Mono", "DejaVu Sans Mono", monospace;
 $font__pre: "Courier 10 Pitch", Courier, monospace;
 $font__line-height-body: 1.5;
 $font__line-height-pre: 1.6;
+
+h1, 
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family: $font__heading;
+}
+

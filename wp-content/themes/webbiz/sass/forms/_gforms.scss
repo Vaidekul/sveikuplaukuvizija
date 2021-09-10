@@ -1,0 +1,22 @@
+body img.gform_ajax_spinner {
+  display: none!important;
+}
+
+.gform_wrapper {
+  .validation_error,
+  .validation_message {
+      display: none;
+  }
+}
+
+.gform_body {
+  ul.gform_fields {
+    input[type="text"],
+    input[type="email"],
+    input[type="url"],
+    input[type="tel"],
+    textarea {
+      width: 100%;
+    }
+  }
+}

@@ -1,0 +1,326 @@
+@font-face {
+  font-family: 'beauty-salon';
+  src:  url('beauty-salon.eot?lplfno');
+  src:  url('beauty-salon.eot?lplfno#iefix') format('embedded-opentype'),
+    url('beauty-salon.ttf?lplfno') format('truetype'),
+    url('beauty-salon.woff?lplfno') format('woff'),
+    url('beauty-salon.svg?lplfno#beauty-salon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="beauty-salon-"], [class*=" beauty-salon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'beauty-salon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.beauty-salon-aloe-vera:before {
+  content: "\e900";
+}
+.beauty-salon-aplicator-bottle:before {
+  content: "\e901";
+}
+.beauty-salon-bamboo:before {
+  content: "\e902";
+}
+.beauty-salon-barber-shop:before {
+  content: "\e903";
+}
+.beauty-salon-bath-salts-bomb:before {
+  content: "\e904";
+}
+.beauty-salon-bath-sponge:before {
+  content: "\e905";
+}
+.beauty-salon-beauty-salon-chair:before {
+  content: "\e906";
+}
+.beauty-salon-big-makeup-box:before {
+  content: "\e907";
+}
+.beauty-salon-big-moustache:before {
+  content: "\e908";
+}
+.beauty-salon-big-razor-blade:before {
+  content: "\e909";
+}
+.beauty-salon-big-scale:before {
+  content: "\e90a";
+}
+.beauty-salon-bobby-pins:before {
+  content: "\e90b";
+}
+.beauty-salon-candle-light:before {
+  content: "\e90c";
+}
+.beauty-salon-cream:before {
+  content: "\e90d";
+}
+.beauty-salon-cream-tube:before {
+  content: "\e90e";
+}
+.beauty-salon-cucumber-slices-on-face:before {
+  content: "\e90f";
+}
+.beauty-salon-curler-with-pin:before {
+  content: "\e910";
+}
+.beauty-salon-curling-wand:before {
+  content: "\e911";
+}
+.beauty-salon-disposable-razor:before {
+  content: "\e912";
+}
+.beauty-salon-electric-shaver:before {
+  content: "\e913";
+}
+.beauty-salon-exfoliating-mitt:before {
+  content: "\e914";
+}
+.beauty-salon-eyelashes-curler:before {
+  content: "\e915";
+}
+.beauty-salon-eye-pencil:before {
+  content: "\e916";
+}
+.beauty-salon-facial-cream:before {
+  content: "\e917";
+}
+.beauty-salon-feet-cream:before {
+  content: "\e918";
+}
+.beauty-salon-finger-with-nail:before {
+  content: "\e919";
+}
+.beauty-salon-flat-iron:before {
+  content: "\e91a";
+}
+.beauty-salon-foam:before {
+  content: "\e91b";
+}
+.beauty-salon-foam-curler:before {
+  content: "\e91c";
+}
+.beauty-salon-folded-towel:before {
+  content: "\e91d";
+}
+.beauty-salon-french-perfume:before {
+  content: "\e91e";
+}
+.beauty-salon-hairbrush:before {
+  content: "\e91f";
+}
+.beauty-salon-hair-clamp:before {
+  content: "\e920";
+}
+.beauty-salon-hair-clipper:before {
+  content: "\e921";
+}
+.beauty-salon-hair-comb:before {
+  content: "\e922";
+}
+.beauty-salon-hairdryer-facing-left:before {
+  content: "\e923";
+}
+.beauty-salon-hairdryer-facing-left-1:before {
+  content: "\e924";
+}
+.beauty-salon-hair-foam:before {
+  content: "\e925";
+}
+.beauty-salon-hair-razor:before {
+  content: "\e926";
+}
+.beauty-salon-hair-sample:before {
+  content: "\e927";
+}
+.beauty-salon-hair-scissors:before {
+  content: "\e928";
+}
+.beauty-salon-hair-spray:before {
+  content: "\e929";
+}
+.beauty-salon-hair-washer-sink:before {
+  content: "\e92a";
+}
+.beauty-salon-hand-mirror:before {
+  content: "\e92b";
+}
+.beauty-salon-hand-mirror-1:before {
+  content: "\e92c";
+}
+.beauty-salon-inclined-bottle:before {
+  content: "\e92d";
+}
+.beauty-salon-inclined-comb:before {
+  content: "\e92e";
+}
+.beauty-salon-inclined-hairbrush:before {
+  content: "\e92f";
+}
+.beauty-salon-inclined-lipstick:before {
+  content: "\e930";
+}
+.beauty-salon-inclined-makeup-brush:before {
+  content: "\e931";
+}
+.beauty-salon-liquid-lipstick:before {
+  content: "\e932";
+}
+.beauty-salon-liquid-makeup:before {
+  content: "\e933";
+}
+.beauty-salon-liquid-soap:before {
+  content: "\e934";
+}
+.beauty-salon-little-makeup-box:before {
+  content: "\e935";
+}
+.beauty-salon-makeup-brush:before {
+  content: "\e936";
+}
+.beauty-salon-makeup-brush-1:before {
+  content: "\e937";
+}
+.beauty-salon-makeup-mirror:before {
+  content: "\e938";
+}
+.beauty-salon-makeup-set:before {
+  content: "\e939";
+}
+.beauty-salon-manicure-scissors:before {
+  content: "\e93a";
+}
+.beauty-salon-mascara:before {
+  content: "\e93b";
+}
+.beauty-salon-men-cream:before {
+  content: "\e93c";
+}
+.beauty-salon-mortar-bowl:before {
+  content: "\e93d";
+}
+.beauty-salon-moustache-product:before {
+  content: "\e93e";
+}
+.beauty-salon-nail-brush:before {
+  content: "\e93f";
+}
+.beauty-salon-nail-file:before {
+  content: "\e940";
+}
+.beauty-salon-nail-polish:before {
+  content: "\e941";
+}
+.beauty-salon-nail-polish-removal:before {
+  content: "\e942";
+}
+.beauty-salon-one-candle:before {
+  content: "\e943";
+}
+.beauty-salon-one-comb:before {
+  content: "\e944";
+}
+.beauty-salon-one-foot:before {
+  content: "\e945";
+}
+.beauty-salon-open-hair-scissors:before {
+  content: "\e946";
+}
+.beauty-salon-perfume-bottle:before {
+  content: "\e947";
+}
+.beauty-salon-round-perfume-bottle:before {
+  content: "\e948";
+}
+.beauty-salon-serum:before {
+  content: "\e949";
+}
+.beauty-salon-shampoo-bottle:before {
+  content: "\e94a";
+}
+.beauty-salon-shampoo-bottle-1:before {
+  content: "\e94b";
+}
+.beauty-salon-shaving-brush:before {
+  content: "\e94c";
+}
+.beauty-salon-shower-head:before {
+  content: "\e94d";
+}
+.beauty-salon-soap-bar:before {
+  content: "\e94e";
+}
+.beauty-salon-sponge:before {
+  content: "\e94f";
+}
+.beauty-salon-stand-hairdryer:before {
+  content: "\e950";
+}
+.beauty-salon-straight-razor:before {
+  content: "\e951";
+}
+.beauty-salon-three-stones:before {
+  content: "\e952";
+}
+.beauty-salon-tint-bowl:before {
+  content: "\e953";
+}
+.beauty-salon-tint-brush:before {
+  content: "\e954";
+}
+.beauty-salon-toothbrush:before {
+  content: "\e955";
+}
+.beauty-salon-tweezers:before {
+  content: "\e956";
+}
+.beauty-salon-two-eyelashes:before {
+  content: "\e957";
+}
+.beauty-salon-two-flip-flops:before {
+  content: "\e958";
+}
+.beauty-salon-vial:before {
+  content: "\e959";
+}
+.beauty-salon-vintage-razor:before {
+  content: "\e95a";
+}
+.beauty-salon-water-spray:before {
+  content: "\e95b";
+}
+.beauty-salon-wet-wipes:before {
+  content: "\e95c";
+}
+.beauty-salon-woman-eye:before {
+  content: "\e95d";
+}
+.beauty-salon-woman-face:before {
+  content: "\e95e";
+}
+.beauty-salon-woman-lips:before {
+  content: "\e95f";
+}
+.beauty-salon-women-comb:before {
+  content: "\e960";
+}
+.beauty-salon-women-comb-1:before {
+  content: "\e961";
+}
+.beauty-salon-women-makeup:before {
+  content: "\e962";
+}
+.beauty-salon-women-waist:before {
+  content: "\e963";
+}

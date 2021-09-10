@@ -1,0 +1,75 @@
+@mixin break($args...) {
+	@if length($args) == 1 {
+		@media (min-width: nth($args,  1)) {
+			@content; 
+		}
+	} @else {
+		@media (min-width: nth($args, 1)) and (max-width: nth($args, 2)) {
+			@content; 
+		}
+	}
+}
+
+// Rem output with px fallback
+@mixin font-size($sizeValue: 1) {
+	font-size: ($sizeValue * 16) * 1px;
+	font-size: $sizeValue * 1rem;
+}
+
+// Center block
+@mixin center-block {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+// Clearfix
+@mixin clearfix() {
+	content: "";
+	display: table;
+	table-layout: fixed;
+}
+
+// Clear after (not all clearfix need this also)
+@mixin clearfix-after() {
+	clear: both;
+}
+
+// Column width with margin
+@mixin column-width($numberColumns: 3) {
+	width: map-get( $columns, $numberColumns ) - ( ( $columns__margin * ( $numberColumns - 1 ) ) / $numberColumns );
+}
+
+// reversed media query mixin logic
+@mixin change($args...) {
+	@if length($args) == 1 {
+		@media (max-width: nth($args,  1)) {
+			@content; 
+		}
+	} @else {
+		@media (max-width: nth($args, 1)) and (min-width: nth($args, 2)) {
+			@content; 
+		}
+	}
+}
+
+//JM Break
+@mixin break($args...) {
+	@if length($args) == 1 {
+		@media (min-width: nth($args,  1)) {
+			@content; 
+		}
+	} @else {
+		@media (min-width: nth($args, 1)) and (max-width: nth($args, 2)) {
+			@content; 
+		}
+	}
+}
+
+// Placeholder Text
+@mixin placeholder {
+	&::-webkit-input-placeholder {@content};
+	&:-moz-placeholder           {@content};
+	&::-moz-placeholder          {@content};
+	&:-ms-input-placeholder      {@content} ; 
+}

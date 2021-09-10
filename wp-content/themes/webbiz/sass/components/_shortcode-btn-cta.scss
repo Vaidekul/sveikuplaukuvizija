@@ -1,0 +1,16 @@
+.btn-cta {
+	font-size: 14px;
+	display: inline-block;
+	padding: 8px 35px;
+	font-weight: bold;
+  color: black;
+  background: #f0f0f0;
+	text-align: center;
+	border: none;
+
+	&:hover {
+		text-decoration: none;
+		background: #f0f0f0;
+		color: black;
+	}
+}

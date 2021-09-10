@@ -1,0 +1,326 @@
+@font-face {
+  font-family: 'salon';
+  src:  url('salon.eot?bzn2y8');
+  src:  url('salon.eot?bzn2y8#iefix') format('embedded-opentype'),
+    url('salon.ttf?bzn2y8') format('truetype'),
+    url('salon.woff?bzn2y8') format('woff'),
+    url('salon.svg?bzn2y8#salon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="salon-"], [class*=" salon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'salon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.salon-lipstick-1:before {
+  content: "\e900";
+}
+.salon-lip-gloss-2:before {
+  content: "\e901";
+}
+.salon-eyeliner-2:before {
+  content: "\e902";
+}
+.salon-wax:before {
+  content: "\e903";
+}
+.salon-spray:before {
+  content: "\e904";
+}
+.salon-spa:before {
+  content: "\e905";
+}
+.salon-candle-2:before {
+  content: "\e906";
+}
+.salon-candle-1:before {
+  content: "\e907";
+}
+.salon-candle:before {
+  content: "\e908";
+}
+.salon-lotion-5:before {
+  content: "\e909";
+}
+.salon-gel:before {
+  content: "\e90a";
+}
+.salon-serum:before {
+  content: "\e90b";
+}
+.salon-scissors:before {
+  content: "\e90c";
+}
+.salon-barber-sign:before {
+  content: "\e90d";
+}
+.salon-hair-roller-1:before {
+  content: "\e90e";
+}
+.salon-razor:before {
+  content: "\e90f";
+}
+.salon-barber:before {
+  content: "\e910";
+}
+.salon-blade:before {
+  content: "\e911";
+}
+.salon-rasp:before {
+  content: "\e912";
+}
+.salon-primer:before {
+  content: "\e913";
+}
+.salon-pressed-powder-1:before {
+  content: "\e914";
+}
+.salon-pressed-powder:before {
+  content: "\e915";
+}
+.salon-powder-1:before {
+  content: "\e916";
+}
+.salon-perfume-2:before {
+  content: "\e917";
+}
+.salon-perfume-1:before {
+  content: "\e918";
+}
+.salon-perfume:before {
+  content: "\e919";
+}
+.salon-spray-bottle:before {
+  content: "\e91a";
+}
+.salon-perfume-bottle:before {
+  content: "\e91b";
+}
+.salon-beauty:before {
+  content: "\e91c";
+}
+.salon-nail-polish-2:before {
+  content: "\e91d";
+}
+.salon-nail-polish-1:before {
+  content: "\e91e";
+}
+.salon-nail-polish:before {
+  content: "\e91f";
+}
+.salon-nail-file:before {
+  content: "\e920";
+}
+.salon-moustache-1:before {
+  content: "\e921";
+}
+.salon-mortar:before {
+  content: "\e922";
+}
+.salon-hand-mirror:before {
+  content: "\e923";
+}
+.salon-mirror:before {
+  content: "\e924";
+}
+.salon-water:before {
+  content: "\e925";
+}
+.salon-mascara-1:before {
+  content: "\e926";
+}
+.salon-moustache:before {
+  content: "\e927";
+}
+.salon-beard:before {
+  content: "\e928";
+}
+.salon-lotus:before {
+  content: "\e929";
+}
+.salon-cream-5:before {
+  content: "\e92a";
+}
+.salon-lotion-4:before {
+  content: "\e92b";
+}
+.salon-cream-4:before {
+  content: "\e92c";
+}
+.salon-cream-3:before {
+  content: "\e92d";
+}
+.salon-lotion-3:before {
+  content: "\e92e";
+}
+.salon-cream-2:before {
+  content: "\e92f";
+}
+.salon-lotion-2:before {
+  content: "\e930";
+}
+.salon-lotion-1:before {
+  content: "\e931";
+}
+.salon-lotion:before {
+  content: "\e932";
+}
+.salon-powder:before {
+  content: "\e933";
+}
+.salon-lipstick:before {
+  content: "\e934";
+}
+.salon-lips:before {
+  content: "\e935";
+}
+.salon-lip-gloss-1:before {
+  content: "\e936";
+}
+.salon-lip-gloss:before {
+  content: "\e937";
+}
+.salon-hot-stone:before {
+  content: "\e938";
+}
+.salon-bag:before {
+  content: "\e939";
+}
+.salon-hair-washing:before {
+  content: "\e93a";
+}
+.salon-towel:before {
+  content: "\e93b";
+}
+.salon-hair-dryer-2:before {
+  content: "\e93c";
+}
+.salon-hair-dryer-1:before {
+  content: "\e93d";
+}
+.salon-hair-roller:before {
+  content: "\e93e";
+}
+.salon-hair-cream-1:before {
+  content: "\e93f";
+}
+.salon-hair-cream:before {
+  content: "\e940";
+}
+.salon-hair-iron:before {
+  content: "\e941";
+}
+.salon-hair-dye-brush-1:before {
+  content: "\e942";
+}
+.salon-hair-dye-brush:before {
+  content: "\e943";
+}
+.salon-hair-dye:before {
+  content: "\e944";
+}
+.salon-hair-dryer:before {
+  content: "\e945";
+}
+.salon-hair-clipper:before {
+  content: "\e946";
+}
+.salon-shaving-brush:before {
+  content: "\e947";
+}
+.salon-hair-brush-1:before {
+  content: "\e948";
+}
+.salon-hair-brush:before {
+  content: "\e949";
+}
+.salon-foundation:before {
+  content: "\e94a";
+}
+.salon-face-treatment:before {
+  content: "\e94b";
+}
+.salon-face-mask:before {
+  content: "\e94c";
+}
+.salon-mask:before {
+  content: "\e94d";
+}
+.salon-brush-3:before {
+  content: "\e94e";
+}
+.salon-eyelash:before {
+  content: "\e94f";
+}
+.salon-eye-shadow-2:before {
+  content: "\e950";
+}
+.salon-eye-shadow-1:before {
+  content: "\e951";
+}
+.salon-eye-shadow:before {
+  content: "\e952";
+}
+.salon-mascara:before {
+  content: "\e953";
+}
+.salon-eyeliner-1:before {
+  content: "\e954";
+}
+.salon-eyeliner:before {
+  content: "\e955";
+}
+.salon-electric-razor:before {
+  content: "\e956";
+}
+.salon-cream-1:before {
+  content: "\e957";
+}
+.salon-cotton-swab:before {
+  content: "\e958";
+}
+.salon-comb-2:before {
+  content: "\e959";
+}
+.salon-comb-1:before {
+  content: "\e95a";
+}
+.salon-comb:before {
+  content: "\e95b";
+}
+.salon-brush-2:before {
+  content: "\e95c";
+}
+.salon-brush-1:before {
+  content: "\e95d";
+}
+.salon-brush:before {
+  content: "\e95e";
+}
+.salon-angle-brush-1:before {
+  content: "\e95f";
+}
+.salon-angle-brush:before {
+  content: "\e960";
+}
+.salon-barber-chair-1:before {
+  content: "\e961";
+}
+.salon-barber-chair:before {
+  content: "\e962";
+}
+.salon-cream:before {
+  content: "\e963";
+}

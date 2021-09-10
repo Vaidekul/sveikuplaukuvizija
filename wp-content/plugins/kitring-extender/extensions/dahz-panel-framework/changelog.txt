@@ -1,0 +1,9 @@
+/**
+ *
+ * Dahz Panel Framework Changelog
+ *
+ */
+
+ === Version ===
+- 1.0.0 - 15 May 2018
+* Initial Release

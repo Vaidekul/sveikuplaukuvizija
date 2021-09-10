@@ -1,0 +1,139 @@
+    /*
+    barbershop icon font: barbershop
+    Creation date: 30/05/2017 14:03
+    */
+
+    @font-face {
+  font-family: "barbershop";
+  src: url("./barbershop.eot");
+  src: url("./barbershop.eot?#iefix") format("embedded-opentype"),
+       url("./barbershop.woff") format("woff"),
+       url("./barbershop.ttf") format("truetype"),
+       url("./barbershop.svg#barbershop") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  @font-face {
+    font-family: "barbershop";
+    src: url("./barbershop.svg#barbershop") format("svg");
+  }
+}
+
+    .fi:before{
+        display: inline-block;
+  font-family: "barbershop";
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  line-height: 1;
+  text-decoration: inherit;
+  text-rendering: optimizeLegibility;
+  text-transform: none;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  font-smoothing: antialiased;
+    }
+
+    .barbershop-001-comb-3:before { content: "\f100"; }
+.barbershop-002-comb-2:before { content: "\f101"; }
+.barbershop-003-spray-bottle:before { content: "\f102"; }
+.barbershop-004-perfume:before { content: "\f103"; }
+.barbershop-005-hand-mirror:before { content: "\f104"; }
+.barbershop-006-razor-2:before { content: "\f105"; }
+.barbershop-007-razor-1:before { content: "\f106"; }
+.barbershop-008-gel:before { content: "\f107"; }
+.barbershop-009-man:before { content: "\f108"; }
+.barbershop-010-comb-1:before { content: "\f109"; }
+.barbershop-011-barber-shop-1:before { content: "\f10a"; }
+.barbershop-012-hairbrush-2:before { content: "\f10b"; }
+.barbershop-013-brush:before { content: "\f10c"; }
+.barbershop-014-blade:before { content: "\f10d"; }
+.barbershop-015-soap-1:before { content: "\f10e"; }
+.barbershop-016-hairbrush-1:before { content: "\f10f"; }
+.barbershop-017-scissors-1:before { content: "\f110"; }
+.barbershop-018-hair-dryer:before { content: "\f111"; }
+.barbershop-019-scissors:before { content: "\f112"; }
+.barbershop-020-lotion:before { content: "\f113"; }
+.barbershop-021-oil-bottle:before { content: "\f114"; }
+.barbershop-022-straighten:before { content: "\f115"; }
+.barbershop-023-towel:before { content: "\f116"; }
+.barbershop-024-comb:before { content: "\f117"; }
+.barbershop-025-mirror-1:before { content: "\f118"; }
+.barbershop-026-soap:before { content: "\f119"; }
+.barbershop-027-shampoo:before { content: "\f11a"; }
+.barbershop-028-boy:before { content: "\f11b"; }
+.barbershop-029-girl:before { content: "\f11c"; }
+.barbershop-030-hot-stones:before { content: "\f11d"; }
+.barbershop-031-hair-cream:before { content: "\f11e"; }
+.barbershop-032-cream-3:before { content: "\f11f"; }
+.barbershop-033-mirror:before { content: "\f120"; }
+.barbershop-034-cream-2:before { content: "\f121"; }
+.barbershop-035-moustache:before { content: "\f122"; }
+.barbershop-036-hair-brush-1:before { content: "\f123"; }
+.barbershop-037-hair-brush:before { content: "\f124"; }
+.barbershop-038-hair-pin:before { content: "\f125"; }
+.barbershop-039-razor:before { content: "\f126"; }
+.barbershop-040-clock:before { content: "\f127"; }
+.barbershop-041-hair-salon:before { content: "\f128"; }
+.barbershop-042-hairbrush:before { content: "\f129"; }
+.barbershop-043-bow-tie:before { content: "\f12a"; }
+.barbershop-044-beard:before { content: "\f12b"; }
+.barbershop-045-barber-shop:before { content: "\f12c"; }
+.barbershop-046-barbershop:before { content: "\f12d"; }
+.barbershop-047-hair-clip:before { content: "\f12e"; }
+.barbershop-048-hair-curler:before { content: "\f12f"; }
+.barbershop-049-cream-1:before { content: "\f130"; }
+.barbershop-050-cream:before { content: "\f131"; }
+
+    $font-barbershop-001-comb-3: "\f100";
+    $font-barbershop-002-comb-2: "\f101";
+    $font-barbershop-003-spray-bottle: "\f102";
+    $font-barbershop-004-perfume: "\f103";
+    $font-barbershop-005-hand-mirror: "\f104";
+    $font-barbershop-006-razor-2: "\f105";
+    $font-barbershop-007-razor-1: "\f106";
+    $font-barbershop-008-gel: "\f107";
+    $font-barbershop-009-man: "\f108";
+    $font-barbershop-010-comb-1: "\f109";
+    $font-barbershop-011-barber-shop-1: "\f10a";
+    $font-barbershop-012-hairbrush-2: "\f10b";
+    $font-barbershop-013-brush: "\f10c";
+    $font-barbershop-014-blade: "\f10d";
+    $font-barbershop-015-soap-1: "\f10e";
+    $font-barbershop-016-hairbrush-1: "\f10f";
+    $font-barbershop-017-scissors-1: "\f110";
+    $font-barbershop-018-hair-dryer: "\f111";
+    $font-barbershop-019-scissors: "\f112";
+    $font-barbershop-020-lotion: "\f113";
+    $font-barbershop-021-oil-bottle: "\f114";
+    $font-barbershop-022-straighten: "\f115";
+    $font-barbershop-023-towel: "\f116";
+    $font-barbershop-024-comb: "\f117";
+    $font-barbershop-025-mirror-1: "\f118";
+    $font-barbershop-026-soap: "\f119";
+    $font-barbershop-027-shampoo: "\f11a";
+    $font-barbershop-028-boy: "\f11b";
+    $font-barbershop-029-girl: "\f11c";
+    $font-barbershop-030-hot-stones: "\f11d";
+    $font-barbershop-031-hair-cream: "\f11e";
+    $font-barbershop-032-cream-3: "\f11f";
+    $font-barbershop-033-mirror: "\f120";
+    $font-barbershop-034-cream-2: "\f121";
+    $font-barbershop-035-moustache: "\f122";
+    $font-barbershop-036-hair-brush-1: "\f123";
+    $font-barbershop-037-hair-brush: "\f124";
+    $font-barbershop-038-hair-pin: "\f125";
+    $font-barbershop-039-razor: "\f126";
+    $font-barbershop-040-clock: "\f127";
+    $font-barbershop-041-hair-salon: "\f128";
+    $font-barbershop-042-hairbrush: "\f129";
+    $font-barbershop-043-bow-tie: "\f12a";
+    $font-barbershop-044-beard: "\f12b";
+    $font-barbershop-045-barber-shop: "\f12c";
+    $font-barbershop-046-barbershop: "\f12d";
+    $font-barbershop-047-hair-clip: "\f12e";
+    $font-barbershop-048-hair-curler: "\f12f";
+    $font-barbershop-049-cream-1: "\f130";
+    $font-barbershop-050-cream: "\f131";

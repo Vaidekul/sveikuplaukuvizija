@@ -1,0 +1,176 @@
+@font-face {
+  font-family: 'tattoo-studio';
+  src:  url('tattoo-studio.eot?93hfpk');
+  src:  url('tattoo-studio.eot?93hfpk#iefix') format('embedded-opentype'),
+    url('tattoo-studio.ttf?93hfpk') format('truetype'),
+    url('tattoo-studio.woff?93hfpk') format('woff'),
+    url('tattoo-studio.svg?93hfpk#tattoo-studio') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="tattoo-studio-"], [class*=" tattoo-studio-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'tattoo-studio' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.tattoo-studio-alcohol:before {
+  content: "\e900";
+}
+.tattoo-studio-apron:before {
+  content: "\e901";
+}
+.tattoo-studio-autoclave:before {
+  content: "\e902";
+}
+.tattoo-studio-bandage:before {
+  content: "\e903";
+}
+.tattoo-studio-battery:before {
+  content: "\e904";
+}
+.tattoo-studio-brushes:before {
+  content: "\e905";
+}
+.tattoo-studio-cart:before {
+  content: "\e906";
+}
+.tattoo-studio-cartridge:before {
+  content: "\e907";
+}
+.tattoo-studio-case:before {
+  content: "\e908";
+}
+.tattoo-studio-chair:before {
+  content: "\e909";
+}
+.tattoo-studio-cleaning-brush:before {
+  content: "\e90a";
+}
+.tattoo-studio-cord:before {
+  content: "\e90b";
+}
+.tattoo-studio-cream:before {
+  content: "\e90c";
+}
+.tattoo-studio-gloves:before {
+  content: "\e90d";
+}
+.tattoo-studio-grip:before {
+  content: "\e90e";
+}
+.tattoo-studio-heart:before {
+  content: "\e90f";
+}
+.tattoo-studio-holder:before {
+  content: "\e910";
+}
+.tattoo-studio-ink:before {
+  content: "\e911";
+}
+.tattoo-studio-ink-1:before {
+  content: "\e912";
+}
+.tattoo-studio-keys:before {
+  content: "\e913";
+}
+.tattoo-studio-license:before {
+  content: "\e914";
+}
+.tattoo-studio-markers:before {
+  content: "\e915";
+}
+.tattoo-studio-needle:before {
+  content: "\e916";
+}
+.tattoo-studio-needles:before {
+  content: "\e917";
+}
+.tattoo-studio-needles-1:before {
+  content: "\e918";
+}
+.tattoo-studio-notebook:before {
+  content: "\e919";
+}
+.tattoo-studio-open:before {
+  content: "\e91a";
+}
+.tattoo-studio-pad:before {
+  content: "\e91b";
+}
+.tattoo-studio-paper:before {
+  content: "\e91c";
+}
+.tattoo-studio-pedal:before {
+  content: "\e91d";
+}
+.tattoo-studio-petroleum:before {
+  content: "\e91e";
+}
+.tattoo-studio-portfolio:before {
+  content: "\e91f";
+}
+.tattoo-studio-power:before {
+  content: "\e920";
+}
+.tattoo-studio-razor:before {
+  content: "\e921";
+}
+.tattoo-studio-rose:before {
+  content: "\e922";
+}
+.tattoo-studio-ruler:before {
+  content: "\e923";
+}
+.tattoo-studio-skin:before {
+  content: "\e924";
+}
+.tattoo-studio-skull:before {
+  content: "\e925";
+}
+.tattoo-studio-soap:before {
+  content: "\e926";
+}
+.tattoo-studio-soap-1:before {
+  content: "\e927";
+}
+.tattoo-studio-spray:before {
+  content: "\e928";
+}
+.tattoo-studio-stencil:before {
+  content: "\e929";
+}
+.tattoo-studio-stool:before {
+  content: "\e92a";
+}
+.tattoo-studio-store:before {
+  content: "\e92b";
+}
+.tattoo-studio-table:before {
+  content: "\e92c";
+}
+.tattoo-studio-tape:before {
+  content: "\e92d";
+}
+.tattoo-studio-tatoo-machine:before {
+  content: "\e92e";
+}
+.tattoo-studio-tattoo:before {
+  content: "\e92f";
+}
+.tattoo-studio-tips:before {
+  content: "\e930";
+}
+.tattoo-studio-wipe:before {
+  content: "\e931";
+}

@@ -1,0 +1,2659 @@
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Dahz Sobari Shortcode\n"
+"POT-Creation-Date: 2017-10-16 14:42+0700\n"
+"PO-Revision-Date: 2017-10-16 14:36+0700\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.8.2\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-WPHeader: dahz-sobari-shortcode.php\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;"
+"esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;_n_noop:1,2;"
+"_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: *.js\n"
+
+#: class-dahz-framework-shortcode-template.php:181
+msgid "Send"
+msgstr ""
+
+#: includes/class-dahz-framework-shortcode-autocomplete-query.php:81
+#: includes/class-dahz-framework-shortcode-autocomplete-query.php:101
+#: includes/class-dahz-framework-shortcode-autocomplete-query.php:137
+#: includes/class-dahz-framework-shortcode-autocomplete-query.php:167
+#: includes/class-dahz-framework-shortcode-autocomplete-query.php:196
+#: includes/class-dahz-framework-shortcode-autocomplete-query.php:226
+msgid "Id"
+msgstr ""
+
+#: includes/class-dahz-framework-shortcode-autocomplete-query.php:81
+#: includes/class-dahz-framework-shortcode-autocomplete-query.php:101
+#: includes/class-dahz-framework-shortcode-autocomplete-query.php:134
+#: includes/class-dahz-framework-shortcode-autocomplete-query.php:164
+#: includes/class-dahz-framework-shortcode-autocomplete-query.php:196
+#: includes/class-dahz-framework-shortcode-autocomplete-query.php:223
+#: includes/dahz-shortcodes-helper.php:600
+#: includes/dahz-shortcodes-helper.php:602
+#: shortcode-maps/ornamental-title.php:29
+#: shortcode-maps/ornamental-title.php:31
+#: shortcode-maps/popup-newsletter.php:18
+#: shortcode-maps/popup-newsletter.php:20
+#: shortcode-maps/title-with-background.php:48
+#: shortcode-maps/title-with-background.php:50
+msgid "Title"
+msgstr ""
+
+#: includes/class-dahz-framework-shortcode-autocomplete-query.php:81
+#: includes/class-dahz-framework-shortcode-autocomplete-query.php:101
+#: includes/class-dahz-framework-shortcode-autocomplete-query.php:129
+msgid "Sku"
+msgstr ""
+
+#: includes/class-dahz-framework-shortcode-autocomplete-query.php:196
+#: includes/class-dahz-framework-shortcode-autocomplete-query.php:218
+msgid "Slug"
+msgstr ""
+
+#: includes/class-dahz-framework-shortcode-vc-mapper.php:69
+#: includes/class-dahz-framework-shortcode-vc-mapper.php:71
+msgid "Row Top Style"
+msgstr ""
+
+#: includes/class-dahz-framework-shortcode-vc-mapper.php:93
+#: includes/class-dahz-framework-shortcode-vc-mapper.php:101
+#: includes/class-dahz-framework-shortcode-vc-mapper.php:149
+#: includes/class-dahz-framework-shortcode-vc-mapper.php:157
+msgid "Height"
+msgstr ""
+
+#: includes/class-dahz-framework-shortcode-vc-mapper.php:106
+#: includes/class-dahz-framework-shortcode-vc-mapper.php:108
+#: includes/class-dahz-framework-shortcode-vc-mapper.php:162
+#: includes/class-dahz-framework-shortcode-vc-mapper.php:164
+#: includes/class-dahz-framework-shortcode-vc-mapper.php:477
+#: includes/class-dahz-framework-shortcode-vc-mapper.php:479
+#: includes/class-dahz-framework-shortcode-vc-mapper.php:579
+#: includes/class-dahz-framework-shortcode-vc-mapper.php:581
+#: shortcode-maps/action-box.php:29 shortcode-maps/action-box.php:31
+#: shortcode-maps/banner.php:37 shortcode-maps/banner.php:39
+#: shortcode-maps/count-down.php:77 shortcode-maps/count-down.php:79
+#: shortcode-maps/flip-box.php:66 shortcode-maps/flip-box.php:294
+#: shortcode-maps/team-member.php:56 shortcode-maps/team-member.php:58
+#: shortcode-maps/video-popup.php:24 shortcode-maps/video-popup.php:26
+msgid "Background Color"
+msgstr ""
+
+#: includes/class-dahz-framework-shortcode-vc-mapper.php:113
+#: includes/class-dahz-framework-shortcode-vc-mapper.php:115
+msgid "Row Bottom Style"
+msgstr ""
+
+#: includes/class-dahz-framework-shortcode-vc-mapper.php:168
+#: shortcode-maps/gradient-fill-color.php:10
+msgid "Gradient Fill Color"
+msgstr ""
+
+#: includes/class-dahz-framework-shortcode-vc-mapper.php:170
+#: shortcode-maps/action-box.php:12 shortcode-maps/animated-text.php:12
+#: shortcode-maps/banner.php:12 shortcode-maps/big-post.php:12
+#: shortcode-maps/blog.php:12 shortcode-maps/button.php:12
+#: shortcode-maps/cascading-image.php:13 shortcode-maps/cascading-image.php:26
+#: shortcode-maps/cascading-image.php:32
+#: shortcode-maps/category-showcase.php:74 shortcode-maps/contact-form.php:12
+#: shortcode-maps/flip-box.php:11 shortcode-maps/gradient-fill-color.php:12
+#: shortcode-maps/image-carousel.php:12 shortcode-maps/image-grid.php:13
+#: shortcode-maps/modal-popup.php:12 shortcode-maps/ornamental-title.php:12
+#: shortcode-maps/popup-newsletter.php:12 shortcode-maps/portfolio.php:12
+#: shortcode-maps/product-grid.php:12 shortcode-maps/product-info.php:15
+#: shortcode-maps/product-info.php:46 shortcode-maps/product-info.php:61
+#: shortcode-maps/product-menu.php:12 shortcode-maps/product-pair.php:12
+#: shortcode-maps/product-pair.php:22 shortcode-maps/product-pair.php:50
+#: shortcode-maps/product-pair.php:78 shortcode-maps/product-showcase.php:12
+#: shortcode-maps/quote.php:12 shortcode-maps/section-title.php:12
+#: shortcode-maps/snap-to-scroll.php:12 shortcode-maps/social-icon.php:12
+#: shortcode-maps/team-member.php:12 shortcode-maps/testimonials.php:13
+#: shortcode-maps/testimonials.php:65 shortcode-maps/testimonials.php:71
+#: shortcode-maps/title-with-background.php:12
+#: shortcode-maps/video-popup.php:12
+msgid "Description Here"
+msgstr ""
+
+#: includes/class-dahz-framework-shortcode-vc-mapper.php:172
+#: includes/class-dahz-framework-shortcode-vc-mapper.php:180
+#: includes/class-dahz-framework-shortcode-vc-mapper.php:198
+#: includes/class-dahz-framework-shortcode-vc-mapper.php:206
+#: includes/class-dahz-framework-shortcode-vc-mapper.php:218
+#: includes/class-dahz-framework-shortcode-vc-mapper.php:236
+#: includes/class-dahz-framework-shortcode-vc-mapper.php:249
+msgid "Overlay Color"
+msgstr ""
+
+#: includes/class-dahz-framework-shortcode-vc-mapper.php:177
+#: includes/class-dahz-framework-shortcode-vc-mapper.php:179
+#: shortcode-maps/gradient-fill-color.php:18
+#: shortcode-maps/gradient-fill-color.php:20
+msgid "Enable Gradient Color"
+msgstr ""
+
+#: includes/class-dahz-framework-shortcode-vc-mapper.php:195
+msgid "Gradient Color 1"
+msgstr ""
+
+#: includes/class-dahz-framework-shortcode-vc-mapper.php:197
+#: shortcode-maps/gradient-fill-color.php:46
+#: shortcode-maps/gradient-fill-color.php:48 shortcode-maps/image-grid.php:92
+#: shortcode-maps/image-grid.php:94
+msgid "Color Gradient 1"
+msgstr ""
+
+#: includes/class-dahz-framework-shortcode-vc-mapper.php:202
+#: includes/class-dahz-framework-shortcode-vc-mapper.php:204
+#: shortcode-maps/gradient-fill-color.php:34
+#: shortcode-maps/gradient-fill-color.php:36
+msgid "Color Strength"
+msgstr ""
+
+#: includes/class-dahz-framework-shortcode-vc-mapper.php:211
+msgid "Gradient Color 2"
+msgstr ""
+
+#: includes/class-dahz-framework-shortcode-vc-mapper.php:213
+#: shortcode-maps/gradient-fill-color.php:56
+#: shortcode-maps/gradient-fill-color.php:58 shortcode-maps/image-grid.php:102
+#: shortcode-maps/image-grid.php:104
+msgid "Color Gradient 2"
+msgstr ""
+
+#: includes/class-dahz-framework-shortcode-vc-mapper.php:223
+#: includes/class-dahz-framework-shortcode-vc-mapper.php:225
+#: shortcode-maps/gradient-fill-color.php:67
+#: shortcode-maps/gradient-fill-color.php:69 shortcode-maps/image-grid.php:112
+#: shortcode-maps/image-grid.php:114
+msgid "Gradient Direction"
+msgstr ""
+
+#: includes/class-dahz-framework-shortcode-vc-mapper.php:241
+#: includes/class-dahz-framework-shortcode-vc-mapper.php:243
+#: shortcode-maps/gradient-fill-color.php:84
+#: shortcode-maps/gradient-fill-color.php:86 shortcode-maps/image-grid.php:128
+#: shortcode-maps/image-grid.php:130
+msgid "Gradient Strength"
+msgstr ""
+
+#: includes/class-dahz-framework-shortcode-vc-mapper.php:285
+#: includes/class-dahz-framework-shortcode-vc-mapper.php:287
+msgid "Act as Toggle"
+msgstr ""
+
+#: includes/class-dahz-framework-shortcode-vc-mapper.php:291
+#: includes/class-dahz-framework-shortcode-vc-mapper.php:293
+#: shortcode-maps/ornamental-title.php:143
+#: shortcode-maps/ornamental-title.php:145
+msgid "Title Alignment"
+msgstr ""
+
+#: includes/class-dahz-framework-shortcode-vc-mapper.php:298
+#: includes/class-dahz-framework-shortcode-vc-mapper.php:300
+#: includes/class-dahz-framework-shortcode-vc-mapper.php:452
+#: includes/class-dahz-framework-shortcode-vc-mapper.php:454
+#: includes/class-dahz-framework-shortcode-vc-mapper.php:554
+#: includes/class-dahz-framework-shortcode-vc-mapper.php:556
+#: includes/class-dahz-framework-shortcode-vc-mapper.php:644
+#: includes/class-dahz-framework-shortcode-vc-mapper.php:646
+#: includes/dahz-shortcodes-helper.php:607
+#: includes/dahz-shortcodes-helper.php:609
+msgid "Title Tag Name"
+msgstr ""
+
+#: includes/class-dahz-framework-shortcode-vc-mapper.php:305
+#: includes/class-dahz-framework-shortcode-vc-mapper.php:307
+#: includes/class-dahz-framework-shortcode-vc-mapper.php:459
+#: includes/class-dahz-framework-shortcode-vc-mapper.php:461
+#: includes/class-dahz-framework-shortcode-vc-mapper.php:561
+#: includes/class-dahz-framework-shortcode-vc-mapper.php:563
+#: includes/class-dahz-framework-shortcode-vc-mapper.php:655
+#: includes/class-dahz-framework-shortcode-vc-mapper.php:657
+#: includes/dahz-shortcodes-helper.php:615
+#: includes/dahz-shortcodes-helper.php:617
+msgid "Title Size"
+msgstr ""
+
+#: includes/class-dahz-framework-shortcode-vc-mapper.php:311
+#: includes/class-dahz-framework-shortcode-vc-mapper.php:313
+#: includes/dahz-shortcodes-helper.php:269
+#: includes/dahz-shortcodes-helper.php:286
+#: includes/dahz-shortcodes-helper.php:303
+#: includes/dahz-shortcodes-helper.php:320
+#: includes/dahz-shortcodes-helper.php:336
+#: includes/dahz-shortcodes-helper.php:353
+#: includes/dahz-shortcodes-helper.php:369
+#: includes/dahz-shortcodes-helper.php:388 shortcode-maps/banner.php:286
+#: shortcode-maps/banner.php:304 shortcode-maps/banner.php:322
+#: shortcode-maps/banner.php:340 shortcode-maps/banner.php:358
+#: shortcode-maps/banner.php:376 shortcode-maps/banner.php:393
+#: shortcode-maps/banner.php:413 shortcode-maps/flip-box.php:96
+#: shortcode-maps/flip-box.php:137 shortcode-maps/flip-box.php:155
+#: shortcode-maps/flip-box.php:173 shortcode-maps/flip-box.php:191
+#: shortcode-maps/flip-box.php:209 shortcode-maps/flip-box.php:227
+#: shortcode-maps/flip-box.php:244 shortcode-maps/flip-box.php:264
+msgid "Icon"
+msgstr ""
+
+#: includes/class-dahz-framework-shortcode-vc-mapper.php:323
+#: includes/class-dahz-framework-shortcode-vc-mapper.php:325
+#: includes/dahz-shortcodes-helper.php:404
+#: includes/dahz-shortcodes-helper.php:406 shortcode-maps/banner.php:430
+#: shortcode-maps/banner.php:432
+msgid "Icon Position"
+msgstr ""
+
+#: includes/class-dahz-framework-shortcode-vc-mapper.php:352
+msgid "Replace Title With icon?"
+msgstr ""
+
+#: includes/class-dahz-framework-shortcode-vc-mapper.php:353
+msgid "Add icon next to section title."
+msgstr ""
+
+#: includes/class-dahz-framework-shortcode-vc-mapper.php:359
+msgid "Before title"
+msgstr ""
+
+#: includes/class-dahz-framework-shortcode-vc-mapper.php:360
+msgid "After title"
+msgstr ""
+
+#: includes/class-dahz-framework-shortcode-vc-mapper.php:366
+msgid "Icon position"
+msgstr ""
+
+#: includes/class-dahz-framework-shortcode-vc-mapper.php:367
+msgid "Select icon position."
+msgstr ""
+
+#: includes/class-dahz-framework-shortcode-vc-mapper.php:393
+msgid "Active"
+msgstr ""
+
+#: includes/class-dahz-framework-shortcode-vc-mapper.php:395
+msgid "Show this section when the page loads"
+msgstr ""
+
+#: includes/class-dahz-framework-shortcode-vc-mapper.php:400
+#: includes/class-dahz-framework-shortcode-vc-mapper.php:402
+#: shortcode-maps/modal-popup.php:140 shortcode-maps/modal-popup.php:142
+msgid "Full Size Content"
+msgstr ""
+
+#: includes/class-dahz-framework-shortcode-vc-mapper.php:407
+#: includes/class-dahz-framework-shortcode-vc-mapper.php:409
+msgid "Section Background Color"
+msgstr ""
+
+#: includes/class-dahz-framework-shortcode-vc-mapper.php:445
+#: includes/class-dahz-framework-shortcode-vc-mapper.php:447
+#: includes/class-dahz-framework-shortcode-vc-mapper.php:523
+msgid "Stretch Tabs"
+msgstr ""
+
+#: includes/class-dahz-framework-shortcode-vc-mapper.php:465
+#: includes/class-dahz-framework-shortcode-vc-mapper.php:467
+#: includes/class-dahz-framework-shortcode-vc-mapper.php:567
+#: includes/class-dahz-framework-shortcode-vc-mapper.php:569
+#: includes/dahz-shortcodes-helper.php:622
+#: includes/dahz-shortcodes-helper.php:624
+msgid "Title Color"
+msgstr ""
+
+#: includes/class-dahz-framework-shortcode-vc-mapper.php:471
+#: includes/class-dahz-framework-shortcode-vc-mapper.php:473
+#: includes/class-dahz-framework-shortcode-vc-mapper.php:573
+#: includes/class-dahz-framework-shortcode-vc-mapper.php:575
+msgid "Title Active Color"
+msgstr ""
+
+#: includes/class-dahz-framework-shortcode-vc-mapper.php:483
+#: includes/class-dahz-framework-shortcode-vc-mapper.php:485
+#: includes/class-dahz-framework-shortcode-vc-mapper.php:585
+#: includes/class-dahz-framework-shortcode-vc-mapper.php:587
+msgid "Background Active Color"
+msgstr ""
+
+#: includes/class-dahz-framework-shortcode-vc-mapper.php:521
+msgid "Stretch Tour"
+msgstr ""
+
+#: includes/class-dahz-framework-shortcode-vc-mapper.php:528
+#: includes/class-dahz-framework-shortcode-vc-mapper.php:530
+msgid "Tour Position"
+msgstr ""
+
+#: includes/class-dahz-framework-shortcode-vc-mapper.php:539
+#: includes/class-dahz-framework-shortcode-vc-mapper.php:541
+msgid "Tour Width"
+msgstr ""
+
+#: includes/class-dahz-framework-shortcode-vc-mapper.php:595
+msgid "Tabs Slider"
+msgstr ""
+
+#: includes/class-dahz-framework-shortcode-vc-mapper.php:625
+#: includes/class-dahz-framework-shortcode-vc-mapper.php:627
+#: shortcode-maps/category-showcase.php:111
+#: shortcode-maps/popup-newsletter.php:30
+#: shortcode-maps/popup-newsletter.php:32 shortcode-maps/snap-to-scroll.php:25
+#: shortcode-maps/snap-to-scroll.php:32 shortcode-maps/testimonials.php:18
+#: shortcode-maps/testimonials.php:28
+msgid "Style"
+msgstr ""
+
+#: includes/class-dahz-framework-shortcode-vc-mapper.php:636
+#: includes/class-dahz-framework-shortcode-vc-mapper.php:638
+#: shortcode-maps/product-menu.php:18 shortcode-maps/product-menu.php:24
+#: shortcode-maps/product-showcase.php:105
+#: shortcode-maps/product-showcase.php:107
+#: shortcode-maps/product-showcase.php:133
+#: shortcode-maps/product-showcase.php:135 shortcode-maps/quote.php:141
+#: shortcode-maps/quote.php:143 shortcode-maps/team-member.php:35
+#: shortcode-maps/team-member.php:38
+msgid "Alignment"
+msgstr ""
+
+#: includes/dahz-framework-shortcode-pagination.php:37
+msgid "To Infinity and Beyond"
+msgstr ""
+
+#: includes/dahz-framework-shortcode-pagination.php:55
+msgid "Load More"
+msgstr ""
+
+#: includes/dahz-framework-shortcode-tagging.php:41
+msgid "Click on image to start tagging"
+msgstr ""
+
+#: includes/dahz-shortcodes-helper.php:3
+msgid "Alert"
+msgstr ""
+
+#: includes/dahz-shortcodes-helper.php:4
+msgid "Info"
+msgstr ""
+
+#: includes/dahz-shortcodes-helper.php:5
+msgid "Tick"
+msgstr ""
+
+#: includes/dahz-shortcodes-helper.php:6
+msgid "Explanation"
+msgstr ""
+
+#: includes/dahz-shortcodes-helper.php:7
+msgid "Address book"
+msgstr ""
+
+#: includes/dahz-shortcodes-helper.php:8
+msgid "Alarm clock"
+msgstr ""
+
+#: includes/dahz-shortcodes-helper.php:9
+msgid "Anchor"
+msgstr ""
+
+#: includes/dahz-shortcodes-helper.php:10
+msgid "Application Image"
+msgstr ""
+
+#: includes/dahz-shortcodes-helper.php:11
+msgid "Arrow"
+msgstr ""
+
+#: includes/dahz-shortcodes-helper.php:12
+msgid "Asterisk"
+msgstr ""
+
+#: includes/dahz-shortcodes-helper.php:13
+msgid "Hammer"
+msgstr ""
+
+#: includes/dahz-shortcodes-helper.php:14
+msgid "Balloon"
+msgstr ""
+
+#: includes/dahz-shortcodes-helper.php:15
+msgid "Balloon Buzz"
+msgstr ""
+
+#: includes/dahz-shortcodes-helper.php:16
+msgid "Balloon Facebook"
+msgstr ""
+
+#: includes/dahz-shortcodes-helper.php:17
+msgid "Balloon Twitter"
+msgstr ""
+
+#: includes/dahz-shortcodes-helper.php:18
+msgid "Battery"
+msgstr ""
+
+#: includes/dahz-shortcodes-helper.php:19
+msgid "Binocular"
+msgstr ""
+
+#: includes/dahz-shortcodes-helper.php:20
+msgid "Document Excel"
+msgstr ""
+
+#: includes/dahz-shortcodes-helper.php:21
+msgid "Document Image"
+msgstr ""
+
+#: includes/dahz-shortcodes-helper.php:22
+msgid "Document Music"
+msgstr ""
+
+#: includes/dahz-shortcodes-helper.php:23
+msgid "Document Office"
+msgstr ""
+
+#: includes/dahz-shortcodes-helper.php:24
+msgid "Document PDF"
+msgstr ""
+
+#: includes/dahz-shortcodes-helper.php:25
+msgid "Document Powerpoint"
+msgstr ""
+
+#: includes/dahz-shortcodes-helper.php:26
+msgid "Document Word"
+msgstr ""
+
+#: includes/dahz-shortcodes-helper.php:27
+msgid "Bookmark"
+msgstr ""
+
+#: includes/dahz-shortcodes-helper.php:28
+msgid "Camcorder"
+msgstr ""
+
+#: includes/dahz-shortcodes-helper.php:29
+msgid "Camera"
+msgstr ""
+
+#: includes/dahz-shortcodes-helper.php:30
+msgid "Chart"
+msgstr ""
+
+#: includes/dahz-shortcodes-helper.php:31
+msgid "Chart pie"
+msgstr ""
+
+#: includes/dahz-shortcodes-helper.php:32
+msgid "Clock"
+msgstr ""
+
+#: includes/dahz-shortcodes-helper.php:33
+msgid "Fire"
+msgstr ""
+
+#: includes/dahz-shortcodes-helper.php:34
+msgid "Heart"
+msgstr ""
+
+#: includes/dahz-shortcodes-helper.php:35
+msgid "Mail"
+msgstr ""
+
+#: includes/dahz-shortcodes-helper.php:36
+msgid "Play"
+msgstr ""
+
+#: includes/dahz-shortcodes-helper.php:37
+msgid "Shield"
+msgstr ""
+
+#: includes/dahz-shortcodes-helper.php:38
+msgid "Video"
+msgstr ""
+
+#: includes/dahz-shortcodes-helper.php:42
+#: includes/dahz-shortcodes-helper.php:43
+#: includes/dahz-shortcodes-helper.php:44
+#: includes/dahz-shortcodes-helper.php:45
+#: includes/dahz-shortcodes-helper.php:46
+#: includes/dahz-shortcodes-helper.php:47
+#: includes/dahz-shortcodes-helper.php:48
+#: includes/dahz-shortcodes-helper.php:49
+#: includes/dahz-shortcodes-helper.php:50
+#: includes/dahz-shortcodes-helper.php:51
+#: includes/dahz-shortcodes-helper.php:52
+#: includes/dahz-shortcodes-helper.php:53
+#: includes/dahz-shortcodes-helper.php:54
+#: includes/dahz-shortcodes-helper.php:55
+#: includes/dahz-shortcodes-helper.php:56
+#: includes/dahz-shortcodes-helper.php:57
+#: includes/dahz-shortcodes-helper.php:58
+#: includes/dahz-shortcodes-helper.php:59
+#: includes/dahz-shortcodes-helper.php:60
+#: includes/dahz-shortcodes-helper.php:61
+#: includes/dahz-shortcodes-helper.php:62
+#: includes/dahz-shortcodes-helper.php:63
+#: includes/dahz-shortcodes-helper.php:64
+#: includes/dahz-shortcodes-helper.php:65
+#: includes/dahz-shortcodes-helper.php:66
+#: includes/dahz-shortcodes-helper.php:67
+#: includes/dahz-shortcodes-helper.php:68
+#: includes/dahz-shortcodes-helper.php:69
+#: includes/dahz-shortcodes-helper.php:70
+#: includes/dahz-shortcodes-helper.php:71
+#: includes/dahz-shortcodes-helper.php:72
+#: includes/dahz-shortcodes-helper.php:73
+#: includes/dahz-shortcodes-helper.php:74
+#: includes/dahz-shortcodes-helper.php:75
+#: includes/dahz-shortcodes-helper.php:76
+#: includes/dahz-shortcodes-helper.php:77
+#: includes/dahz-shortcodes-helper.php:78
+#: includes/dahz-shortcodes-helper.php:79
+#: includes/dahz-shortcodes-helper.php:80
+#: includes/dahz-shortcodes-helper.php:81
+#: includes/dahz-shortcodes-helper.php:82
+#: includes/dahz-shortcodes-helper.php:83
+#: includes/dahz-shortcodes-helper.php:84
+#: includes/dahz-shortcodes-helper.php:85
+#: includes/dahz-shortcodes-helper.php:86
+#: includes/dahz-shortcodes-helper.php:87
+#: includes/dahz-shortcodes-helper.php:88
+#: includes/dahz-shortcodes-helper.php:89
+#: includes/dahz-shortcodes-helper.php:90
+#: includes/dahz-shortcodes-helper.php:91
+#: includes/dahz-shortcodes-helper.php:92
+#: includes/dahz-shortcodes-helper.php:93
+#: includes/dahz-shortcodes-helper.php:94
+#: includes/dahz-shortcodes-helper.php:95
+#: includes/dahz-shortcodes-helper.php:96
+#: includes/dahz-shortcodes-helper.php:97
+#: includes/dahz-shortcodes-helper.php:98
+#: includes/dahz-shortcodes-helper.php:99
+#: includes/dahz-shortcodes-helper.php:100
+#: includes/dahz-shortcodes-helper.php:101
+#: includes/dahz-shortcodes-helper.php:102
+#: includes/dahz-shortcodes-helper.php:103
+#: includes/dahz-shortcodes-helper.php:104
+#: includes/dahz-shortcodes-helper.php:105
+#: includes/dahz-shortcodes-helper.php:106
+#: includes/dahz-shortcodes-helper.php:107
+#: includes/dahz-shortcodes-helper.php:108
+#: includes/dahz-shortcodes-helper.php:109
+#: includes/dahz-shortcodes-helper.php:110
+#: includes/dahz-shortcodes-helper.php:111
+#: includes/dahz-shortcodes-helper.php:112
+#: includes/dahz-shortcodes-helper.php:113
+#: includes/dahz-shortcodes-helper.php:114
+#: includes/dahz-shortcodes-helper.php:115
+#: includes/dahz-shortcodes-helper.php:116
+#: includes/dahz-shortcodes-helper.php:117
+#: includes/dahz-shortcodes-helper.php:118
+#: includes/dahz-shortcodes-helper.php:119
+#: includes/dahz-shortcodes-helper.php:120
+#: includes/dahz-shortcodes-helper.php:121
+#: includes/dahz-shortcodes-helper.php:122
+#: includes/dahz-shortcodes-helper.php:123
+#: includes/dahz-shortcodes-helper.php:124
+#: includes/dahz-shortcodes-helper.php:125
+#: includes/dahz-shortcodes-helper.php:126
+#: includes/dahz-shortcodes-helper.php:127
+#: includes/dahz-shortcodes-helper.php:128
+#: includes/dahz-shortcodes-helper.php:129
+#: includes/dahz-shortcodes-helper.php:130
+#: includes/dahz-shortcodes-helper.php:131
+#: includes/dahz-shortcodes-helper.php:132
+#: includes/dahz-shortcodes-helper.php:133
+#: includes/dahz-shortcodes-helper.php:134
+#: includes/dahz-shortcodes-helper.php:135
+#: includes/dahz-shortcodes-helper.php:136
+#: includes/dahz-shortcodes-helper.php:137
+#: includes/dahz-shortcodes-helper.php:138
+#: includes/dahz-shortcodes-helper.php:139
+#: includes/dahz-shortcodes-helper.php:140
+#: includes/dahz-shortcodes-helper.php:141
+#: includes/dahz-shortcodes-helper.php:142
+#: includes/dahz-shortcodes-helper.php:143
+#: includes/dahz-shortcodes-helper.php:144
+#: includes/dahz-shortcodes-helper.php:145
+#: includes/dahz-shortcodes-helper.php:146
+#: includes/dahz-shortcodes-helper.php:147
+#: includes/dahz-shortcodes-helper.php:148
+#: includes/dahz-shortcodes-helper.php:149
+#: includes/dahz-shortcodes-helper.php:150
+#: includes/dahz-shortcodes-helper.php:151
+#: includes/dahz-shortcodes-helper.php:152
+#: includes/dahz-shortcodes-helper.php:153
+#: includes/dahz-shortcodes-helper.php:154
+#: includes/dahz-shortcodes-helper.php:155
+#: includes/dahz-shortcodes-helper.php:156
+#: includes/dahz-shortcodes-helper.php:157
+#: includes/dahz-shortcodes-helper.php:158
+#: includes/dahz-shortcodes-helper.php:159
+#: includes/dahz-shortcodes-helper.php:160
+#: includes/dahz-shortcodes-helper.php:161
+#: includes/dahz-shortcodes-helper.php:162
+#: includes/dahz-shortcodes-helper.php:163
+#: includes/dahz-shortcodes-helper.php:164
+#: includes/dahz-shortcodes-helper.php:165
+#: includes/dahz-shortcodes-helper.php:166
+#: includes/dahz-shortcodes-helper.php:167
+#: includes/dahz-shortcodes-helper.php:168
+#: includes/dahz-shortcodes-helper.php:169
+#: includes/dahz-shortcodes-helper.php:170
+#: includes/dahz-shortcodes-helper.php:171
+#: includes/dahz-shortcodes-helper.php:172
+#: includes/dahz-shortcodes-helper.php:173
+#: includes/dahz-shortcodes-helper.php:174
+#: includes/dahz-shortcodes-helper.php:175
+msgid "Home"
+msgstr ""
+
+#: includes/dahz-shortcodes-helper.php:243 shortcode-maps/banner.php:254
+#: shortcode-maps/flip-box.php:89
+msgid "Use Icon?"
+msgstr ""
+
+#: includes/dahz-shortcodes-helper.php:245 shortcode-maps/banner.php:256
+#: shortcode-maps/flip-box.php:91
+msgid "Do you want to use icon?"
+msgstr ""
+
+#: includes/dahz-shortcodes-helper.php:249 shortcode-maps/banner.php:265
+msgid "Icon library"
+msgstr ""
+
+#: includes/dahz-shortcodes-helper.php:251 shortcode-maps/banner.php:267
+#: shortcode-maps/flip-box.php:98
+msgid "Font Awesome"
+msgstr ""
+
+#: includes/dahz-shortcodes-helper.php:252 shortcode-maps/banner.php:268
+#: shortcode-maps/flip-box.php:99
+msgid "Open Iconic"
+msgstr ""
+
+#: includes/dahz-shortcodes-helper.php:253 shortcode-maps/banner.php:269
+#: shortcode-maps/flip-box.php:100
+msgid "Typicons"
+msgstr ""
+
+#: includes/dahz-shortcodes-helper.php:254 shortcode-maps/banner.php:270
+#: shortcode-maps/flip-box.php:101
+msgid "Entypo"
+msgstr ""
+
+#: includes/dahz-shortcodes-helper.php:255 shortcode-maps/banner.php:271
+#: shortcode-maps/flip-box.php:102
+msgid "Linecons"
+msgstr ""
+
+#: includes/dahz-shortcodes-helper.php:256 shortcode-maps/banner.php:272
+#: shortcode-maps/flip-box.php:103
+msgid "Pixel"
+msgstr ""
+
+#: includes/dahz-shortcodes-helper.php:257 shortcode-maps/banner.php:273
+#: shortcode-maps/flip-box.php:104
+msgid "Mono Social"
+msgstr ""
+
+#: includes/dahz-shortcodes-helper.php:258 shortcode-maps/banner.php:274
+#: shortcode-maps/flip-box.php:105
+msgid "Dahz Icons"
+msgstr ""
+
+#: includes/dahz-shortcodes-helper.php:265 shortcode-maps/banner.php:281
+#: shortcode-maps/flip-box.php:112
+msgid "Select icon library."
+msgstr ""
+
+#: includes/dahz-shortcodes-helper.php:282
+#: includes/dahz-shortcodes-helper.php:299
+#: includes/dahz-shortcodes-helper.php:316
+#: includes/dahz-shortcodes-helper.php:349
+#: includes/dahz-shortcodes-helper.php:365
+#: includes/dahz-shortcodes-helper.php:384
+#: includes/dahz-shortcodes-helper.php:400 shortcode-maps/banner.php:299
+#: shortcode-maps/banner.php:317 shortcode-maps/banner.php:335
+#: shortcode-maps/banner.php:353 shortcode-maps/banner.php:371
+#: shortcode-maps/banner.php:388 shortcode-maps/banner.php:408
+#: shortcode-maps/banner.php:425 shortcode-maps/flip-box.php:150
+#: shortcode-maps/flip-box.php:168 shortcode-maps/flip-box.php:186
+#: shortcode-maps/flip-box.php:204 shortcode-maps/flip-box.php:222
+#: shortcode-maps/flip-box.php:239 shortcode-maps/flip-box.php:259
+msgid "Select icon from library."
+msgstr ""
+
+#: includes/dahz-shortcodes-helper.php:420
+#: includes/dahz-shortcodes-helper.php:422 shortcode-maps/banner.php:118
+#: shortcode-maps/banner.php:120
+msgid "Button Label"
+msgstr ""
+
+#: includes/dahz-shortcodes-helper.php:424
+#: includes/dahz-shortcodes-helper.php:437
+#: includes/dahz-shortcodes-helper.php:450
+#: includes/dahz-shortcodes-helper.php:462
+#: includes/dahz-shortcodes-helper.php:475
+#: includes/dahz-shortcodes-helper.php:487
+#: includes/dahz-shortcodes-helper.php:495
+#: includes/dahz-shortcodes-helper.php:503
+#: includes/dahz-shortcodes-helper.php:511
+#: includes/dahz-shortcodes-helper.php:519
+#: includes/dahz-shortcodes-helper.php:531
+#: includes/dahz-shortcodes-helper.php:554 shortcode-maps/contact-form.php:145
+msgid "Button Options"
+msgstr ""
+
+#: includes/dahz-shortcodes-helper.php:429
+#: includes/dahz-shortcodes-helper.php:436 shortcode-maps/banner.php:130
+#: shortcode-maps/banner.php:137
+msgid "Button Style"
+msgstr ""
+
+#: includes/dahz-shortcodes-helper.php:442
+#: includes/dahz-shortcodes-helper.php:444 shortcode-maps/banner.php:146
+#: shortcode-maps/banner.php:148
+msgid "Button Color"
+msgstr ""
+
+#: includes/dahz-shortcodes-helper.php:454
+#: includes/dahz-shortcodes-helper.php:456 shortcode-maps/banner.php:158
+#: shortcode-maps/banner.php:160
+msgid "Button Hover Color"
+msgstr ""
+
+#: includes/dahz-shortcodes-helper.php:467
+#: includes/dahz-shortcodes-helper.php:469 shortcode-maps/banner.php:170
+#: shortcode-maps/banner.php:172 shortcode-maps/social-icon.php:60
+#: shortcode-maps/social-icon.php:62
+msgid "Outline Color"
+msgstr ""
+
+#: includes/dahz-shortcodes-helper.php:479
+#: includes/dahz-shortcodes-helper.php:481 shortcode-maps/banner.php:182
+#: shortcode-maps/banner.php:184
+msgid "Outline Hover Color"
+msgstr ""
+
+#: includes/dahz-shortcodes-helper.php:491
+#: includes/dahz-shortcodes-helper.php:493 shortcode-maps/banner.php:194
+#: shortcode-maps/banner.php:196
+msgid "Label Color"
+msgstr ""
+
+#: includes/dahz-shortcodes-helper.php:499
+#: includes/dahz-shortcodes-helper.php:501 shortcode-maps/banner.php:206
+#: shortcode-maps/banner.php:208
+msgid "Label Hover Color"
+msgstr ""
+
+#: includes/dahz-shortcodes-helper.php:507
+#: includes/dahz-shortcodes-helper.php:509 shortcode-maps/banner.php:218
+#: shortcode-maps/banner.php:220
+msgid "Button Size"
+msgstr ""
+
+#: includes/dahz-shortcodes-helper.php:515
+#: includes/dahz-shortcodes-helper.php:517 shortcode-maps/banner.php:230
+#: shortcode-maps/banner.php:232 shortcode-maps/contact-form.php:93
+#: shortcode-maps/contact-form.php:95 shortcode-maps/count-down.php:65
+#: shortcode-maps/count-down.php:67 shortcode-maps/quote.php:59
+#: shortcode-maps/quote.php:61
+msgid "Border Radius"
+msgstr ""
+
+#: includes/dahz-shortcodes-helper.php:523
+#: includes/dahz-shortcodes-helper.php:526 shortcode-maps/banner.php:242
+#: shortcode-maps/banner.php:245
+msgid "Enable Fullwidth"
+msgstr ""
+
+#: includes/dahz-shortcodes-helper.php:565
+#: includes/dahz-shortcodes-helper.php:567
+msgid "Css Animation"
+msgstr ""
+
+#: includes/dahz-shortcodes-helper.php:578
+msgid "Default"
+msgstr ""
+
+#: includes/dahz-shortcodes-helper.php:580
+msgid "Top to bottom"
+msgstr ""
+
+#: includes/dahz-shortcodes-helper.php:581
+msgid "Bottom to top"
+msgstr ""
+
+#: includes/dahz-shortcodes-helper.php:582
+msgid "Left to right"
+msgstr ""
+
+#: includes/dahz-shortcodes-helper.php:583
+msgid "Right to left"
+msgstr ""
+
+#: includes/dahz-shortcodes-helper.php:584
+msgid "Appear from center"
+msgstr ""
+
+#: includes/dahz-shortcodes-helper.php:593 shortcode-maps/section-title.php:47
+#: shortcode-maps/section-title.php:49
+msgid "Padding"
+msgstr ""
+
+#: includes/dahz-shortcodes-helper.php:595
+msgid "Padding : Top Right Bottom Left"
+msgstr ""
+
+#: includes/dahz-shortcodes-helper.php:596
+#: includes/dahz-shortcodes-helper.php:603
+#: includes/dahz-shortcodes-helper.php:611
+#: includes/dahz-shortcodes-helper.php:618
+#: includes/dahz-shortcodes-helper.php:625
+#: includes/dahz-shortcodes-helper.php:629
+#: includes/dahz-shortcodes-helper.php:631
+#: includes/dahz-shortcodes-helper.php:632
+#: includes/dahz-shortcodes-helper.php:639
+#: includes/dahz-shortcodes-helper.php:646 shortcode-maps/testimonials.php:94
+#: shortcode-maps/testimonials.php:96
+msgid "Content"
+msgstr ""
+
+#: includes/dahz-shortcodes-helper.php:636
+#: includes/dahz-shortcodes-helper.php:638
+msgid "Content Margin Bottom"
+msgstr ""
+
+#: includes/dahz-shortcodes-helper.php:643
+#: includes/dahz-shortcodes-helper.php:645
+msgid "Content Color"
+msgstr ""
+
+#: includes/dahz-shortcodes-helper.php:652
+msgid "Use theme default font family?"
+msgstr ""
+
+#: includes/dahz-shortcodes-helper.php:654
+msgid "Yes"
+msgstr ""
+
+#: includes/dahz-shortcodes-helper.php:655
+msgid "Use font family from the theme."
+msgstr ""
+
+#: includes/dahz-shortcodes-helper.php:663
+msgid "Select font family."
+msgstr ""
+
+#: includes/dahz-shortcodes-helper.php:664
+msgid "Select font styling."
+msgstr ""
+
+#: includes/dahz-shortcodes-helper.php:674
+#: includes/dahz-shortcodes-helper.php:676
+#: shortcode-maps/ornamental-title.php:62
+#: shortcode-maps/ornamental-title.php:64
+#: shortcode-maps/ornamental-title.php:278
+msgid "Font Size"
+msgstr ""
+
+#: includes/dahz-shortcodes-helper.php:680
+#: includes/dahz-shortcodes-helper.php:682
+#: shortcode-maps/ornamental-title.php:84
+#: shortcode-maps/ornamental-title.php:86
+msgid "Line Height"
+msgstr ""
+
+#: includes/dahz-shortcodes-helper.php:686
+#: includes/dahz-shortcodes-helper.php:688
+#: shortcode-maps/ornamental-title.php:95
+#: shortcode-maps/ornamental-title.php:97 shortcode-maps/quote.php:135
+#: shortcode-maps/quote.php:137
+msgid "Letter Spacing"
+msgstr ""
+
+#: includes/dahz-shortcodes-helper.php:692
+#: includes/dahz-shortcodes-helper.php:694
+#: shortcode-maps/ornamental-title.php:117
+#: shortcode-maps/ornamental-title.php:119
+msgid "Font Style"
+msgstr ""
+
+#: includes/templates/big_post.php:48
+msgid "Read More"
+msgstr ""
+
+#: includes/templates/blog.php:96
+msgid "Continue Reading"
+msgstr ""
+
+#: includes/templates/portfolio.php:86
+msgid "View More"
+msgstr ""
+
+#: includes/templates/product_info.php:35
+msgid "learn more"
+msgstr ""
+
+#: includes/templates/product_menu.php:44
+msgid "No product categories exist."
+msgstr ""
+
+#: includes/templates/product_menu.php:62
+msgid "No brand categories exist."
+msgstr ""
+
+#: includes/templates/product_menu.php:167
+#: includes/templates/product_menu.php:191
+#, php-format
+msgid "View all posts in %s"
+msgstr ""
+
+#: includes/templates/product_showcase.php:102
+#, php-format
+msgid "%s"
+msgid_plural "%s"
+msgstr[0] ""
+msgstr[1] ""
+
+#: includes/templates/social_icon.php:67
+msgid "Follow us on "
+msgstr ""
+
+#: includes/templates/tagging.php:18
+msgid "Image Tagging"
+msgstr ""
+
+#: includes/templates/video_popup.php:99
+msgid "Close"
+msgstr ""
+
+#: includes/templates/video_popup.php:102
+msgid "Fullscreen"
+msgstr ""
+
+#: shortcode-maps/action-box.php:10
+msgid "Action Box"
+msgstr ""
+
+#: shortcode-maps/action-box.php:18 shortcode-maps/action-box.php:25
+msgid "Action Box Style"
+msgstr ""
+
+#: shortcode-maps/action-box.php:35 shortcode-maps/action-box.php:37
+#: shortcode-maps/banner.php:44 shortcode-maps/banner.php:46
+#: shortcode-maps/flip-box.php:60 shortcode-maps/flip-box.php:288
+#: shortcode-maps/video-popup.php:30 shortcode-maps/video-popup.php:32
+msgid "Background Image"
+msgstr ""
+
+#: shortcode-maps/action-box.php:44 shortcode-maps/action-box.php:46
+#: shortcode-maps/banner.php:90 shortcode-maps/banner.php:92
+#: shortcode-maps/banner.php:107 shortcode-maps/banner.php:109
+#: shortcode-maps/button.php:19 shortcode-maps/button.php:21
+msgid "Button Link"
+msgstr ""
+
+#: shortcode-maps/animated-text.php:10
+msgid "Animated Text"
+msgstr ""
+
+#: shortcode-maps/animated-text.php:17 shortcode-maps/animated-text.php:19
+msgid "Text"
+msgstr ""
+
+#: shortcode-maps/animated-text.php:23 shortcode-maps/animated-text.php:25
+#: shortcode-maps/product-showcase.php:148
+#: shortcode-maps/product-showcase.php:150
+msgid "Text Style"
+msgstr ""
+
+#: shortcode-maps/animated-text.php:33 shortcode-maps/animated-text.php:35
+msgid "Image Background"
+msgstr ""
+
+#: shortcode-maps/animated-text.php:43 shortcode-maps/animated-text.php:45
+msgid "Inner Text Color"
+msgstr ""
+
+#: shortcode-maps/animated-text.php:53 shortcode-maps/animated-text.php:55
+msgid "Outer Text Color"
+msgstr ""
+
+#: shortcode-maps/animated-text.php:66 shortcode-maps/animated-text.php:68
+#: shortcode-maps/contact-form.php:134 shortcode-maps/contact-form.php:136
+#: shortcode-maps/flip-box.php:79 shortcode-maps/flip-box.php:307
+#: shortcode-maps/image-grid.php:146 shortcode-maps/image-grid.php:148
+#: shortcode-maps/image-grid.php:162 shortcode-maps/image-grid.php:164
+#: shortcode-maps/ornamental-title.php:106
+#: shortcode-maps/ornamental-title.php:108 shortcode-maps/quote.php:108
+#: shortcode-maps/quote.php:110 shortcode-maps/section-title.php:27
+#: shortcode-maps/section-title.php:29 shortcode-maps/team-member.php:83
+#: shortcode-maps/team-member.php:85
+#: shortcode-maps/title-with-background.php:54
+#: shortcode-maps/title-with-background.php:56
+msgid "Text Color"
+msgstr ""
+
+#: shortcode-maps/animated-text.php:76 shortcode-maps/animated-text.php:78
+msgid "Animation Duration"
+msgstr ""
+
+#: shortcode-maps/banner.php:10
+msgid "Banner"
+msgstr ""
+
+#: shortcode-maps/banner.php:17 shortcode-maps/banner.php:19
+#: shortcode-maps/flip-box.php:16 shortcode-maps/product-showcase.php:36
+#: shortcode-maps/product-showcase.php:39
+#: shortcode-maps/product-showcase.php:47 shortcode-maps/video-popup.php:18
+#: shortcode-maps/video-popup.php:20
+msgid "Min Height"
+msgstr ""
+
+#: shortcode-maps/banner.php:23 shortcode-maps/banner.php:25
+msgid "Banner Url"
+msgstr ""
+
+#: shortcode-maps/banner.php:29 shortcode-maps/banner.php:31
+msgid "Content Position"
+msgstr ""
+
+#: shortcode-maps/banner.php:33 shortcode-maps/banner.php:40
+#: shortcode-maps/banner.php:47 shortcode-maps/banner.php:54
+#: shortcode-maps/banner.php:64 shortcode-maps/banner.php:71
+#: shortcode-maps/banner.php:82 shortcode-maps/banner.php:454
+#: shortcode-maps/banner.php:470 shortcode-maps/banner.php:481
+#: shortcode-maps/banner.php:492 shortcode-maps/blog.php:115
+#: shortcode-maps/blog.php:150 shortcode-maps/blog.php:158
+#: shortcode-maps/blog.php:166 shortcode-maps/blog.php:174
+#: shortcode-maps/blog.php:182 shortcode-maps/blog.php:190
+#: shortcode-maps/blog.php:201 shortcode-maps/blog.php:216
+#: shortcode-maps/blog.php:227 shortcode-maps/portfolio.php:110
+#: shortcode-maps/portfolio.php:149 shortcode-maps/portfolio.php:160
+#: shortcode-maps/portfolio.php:175 shortcode-maps/portfolio.php:186
+#: shortcode-maps/product-display.php:61
+#: shortcode-maps/product-display.php:171
+#: shortcode-maps/product-display.php:220
+#: shortcode-maps/product-display.php:231
+#: shortcode-maps/product-display.php:246
+#: shortcode-maps/product-display.php:257
+msgid "Design Options"
+msgstr ""
+
+#: shortcode-maps/banner.php:51 shortcode-maps/banner.php:53
+#: shortcode-maps/image-grid.php:139 shortcode-maps/image-grid.php:141
+#: shortcode-maps/product-showcase.php:93
+#: shortcode-maps/product-showcase.php:96 shortcode-maps/team-member.php:105
+#: shortcode-maps/team-member.php:107 shortcode-maps/video-popup.php:36
+#: shortcode-maps/video-popup.php:38
+msgid "Color Overlay"
+msgstr ""
+
+#: shortcode-maps/banner.php:61 shortcode-maps/banner.php:63
+#: shortcode-maps/video-popup.php:78 shortcode-maps/video-popup.php:80
+msgid "Enable Border"
+msgstr ""
+
+#: shortcode-maps/banner.php:68 shortcode-maps/banner.php:70
+#: shortcode-maps/count-down.php:59 shortcode-maps/count-down.php:61
+#: shortcode-maps/quote.php:47 shortcode-maps/quote.php:49
+#: shortcode-maps/video-popup.php:84 shortcode-maps/video-popup.php:86
+msgid "Border Size"
+msgstr ""
+
+#: shortcode-maps/banner.php:79 shortcode-maps/banner.php:81
+#: shortcode-maps/contact-form.php:67 shortcode-maps/contact-form.php:69
+#: shortcode-maps/count-down.php:71 shortcode-maps/count-down.php:73
+#: shortcode-maps/modal-popup.php:114 shortcode-maps/modal-popup.php:116
+#: shortcode-maps/team-member.php:46 shortcode-maps/team-member.php:48
+#: shortcode-maps/video-popup.php:94 shortcode-maps/video-popup.php:96
+msgid "Border Color"
+msgstr ""
+
+#: shortcode-maps/banner.php:100 shortcode-maps/banner.php:102
+msgid "Enable Secondary Button"
+msgstr ""
+
+#: shortcode-maps/banner.php:103 shortcode-maps/banner.php:114
+#: shortcode-maps/banner.php:126 shortcode-maps/banner.php:142
+#: shortcode-maps/banner.php:154 shortcode-maps/banner.php:166
+#: shortcode-maps/banner.php:178 shortcode-maps/banner.php:190
+#: shortcode-maps/banner.php:202 shortcode-maps/banner.php:214
+#: shortcode-maps/banner.php:226 shortcode-maps/banner.php:238
+#: shortcode-maps/banner.php:250 shortcode-maps/banner.php:261
+#: shortcode-maps/banner.php:282 shortcode-maps/banner.php:300
+#: shortcode-maps/banner.php:318 shortcode-maps/banner.php:336
+#: shortcode-maps/banner.php:354 shortcode-maps/banner.php:372
+#: shortcode-maps/banner.php:389 shortcode-maps/banner.php:409
+#: shortcode-maps/banner.php:426 shortcode-maps/banner.php:441
+msgid "Button Secondary Options"
+msgstr ""
+
+#: shortcode-maps/banner.php:447 shortcode-maps/banner.php:449
+msgid "Hover Effect"
+msgstr ""
+
+#: shortcode-maps/banner.php:458 shortcode-maps/banner.php:460
+msgid "Video Source"
+msgstr ""
+
+#: shortcode-maps/banner.php:474 shortcode-maps/banner.php:476
+#: shortcode-maps/video-popup.php:42 shortcode-maps/video-popup.php:44
+msgid "Video Url"
+msgstr ""
+
+#: shortcode-maps/banner.php:485 shortcode-maps/banner.php:487
+msgid "Mute Video"
+msgstr ""
+
+#: shortcode-maps/big-post.php:10
+msgid "Big Post"
+msgstr ""
+
+#: shortcode-maps/big-post.php:17 shortcode-maps/blog.php:65
+#: shortcode-maps/portfolio.php:66
+msgid "Select Posts"
+msgstr ""
+
+#: shortcode-maps/big-post.php:29
+msgid "Enter List of Post"
+msgstr ""
+
+#: shortcode-maps/big-post.php:33
+msgid "Content Alignment"
+msgstr ""
+
+#: shortcode-maps/big-post.php:40 shortcode-maps/blog.php:28
+#: shortcode-maps/blog.php:35 shortcode-maps/portfolio.php:29
+#: shortcode-maps/portfolio.php:36 shortcode-maps/product-display.php:29
+#: shortcode-maps/product-display.php:44 shortcode-maps/product-grid.php:29
+#: shortcode-maps/product-grid.php:44 shortcode-maps/product-menu.php:29
+#: shortcode-maps/product-menu.php:43
+msgid "Filter By"
+msgstr ""
+
+#: shortcode-maps/big-post.php:44 shortcode-maps/blog.php:154
+#: shortcode-maps/blog.php:157
+msgid "Display Categories"
+msgstr ""
+
+#: shortcode-maps/big-post.php:52 shortcode-maps/blog.php:162
+#: shortcode-maps/blog.php:165
+msgid "Display Author"
+msgstr ""
+
+#: shortcode-maps/big-post.php:60
+msgid "Date"
+msgstr ""
+
+#: shortcode-maps/big-post.php:68
+msgid "Comment"
+msgstr ""
+
+#: shortcode-maps/big-post.php:76
+msgid "Excerpt"
+msgstr ""
+
+#: shortcode-maps/big-post.php:84
+msgid "Read More Button"
+msgstr ""
+
+#: shortcode-maps/blog.php:10
+msgid "Blog"
+msgstr ""
+
+#: shortcode-maps/blog.php:17 shortcode-maps/blog.php:24
+#: shortcode-maps/portfolio.php:17 shortcode-maps/portfolio.php:25
+msgid "Posts Display"
+msgstr ""
+
+#: shortcode-maps/blog.php:39 shortcode-maps/blog.php:51
+#: shortcode-maps/portfolio.php:40 shortcode-maps/portfolio.php:52
+#: shortcode-maps/product-display.php:66 shortcode-maps/product-display.php:78
+#: shortcode-maps/product-grid.php:61 shortcode-maps/product-grid.php:73
+#: shortcode-maps/product-menu.php:48 shortcode-maps/product-menu.php:64
+msgid "Order By"
+msgstr ""
+
+#: shortcode-maps/blog.php:55 shortcode-maps/blog.php:61
+#: shortcode-maps/portfolio.php:56 shortcode-maps/portfolio.php:62
+#: shortcode-maps/product-display.php:87 shortcode-maps/product-display.php:93
+#: shortcode-maps/product-grid.php:78 shortcode-maps/product-grid.php:84
+#: shortcode-maps/product-menu.php:69 shortcode-maps/product-menu.php:75
+msgid "Sort By"
+msgstr ""
+
+#: shortcode-maps/blog.php:77 shortcode-maps/portfolio.php:78
+#: shortcode-maps/product-display.php:110 shortcode-maps/product-grid.php:101
+#: shortcode-maps/product-info.php:32 shortcode-maps/product-menu.php:92
+#: shortcode-maps/product-pair.php:40 shortcode-maps/product-pair.php:68
+#: shortcode-maps/product-showcase.php:64
+msgid "Enter List of Products"
+msgstr ""
+
+#: shortcode-maps/blog.php:85 shortcode-maps/portfolio.php:86
+msgid "Select Post Categories"
+msgstr ""
+
+#: shortcode-maps/blog.php:97 shortcode-maps/portfolio.php:98
+#: shortcode-maps/product-display.php:152 shortcode-maps/product-grid.php:143
+#: shortcode-maps/product-menu.php:134
+msgid "Enter List of Products Categories"
+msgstr ""
+
+#: shortcode-maps/blog.php:105 shortcode-maps/blog.php:114
+#: shortcode-maps/portfolio.php:106 shortcode-maps/portfolio.php:109
+#: shortcode-maps/product-display.php:161
+#: shortcode-maps/product-display.php:170 shortcode-maps/product-grid.php:152
+#: shortcode-maps/product-grid.php:161
+msgid "Columns"
+msgstr ""
+
+#: shortcode-maps/blog.php:119 shortcode-maps/blog.php:122
+#: shortcode-maps/portfolio.php:114 shortcode-maps/portfolio.php:117
+msgid "Total Posts"
+msgstr ""
+
+#: shortcode-maps/blog.php:126 shortcode-maps/blog.php:134
+#: shortcode-maps/portfolio.php:121 shortcode-maps/portfolio.php:129
+#: shortcode-maps/product-display.php:192
+#: shortcode-maps/product-display.php:200 shortcode-maps/product-grid.php:172
+#: shortcode-maps/product-grid.php:180
+msgid "Pagination Type"
+msgstr ""
+
+#: shortcode-maps/blog.php:142 shortcode-maps/blog.php:149
+#: shortcode-maps/portfolio.php:137 shortcode-maps/portfolio.php:148
+msgid "Post Style"
+msgstr ""
+
+#: shortcode-maps/blog.php:170 shortcode-maps/blog.php:173
+msgid "Display Date"
+msgstr ""
+
+#: shortcode-maps/blog.php:178 shortcode-maps/blog.php:181
+msgid "Display Comment"
+msgstr ""
+
+#: shortcode-maps/blog.php:186 shortcode-maps/blog.php:189
+msgid "Display Excerpt"
+msgstr ""
+
+#: shortcode-maps/blog.php:194 shortcode-maps/blog.php:196
+#: shortcode-maps/image-carousel.php:29 shortcode-maps/image-carousel.php:31
+#: shortcode-maps/portfolio.php:153 shortcode-maps/portfolio.php:155
+#: shortcode-maps/product-display.php:224
+#: shortcode-maps/product-display.php:226 shortcode-maps/product-grid.php:195
+#: shortcode-maps/product-grid.php:197
+msgid "Show Navigation Arrow"
+msgstr ""
+
+#: shortcode-maps/blog.php:205 shortcode-maps/blog.php:211
+#: shortcode-maps/image-carousel.php:36 shortcode-maps/image-carousel.php:42
+#: shortcode-maps/portfolio.php:164 shortcode-maps/portfolio.php:170
+#: shortcode-maps/product-display.php:235
+#: shortcode-maps/product-display.php:241 shortcode-maps/product-grid.php:201
+#: shortcode-maps/product-grid.php:207
+msgid "Arrow Position"
+msgstr ""
+
+#: shortcode-maps/blog.php:220 shortcode-maps/blog.php:222
+#: shortcode-maps/carousel-container.php:79
+#: shortcode-maps/carousel-container.php:81
+#: shortcode-maps/image-carousel.php:51 shortcode-maps/image-carousel.php:53
+#: shortcode-maps/portfolio.php:179 shortcode-maps/portfolio.php:181
+#: shortcode-maps/product-display.php:250
+#: shortcode-maps/product-display.php:252 shortcode-maps/product-grid.php:211
+#: shortcode-maps/product-grid.php:213
+msgid "Show Navigation Dots"
+msgstr ""
+
+#: shortcode-maps/button.php:10
+msgid "Button"
+msgstr ""
+
+#: shortcode-maps/carousel-container.php:8
+msgid "Carousel Container"
+msgstr ""
+
+#: shortcode-maps/carousel-container.php:14
+msgid "Create a container for carousel"
+msgstr ""
+
+#: shortcode-maps/carousel-container.php:18
+#: shortcode-maps/image-carousel.php:65 shortcode-maps/image-carousel.php:68
+msgid "Desktop Column"
+msgstr ""
+
+#: shortcode-maps/carousel-container.php:29
+msgid "Show on large. ( Desktop )"
+msgstr ""
+
+#: shortcode-maps/carousel-container.php:33
+#: shortcode-maps/image-carousel.php:73 shortcode-maps/image-carousel.php:76
+msgid "Small Desktop Column"
+msgstr ""
+
+#: shortcode-maps/carousel-container.php:44
+msgid "Show on Small Desktop. ( Medium Desktop, Landscape Tablet )"
+msgstr ""
+
+#: shortcode-maps/carousel-container.php:48
+#: shortcode-maps/image-carousel.php:81 shortcode-maps/image-carousel.php:84
+msgid "Mobile Column"
+msgstr ""
+
+#: shortcode-maps/carousel-container.php:56
+msgid "Show on small. ( Portrait Tablet, Mobile )"
+msgstr ""
+
+#: shortcode-maps/carousel-container.php:60
+#: shortcode-maps/carousel-container.php:63
+msgid "Show Navigation Arrows"
+msgstr ""
+
+#: shortcode-maps/carousel-container.php:68
+msgid "Carousel Arrow Position"
+msgstr ""
+
+#: shortcode-maps/carousel-container.php:75
+msgid "Arrow button placement for carousel"
+msgstr ""
+
+#: shortcode-maps/carousel-item.php:8
+msgid "Carousel Item"
+msgstr ""
+
+#: shortcode-maps/carousel-item.php:16
+msgid "Insert an item for carousel"
+msgstr ""
+
+#: shortcode-maps/carousel-item.php:20
+msgid "Extra Class"
+msgstr ""
+
+#: shortcode-maps/carousel-item.php:22
+msgid "Add extra class"
+msgstr ""
+
+#: shortcode-maps/cascading-image.php:11
+msgid "Cascading Image"
+msgstr ""
+
+#: shortcode-maps/cascading-image.php:18
+msgid "Time Between Animation"
+msgstr ""
+
+#: shortcode-maps/cascading-image.php:19
+msgid ""
+"Enter your desired time between animations in milliseconds, defaults to 200 "
+"if left blank "
+msgstr ""
+
+#: shortcode-maps/cascading-image.php:30 shortcode-maps/modal-popup.php:38
+#: shortcode-maps/modal-popup.php:40 shortcode-maps/popup-newsletter.php:41
+#: shortcode-maps/popup-newsletter.php:43 shortcode-maps/testimonials.php:69
+#: shortcode-maps/title-with-background.php:18
+#: shortcode-maps/title-with-background.php:20
+msgid "Image"
+msgstr ""
+
+#: shortcode-maps/cascading-image.php:37
+msgid "Layer BG Color"
+msgstr ""
+
+#: shortcode-maps/cascading-image.php:38
+msgid "Use this to set a BG color for the layer"
+msgstr ""
+
+#: shortcode-maps/cascading-image.php:43 shortcode-maps/cascading-image.php:52
+#: shortcode-maps/cascading-image.php:55
+msgid "Offset X"
+msgstr ""
+
+#: shortcode-maps/cascading-image.php:59 shortcode-maps/cascading-image.php:68
+#: shortcode-maps/cascading-image.php:71
+msgid "Offset Y"
+msgstr ""
+
+#: shortcode-maps/cascading-image.php:75 shortcode-maps/cascading-image.php:84
+#: shortcode-maps/cascading-image.php:87
+#: shortcode-maps/cascading-image.php:100
+msgid "Rotate"
+msgstr ""
+
+#: shortcode-maps/cascading-image.php:91 shortcode-maps/image-carousel.php:140
+#: shortcode-maps/image-carousel.php:149
+msgid "Box Shadow"
+msgstr ""
+
+#: shortcode-maps/category-showcase.php:72
+msgid "Category Showcase"
+msgstr ""
+
+#: shortcode-maps/category-showcase.php:80
+msgid "Choose Loop Feed"
+msgstr ""
+
+#: shortcode-maps/category-showcase.php:87
+#: shortcode-maps/category-showcase.php:101
+msgid "Choose Loop Feed."
+msgstr ""
+
+#: shortcode-maps/category-showcase.php:91
+msgid "Choose Brand/categories"
+msgstr ""
+
+#: shortcode-maps/category-showcase.php:105
+msgid "Show Description"
+msgstr ""
+
+#: shortcode-maps/category-showcase.php:107
+msgid "Show Description."
+msgstr ""
+
+#: shortcode-maps/category-showcase.php:117
+msgid "Style."
+msgstr ""
+
+#: shortcode-maps/category-showcase.php:121
+msgid "Post Categories"
+msgstr ""
+
+#: shortcode-maps/category-showcase.php:123
+msgid "Post Categories."
+msgstr ""
+
+#: shortcode-maps/category-showcase.php:131
+msgid "Post Categories Item to Display"
+msgstr ""
+
+#: shortcode-maps/category-showcase.php:133
+msgid "Post Categories Item to Display."
+msgstr ""
+
+#: shortcode-maps/category-showcase.php:138
+#: shortcode-maps/category-showcase.php:169
+#: shortcode-maps/category-showcase.php:200
+#: shortcode-maps/category-showcase.php:231 shortcode-maps/image-grid.php:30
+msgid "Item Size"
+msgstr ""
+
+#: shortcode-maps/category-showcase.php:140
+#: shortcode-maps/category-showcase.php:171
+#: shortcode-maps/category-showcase.php:202
+#: shortcode-maps/category-showcase.php:233 shortcode-maps/image-grid.php:32
+msgid "Item Size."
+msgstr ""
+
+#: shortcode-maps/category-showcase.php:152
+msgid "Portfolio Categories"
+msgstr ""
+
+#: shortcode-maps/category-showcase.php:154
+msgid "Portfolio Categories."
+msgstr ""
+
+#: shortcode-maps/category-showcase.php:162
+msgid "Portfolio Categories Item to Display"
+msgstr ""
+
+#: shortcode-maps/category-showcase.php:164
+msgid "Portfolio Categories Item to Display."
+msgstr ""
+
+#: shortcode-maps/category-showcase.php:183
+msgid "Product Categories"
+msgstr ""
+
+#: shortcode-maps/category-showcase.php:185
+msgid "Product Categories."
+msgstr ""
+
+#: shortcode-maps/category-showcase.php:193
+msgid "Product Categories Item to Display"
+msgstr ""
+
+#: shortcode-maps/category-showcase.php:195
+msgid "Product Categories Item to Display."
+msgstr ""
+
+#: shortcode-maps/category-showcase.php:214
+msgid "Product Brands"
+msgstr ""
+
+#: shortcode-maps/category-showcase.php:216
+msgid "Product Brands."
+msgstr ""
+
+#: shortcode-maps/category-showcase.php:224
+msgid "Product Brands Item to Display"
+msgstr ""
+
+#: shortcode-maps/category-showcase.php:226
+msgid "Product Brands Item to Display."
+msgstr ""
+
+#: shortcode-maps/category-showcase.php:245 shortcode-maps/image-grid.php:60
+#: shortcode-maps/image-grid.php:62
+msgid "Item Spacing"
+msgstr ""
+
+#: shortcode-maps/category-showcase.php:247
+msgid "Spacing between loop items."
+msgstr ""
+
+#: shortcode-maps/category-showcase.php:251
+msgid "Title/description main color"
+msgstr ""
+
+#: shortcode-maps/category-showcase.php:253
+msgid "Title/description main color."
+msgstr ""
+
+#: shortcode-maps/category-showcase.php:254
+#: shortcode-maps/category-showcase.php:261
+#: shortcode-maps/category-showcase.php:273
+#: shortcode-maps/category-showcase.php:285
+#: shortcode-maps/category-showcase.php:292
+msgid "Styles & Animation"
+msgstr ""
+
+#: shortcode-maps/category-showcase.php:258
+msgid "Title/description hover color"
+msgstr ""
+
+#: shortcode-maps/category-showcase.php:260
+msgid "Title/description hover color."
+msgstr ""
+
+#: shortcode-maps/category-showcase.php:265
+msgid "Title/description animation"
+msgstr ""
+
+#: shortcode-maps/category-showcase.php:272
+#: shortcode-maps/category-showcase.php:284
+msgid "Animation on mouse over."
+msgstr ""
+
+#: shortcode-maps/category-showcase.php:277
+msgid "Image animation"
+msgstr ""
+
+#: shortcode-maps/category-showcase.php:289
+msgid "Overlay hover color"
+msgstr ""
+
+#: shortcode-maps/category-showcase.php:291
+msgid "Overlay hover color."
+msgstr ""
+
+#: shortcode-maps/contact-form.php:10
+msgid "Contact Form"
+msgstr ""
+
+#: shortcode-maps/contact-form.php:25
+msgid "No contact forms found"
+msgstr ""
+
+#: shortcode-maps/contact-form.php:30
+msgid "Select contact form"
+msgstr ""
+
+#: shortcode-maps/contact-form.php:34
+msgid "Choose previously created contact form from the drop down list."
+msgstr ""
+
+#: shortcode-maps/contact-form.php:39
+msgid "Search title"
+msgstr ""
+
+#: shortcode-maps/contact-form.php:42
+msgid "Enter optional title to search if no ID selected or cannot find by ID."
+msgstr ""
+
+#: shortcode-maps/contact-form.php:47 shortcode-maps/contact-form.php:49
+msgid "Form Style"
+msgstr ""
+
+#: shortcode-maps/contact-form.php:60 shortcode-maps/contact-form.php:62
+msgid "Inner Background Color"
+msgstr ""
+
+#: shortcode-maps/contact-form.php:70 shortcode-maps/contact-form.php:82
+#: shortcode-maps/contact-form.php:89 shortcode-maps/contact-form.php:96
+#: shortcode-maps/contact-form.php:108 shortcode-maps/contact-form.php:119
+#: shortcode-maps/contact-form.php:130 shortcode-maps/contact-form.php:137
+msgid "Content Style"
+msgstr ""
+
+#: shortcode-maps/contact-form.php:74 shortcode-maps/contact-form.php:76
+#: shortcode-maps/count-down.php:51 shortcode-maps/count-down.php:54
+msgid "Border Style"
+msgstr ""
+
+#: shortcode-maps/contact-form.php:86 shortcode-maps/contact-form.php:88
+msgid "Border Width"
+msgstr ""
+
+#: shortcode-maps/contact-form.php:100 shortcode-maps/contact-form.php:102
+msgid "Style on Focus"
+msgstr ""
+
+#: shortcode-maps/contact-form.php:112 shortcode-maps/contact-form.php:114
+msgid "Simple Border Color"
+msgstr ""
+
+#: shortcode-maps/contact-form.php:123 shortcode-maps/contact-form.php:125
+msgid "Underline Color"
+msgstr ""
+
+#: shortcode-maps/contact-form.php:142 shortcode-maps/contact-form.php:144
+msgid "Button Alignment"
+msgstr ""
+
+#: shortcode-maps/contact-form.php:150 shortcode-maps/contact-form.php:152
+msgid "Enable Captcha?"
+msgstr ""
+
+#: shortcode-maps/contact-form.php:153 shortcode-maps/contact-form.php:160
+#: shortcode-maps/contact-form.php:167
+msgid "Recaptcha Setting"
+msgstr ""
+
+#: shortcode-maps/contact-form.php:157 shortcode-maps/contact-form.php:159
+msgid "Public Key"
+msgstr ""
+
+#: shortcode-maps/contact-form.php:164 shortcode-maps/contact-form.php:166
+msgid "Private Key"
+msgstr ""
+
+#: shortcode-maps/count-down.php:10 shortcode-maps/count-down.php:12
+msgid "Count Down"
+msgstr ""
+
+#: shortcode-maps/count-down.php:18 shortcode-maps/count-down.php:24
+msgid "Count Down Style"
+msgstr ""
+
+#: shortcode-maps/count-down.php:28 shortcode-maps/count-down.php:30
+msgid "Target Time"
+msgstr ""
+
+#: shortcode-maps/count-down.php:35
+msgid "Select Time Unit To Display"
+msgstr ""
+
+#: shortcode-maps/count-down.php:38
+msgid "Years"
+msgstr ""
+
+#: shortcode-maps/count-down.php:39
+msgid "Months"
+msgstr ""
+
+#: shortcode-maps/count-down.php:40
+msgid "Weeks"
+msgstr ""
+
+#: shortcode-maps/count-down.php:41
+msgid "Days"
+msgstr ""
+
+#: shortcode-maps/count-down.php:42
+msgid "Hours"
+msgstr ""
+
+#: shortcode-maps/count-down.php:43
+msgid "Minutes"
+msgstr ""
+
+#: shortcode-maps/count-down.php:44
+msgid "Seconds"
+msgstr ""
+
+#: shortcode-maps/count-down.php:46
+msgid "Time Unit To Display"
+msgstr ""
+
+#: shortcode-maps/count-down.php:83 shortcode-maps/count-down.php:85
+msgid "Backround Size"
+msgstr ""
+
+#: shortcode-maps/count-down.php:90 shortcode-maps/count-down.php:93
+msgid "Year(singular)"
+msgstr ""
+
+#: shortcode-maps/count-down.php:94 shortcode-maps/count-down.php:102
+#: shortcode-maps/count-down.php:111 shortcode-maps/count-down.php:119
+#: shortcode-maps/count-down.php:128 shortcode-maps/count-down.php:136
+#: shortcode-maps/count-down.php:145 shortcode-maps/count-down.php:153
+#: shortcode-maps/count-down.php:162 shortcode-maps/count-down.php:170
+#: shortcode-maps/count-down.php:179 shortcode-maps/count-down.php:187
+#: shortcode-maps/count-down.php:195 shortcode-maps/count-down.php:203
+msgid "String Translations"
+msgstr ""
+
+#: shortcode-maps/count-down.php:98 shortcode-maps/count-down.php:101
+msgid "Years(plural)"
+msgstr ""
+
+#: shortcode-maps/count-down.php:107 shortcode-maps/count-down.php:110
+msgid "Month(singular)"
+msgstr ""
+
+#: shortcode-maps/count-down.php:115 shortcode-maps/count-down.php:118
+msgid "Months(plural)"
+msgstr ""
+
+#: shortcode-maps/count-down.php:124 shortcode-maps/count-down.php:127
+msgid "Week(singular)"
+msgstr ""
+
+#: shortcode-maps/count-down.php:132 shortcode-maps/count-down.php:135
+msgid "Weeks(plural)"
+msgstr ""
+
+#: shortcode-maps/count-down.php:141 shortcode-maps/count-down.php:144
+msgid "Day(singular)"
+msgstr ""
+
+#: shortcode-maps/count-down.php:149 shortcode-maps/count-down.php:152
+msgid "Days(plural)"
+msgstr ""
+
+#: shortcode-maps/count-down.php:158 shortcode-maps/count-down.php:161
+msgid "Hour(singular)"
+msgstr ""
+
+#: shortcode-maps/count-down.php:166 shortcode-maps/count-down.php:169
+msgid "Hours(plural)"
+msgstr ""
+
+#: shortcode-maps/count-down.php:175 shortcode-maps/count-down.php:178
+msgid "Minute(singular)"
+msgstr ""
+
+#: shortcode-maps/count-down.php:183 shortcode-maps/count-down.php:186
+msgid "Minutes(plural)"
+msgstr ""
+
+#: shortcode-maps/count-down.php:191 shortcode-maps/count-down.php:194
+msgid "Second(singular)"
+msgstr ""
+
+#: shortcode-maps/count-down.php:199 shortcode-maps/count-down.php:202
+msgid "Seconds(plural)"
+msgstr ""
+
+#: shortcode-maps/count-down.php:208 shortcode-maps/count-down.php:210
+msgid "Timer Digit Text Color"
+msgstr ""
+
+#: shortcode-maps/count-down.php:211 shortcode-maps/count-down.php:218
+#: shortcode-maps/count-down.php:225 shortcode-maps/count-down.php:233
+#: shortcode-maps/count-down.php:240 shortcode-maps/count-down.php:247
+msgid "Typography"
+msgstr ""
+
+#: shortcode-maps/count-down.php:215 shortcode-maps/count-down.php:217
+msgid "Timer Digit Text Size"
+msgstr ""
+
+#: shortcode-maps/count-down.php:222 shortcode-maps/count-down.php:224
+msgid "Timer Digit Text Line Height"
+msgstr ""
+
+#: shortcode-maps/count-down.php:230 shortcode-maps/count-down.php:232
+msgid "Timer Unit Text Color"
+msgstr ""
+
+#: shortcode-maps/count-down.php:237 shortcode-maps/count-down.php:239
+msgid "Timer Unit Text Size"
+msgstr ""
+
+#: shortcode-maps/count-down.php:244 shortcode-maps/count-down.php:246
+msgid "Timer Unit Text Line Height"
+msgstr ""
+
+#: shortcode-maps/flip-box.php:9
+msgid "Flip Box"
+msgstr ""
+
+#: shortcode-maps/flip-box.php:22
+msgid "Horizontal Content Alignment"
+msgstr ""
+
+#: shortcode-maps/flip-box.php:25
+msgid "Left"
+msgstr ""
+
+#: shortcode-maps/flip-box.php:26 shortcode-maps/flip-box.php:36
+msgid "Center"
+msgstr ""
+
+#: shortcode-maps/flip-box.php:27
+msgid "Right"
+msgstr ""
+
+#: shortcode-maps/flip-box.php:32
+msgid "Vertical Content Alignment"
+msgstr ""
+
+#: shortcode-maps/flip-box.php:35
+msgid "Top"
+msgstr ""
+
+#: shortcode-maps/flip-box.php:37
+msgid "Bottom"
+msgstr ""
+
+#: shortcode-maps/flip-box.php:42
+msgid "Flip Direction"
+msgstr ""
+
+#: shortcode-maps/flip-box.php:45
+msgid "Horizontal To Left"
+msgstr ""
+
+#: shortcode-maps/flip-box.php:46
+msgid "Horizontal To Right"
+msgstr ""
+
+#: shortcode-maps/flip-box.php:47
+msgid "Vertical To Bottom"
+msgstr ""
+
+#: shortcode-maps/flip-box.php:48
+msgid "Vertical To Top"
+msgstr ""
+
+#: shortcode-maps/flip-box.php:53
+msgid "Front Box Content"
+msgstr ""
+
+#: shortcode-maps/flip-box.php:55
+msgid "The text that will display on the front of your flip box"
+msgstr ""
+
+#: shortcode-maps/flip-box.php:56 shortcode-maps/flip-box.php:62
+#: shortcode-maps/flip-box.php:68 shortcode-maps/flip-box.php:74
+#: shortcode-maps/flip-box.php:85 shortcode-maps/flip-box.php:92
+#: shortcode-maps/flip-box.php:113 shortcode-maps/flip-box.php:123
+#: shortcode-maps/flip-box.php:133 shortcode-maps/flip-box.php:151
+#: shortcode-maps/flip-box.php:169 shortcode-maps/flip-box.php:187
+#: shortcode-maps/flip-box.php:205 shortcode-maps/flip-box.php:223
+#: shortcode-maps/flip-box.php:240 shortcode-maps/flip-box.php:260
+#: shortcode-maps/flip-box.php:276
+msgid "Front Side"
+msgstr ""
+
+#: shortcode-maps/flip-box.php:72 shortcode-maps/flip-box.php:300
+msgid "BG Color overlay on BG Image"
+msgstr ""
+
+#: shortcode-maps/flip-box.php:75 shortcode-maps/flip-box.php:303
+msgid "Checking this will overlay your BG color on your BG image"
+msgstr ""
+
+#: shortcode-maps/flip-box.php:82 shortcode-maps/flip-box.php:310
+msgid "Dark"
+msgstr ""
+
+#: shortcode-maps/flip-box.php:83 shortcode-maps/flip-box.php:311
+msgid "Light"
+msgstr ""
+
+#: shortcode-maps/flip-box.php:117 shortcode-maps/image-grid.php:168
+#: shortcode-maps/image-grid.php:170 shortcode-maps/quote.php:89
+#: shortcode-maps/quote.php:91 shortcode-maps/social-icon.php:43
+#: shortcode-maps/social-icon.php:45
+msgid "Icon Color"
+msgstr ""
+
+#: shortcode-maps/flip-box.php:127 shortcode-maps/image-grid.php:178
+#: shortcode-maps/image-grid.php:180 shortcode-maps/quote.php:77
+#: shortcode-maps/quote.php:79
+msgid "Icon Size"
+msgstr ""
+
+#: shortcode-maps/flip-box.php:281
+msgid "Back Box Content"
+msgstr ""
+
+#: shortcode-maps/flip-box.php:283
+msgid "The text that will display on the back of your flip box"
+msgstr ""
+
+#: shortcode-maps/flip-box.php:284 shortcode-maps/flip-box.php:290
+#: shortcode-maps/flip-box.php:296 shortcode-maps/flip-box.php:302
+#: shortcode-maps/flip-box.php:313
+msgid "Back Side"
+msgstr ""
+
+#: shortcode-maps/gradient-fill-color.php:24
+#: shortcode-maps/gradient-fill-color.php:26
+msgid "Color"
+msgstr ""
+
+#: shortcode-maps/image-carousel.php:10
+msgid "Image Carousel"
+msgstr ""
+
+#: shortcode-maps/image-carousel.php:17 shortcode-maps/image-carousel.php:19
+#: shortcode-maps/image-grid.php:19 shortcode-maps/snap-to-scroll.php:19
+#: shortcode-maps/snap-to-scroll.php:21
+msgid "Images"
+msgstr ""
+
+#: shortcode-maps/image-carousel.php:23 shortcode-maps/image-carousel.php:25
+#: shortcode-maps/image-grid.php:44 shortcode-maps/image-grid.php:46
+#: shortcode-maps/modal-popup.php:48 shortcode-maps/modal-popup.php:50
+msgid "Image Size"
+msgstr ""
+
+#: shortcode-maps/image-carousel.php:32 shortcode-maps/image-carousel.php:47
+#: shortcode-maps/image-carousel.php:54 shortcode-maps/image-carousel.php:69
+#: shortcode-maps/image-carousel.php:77 shortcode-maps/image-carousel.php:85
+#: shortcode-maps/image-carousel.php:93 shortcode-maps/image-carousel.php:100
+#: shortcode-maps/image-carousel.php:111 shortcode-maps/image-carousel.php:118
+#: shortcode-maps/image-carousel.php:125 shortcode-maps/image-carousel.php:136
+msgid "Carousel Options"
+msgstr ""
+
+#: shortcode-maps/image-carousel.php:89 shortcode-maps/image-carousel.php:92
+msgid "Slide To Scroll"
+msgstr ""
+
+#: shortcode-maps/image-carousel.php:97 shortcode-maps/image-carousel.php:99
+msgid "Enable Center Mode"
+msgstr ""
+
+#: shortcode-maps/image-carousel.php:104 shortcode-maps/image-carousel.php:106
+msgid "Center Paddng"
+msgstr ""
+
+#: shortcode-maps/image-carousel.php:115 shortcode-maps/image-carousel.php:117
+msgid "Free Scroll"
+msgstr ""
+
+#: shortcode-maps/image-carousel.php:122 shortcode-maps/image-carousel.php:124
+msgid "Enable Auto Play"
+msgstr ""
+
+#: shortcode-maps/image-carousel.php:129 shortcode-maps/image-carousel.php:131
+msgid "Auto Play Duration"
+msgstr ""
+
+#: shortcode-maps/image-carousel.php:153 shortcode-maps/image-carousel.php:160
+#: shortcode-maps/image-grid.php:208 shortcode-maps/image-grid.php:210
+msgid "On Click"
+msgstr ""
+
+#: shortcode-maps/image-carousel.php:164 shortcode-maps/image-carousel.php:166
+#: shortcode-maps/image-grid.php:219 shortcode-maps/image-grid.php:221
+msgid "Custom Link"
+msgstr ""
+
+#: shortcode-maps/image-carousel.php:174 shortcode-maps/image-carousel.php:176
+#: shortcode-maps/image-grid.php:229 shortcode-maps/image-grid.php:235
+msgid "Custom Link Target"
+msgstr ""
+
+#: shortcode-maps/image-grid.php:11
+msgid "Image Grid"
+msgstr ""
+
+#: shortcode-maps/image-grid.php:24
+msgid "Images to Display"
+msgstr ""
+
+#: shortcode-maps/image-grid.php:26
+msgid "Image Item to Display."
+msgstr ""
+
+#: shortcode-maps/image-grid.php:50 shortcode-maps/image-grid.php:52
+msgid "Layout"
+msgstr ""
+
+#: shortcode-maps/image-grid.php:66 shortcode-maps/image-grid.php:68
+msgid "Enable Masonry Style"
+msgstr ""
+
+#: shortcode-maps/image-grid.php:72 shortcode-maps/image-grid.php:74
+msgid "Hover Style"
+msgstr ""
+
+#: shortcode-maps/image-grid.php:86 shortcode-maps/image-grid.php:88
+#: shortcode-maps/team-member.php:66 shortcode-maps/team-member.php:68
+msgid "Enable Gradient"
+msgstr ""
+
+#: shortcode-maps/image-grid.php:188 shortcode-maps/image-grid.php:190
+msgid "Frame Color"
+msgstr ""
+
+#: shortcode-maps/image-grid.php:198 shortcode-maps/image-grid.php:200
+msgid "Frame Size"
+msgstr ""
+
+#: shortcode-maps/modal-popup.php:10
+msgid "Modal Popup"
+msgstr ""
+
+#: shortcode-maps/modal-popup.php:18 shortcode-maps/modal-popup.php:24
+msgid "Modal Style"
+msgstr ""
+
+#: shortcode-maps/modal-popup.php:58 shortcode-maps/modal-popup.php:65
+#: shortcode-maps/title-with-background.php:41
+#: shortcode-maps/title-with-background.php:43
+msgid "Image Alignment"
+msgstr ""
+
+#: shortcode-maps/modal-popup.php:74 shortcode-maps/modal-popup.php:76
+msgid "Enable Heading"
+msgstr ""
+
+#: shortcode-maps/modal-popup.php:81 shortcode-maps/modal-popup.php:83
+msgid "Modal Heading"
+msgstr ""
+
+#: shortcode-maps/modal-popup.php:92 shortcode-maps/modal-popup.php:94
+msgid "Modal Heading Background"
+msgstr ""
+
+#: shortcode-maps/modal-popup.php:103 shortcode-maps/modal-popup.php:105
+msgid "Modal Heading Text Color"
+msgstr ""
+
+#: shortcode-maps/modal-popup.php:121 shortcode-maps/modal-popup.php:128
+msgid "Modal Size"
+msgstr ""
+
+#: shortcode-maps/modal-popup.php:133 shortcode-maps/modal-popup.php:135
+#: shortcode-maps/testimonials.php:53
+msgid "Content Background Color"
+msgstr ""
+
+#: shortcode-maps/modal-popup.php:146 shortcode-maps/modal-popup.php:148
+#: shortcode-maps/modal-popup.php:149
+msgid "Modal Content"
+msgstr ""
+
+#: shortcode-maps/ornamental-title.php:10
+msgid "Ornamental Title"
+msgstr ""
+
+#: shortcode-maps/ornamental-title.php:18
+#: shortcode-maps/ornamental-title.php:20
+msgid "Title As"
+msgstr ""
+
+#: shortcode-maps/ornamental-title.php:40
+#: shortcode-maps/ornamental-title.php:42
+msgid "Title Image"
+msgstr ""
+
+#: shortcode-maps/ornamental-title.php:51
+#: shortcode-maps/ornamental-title.php:53
+#: shortcode-maps/ornamental-title.php:267
+msgid "Font Family"
+msgstr ""
+
+#: shortcode-maps/ornamental-title.php:73
+#: shortcode-maps/ornamental-title.php:75
+msgid "Font Weight"
+msgstr ""
+
+#: shortcode-maps/ornamental-title.php:132
+#: shortcode-maps/ornamental-title.php:134
+msgid "Enable Uppercase"
+msgstr ""
+
+#: shortcode-maps/ornamental-title.php:155
+#: shortcode-maps/ornamental-title.php:157
+msgid "Enable Subtitle"
+msgstr ""
+
+#: shortcode-maps/ornamental-title.php:162
+#: shortcode-maps/ornamental-title.php:164
+#: shortcode-maps/popup-newsletter.php:24
+#: shortcode-maps/popup-newsletter.php:26
+msgid "Subtitle"
+msgstr ""
+
+#: shortcode-maps/ornamental-title.php:173
+#: shortcode-maps/ornamental-title.php:175
+msgid "Subtitle Font Family"
+msgstr ""
+
+#: shortcode-maps/ornamental-title.php:184
+#: shortcode-maps/ornamental-title.php:186
+msgid "Subtitle Font Size"
+msgstr ""
+
+#: shortcode-maps/ornamental-title.php:195
+#: shortcode-maps/ornamental-title.php:197
+msgid "Subtitle Alignment"
+msgstr ""
+
+#: shortcode-maps/ornamental-title.php:211
+#: shortcode-maps/ornamental-title.php:213
+msgid "Enable Link"
+msgstr ""
+
+#: shortcode-maps/ornamental-title.php:219
+#: shortcode-maps/ornamental-title.php:221
+msgid "Link Title 1"
+msgstr ""
+
+#: shortcode-maps/ornamental-title.php:230
+#: shortcode-maps/ornamental-title.php:232
+msgid "URL 1"
+msgstr ""
+
+#: shortcode-maps/ornamental-title.php:242
+#: shortcode-maps/ornamental-title.php:244
+msgid "Link Title 2"
+msgstr ""
+
+#: shortcode-maps/ornamental-title.php:253
+#: shortcode-maps/ornamental-title.php:255
+msgid "URL 2"
+msgstr ""
+
+#: shortcode-maps/ornamental-title.php:265
+msgid "Link Font Family"
+msgstr ""
+
+#: shortcode-maps/ornamental-title.php:276
+msgid "Link Font Size"
+msgstr ""
+
+#: shortcode-maps/ornamental-title.php:287
+#: shortcode-maps/ornamental-title.php:289
+msgid "Link Alignment"
+msgstr ""
+
+#: shortcode-maps/ornamental-title.php:303
+#: shortcode-maps/ornamental-title.php:305
+msgid "Ornament Style"
+msgstr ""
+
+#: shortcode-maps/ornamental-title.php:318
+#: shortcode-maps/ornamental-title.php:320
+msgid "Ornament Color"
+msgstr ""
+
+#: shortcode-maps/ornamental-title.php:325
+#: shortcode-maps/ornamental-title.php:327
+msgid "Ornament Thickness"
+msgstr ""
+
+#: shortcode-maps/ornamental-title.php:332
+#: shortcode-maps/ornamental-title.php:334
+msgid "Margin Top"
+msgstr ""
+
+#: shortcode-maps/ornamental-title.php:339
+#: shortcode-maps/ornamental-title.php:341
+msgid "Margin Bottom"
+msgstr ""
+
+#: shortcode-maps/popup-newsletter.php:10
+msgid "Popup Newsletter"
+msgstr ""
+
+#: shortcode-maps/popup-newsletter.php:48
+#: shortcode-maps/popup-newsletter.php:50
+msgid "Navigation Style"
+msgstr ""
+
+#: shortcode-maps/popup-newsletter.php:58
+#: shortcode-maps/popup-newsletter.php:60
+msgid "Display Setting"
+msgstr ""
+
+#: shortcode-maps/portfolio.php:10
+msgid "Portfolio"
+msgstr ""
+
+#: shortcode-maps/product-display.php:10 shortcode-maps/product-display.php:18
+#: shortcode-maps/product-display.php:24 shortcode-maps/product-grid.php:18
+#: shortcode-maps/product-grid.php:24
+msgid "Product Display"
+msgstr ""
+
+#: shortcode-maps/product-display.php:12
+msgid "Display product loop as grid / carousel"
+msgstr ""
+
+#: shortcode-maps/product-display.php:49 shortcode-maps/product-display.php:56
+#: shortcode-maps/product-grid.php:49 shortcode-maps/product-grid.php:56
+msgid "Layout Style"
+msgstr ""
+
+#: shortcode-maps/product-display.php:98 shortcode-maps/product-grid.php:89
+#: shortcode-maps/product-info.php:20 shortcode-maps/product-menu.php:80
+#: shortcode-maps/product-pair.php:27 shortcode-maps/product-pair.php:55
+#: shortcode-maps/product-showcase.php:52
+msgid "Select Product"
+msgstr ""
+
+#: shortcode-maps/product-display.php:119 shortcode-maps/product-grid.php:110
+#: shortcode-maps/product-menu.php:101
+msgid "Select Product Brands"
+msgstr ""
+
+#: shortcode-maps/product-display.php:131 shortcode-maps/product-grid.php:122
+#: shortcode-maps/product-menu.php:113
+msgid "Enter List of Product Brands"
+msgstr ""
+
+#: shortcode-maps/product-display.php:140 shortcode-maps/product-grid.php:131
+#: shortcode-maps/product-menu.php:122
+msgid "Select Product Categories"
+msgstr ""
+
+#: shortcode-maps/product-display.php:175
+#: shortcode-maps/product-display.php:178 shortcode-maps/product-grid.php:165
+#: shortcode-maps/product-grid.php:168 shortcode-maps/product-menu.php:143
+#: shortcode-maps/product-menu.php:146
+msgid "Total Product"
+msgstr ""
+
+#: shortcode-maps/product-display.php:182
+#: shortcode-maps/product-display.php:184
+msgid "Enable Pagination"
+msgstr ""
+
+#: shortcode-maps/product-display.php:208
+#: shortcode-maps/product-display.php:215 shortcode-maps/product-grid.php:184
+#: shortcode-maps/product-grid.php:191
+msgid "Product Style"
+msgstr ""
+
+#: shortcode-maps/product-grid.php:10
+msgid "Product Grid"
+msgstr ""
+
+#: shortcode-maps/product-info.php:13
+msgid "Product Info"
+msgstr ""
+
+#: shortcode-maps/product-info.php:40
+msgid "Enable Image"
+msgstr ""
+
+#: shortcode-maps/product-info.php:50 shortcode-maps/product-pair.php:16
+msgid "Product Animation On Hover"
+msgstr ""
+
+#: shortcode-maps/product-info.php:65
+msgid "Text Position"
+msgstr ""
+
+#: shortcode-maps/product-info.php:72
+msgid "Description here"
+msgstr ""
+
+#: shortcode-maps/product-menu.php:10
+msgid "Product Menu"
+msgstr ""
+
+#: shortcode-maps/product-pair.php:10
+msgid "Product Pair"
+msgstr ""
+
+#: shortcode-maps/product-pair.php:19
+msgid "zoom"
+msgstr ""
+
+#: shortcode-maps/product-pair.php:20
+msgid "framed"
+msgstr ""
+
+#: shortcode-maps/product-pair.php:23
+msgid "General"
+msgstr ""
+
+#: shortcode-maps/product-pair.php:29 shortcode-maps/product-pair.php:51
+msgid "Product 1"
+msgstr ""
+
+#: shortcode-maps/product-pair.php:44 shortcode-maps/product-pair.php:72
+msgid "Display SIze"
+msgstr ""
+
+#: shortcode-maps/product-pair.php:47 shortcode-maps/product-pair.php:75
+msgid "small"
+msgstr ""
+
+#: shortcode-maps/product-pair.php:48 shortcode-maps/product-pair.php:76
+msgid "large"
+msgstr ""
+
+#: shortcode-maps/product-pair.php:57 shortcode-maps/product-pair.php:79
+msgid "Product 2"
+msgstr ""
+
+#: shortcode-maps/product-showcase.php:10
+msgid "Product Showcase"
+msgstr ""
+
+#: shortcode-maps/product-showcase.php:18
+#: shortcode-maps/product-showcase.php:25
+msgid "Product Showcase Style"
+msgstr ""
+
+#: shortcode-maps/product-showcase.php:29
+#: shortcode-maps/product-showcase.php:31
+msgid "Product Image"
+msgstr ""
+
+#: shortcode-maps/product-showcase.php:44
+msgid "Mobile Height"
+msgstr ""
+
+#: shortcode-maps/product-showcase.php:69
+#: shortcode-maps/product-showcase.php:72
+msgid "Display Brand"
+msgstr ""
+
+#: shortcode-maps/product-showcase.php:77
+#: shortcode-maps/product-showcase.php:80
+msgid "Display Price"
+msgstr ""
+
+#: shortcode-maps/product-showcase.php:85
+#: shortcode-maps/product-showcase.php:88
+msgid "Display Rating"
+msgstr ""
+
+#: shortcode-maps/product-showcase.php:121
+#: shortcode-maps/product-showcase.php:124
+msgid "Color Background"
+msgstr ""
+
+#: shortcode-maps/product-showcase.php:159
+#: shortcode-maps/product-showcase.php:161
+msgid "Set Button As"
+msgstr ""
+
+#: shortcode-maps/product-tagging.php:22 shortcode-maps/product-tagging.php:30
+msgid "Product Tagging"
+msgstr ""
+
+#: shortcode-maps/product-tagging.php:25
+msgid "Lorem ipsum dolor sit amet, consectetur adipisicing elit."
+msgstr ""
+
+#: shortcode-maps/quote.php:10
+msgid "Quote"
+msgstr ""
+
+#: shortcode-maps/quote.php:18 shortcode-maps/quote.php:25
+msgid "Quote Style"
+msgstr ""
+
+#: shortcode-maps/quote.php:30 shortcode-maps/quote.php:32
+msgid "Quote Text"
+msgstr ""
+
+#: shortcode-maps/quote.php:37 shortcode-maps/quote.php:39
+msgid "Background color"
+msgstr ""
+
+#: shortcode-maps/quote.php:53 shortcode-maps/quote.php:55
+msgid "Border color"
+msgstr ""
+
+#: shortcode-maps/quote.php:101 shortcode-maps/quote.php:103
+msgid "Text Size"
+msgstr ""
+
+#: shortcode-maps/quote.php:115 shortcode-maps/quote.php:117
+msgid "Cite"
+msgstr ""
+
+#: shortcode-maps/quote.php:122 shortcode-maps/quote.php:124
+msgid "Cite Size"
+msgstr ""
+
+#: shortcode-maps/quote.php:129 shortcode-maps/quote.php:131
+msgid "Cite Color"
+msgstr ""
+
+#: shortcode-maps/section-title.php:10
+msgid "Section Title"
+msgstr ""
+
+#: shortcode-maps/section-title.php:18 shortcode-maps/section-title.php:20
+msgid "Text Content"
+msgstr ""
+
+#: shortcode-maps/section-title.php:34 shortcode-maps/section-title.php:36
+msgid "Text Align"
+msgstr ""
+
+#: shortcode-maps/section-title.php:41 shortcode-maps/section-title.php:43
+msgid "Text Shadow"
+msgstr ""
+
+#: shortcode-maps/section-title.php:53 shortcode-maps/section-title.php:55
+msgid "Margin"
+msgstr ""
+
+#: shortcode-maps/snap-to-scroll.php:10
+msgid "Snap To Scroll"
+msgstr ""
+
+#: shortcode-maps/snap-to-scroll.php:36 shortcode-maps/snap-to-scroll.php:42
+msgid "Pagination Color"
+msgstr ""
+
+#: shortcode-maps/social-icon.php:10
+msgid "Social Icon"
+msgstr ""
+
+#: shortcode-maps/social-icon.php:17 shortcode-maps/social-icon.php:26
+msgid "Social Icon Style"
+msgstr ""
+
+#: shortcode-maps/social-icon.php:30 shortcode-maps/social-icon.php:32
+msgid "Social Icon Size"
+msgstr ""
+
+#: shortcode-maps/social-icon.php:36 shortcode-maps/social-icon.php:39
+msgid "Social Icon Alignment"
+msgstr ""
+
+#: shortcode-maps/social-icon.php:49 shortcode-maps/social-icon.php:51
+msgid "Icon Background Color"
+msgstr ""
+
+#: shortcode-maps/tagging.php:10
+msgid "Tagging"
+msgstr ""
+
+#: shortcode-maps/tagging.php:12
+msgid "Dahz"
+msgstr ""
+
+#: shortcode-maps/tagging.php:13
+msgid "Tag anything to an image"
+msgstr ""
+
+#: shortcode-maps/tagging.php:19
+msgid "Select Image to Tag"
+msgstr ""
+
+#: shortcode-maps/team-member.php:10
+msgid "Team Member"
+msgstr ""
+
+#: shortcode-maps/team-member.php:17 shortcode-maps/team-member.php:30
+msgid "Team Member Style"
+msgstr ""
+
+#: shortcode-maps/team-member.php:122 shortcode-maps/team-member.php:124
+msgid "Member Picture"
+msgstr ""
+
+#: shortcode-maps/team-member.php:128 shortcode-maps/team-member.php:130
+msgid "Member Name"
+msgstr ""
+
+#: shortcode-maps/team-member.php:134 shortcode-maps/team-member.php:136
+msgid "Member Job Position"
+msgstr ""
+
+#: shortcode-maps/team-member.php:140 shortcode-maps/team-member.php:142
+msgid "About Member"
+msgstr ""
+
+#: shortcode-maps/team-member.php:147 shortcode-maps/team-member.php:149
+msgid "Facebook Link"
+msgstr ""
+
+#: shortcode-maps/team-member.php:150 shortcode-maps/team-member.php:157
+#: shortcode-maps/team-member.php:164 shortcode-maps/team-member.php:171
+#: shortcode-maps/team-member.php:178 shortcode-maps/team-member.php:185
+#: shortcode-maps/team-member.php:192 shortcode-maps/team-member.php:199
+#: shortcode-maps/team-member.php:206 shortcode-maps/team-member.php:213
+#: shortcode-maps/team-member.php:220
+msgid "Social Links"
+msgstr ""
+
+#: shortcode-maps/team-member.php:154 shortcode-maps/team-member.php:156
+msgid "Twitter Link"
+msgstr ""
+
+#: shortcode-maps/team-member.php:161 shortcode-maps/team-member.php:163
+msgid "Snapchat Link"
+msgstr ""
+
+#: shortcode-maps/team-member.php:168 shortcode-maps/team-member.php:170
+msgid "Pinteres Link"
+msgstr ""
+
+#: shortcode-maps/team-member.php:175 shortcode-maps/team-member.php:177
+msgid "Linkedin Link"
+msgstr ""
+
+#: shortcode-maps/team-member.php:182 shortcode-maps/team-member.php:184
+msgid "Google+ Link"
+msgstr ""
+
+#: shortcode-maps/team-member.php:189 shortcode-maps/team-member.php:191
+msgid "Youtube Link"
+msgstr ""
+
+#: shortcode-maps/team-member.php:196 shortcode-maps/team-member.php:198
+msgid "Instagram Link"
+msgstr ""
+
+#: shortcode-maps/team-member.php:203 shortcode-maps/team-member.php:205
+msgid "Dribble Link"
+msgstr ""
+
+#: shortcode-maps/team-member.php:210 shortcode-maps/team-member.php:212
+msgid "Tumblr Link"
+msgstr ""
+
+#: shortcode-maps/team-member.php:217 shortcode-maps/team-member.php:219
+msgid "Email Address"
+msgstr ""
+
+#: shortcode-maps/testimonials.php:11
+msgid "Testimonials"
+msgstr ""
+
+#: shortcode-maps/testimonials.php:32
+msgid "Hover Color"
+msgstr ""
+
+#: shortcode-maps/testimonials.php:34
+msgid "Hover color."
+msgstr ""
+
+#: shortcode-maps/testimonials.php:42
+msgid "Add Outline Box"
+msgstr ""
+
+#: shortcode-maps/testimonials.php:49
+msgid "Add outline to your hover box"
+msgstr ""
+
+#: shortcode-maps/testimonials.php:76 shortcode-maps/testimonials.php:78
+msgid "Name"
+msgstr ""
+
+#: shortcode-maps/testimonials.php:82 shortcode-maps/testimonials.php:84
+msgid "Role"
+msgstr ""
+
+#: shortcode-maps/testimonials.php:88 shortcode-maps/testimonials.php:90
+msgid "URL Link"
+msgstr ""
+
+#: shortcode-maps/title-with-background.php:10
+msgid "Title With Backround"
+msgstr ""
+
+#: shortcode-maps/title-with-background.php:25
+#: shortcode-maps/title-with-background.php:27
+msgid "Image Style"
+msgstr ""
+
+#: shortcode-maps/title-with-background.php:35
+#: shortcode-maps/title-with-background.php:37
+msgid "Background Height"
+msgstr ""
+
+#: shortcode-maps/video-popup.php:10
+msgid "Video Popup"
+msgstr ""
+
+#: shortcode-maps/video-popup.php:48 shortcode-maps/video-popup.php:50
+msgid "Button Type"
+msgstr ""
+
+#: shortcode-maps/video-popup.php:65
+msgid "Image Icon"
+msgstr ""
+
+#: shortcode-maps/video-popup.php:71
+msgid "Upload Your Image Icon Here"
+msgstr ""
+
+#: shortcode-maps/video-popup.php:104 shortcode-maps/video-popup.php:106
+msgid "Show Text When Hover"
+msgstr ""
+
+#. Plugin Name of the plugin/theme
+msgid "Dahz Sobari Shortcode"
+msgstr ""
+
+#. Author of the plugin/theme
+msgid "DAHZ"
+msgstr ""
+
+#. Author URI of the plugin/theme
+msgid "http://daffyhazan.com"
+msgstr ""

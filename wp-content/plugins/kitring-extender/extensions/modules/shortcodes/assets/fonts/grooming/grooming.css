@@ -1,0 +1,326 @@
+@font-face {
+  font-family: 'grooming';
+  src:  url('grooming.eot?tn3ry5');
+  src:  url('grooming.eot?tn3ry5#iefix') format('embedded-opentype'),
+    url('grooming.ttf?tn3ry5') format('truetype'),
+    url('grooming.woff?tn3ry5') format('woff'),
+    url('grooming.svg?tn3ry5#grooming') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="grooming-"], [class*=" grooming-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'grooming' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.grooming-barber-chair:before {
+  content: "\e900";
+}
+.grooming-brush:before {
+  content: "\e901";
+}
+.grooming-comb:before {
+  content: "\e902";
+}
+.grooming-cream:before {
+  content: "\e903";
+}
+.grooming-cream-1:before {
+  content: "\e904";
+}
+.grooming-deodorant:before {
+  content: "\e905";
+}
+.grooming-earbuds:before {
+  content: "\e906";
+}
+.grooming-earbuds-1:before {
+  content: "\e907";
+}
+.grooming-epilator:before {
+  content: "\e908";
+}
+.grooming-eyelashes:before {
+  content: "\e909";
+}
+.grooming-eyelashes-1:before {
+  content: "\e90a";
+}
+.grooming-eyelashes-curler:before {
+  content: "\e90b";
+}
+.grooming-file:before {
+  content: "\e90c";
+}
+.grooming-hair-brush:before {
+  content: "\e90d";
+}
+.grooming-hair-brush-1:before {
+  content: "\e90e";
+}
+.grooming-hair-brush-2:before {
+  content: "\e90f";
+}
+.grooming-hair-brush-3:before {
+  content: "\e910";
+}
+.grooming-hair-clip:before {
+  content: "\e911";
+}
+.grooming-hairdryer:before {
+  content: "\e912";
+}
+.grooming-hair-straightener:before {
+  content: "\e913";
+}
+.grooming-hand-mirror:before {
+  content: "\e914";
+}
+.grooming-hand-mirror-1:before {
+  content: "\e915";
+}
+.grooming-lipstick:before {
+  content: "\e916";
+}
+.grooming-lipstick-1:before {
+  content: "\e917";
+}
+.grooming-lipstick-2:before {
+  content: "\e918";
+}
+.grooming-lotion:before {
+  content: "\e919";
+}
+.grooming-lotion-1:before {
+  content: "\e91a";
+}
+.grooming-lotion-2:before {
+  content: "\e91b";
+}
+.grooming-lotion-3:before {
+  content: "\e91c";
+}
+.grooming-lotion-4:before {
+  content: "\e91d";
+}
+.grooming-lotion-5:before {
+  content: "\e91e";
+}
+.grooming-lotion-6:before {
+  content: "\e91f";
+}
+.grooming-makeup:before {
+  content: "\e920";
+}
+.grooming-makeup-1:before {
+  content: "\e921";
+}
+.grooming-makeup-2:before {
+  content: "\e922";
+}
+.grooming-makeup-3:before {
+  content: "\e923";
+}
+.grooming-makeup-4:before {
+  content: "\e924";
+}
+.grooming-makeup-5:before {
+  content: "\e925";
+}
+.grooming-makeup-6:before {
+  content: "\e926";
+}
+.grooming-manicure:before {
+  content: "\e927";
+}
+.grooming-manicure-1:before {
+  content: "\e928";
+}
+.grooming-manicure-2:before {
+  content: "\e929";
+}
+.grooming-manicure-3:before {
+  content: "\e92a";
+}
+.grooming-manicure-4:before {
+  content: "\e92b";
+}
+.grooming-manicure-5:before {
+  content: "\e92c";
+}
+.grooming-manicure-6:before {
+  content: "\e92d";
+}
+.grooming-manicure-7:before {
+  content: "\e92e";
+}
+.grooming-manicure-8:before {
+  content: "\e92f";
+}
+.grooming-manicure-9:before {
+  content: "\e930";
+}
+.grooming-manicure-10:before {
+  content: "\e931";
+}
+.grooming-manicure-11:before {
+  content: "\e932";
+}
+.grooming-manicure-12:before {
+  content: "\e933";
+}
+.grooming-manicure-13:before {
+  content: "\e934";
+}
+.grooming-manicure-14:before {
+  content: "\e935";
+}
+.grooming-manicure-15:before {
+  content: "\e936";
+}
+.grooming-manicure-16:before {
+  content: "\e937";
+}
+.grooming-manicure-17:before {
+  content: "\e938";
+}
+.grooming-manicure-18:before {
+  content: "\e939";
+}
+.grooming-mascara:before {
+  content: "\e93a";
+}
+.grooming-mascara-1:before {
+  content: "\e93b";
+}
+.grooming-mascara-2:before {
+  content: "\e93c";
+}
+.grooming-mascara-3:before {
+  content: "\e93d";
+}
+.grooming-mascara-4:before {
+  content: "\e93e";
+}
+.grooming-mascara-5:before {
+  content: "\e93f";
+}
+.grooming-mirror:before {
+  content: "\e940";
+}
+.grooming-mirror-1:before {
+  content: "\e941";
+}
+.grooming-mirror-2:before {
+  content: "\e942";
+}
+.grooming-nail-polish:before {
+  content: "\e943";
+}
+.grooming-nail-polish-1:before {
+  content: "\e944";
+}
+.grooming-nail-polish-2:before {
+  content: "\e945";
+}
+.grooming-perfume:before {
+  content: "\e946";
+}
+.grooming-perfume-1:before {
+  content: "\e947";
+}
+.grooming-perfume-2:before {
+  content: "\e948";
+}
+.grooming-perfume-3:before {
+  content: "\e949";
+}
+.grooming-perfume-4:before {
+  content: "\e94a";
+}
+.grooming-perfume-5:before {
+  content: "\e94b";
+}
+.grooming-powder:before {
+  content: "\e94c";
+}
+.grooming-powder-1:before {
+  content: "\e94d";
+}
+.grooming-powder-2:before {
+  content: "\e94e";
+}
+.grooming-powder-3:before {
+  content: "\e94f";
+}
+.grooming-powder-4:before {
+  content: "\e950";
+}
+.grooming-powder-5:before {
+  content: "\e951";
+}
+.grooming-razor:before {
+  content: "\e952";
+}
+.grooming-razor-1:before {
+  content: "\e953";
+}
+.grooming-razor-2:before {
+  content: "\e954";
+}
+.grooming-scissors:before {
+  content: "\e955";
+}
+.grooming-shaver:before {
+  content: "\e956";
+}
+.grooming-shaver-1:before {
+  content: "\e957";
+}
+.grooming-shaving:before {
+  content: "\e958";
+}
+.grooming-shaving-1:before {
+  content: "\e959";
+}
+.grooming-shaving-2:before {
+  content: "\e95a";
+}
+.grooming-shaving-3:before {
+  content: "\e95b";
+}
+.grooming-soap:before {
+  content: "\e95c";
+}
+.grooming-soap-1:before {
+  content: "\e95d";
+}
+.grooming-sponge:before {
+  content: "\e95e";
+}
+.grooming-toilet-paper:before {
+  content: "\e95f";
+}
+.grooming-toothbrush:before {
+  content: "\e960";
+}
+.grooming-toothpaste:before {
+  content: "\e961";
+}
+.grooming-toothpaste-1:before {
+  content: "\e962";
+}
+.grooming-toothpaste-2:before {
+  content: "\e963";
+}

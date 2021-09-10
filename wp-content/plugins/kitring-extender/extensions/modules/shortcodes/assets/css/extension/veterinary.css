@@ -1,0 +1,79 @@
+	/*
+  	salon icon font: salon
+  	Creation date: 02/04/2018 10:26
+  	*/
+
+@font-face {
+  font-family: "salon";
+  src: url("../../fonts/salon/salon.eot");
+  src: url("../../fonts/salon/salon.eot?#iefix") format("embedded-opentype"),
+       url("../../fonts/salon/salon.woff") format("woff"),
+       url("../../fonts/salon/salon.ttf") format("truetype"),
+       url("../../fonts/salon/salon.svg#salon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  @font-face {
+    font-family: "salon";
+    src: url("../../fonts/salon/salon.svg#salon") format("svg");
+  }
+}
+
+[class^="salon-"]:before, [class*=" salon-"]:before,
+[class^="salon-"]:after, [class*=" salon-"]:after {   
+  font-family: salon;
+font-style: normal;
+}
+
+.salon-001-scale:before { content: "\f100"; }
+.salon-002-blood:before { content: "\f101"; }
+.salon-003-food-1:before { content: "\f102"; }
+.salon-004-vaccine:before { content: "\f103"; }
+.salon-005-blood-donation:before { content: "\f104"; }
+.salon-006-toy:before { content: "\f105"; }
+.salon-007-spray:before { content: "\f106"; }
+.salon-008-care:before { content: "\f107"; }
+.salon-009-siren:before { content: "\f108"; }
+.salon-010-24-hours:before { content: "\f109"; }
+.salon-011-van:before { content: "\f10a"; }
+.salon-012-salon-4:before { content: "\f10b"; }
+.salon-013-salon-3:before { content: "\f10c"; }
+.salon-014-call-center:before { content: "\f10d"; }
+.salon-015-clinic:before { content: "\f10e"; }
+.salon-016-flea:before { content: "\f10f"; }
+.salon-017-salon-2:before { content: "\f110"; }
+.salon-018-shampoo:before { content: "\f111"; }
+.salon-019-doctor:before { content: "\f112"; }
+.salon-020-certificate:before { content: "\f113"; }
+.salon-021-test:before { content: "\f114"; }
+.salon-022-search:before { content: "\f115"; }
+.salon-023-collar-1:before { content: "\f116"; }
+.salon-024-bell:before { content: "\f117"; }
+.salon-025-medicine:before { content: "\f118"; }
+.salon-026-band-aid:before { content: "\f119"; }
+.salon-027-salon-1:before { content: "\f11a"; }
+.salon-028-stethoscope:before { content: "\f11b"; }
+.salon-029-collar:before { content: "\f11c"; }
+.salon-030-award:before { content: "\f11d"; }
+.salon-031-schedule:before { content: "\f11e"; }
+.salon-032-heart-rate:before { content: "\f11f"; }
+.salon-033-thermometer:before { content: "\f120"; }
+.salon-034-cage-1:before { content: "\f121"; }
+.salon-035-dog:before { content: "\f122"; }
+.salon-036-cat:before { content: "\f123"; }
+.salon-037-snack:before { content: "\f124"; }
+.salon-038-pills:before { content: "\f125"; }
+.salon-039-bowl:before { content: "\f126"; }
+.salon-040-first-aid-kit:before { content: "\f127"; }
+.salon-041-grooming:before { content: "\f128"; }
+.salon-042-cage:before { content: "\f129"; }
+.salon-043-house:before { content: "\f12a"; }
+.salon-044-fountain:before { content: "\f12b"; }
+.salon-045-poo:before { content: "\f12c"; }
+.salon-046-bone:before { content: "\f12d"; }
+.salon-047-food:before { content: "\f12e"; }
+.salon-048-milk:before { content: "\f12f"; }
+.salon-049-salon:before { content: "\f130"; }
+.salon-050-injection:before { content: "\f131"; }

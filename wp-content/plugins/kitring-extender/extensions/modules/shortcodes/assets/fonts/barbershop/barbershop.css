@@ -1,0 +1,176 @@
+@font-face {
+  font-family: 'barbershop';
+  src:  url('barbershop.eot?7872sh');
+  src:  url('barbershop.eot?7872sh#iefix') format('embedded-opentype'),
+    url('barbershop.ttf?7872sh') format('truetype'),
+    url('barbershop.woff?7872sh') format('woff'),
+    url('barbershop.svg?7872sh#barbershop') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="barbershop-"], [class*=" barbershop-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'barbershop' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.barbershop-comb-3:before {
+  content: "\e900";
+}
+.barbershop-comb-2:before {
+  content: "\e901";
+}
+.barbershop-spray-bottle:before {
+  content: "\e902";
+}
+.barbershop-perfume:before {
+  content: "\e903";
+}
+.barbershop-hand-mirror:before {
+  content: "\e904";
+}
+.barbershop-razor-2:before {
+  content: "\e905";
+}
+.barbershop-razor-1:before {
+  content: "\e906";
+}
+.barbershop-gel:before {
+  content: "\e907";
+}
+.barbershop-man:before {
+  content: "\e908";
+}
+.barbershop-comb-1:before {
+  content: "\e909";
+}
+.barbershop-barber-shop-1:before {
+  content: "\e90a";
+}
+.barbershop-hairbrush-2:before {
+  content: "\e90b";
+}
+.barbershop-brush:before {
+  content: "\e90c";
+}
+.barbershop-blade:before {
+  content: "\e90d";
+}
+.barbershop-soap-1:before {
+  content: "\e90e";
+}
+.barbershop-hairbrush-1:before {
+  content: "\e90f";
+}
+.barbershop-scissors-1:before {
+  content: "\e910";
+}
+.barbershop-hair-dryer:before {
+  content: "\e911";
+}
+.barbershop-scissors:before {
+  content: "\e912";
+}
+.barbershop-lotion:before {
+  content: "\e913";
+}
+.barbershop-oil-bottle:before {
+  content: "\e914";
+}
+.barbershop-straighten:before {
+  content: "\e915";
+}
+.barbershop-towel:before {
+  content: "\e916";
+}
+.barbershop-comb:before {
+  content: "\e917";
+}
+.barbershop-mirror-1:before {
+  content: "\e918";
+}
+.barbershop-soap:before {
+  content: "\e919";
+}
+.barbershop-shampoo:before {
+  content: "\e91a";
+}
+.barbershop-boy:before {
+  content: "\e91b";
+}
+.barbershop-girl:before {
+  content: "\e91c";
+}
+.barbershop-hot-stones:before {
+  content: "\e91d";
+}
+.barbershop-hair-cream:before {
+  content: "\e91e";
+}
+.barbershop-cream-3:before {
+  content: "\e91f";
+}
+.barbershop-mirror:before {
+  content: "\e920";
+}
+.barbershop-cream-2:before {
+  content: "\e921";
+}
+.barbershop-moustache:before {
+  content: "\e922";
+}
+.barbershop-hair-brush-1:before {
+  content: "\e923";
+}
+.barbershop-hair-brush:before {
+  content: "\e924";
+}
+.barbershop-hair-pin:before {
+  content: "\e925";
+}
+.barbershop-razor:before {
+  content: "\e926";
+}
+.barbershop-clock:before {
+  content: "\e927";
+}
+.barbershop-hair-salon:before {
+  content: "\e928";
+}
+.barbershop-hairbrush:before {
+  content: "\e929";
+}
+.barbershop-bow-tie:before {
+  content: "\e92a";
+}
+.barbershop-beard:before {
+  content: "\e92b";
+}
+.barbershop-barber-shop:before {
+  content: "\e92c";
+}
+.barbershop-barbershop:before {
+  content: "\e92d";
+}
+.barbershop-hair-clip:before {
+  content: "\e92e";
+}
+.barbershop-hair-curler:before {
+  content: "\e92f";
+}
+.barbershop-cream-1:before {
+  content: "\e930";
+}
+.barbershop-cream:before {
+  content: "\e931";
+}

@@ -1,0 +1,135 @@
+// imports
+@import 'buttons';
+
+
+.header-cart-count {
+  display: none;
+}
+
+// general styling
+.woocommerce .col2-set, .woocommerce-page .col2-set {
+  width: auto !important;
+}
+
+div.shop-product-thumbnail {
+  position: relative;
+  overflow: hidden;
+
+  img {
+    transition: all .3s ease;
+    transform: scale(1.05);
+    margin-bottom: 0 !important;
+  }
+
+  span {
+    position: absolute !important;
+    left: 10px !important;
+    top: 15px !important;
+    right: auto !important;
+  }
+
+  &:hover,
+  &:focus {
+    img {
+      transform: scale(1);     
+    }
+
+
+  }
+}
+
+a.woocommerce-loop-product__link {
+  span.price {
+    display: flex !important; 
+
+    del {
+      margin-right: 5px;
+    }
+  }
+}
+
+.woocommerce ul.products li.product .button {
+  margin-top: 0 !important;
+}
+
+div.product {
+  span.onsale {
+    left: 15px;
+    top: 15px;
+  }
+}
+
+#coupon_code {
+  width: auto !important;
+} 
+
+form.checkout_coupon {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+
+  p {
+    margin-bottom: 0;
+
+    &:first-child {
+      margin-right: 10px;
+      margin-bottom: 5px;
+    }
+  }
+}
+
+// all text inputs
+.woocommerce input.input-text, .woocommerce #coupon_code, .woocommerce textarea.input-text {
+  border-color: red;
+}
+
+
+.woocommerce label {
+  color: red;
+}
+
+ul.woocommerce-thankyou-order-details {
+  padding-left: 0;
+}
+
+.woocommerce-MyAccount-navigation ul {
+  list-style-type: none;
+  padding: 0;
+  margin-left: 0;
+
+  li {
+    border-bottom: 1px solid black;
+
+    a {
+      display: block;
+      padding: 15px 0;
+
+      i {
+        float: right;
+        margin-right: 15px;
+        position: relative;
+        font-size: 22px;
+        width: 30px;
+        text-align: center;
+      }
+
+      &:hover {
+        text-decoration: none;
+      }
+    }
+
+    &:first-child {
+      border-top: 1px solid black;
+    }
+  }
+}
+
+.woocommerce-form-login .woocommerce-form__label-for-checkbox {
+  margin-left: 15px;
+  position: relative;
+  top: 3px;
+}
+
+.woocommerce-form-login {
+  max-width: 350px;
+}

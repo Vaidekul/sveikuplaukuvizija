@@ -1,0 +1,129 @@
+	/*
+  	animal-v2 icon font: animal-v2
+  	Creation date: 12/05/2017 10:25
+  	*/
+
+@font-face {
+  font-family: "animal-v2";
+  src: url("../../fonts/animal-v2/animal-v2.eot");
+  src: url("../../fonts/animal-v2/animal-v2.eot?#iefix") format("embedded-opentype"),
+       url("../../fonts/animal-v2/animal-v2.woff") format("woff"),
+       url("../../fonts/animal-v2/animal-v2.ttf") format("truetype"),
+       url("../../fonts/animal-v2/animal-v2.svg#animal-v2") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  @font-face {
+    font-family: "animal-v2";
+    src: url("../../fonts/animal-v2/animal-v2.svg#animal-v2") format("svg");
+  }
+}
+
+[class^="animal-v2-"]:before, [class*=" animal-v2-"]:before,
+[class^="animal-v2-"]:after, [class*=" animal-v2-"]:after {   
+  font-family: animal-v2;
+font-style: normal;
+}
+
+.animal-v2-001-boar:before { content: "\f100"; }
+.animal-v2-002-porcupine:before { content: "\f101"; }
+.animal-v2-003-toad:before { content: "\f102"; }
+.animal-v2-004-shrew:before { content: "\f103"; }
+.animal-v2-005-wolverine:before { content: "\f104"; }
+.animal-v2-006-mole:before { content: "\f105"; }
+.animal-v2-007-weasel:before { content: "\f106"; }
+.animal-v2-008-racoon:before { content: "\f107"; }
+.animal-v2-009-zebra:before { content: "\f108"; }
+.animal-v2-010-otter:before { content: "\f109"; }
+.animal-v2-011-dog:before { content: "\f10a"; }
+.animal-v2-012-salamander:before { content: "\f10b"; }
+.animal-v2-013-monkey:before { content: "\f10c"; }
+.animal-v2-014-kiwi:before { content: "\f10d"; }
+.animal-v2-015-philippine-tarsier:before { content: "\f10e"; }
+.animal-v2-016-skunk:before { content: "\f10f"; }
+.animal-v2-017-red-panda:before { content: "\f110"; }
+.animal-v2-018-pig:before { content: "\f111"; }
+.animal-v2-019-rhinoceros:before { content: "\f112"; }
+.animal-v2-020-squirrel:before { content: "\f113"; }
+.animal-v2-021-polar-bear:before { content: "\f114"; }
+.animal-v2-022-owl:before { content: "\f115"; }
+.animal-v2-023-sea-lion:before { content: "\f116"; }
+.animal-v2-024-tiger:before { content: "\f117"; }
+.animal-v2-025-ostrich:before { content: "\f118"; }
+.animal-v2-026-wolf:before { content: "\f119"; }
+.animal-v2-027-ermine:before { content: "\f11a"; }
+.animal-v2-028-lemur:before { content: "\f11b"; }
+.animal-v2-029-badger:before { content: "\f11c"; }
+.animal-v2-030-armadillo:before { content: "\f11d"; }
+.animal-v2-031-eel:before { content: "\f11e"; }
+.animal-v2-032-sheep:before { content: "\f11f"; }
+.animal-v2-033-gorilla:before { content: "\f120"; }
+.animal-v2-034-kangaroo:before { content: "\f121"; }
+.animal-v2-035-coati:before { content: "\f122"; }
+.animal-v2-036-hedgehog:before { content: "\f123"; }
+.animal-v2-037-donkey:before { content: "\f124"; }
+.animal-v2-038-hyena:before { content: "\f125"; }
+.animal-v2-039-hippopotamus:before { content: "\f126"; }
+.animal-v2-040-fennec:before { content: "\f127"; }
+.animal-v2-041-goat:before { content: "\f128"; }
+.animal-v2-042-alpaca:before { content: "\f129"; }
+.animal-v2-043-whale:before { content: "\f12a"; }
+.animal-v2-044-hen:before { content: "\f12b"; }
+.animal-v2-045-panther:before { content: "\f12c"; }
+.animal-v2-046-bison:before { content: "\f12d"; }
+.animal-v2-047-cheetah:before { content: "\f12e"; }
+.animal-v2-048-antilope:before { content: "\f12f"; }
+.animal-v2-049-giraffe:before { content: "\f130"; }
+.animal-v2-050-panda:before { content: "\f131"; }
+.animal-v2-051-bird:before { content: "\f132"; }
+.animal-v2-052-lion:before { content: "\f133"; }
+.animal-v2-053-moose:before { content: "\f134"; }
+.animal-v2-054-snail:before { content: "\f135"; }
+.animal-v2-055-cat:before { content: "\f136"; }
+.animal-v2-056-fox:before { content: "\f137"; }
+.animal-v2-057-fish-2:before { content: "\f138"; }
+.animal-v2-058-bear:before { content: "\f139"; }
+.animal-v2-059-horse:before { content: "\f13a"; }
+.animal-v2-060-deer:before { content: "\f13b"; }
+.animal-v2-061-camel:before { content: "\f13c"; }
+.animal-v2-062-cow:before { content: "\f13d"; }
+.animal-v2-063-walrus:before { content: "\f13e"; }
+.animal-v2-064-rabbit:before { content: "\f13f"; }
+.animal-v2-065-puffer:before { content: "\f140"; }
+.animal-v2-066-fish-1:before { content: "\f141"; }
+.animal-v2-067-hamster:before { content: "\f142"; }
+.animal-v2-068-koala:before { content: "\f143"; }
+.animal-v2-069-snake:before { content: "\f144"; }
+.animal-v2-070-lizard:before { content: "\f145"; }
+.animal-v2-071-mussel:before { content: "\f146"; }
+.animal-v2-072-spider:before { content: "\f147"; }
+.animal-v2-073-octopus:before { content: "\f148"; }
+.animal-v2-074-rat:before { content: "\f149"; }
+.animal-v2-075-manta-ray:before { content: "\f14a"; }
+.animal-v2-076-beetle:before { content: "\f14b"; }
+.animal-v2-077-elephant:before { content: "\f14c"; }
+.animal-v2-078-crocodile:before { content: "\f14d"; }
+.animal-v2-079-crow:before { content: "\f14e"; }
+.animal-v2-080-dolphin:before { content: "\f14f"; }
+.animal-v2-081-duck:before { content: "\f150"; }
+.animal-v2-082-starfish:before { content: "\f151"; }
+.animal-v2-083-clam:before { content: "\f152"; }
+.animal-v2-084-worm:before { content: "\f153"; }
+.animal-v2-085-turtle:before { content: "\f154"; }
+.animal-v2-086-crab:before { content: "\f155"; }
+.animal-v2-087-goldfish:before { content: "\f156"; }
+.animal-v2-088-flamingo:before { content: "\f157"; }
+.animal-v2-089-coral:before { content: "\f158"; }
+.animal-v2-090-bat:before { content: "\f159"; }
+.animal-v2-091-jellyfish:before { content: "\f15a"; }
+.animal-v2-092-hummingbird:before { content: "\f15b"; }
+.animal-v2-093-penguin:before { content: "\f15c"; }
+.animal-v2-094-toucan:before { content: "\f15d"; }
+.animal-v2-095-butterfly:before { content: "\f15e"; }
+.animal-v2-096-bee:before { content: "\f15f"; }
+.animal-v2-097-fish:before { content: "\f160"; }
+.animal-v2-098-scorpion:before { content: "\f161"; }
+.animal-v2-099-frog:before { content: "\f162"; }
+.animal-v2-100-parrot:before { content: "\f163"; }

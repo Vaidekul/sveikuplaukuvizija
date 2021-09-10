@@ -1,0 +1,247 @@
+/** 
+* Add theme general styles here
+*/
+
+#page {
+	margin-top: 100px;
+}
+
+@keyframes LOADING {
+	0% {
+		opacity: .6;
+	}
+	50% {
+		opacity: .8;
+	}
+	100% {
+		opacity: .6;
+	}
+}
+
+.loading {
+	position: relative;
+
+	&:before {
+		content: '';
+		position: absolute;
+		top: 0;
+		left: 0;
+		height: 100%;
+		width: 100%;
+		background: white;
+		transition: all .2s linear;
+		opacity: 1;
+		animation: LOADING .8s infinite;
+		z-index: 100;
+	}
+}
+
+// used to lock scroll when mobile menu is open
+body.mobile-menu-open {
+	@include change(992px) {
+		overflow: hidden;
+	}
+}
+
+/** 
+* To assist Bootstrap flex utilities "Flex Grow Property"
+* Add to the flex children elements
+*/
+.grow {
+  &--1 {
+    flex-grow: 1;
+  }
+  &--2 {
+    flex-grow: 2;
+  }
+  &--3 {
+    flex-grow: 3;
+  }
+  &--4 {
+    flex-grow: 4;
+  }
+}
+
+
+// padding classes
+.padding-none {
+	padding-top: 0;
+	padding-bottom: 0;
+}
+
+.padding-min {
+	padding-top: 25px;
+  padding-bottom: 25px;
+  
+  @include change(768px) {
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
+}
+
+.padding-med {
+	padding-top: 80px;
+  padding-bottom: 80px;
+  @include change(992px) {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+  @include change(768px) {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+}
+
+.padding-max {
+	padding-top: 150px;
+  padding-bottom: 150px;
+  @include change(992px) {
+    padding-top: 110px;
+    padding-bottom: 110px;
+  }
+  @include change(768px) {
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+}
+
+.margin-none {
+	margin-top: 0;
+	margin-bottom: 0;
+}
+
+.margin-min {
+	margin-top: 25px;
+  margin-bottom: 25px;
+  
+  @include change(768px) {
+    margin-top: 15px;
+    margin-bottom: 15px;
+  }
+}
+
+.margin-med {
+	margin-top: 80px;
+  margin-bottom: 80px;
+  @include change(992px) {
+    margin-top: 60px;
+    margin-bottom: 60px;
+  }
+  @include change(768px) {
+    margin-top: 40px;
+    margin-bottom: 40px;
+  }
+}
+
+.margin-max {
+	margin-top: 150px;
+  margin-bottom: 150px;
+  @include change(992px) {
+    margin-top: 110px;
+    margin-bottom: 110px;
+  }
+  @include change(768px) {
+    margin-top: 80px;
+    margin-bottom: 80px;
+  }
+}
+
+.bg-img {
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	background-size: cover;
+	background-position: center center;
+}
+
+.pos-rel {
+	position: relative;
+}
+
+.single-blog {
+	.info {
+		padding-bottom: 15px;
+
+		.cats a {
+			font-size: responsive 16px 20px;
+			color: grey;
+			transition: all .2s ease;
+			margin-right: 15px;
+			font-weight: 500;
+
+			&:hover {
+				text-decoration: none;
+				color: darken(grey, 10%);
+			}
+		}
+
+		.date {
+			font-size: responsive 16px 20px;
+			font-weight: 500;
+		}
+	}
+
+	.tags {
+		font-size: responsive 16px 18px;
+		a {
+			color: grey;
+			margin-right: 5px;
+			transition: all .2s ease;
+
+			&:hover {
+				color: grey;
+				text-decoration: none;
+			}
+		}
+	}
+
+	.post-nav {
+		a {
+			display: block;
+			width: 100%;
+			padding: 15px;
+			border: 1px solid black;
+			margin: 15px;
+			color: grey;
+			transition: all .2s ease;
+
+			.title {
+				font-size: responsive 16px 18px;
+				font-weight: 500;
+			}
+			
+			.direction {
+				text-transform: uppercase;
+				font-weight: 800;
+				font-size: responsive 16px 18px;
+				margin-bottom: 15px;
+			}
+
+			&:first-child {
+				margin-left: 0;
+			}
+
+			&:last-child {
+				margin-right: 0;
+			}
+
+			&:hover {
+				text-decoration: none;
+				color: grey;
+				border-color: grey;
+			}
+		}
+	}
+}
+
+.post-author-box {
+	.photo {
+		height: 165px;
+		width: 165px;
+		min-width: 165px;
+		background-size: cover;
+		background-position: center center;
+	}
+}

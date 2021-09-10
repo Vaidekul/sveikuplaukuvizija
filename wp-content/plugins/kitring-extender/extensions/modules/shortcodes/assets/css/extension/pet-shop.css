@@ -1,0 +1,79 @@
+	/*
+  	pet-shop icon font: pet-shop
+  	Creation date: 30/04/2018 08:04
+  	*/
+
+@font-face {
+  font-family: "pet-shop";
+  src: url("../../fonts/pet-shop/pet-shop.eot");
+  src: url("../../fonts/pet-shop/pet-shop.eot?#iefix") format("embedded-opentype"),
+       url("../../fonts/pet-shop/pet-shop.woff") format("woff"),
+       url("../../fonts/pet-shop/pet-shop.ttf") format("truetype"),
+       url("../../fonts/pet-shop/pet-shop.svg#pet-shop") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  @font-face {
+    font-family: "pet-shop";
+    src: url("../../fonts/pet-shop/pet-shop.svg#pet-shop") format("svg");
+  }
+}
+
+[class^="pet-shop-"]:before, [class*=" pet-shop-"]:before,
+[class^="pet-shop-"]:after, [class*=" pet-shop-"]:after {   
+	font-family: pet-shop;
+	font-style: normal;
+}
+
+.pet-shop-001-turtle:before { content: "\f100"; }
+.pet-shop-002-electric-shaver:before { content: "\f101"; }
+.pet-shop-003-mouse:before { content: "\f102"; }
+.pet-shop-004-bacteria:before { content: "\f103"; }
+.pet-shop-005-scissors:before { content: "\f104"; }
+.pet-shop-006-platform:before { content: "\f105"; }
+.pet-shop-007-pet-shampoo-2:before { content: "\f106"; }
+.pet-shop-008-pet-shampoo-1:before { content: "\f107"; }
+.pet-shop-009-pet-shampoo:before { content: "\f108"; }
+.pet-shop-010-pawprints:before { content: "\f109"; }
+.pet-shop-011-patch:before { content: "\f10a"; }
+.pet-shop-012-vaccine:before { content: "\f10b"; }
+.pet-shop-013-pet-food-1:before { content: "\f10c"; }
+.pet-shop-014-pet-food:before { content: "\f10d"; }
+.pet-shop-015-drops-1:before { content: "\f10e"; }
+.pet-shop-016-drops:before { content: "\f10f"; }
+.pet-shop-017-dermathology:before { content: "\f110"; }
+.pet-shop-018-certificate:before { content: "\f111"; }
+.pet-shop-019-cage:before { content: "\f112"; }
+.pet-shop-020-pet-brush-1:before { content: "\f113"; }
+.pet-shop-021-pet-brush:before { content: "\f114"; }
+.pet-shop-022-medal:before { content: "\f115"; }
+.pet-shop-023-leash:before { content: "\f116"; }
+.pet-shop-024-lamp:before { content: "\f117"; }
+.pet-shop-025-hamster:before { content: "\f118"; }
+.pet-shop-026-fish-food-1:before { content: "\f119"; }
+.pet-shop-027-fish-food:before { content: "\f11a"; }
+.pet-shop-028-fish-1:before { content: "\f11b"; }
+.pet-shop-029-fish:before { content: "\f11c"; }
+.pet-shop-030-dog-house:before { content: "\f11d"; }
+.pet-shop-031-badge:before { content: "\f11e"; }
+.pet-shop-032-trophy:before { content: "\f11f"; }
+.pet-shop-033-dog-1:before { content: "\f120"; }
+.pet-shop-034-dog:before { content: "\f121"; }
+.pet-shop-035-collar-1:before { content: "\f122"; }
+.pet-shop-036-collar:before { content: "\f123"; }
+.pet-shop-037-cat:before { content: "\f124"; }
+.pet-shop-038-carrot:before { content: "\f125"; }
+.pet-shop-039-canned-food:before { content: "\f126"; }
+.pet-shop-040-rabbit:before { content: "\f127"; }
+.pet-shop-041-bones:before { content: "\f128"; }
+.pet-shop-042-bird-house:before { content: "\f129"; }
+.pet-shop-043-bird-cage:before { content: "\f12a"; }
+.pet-shop-044-bird-1:before { content: "\f12b"; }
+.pet-shop-045-bird:before { content: "\f12c"; }
+.pet-shop-046-bell:before { content: "\f12d"; }
+.pet-shop-047-ball:before { content: "\f12e"; }
+.pet-shop-048-poo:before { content: "\f12f"; }
+.pet-shop-049-aquarium-1:before { content: "\f130"; }
+.pet-shop-050-aquarium:before { content: "\f131"; }

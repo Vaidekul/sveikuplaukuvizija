@@ -1,0 +1,140 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: OPAY - Woocommerce v1.2.9\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2015-03-06 16:25-0500\n"
+"PO-Revision-Date: 2015-03-30 08:13:18+0000\n"
+"Last-Translator: \n"
+"Language-Team: OPAY <info@opay.lt>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
+"X-Generator: Poedit 1.7.5\n"
+"X-Poedit-Language: \n"
+"X-Poedit-Country: \n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e;__ngettext:1,2;_n:1,2;__ngettext_noop:1,2;_n_noop:1,2;_c,_nc:4c,1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;_nx_noop:4c,1,2;\n"
+"X-Poedit-Basepath: \n"
+"X-Poedit-Bookmarks: \n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Textdomain-Support: yes"
+
+#: wc_opay_gateway.class.php:25
+#@ opay-woocommerce
+msgid "OPAY Payment Gateway plugin for WooCommerce"
+msgstr "OPAY mokėjimų sistemos įskiepis WooCommerce sistemai"
+
+#: wc_opay_gateway.class.php:12
+#: wc_opay_gateway.class.php:17
+#: wc_opay_gateway.class.php:21
+#@ opay-woocommerce
+msgid "OPAY Payment Gateway"
+msgstr "OPAY mokėjimų sistema"
+
+#: wc_opay_gateway.class.php:182
+#@ opay-woocommerce
+msgid "Customer chose payment method"
+msgstr "Pirkėjas pasirinko mokėjimo būdą"
+
+#: wc_opay_gateway.class.php:186
+#@ opay-woocommerce
+msgid "Customer redirected to external OPAY page"
+msgstr "Pirkėjas nukreiptas į OPAY mokėjimų langą"
+
+#: wc_opay_gateway.class.php:259
+#@ opay-woocommerce
+msgid "Enable / Disable"
+msgstr "Įjungti / Išjungti"
+
+#: wc_opay_gateway.class.php:260
+#@ opay-woocommerce
+msgid "Enable OPAY Gateway"
+msgstr "Įjungti OPAY mokėjimų sistemos palaikymą"
+
+#: wc_opay_gateway.class.php:265
+#@ opay-woocommerce
+msgid "Website ID"
+msgstr "Tinklalapio ID (website_id)"
+
+#: wc_opay_gateway.class.php:270
+#@ opay-woocommerce
+msgid "Test mode"
+msgstr "Testavimo režimas"
+
+#: wc_opay_gateway.class.php:273
+#@ opay-woocommerce
+msgid "Enabled"
+msgstr "Įjungtas"
+
+#: wc_opay_gateway.class.php:274
+#@ opay-woocommerce
+msgid "Disabled"
+msgstr "Išjungtas"
+
+#: wc_opay_gateway.class.php:279
+#@ opay-woocommerce
+msgid "User ID"
+msgstr "Vartotojo ID (user_id)"
+
+#: wc_opay_gateway.class.php:281
+#@ opay-woocommerce
+msgid "Needed when Test mode is enabled"
+msgstr "Reikalingas kai įjungtas Testavimo režimas"
+
+#: wc_opay_gateway.class.php:285
+#@ opay-woocommerce
+msgid "Sign data with"
+msgstr "Pasirašyti duomenis su"
+
+#: wc_opay_gateway.class.php:288
+#@ opay-woocommerce
+msgid "RSA private key"
+msgstr "RSA privačiu raktu"
+
+#: wc_opay_gateway.class.php:289
+#: wc_opay_gateway.class.php:306
+#@ opay-woocommerce
+msgid "Signature password"
+msgstr "Pasirašymo slaptažodžiu"
+
+#: wc_opay_gateway.class.php:294
+#@ opay-woocommerce
+msgid "Private key"
+msgstr "Privatus raktas"
+
+#: wc_opay_gateway.class.php:300
+#@ opay-woocommerce
+msgid "OPAY's certificate"
+msgstr "OPAY sertifikatas"
+
+#: wc_opay_gateway.class.php:311
+#@ opay-woocommerce
+msgid "Show payment methods"
+msgstr "Rodyti mokėjimo būdus"
+
+#: wc_opay_gateway.class.php:314
+#@ opay-woocommerce
+msgid "In checkout page grouped"
+msgstr "Parduotuvės atsiskaitymų lange sugrupuotus"
+
+#: wc_opay_gateway.class.php:315
+#@ opay-woocommerce
+msgid "In checkout page"
+msgstr "Parduotuvės atsiskaitymo lange"
+
+#: wc_opay_gateway.class.php:316
+#@ opay-woocommerce
+msgid "In external OPAY page"
+msgstr "OPAY mokėjimų lange"
+
+#: wc_opay_gateway.class.php:321
+#@ opay-woocommerce
+msgid "Height of banks' icons"
+msgstr "Bankų paveikslėlių aukštis"
+
+#: wc_opay_gateway.class.php:337
+#@ opay-woocommerce
+msgid "Please choose payment method"
+msgstr "Prašome pasirinkti mokėjimo būdą"
+

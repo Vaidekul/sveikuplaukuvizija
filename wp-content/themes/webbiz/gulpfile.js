@@ -1,12 +1,12 @@
 /*global 
-    require:true
+		require:true
 */
 console.log("Gulp Start");
 require("es6-promise").polyfill();
 var gulp = require("gulp");
 var sass = require("gulp-sass");
 var autoprefixer = require("gulp-autoprefixer");
-var minifycss = require("gulp-minify-css");
+var minifycss = require("gulp-clean-css");
 var rtlcss = require("gulp-rtlcss");
 var rename = require("gulp-rename");
 var plumber = require("gulp-plumber");

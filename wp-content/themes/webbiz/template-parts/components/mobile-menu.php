@@ -1,4 +1,4 @@
-<div class="mobile-menu-container d-lg-none">
+<div class="mobile-menu-container">
   <?php
   wp_nav_menu( array(
     'theme_location' => 'menu-2',

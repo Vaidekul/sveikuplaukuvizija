@@ -34,20 +34,20 @@
 
 		<div class="header-cart-count counter"></div>
 
-		<?php get_template_part('./template-parts/components/header-content'); ?>
+		<?php //get_template_part('./template-parts/components/header-content'); ?>
 
 	</header>
 
 	<!-- Floating header -->
 	<header id="masthead-floating" class="site-header masthead">
 
-		<?php get_template_part('./template-parts/components/header-content'); ?>
+		<?php //get_template_part('./template-parts/components/header-content'); ?>
 
 	</header>
 
 	<?php 
 	// Mobile meenu
-	get_template_part('./template-parts/components/mobile-menu'); 
+	//get_template_part('./template-parts/components/mobile-menu'); 
 	// search window
 	//get_template_part('./template-parts/components/search-window') 
 	?>

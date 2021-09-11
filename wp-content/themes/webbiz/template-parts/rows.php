@@ -1,5 +1,8 @@
 <?php 
 
+if( is_front_page()) {
+	get_template_part( 'template-parts/rows/frontpage');
+}
 
 // if theres content in default editor
 if ( get_the_content() ) {

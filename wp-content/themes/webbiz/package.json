@@ -33,6 +33,7 @@
     "lity": "^2.4.1",
     "popper.js": "^1.16.1",
     "responsive-font-size": "^1.0.1",
+    "slick": "^1.12.2",
     "slick-carousel": "^1.8.1",
     "uglifyjs-webpack-plugin": "^2.2.0",
     "webpack-cli": "^3.3.12"

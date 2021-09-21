@@ -1,0 +1,52 @@
+.rinkiniai {
+	background-size: cover;
+	background-position: center center;
+	background-color: #c69a68;
+	h2, .subtitle {
+		color: black;
+		opacity: 1;
+		text-align: center;
+	}
+	h2 {
+		width: 80%;
+		margin: auto;
+	}
+	.subtitle {
+		font-size: 2rem;
+    font-weight: 300;
+		margin-top: 2rem;
+	}
+	.blocks {
+		padding-top: 4rem
+	}
+	.block {
+		flex: 1;
+		color: black;
+		.rinkinio-img {
+			height: 16rem;
+			width: 95%;
+			overflow: hidden;
+			img {
+				object-fit: cover;
+				transform: scale(1.1);
+				transition: all .2s linear;
+			}
+		}
+		&:hover {
+			// cursor: pointer;
+			img {
+				transform: scale(1);
+			}
+		}
+		h3 {
+			color: black;
+			opacity: 1;
+			font-size: 2.6rem;
+			margin-top: 1rem;
+		}	
+		a {
+			font-weight: 300;
+			cursor: pointer;
+		}
+	}
+}

@@ -1,37 +1,46 @@
 .mobile-menu-container {
-  background: #eeddd3;
   position: fixed;
   top: 0;
   left: 0;
   width: 70rem;
   height: 100%;
-  padding-top: 100px;
   z-index: 900;
   padding-left: 8rem;
   padding-right: 15px;
   transition: all .4s linear;
   opacity: 0;
 	transform: translateX(-100%);
-	display: flex;
-	// justify-content: center;
-	align-items: center;
 
   &.active {
     opacity: 1;
-		transform: translateX(24.5rem);
+		transform: translateX(30rem);
   }
 }
 
 #mobile-menu {
+	background-color: #4c0c13;
+	padding-top: 100px;
   list-style-type: none;
   padding: 0;
   margin: 0;
+  position: absolute;
+  transition: all .4s linear;
+	left: 0rem;
+	padding-left: 4rem;
+  padding-top: 7rem;
+	height: 100%;
+	border-left: solid .5px white;
+	width: 40%;
+  padding-left: 5rem;
 	li {
 		padding-bottom: 2rem;
 		a {
 			font-size: 2rem;
 			color: white !important;
 			opacity: .8;
+			display: flex;
+			align-items: center;
+			font-weight: 300;
 			&:hover {
 				opacity: 1;
 				text-decoration: none;
@@ -42,25 +51,39 @@
 		}
 	}
   ul.sub-menu {
+		position: absolute;
     list-style-type: none;
-    padding: 0;
     margin: 0;
-    display: none;
-		
-		li {
-			padding-bottom: 2rem;
-			a {
-				font-size: 2rem;
-				color: white !important;
-				opacity: .8;
-				&:hover {
-					opacity: 1;
-					text-decoration: none;
-				}
-			}
-			&:last-child {
-				padding-bottom: 0;
-			}
-		}
+    padding: 0;
+    display: block;
+    position: absolute;
+    top: 0;
+		right: 0;
+    opacity: 1;
+    transition: all .2s linear;
+		width: 150%;
+		transform: translateX(-5%);
+    opacity: 0;
+    background-color: #4c0c13;
+		transition: all .4s linear;
+		z-index: -1;
+		padding-left: 5rem;
+		padding-top: 7rem;
+		height: 100%;
+		border-left: solid .5px white;
+    &.active {
+			transform: translateX(100%);
+			opacity: 1;
+			z-index: 3;
+    }
   }
+}
+
+.arrow-icon-left-side {
+	transform: rotate(-180deg);
+}
+.menu-arrow-left {
+	position: relative;
+	left: -10px;
+	opacity: 1 !important;
 }

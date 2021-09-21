@@ -1,16 +1,101 @@
 .btn-cta {
-	font-size: 14px;
+	font-size: 1.8rem;
 	display: inline-block;
-	padding: 8px 35px;
-	font-weight: bold;
+	font-weight: 500;
   color: black;
-  background: #f0f0f0;
 	text-align: center;
 	border: none;
-
-	&:hover {
-		text-decoration: none;
-		background: #f0f0f0;
+	font-family: $font__main;
+	// margin-top: 3rem;
+	letter-spacing: .6px;
+	opacity: 1;
+	transition: all .2s linear;
+	&.black {
 		color: black;
 	}
+	&.white {
+		color: white;
+	}
+	&:hover {
+		text-decoration: none;
+		opacity: .6;
+	}
+}
+
+.custom-link {
+	color: white !important;
+	font-weight: 500;
+	font-size: 1.8rem;
+	display: inline-block;
+	height: 2rem;
+	line-height: 2rem;
+	letter-spacing: .6px;
+	i {
+		margin-left: 15px;
+	}	
+		.arrow-icon {
+			position: relative;
+			top: -1px;
+			-webkit-transition: -webkit-transform 0.3s ease;
+			transition: -webkit-transform 0.3s ease;
+			transition: transform 0.3s ease;
+			transition: transform 0.3s ease, -webkit-transform 0.3s ease;
+			vertical-align: middle;
+		}
+		
+		.arrow-icon--circle {
+			transition: stroke-dashoffset .3s ease;
+			stroke-dasharray: 95;
+			stroke-dashoffset: 95;
+		}
+		
+		&:hover {
+			text-decoration: none;
+			.arrow-icon {
+				transform: translate3d(5px, 0, 0);
+			}
+			
+			.arrow-icon--circle {
+				stroke-dashoffset: 0;
+			}
+		}
+}
+
+.custom-link.black {
+	color: black !important;
+	font-weight: 500;
+	font-size: 1.8rem;
+	display: inline-block;
+	height: 2rem;
+	line-height: 2rem;
+	letter-spacing: .6px;
+	i {
+		margin-left: 15px;
+	}	
+		.arrow-icon {
+			position: relative;
+			top: -1px;
+			-webkit-transition: -webkit-transform 0.3s ease;
+			transition: -webkit-transform 0.3s ease;
+			transition: transform 0.3s ease;
+			transition: transform 0.3s ease, -webkit-transform 0.3s ease;
+			vertical-align: middle;
+		}
+		
+		.arrow-icon--circle {
+			transition: stroke-dashoffset .3s ease;
+			stroke-dasharray: 95;
+			stroke-dashoffset: 95;
+		}
+		
+		&:hover {
+			text-decoration: none;
+			.arrow-icon {
+				transform: translate3d(5px, 0, 0);
+			}
+			
+			.arrow-icon--circle {
+				stroke-dashoffset: 0;
+			}
+		}
 }

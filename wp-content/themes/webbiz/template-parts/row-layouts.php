@@ -15,5 +15,17 @@ while (have_rows('rows')) {
     get_template_part( 'template-parts/rows/rinkiniai' );
   } elseif( get_row_layout() === 'cta_row' ) {
     get_template_part( 'template-parts/rows/cta-row' );
-  }
+  } elseif( get_row_layout() === 'hover_columns' ) {
+    get_template_part( 'template-parts/rows/hover-columns' );
+  } elseif( get_row_layout() === 'komanda' ) {
+    get_template_part( 'template-parts/rows/komanda' );
+  } elseif( get_row_layout() === 'scrolling_logos' ) {
+    get_template_part( 'template-parts/rows/scrolling-logos' );
+  } elseif( get_row_layout() === 'spacing' ) {
+    get_template_part( 'template-parts/rows/spacing' );
+  } elseif( get_row_layout() === 'paslaugos' ) {
+    get_template_part( 'template-parts/rows/paslaugos' );
+  } elseif( get_row_layout() === 'image_text' ) {
+    get_template_part( 'template-parts/rows/img-txt' );
+  } 
 }

@@ -1,0 +1,10 @@
+.scrolling-logos {
+	background: black;
+	padding: 2rem 0;
+	.logo-block {
+		img {
+			height: 80px;
+			object-fit: contain;
+		}
+	}
+}

@@ -12,8 +12,8 @@
  * @package webbiz
  */
 
-get_header(); ?>
-
+get_header(); 
+get_template_part( 'template-parts/rows/default-top'); ?>
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main">
 

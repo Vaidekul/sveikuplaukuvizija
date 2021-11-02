@@ -11,7 +11,6 @@ get_header(); ?>
 
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main">
-
 		<div class="container padding-med">
 			<div class="row row-posts">
 				<?php

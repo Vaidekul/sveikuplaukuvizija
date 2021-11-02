@@ -1,19 +1,17 @@
 .mobile-menu-container {
-  position: fixed;
+  position: absolute;
   top: 0;
   left: 0;
-  width: 70rem;
+  width: 40rem;
   height: 100%;
-  z-index: 900;
-  padding-left: 8rem;
-  padding-right: 15px;
-  transition: all .4s linear;
+  z-index: -1;
+  transition: all .5s linear;
   opacity: 0;
 	transform: translateX(-100%);
 
   &.active {
     opacity: 1;
-		transform: translateX(30rem);
+		transform: translateX(15rem);
   }
 }
 
@@ -26,16 +24,17 @@
   position: absolute;
   transition: all .4s linear;
 	left: 0rem;
-	padding-left: 4rem;
-  padding-top: 7rem;
+	padding-left: 3rem;
+  padding-top: 3rem;
 	height: 100%;
 	border-left: solid .5px white;
 	width: 40%;
   padding-left: 5rem;
+	z-index: 1;
 	li {
-		padding-bottom: 2rem;
+		padding-bottom: 1rem;
 		a {
-			font-size: 2rem;
+			font-size: 1rem;
 			color: white !important;
 			opacity: .8;
 			display: flex;
@@ -68,13 +67,13 @@
 		transition: all .4s linear;
 		z-index: -1;
 		padding-left: 5rem;
-		padding-top: 7rem;
+		padding-top: 3rem;
 		height: 100%;
 		border-left: solid .5px white;
     &.active {
 			transform: translateX(100%);
 			opacity: 1;
-			z-index: 3;
+			z-index: -1;
     }
   }
 }

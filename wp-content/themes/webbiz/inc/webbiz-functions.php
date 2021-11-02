@@ -153,4 +153,6 @@ function wb_get_padding($padding, $margin = false) {
 
 require get_template_directory() . '/inc/prepare-rest.php';
 require get_template_directory() . '/inc/cpt/cta.php';
+require get_template_directory() . '/inc/cpt/cpt-komanda.php';
+require get_template_directory() . '/inc/cpt/cpt-prices.php';
 require get_template_directory() . '/template-parts/components/shortcode-btn-cta.php';

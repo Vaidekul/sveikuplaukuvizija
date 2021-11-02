@@ -1,9 +1,104 @@
 #colophon {
-  background: #f0f0f0;
-  padding: 10px 0;
+  // background: #f0f0f0;
+	padding-top: 50px;
 
   .footer-container {
-    max-width: 1140px;
+    .footer-title{
+      padding-bottom: 20px;
+			font-size: 1.6rem;
+			color: black;
+    }
+    // max-width: 1140px;
     margin: 0 auto;
+    ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      li{
+        margin : 0;
+        padding-top: 5px;
+      }
+    }
+    a{
+      padding-top: 10px;
+      color: black;
+			font-size: 1rem;
+      font-weight: 300;	
+      line-height: 28px;
+      transition: all .2s linear;
+      &:hover{
+        opacity: .8;
+      }
+    }
   }
+
+  .address {
+    max-width: 300px;
+    cursor: pointer;
+  }
+
+  //copyright
+  .copyright {
+    padding-top: 20px;
+    background: #242424;
+    .copy-right {
+      font-size: 16px;	
+      font-weight: 300;	
+      line-height: 23px;
+      color: white;
+    }
+    .logo-footer {
+      color: white;
+			font-size: 70px;
+			display: flex;
+			justify-content: center;
+			img {
+				height: 55px;
+				object-fit: contain;
+			}
+    }
+    #agency {
+      color: white;
+      font-size: 16px;	
+      font-weight: 300;	
+      line-height: 23px;
+      a{
+        color: white;
+        &:hover {
+          opacity: .8;
+        }
+      }
+    }
+  }
+
+  ///instagram feed
+  #sbi_load {
+    display: none;
+  }
+  .widgettitle {
+    display: none;
+  }
+
+  //social
+  .webbiz-social-function{
+    margin-top: 30px;
+    a {
+      margin-right: 15px;
+      font-size: 22px;
+    }
+  }
+  a.follow-us {
+    font-family: $font__main;
+    font-size: 28px;	
+    line-height: 34px;
+    i {
+      font-size: 40px;
+      margin-right: 20px;
+      margin-bottom: 30px;
+    }
+  }
+}
+
+.copy-right {
+	font-size: 15px;
 }

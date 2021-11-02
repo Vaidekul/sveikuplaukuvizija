@@ -20,45 +20,43 @@ body.mobile-menu-open {
 .frontpage-slider {
 	height: 100vh;
 	display: flex;
+	width: calc(100% - 15rem);
+	margin-left: auto;
+	margin-right: 0;
+	position: absolute;
+	top: 0;
+	right: 0;
 	.side-nav {
-		width: 30rem;
-		// background-color: #eeddd3;
-		background-color: #c69a68;
-		// background-color: #4c0c13;
-		// background-color: #3f090f;
-		// background-color: #690913;
+		width: 15rem;
+		z-index: 100;
+		background-color: #4c0c13;
 		display: flex;
 		justify-content: center;
-		padding-top: 3rem;
-		padding-bottom: 3rem;
-		// flex-direction: column;
-		// align-items: center;
 		.inner-container {
 			display: flex;
 			flex-direction: column;
-			width: 80%;
-			padding-top: 5rem;
-			margin-bottom: 5rem;
+			width: 100%;
+			padding-top: 3rem;
+			margin-bottom: 3rem;
 			position: relative;
+			z-index: 100;
+			justify-content: space-between;
 			.mobile-menu-toggle {
 				z-index: 2000;
-				padding-left: 0;
-				padding-top: 10rem;
-				padding-bottom: 10rem;
 		
 				.hamburger-box {
-					// opacity: .6;
+					transform: scale(.7);
 					&:hover {
 						opacity: 1;
 					}
 					.hamburger-inner, .hamburger-inner::after, .hamburger-inner::before {
-						background-color: black;
+						background-color: white;
 						height: 2px;
 					}
 				}
 			}
 			.bottom-nav {
-				position: absolute;
+				position: relative;
 				bottom: 0;
 				left: 50%;
 				transform: translateX(-50%);
@@ -74,8 +72,8 @@ body.mobile-menu-open {
 					li {
 						padding-bottom: 2rem;
 						a {
-							font-size: 2rem;
-							color: black !important;
+							font-size: 1rem;
+							color: white !important;
 							position: relative;
 							font-weight: 300;
 							// opacity: .6;
@@ -85,14 +83,14 @@ body.mobile-menu-open {
 								width: 0%;
 								height: 1px;
 								top: 110%;
-								background: black;
+								background: white;
 							}
 							:before {
 								left: -2.5px;
 							}
 							:after {
 								right: 2.5px;
-								background: black;
+								background: white;
 								transition: width 0.8s cubic-bezier(0.22, 0.61, 0.36, 1);
 							}
 							&:hover {
@@ -126,7 +124,7 @@ body.mobile-menu-open {
 			}
 		}
 		.logo img{
-			height: 10rem;
+			height: 5rem;
 			object-fit: contain;
 		}
 	}
@@ -147,7 +145,8 @@ body.mobile-menu-open {
 	}
 	.slider {
 		background-color: #fff1e6;
-		width: calc(100% - 30rem);
+		// width: calc(100% - 30rem);
+		width: 100%;
 
 		.slick-list, .slick-track, .img-slider, .content{
 			height: 100%;
@@ -156,19 +155,20 @@ body.mobile-menu-open {
 			background-position: center;
 			background-repeat: no-repeat;
 			background-size: cover;
-
 			display: flex;
-			// align-items: center;
 			padding-left: 10%;
 			flex-direction: column;
 			justify-content: center;
+			
 			h1 {
-				font-size: 5rem;
 				text-transform: uppercase;
 				font-family: $font__main !important;
 				opacity: .8;
 				letter-spacing: .5px;
 				position: relative;
+
+				animation:fadeOutRight 1s both;
+
 				&::before {
 					position: absolute;
 					top: -40px;
@@ -183,13 +183,16 @@ body.mobile-menu-open {
 			.subheading {
 				margin-top: 1rem;
 				opacity: .8;
+				
+				animation:fadeOutRight 1s both;
+				
 				p {
-					font-size: 2rem;
+					// font-size: 2rem;
 					margin-bottom: 0;
-					font-weight: 300;
+					font-weight: 400;
 				}
 			}
-			&.w {
+			&.w {	
 				color: white;
 				h1::before {
 					background: white;
@@ -223,3 +226,56 @@ body.mobile-menu-open {
 	}
 	}
 }
+
+
+.frontpage-slider .slider .slick-slide.slick-active .content h1 {
+	animation:fadeInDown 1s both 1s;
+}
+
+.frontpage-slider .slider .slick-slide.slick-active .content .subheading {
+	animation:fadeInLeft 1s both 1.5s;
+}
+
+@keyframes fadeInLeft {
+	0% {
+		 opacity: 0;
+		 transform: translateX(-20px);
+	}
+	100% {
+		 opacity: 1;
+		 transform: translateX(0);
+	}
+}   
+
+@keyframes fadeOutRight {
+	0% {
+		 opacity: 1;
+		 transform: translateX(0);
+	}
+	100% {
+		 opacity: 0;
+		 transform: translateX(20px);
+	}
+} 
+
+@keyframes fadeInDown {
+	0% {
+		 opacity: 0;
+		 transform: translateY(-20px);
+	}
+	100% {
+		 opacity: 1;
+		 transform: translateY(0);
+	}
+} 
+
+@keyframes fadeOutLeft {
+	0% {
+		 opacity: 1;
+		 transform: translateX(0);
+	}
+	100% {
+		 opacity: 0;
+		 transform: translateX(-20px);
+	}
+} 

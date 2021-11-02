@@ -1,0 +1,21 @@
+.wishlist-title-container {
+	display: none;
+}
+
+.wishlist_table .product-add-to-cart a.button {
+	padding: 0.4rem 1rem 0.6rem!important;
+}
+
+ .wishlist-in-stock {
+	 color: black !important;
+ }
+
+ .wishlist_table tr td.product-thumbnail a {
+	 max-width: 200px;
+ }
+
+ .woocommerce-wishlist.woocommerce table.shop_table td.product-name a {
+	font-size: 1.5rem;
+	line-height: 1.4;
+	color: black;
+ }

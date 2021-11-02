@@ -219,7 +219,7 @@ function shop_loop_close_div() {
 add_action('woocommerce_before_shop_loop', 'sidebar_col_open_div', 2);
 
 function sidebar_col_open_div() {
-  echo '<div class="col-lg-3 d-none d-lg-block">';
+  echo '<div class="col-lg-3 d-lg-block">';
 }
 
 /**

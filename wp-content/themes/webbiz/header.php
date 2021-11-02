@@ -16,10 +16,10 @@
 	<meta charset="<?php bloginfo( 'charset' ); ?>">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="profile" href="http://gmpg.org/xfn/11">
-
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600;700&family=Roboto+Slab:wght@100;200;300;400;500;600;700&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Be+Vietnam:ital,wght@0,100;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+	<script src="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600;700&family=Roboto+Slab:wght@100;200;300;400;500;600;700&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
 	
 	<?php wp_head(); ?>
 	<?= get_field('scripts_content' , 'options'); ?>
@@ -50,6 +50,7 @@
 	//get_template_part('./template-parts/components/mobile-menu'); 
 	// search window
 	//get_template_part('./template-parts/components/search-window') 
+	get_template_part('./template-parts/components/header-content');
 	?>
 
 	<div id="content" class="site-content">

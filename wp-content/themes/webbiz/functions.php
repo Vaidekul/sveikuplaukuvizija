@@ -47,6 +47,9 @@ if ( ! function_exists( 'webbiz_setup' ) ) :
 			'menu-1' => esc_html__( 'Primary', 'webbiz' ),
 			'menu-2' => esc_html__( 'Mobile Menu', 'webbiz' ),
 			'menu-3' => esc_html__( 'Sidebar Menu', 'webbiz' ),
+			'menu-4' => esc_html__( 'Sveiku Plauku Vizija', 'webbiz' ),
+			'menu-5' => esc_html__( 'Darbo Laikas', 'webbiz' ),
+			'menu-6' => esc_html__( 'Informacija', 'webbiz' ),
 		) );
 
 		/*
@@ -143,8 +146,9 @@ function webbiz_scripts() {
 	
 	wp_enqueue_style( 'fontawesome', get_template_directory_uri() . '/fontawesome/css/fontawesome.css' );
 	wp_enqueue_style( 'fontawesome-all', get_template_directory_uri() . '/fontawesome/css/fontawesome-all.css' );
-	wp_enqueue_style( 'slick', '//cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css' );
-	wp_enqueue_style( 'slick_theme', '//cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css' );
+	// wp_enqueue_style( 'slick', '//cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css' );
+	// wp_enqueue_style( 'slick_theme', '//cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css' );
+	wp_enqueue_style( 'aos', '//cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css' );
 	// Styles
 	if ( defined( 'WP_LOCAL_DEV' ) && WP_LOCAL_DEV ) {
 		wp_enqueue_style( 'webbiz-style', get_template_directory_uri() . '/style.css', array(), filemtime( get_stylesheet_directory().'/style.css')  );
@@ -264,14 +268,48 @@ function is_cookie_set($ref, $name){
 	}
 }
 
-// To change add to cart text on single product page
-add_filter( 'woocommerce_product_single_add_to_cart_text', 'woocommerce_custom_single_add_to_cart_text' ); 
-function woocommerce_custom_single_add_to_cart_text() {
-    return __( 'Įsigyti', 'woocommerce' ); 
+// // To change add to cart text on single product page
+// add_filter( 'woocommerce_product_single_add_to_cart_text', 'woocommerce_custom_single_add_to_cart_text' ); 
+// function woocommerce_custom_single_add_to_cart_text() {
+//     return __( 'Į krepšelį', 'woocommerce' ); 
+// }
+
+// // To change add to cart text on product archives(Collection) page
+// add_filter( 'woocommerce_product_add_to_cart_text', 'woocommerce_custom_product_add_to_cart_text' );  
+// function woocommerce_custom_product_add_to_cart_text() {
+//     return __( 'Įsigyti', 'woocommerce' );
+// }
+
+add_filter( 'woocommerce_product_add_to_cart_text' , 'custom_select_options_text' );
+  function custom_select_options_text() {
+  global $product;
+  $product_type = $product->product_type;
+  switch ( $product_type ) {
+  case 'subscription':
+  return __( 'Pasirinkti', 'woocommerce' ); /*change 'Options' for Simple Subscriptions */
+  case 'variable-subscription':
+  return __( 'Pasirinkti', 'woocommerce' ); /*change 'Options' for Variable Subscriptions */
+  case 'variable':
+  return __( 'Pasirinkti', 'woocommerce' ); /*change 'Options' for Variable Products */
+  case 'simple':
+  return __( 'Į krepšelį', 'woocommerce' ); /*change 'Add to Cart' for Simple Products */
+  break;
+      }
+  }
+
+/**
+ * Change number of products that are displayed per page (shop page)
+ */
+add_filter( 'loop_shop_per_page', 'new_loop_shop_per_page', 20 );
+
+function new_loop_shop_per_page( $cols ) {
+  // $cols contains the current number of products per page based on the value stored on Options –> Reading
+  // Return the number of products you wanna show per page.
+  $cols = 21;
+  return $cols;
 }
 
-// To change add to cart text on product archives(Collection) page
-add_filter( 'woocommerce_product_add_to_cart_text', 'woocommerce_custom_product_add_to_cart_text' );  
-function woocommerce_custom_product_add_to_cart_text() {
-    return __( 'Įsigyti', 'woocommerce' );
+function remove_image_zoom_support() {
+	remove_theme_support( 'wc-product-gallery-zoom' );
 }
+add_action( 'wp', 'remove_image_zoom_support', 100 );

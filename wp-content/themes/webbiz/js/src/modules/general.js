@@ -36,6 +36,8 @@ function mobileMenu() {
   $(".mobile-menu-toggle").click(function () {
     $(".mobile-menu-container").toggleClass("active");
     $("#mobile-menu .sub-menu").removeClass("active");
+
+    // $("html,body").animate({ scrollTop: $(this.hash).offset().top }, 350);
     // toggle icon style
     $(this).toggleClass("is-active");
     // switch logos
@@ -98,11 +100,79 @@ $(".frontpage-slider .slider").slick({
 });
 
 $(".main-prod-cat .slider").slick({
-  arrows: true,
+  arrows: false,
   dots: false,
-  // slidesToScroll: 1,
-  // autoplay: true,
+  autoplay: true,
+  // autoplaySpeed: 2000,
   infinite: true,
-  speed: 400,
-  slidesToShow: 3,
+  speed: 300,
+  slidesToShow: 4,
+  slidesToScroll: 1,
+  cssEase: "linear",
+  // fade: true,
+  draggable: true,
+  responsive: [
+    {
+      breakpoint: 1224,
+      settings: {
+        slidesToShow: 3,
+        // slidesToScroll: 3,
+      },
+    },
+    {
+      breakpoint: 900,
+      settings: {
+        slidesToShow: 2,
+        // slidesToScroll: 2,
+      },
+    },
+    {
+      breakpoint: 700,
+      settings: {
+        slidesToShow: 2,
+        // slidesToScroll: 1,
+      },
+    },
+    {
+      breakpoint: 600,
+      settings: {
+        slidesToShow: 1,
+        // slidesToScroll: 1,
+      },
+    },
+  ],
+});
+
+// function hoverColumns() {
+//   $(".hover-columns .column").hover(function () {
+//     $(".hover-columns .column").toggleClass("zoom-out");
+//     $(this).removeClass("zoom-out").toggleClass("zoom-in");
+//   });
+// }
+// hoverColumns();
+
+$(".scrolling-logos .container").slick({
+  infinite: true,
+  arrows: false,
+  dots: false,
+  autoplay: true,
+  slidesToScroll: 1,
+  slidesToShow: 4,
+  speed: 300,
+  responsive: [
+    {
+      breakpoint: 1000,
+      settings: {
+        slidesToShow: 3,
+        // slidesToScroll: 3,
+      },
+    },
+    {
+      breakpoint: 680,
+      settings: {
+        slidesToShow: 2,
+        // slidesToScroll: 3,
+      },
+    },
+  ],
 });

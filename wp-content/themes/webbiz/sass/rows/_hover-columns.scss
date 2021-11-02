@@ -1,0 +1,87 @@
+.hover-columns {
+	// background-color: #4c0c13;
+	.columns {
+		display: flex;
+		justify-content: space-between;
+		width: 80%;
+		margin: auto;
+		width: 100%;
+		flex-wrap: wrap;
+		.column {
+			height: 25rem;
+			position: relative;
+			width: 100%;
+			margin: 1rem;
+			overflow: hidden;
+			.img {
+				background-position: center center ;
+				background-size: cover;
+				transform: scale(1);
+				height: 100%;
+				width: 100%;
+				transition: all .3s linear;
+				position: absolute;
+				top: 0;
+				left: 0;
+				z-index: -1;
+			}
+			@include change(992px) {
+				height: 20rem;
+			}
+			&:before {
+				position: absolute;
+				top: 0; 
+				left: 0 ;
+				height: 100%;
+				width: 100%;
+				background: black;
+				opacity: .2;
+				z-index: 0;
+				content: '';
+			}
+			&:hover {
+				.img {
+					transform: scale(1.2);
+				}
+			}
+			.content {
+				position: absolute;
+				bottom: 10%;
+				left: 5%;
+				color: white;
+				z-index: 1;
+				h2 {
+					font-size: 2rem;
+				}
+				.custom-link {
+					font-weight: 300;
+				}
+			}
+			@include change(1400px) {
+				width: 100%;
+			}
+		}
+		.column.zoom-in {
+			// width: 45%;
+			z-index: 2;
+			transform: scale(1.15);
+			&:before {
+				opacity: 0.1;
+			}
+		}
+		.column-txt {
+			transition: all .3s linear;
+			background-position: center center ;
+			background-size: cover;
+			position: relative;
+			width: 100%;
+			margin: 1rem;
+			display: flex;
+			justify-content: flex-end;
+		}
+		.column.zoom-out {
+			z-index: 0;
+			transform: scale(1);
+		}
+	}
+}

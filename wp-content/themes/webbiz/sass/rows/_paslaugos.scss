@@ -1,0 +1,58 @@
+.section-services {
+	overflow: hidden;
+	h2 {
+		// text-align: center;
+		font-size: 4rem;
+		text-transform: uppercase;
+		@include change(992px) {
+			font-size: 2rem;
+		}
+	}
+	.price-list {
+		padding-top: 3rem;
+		position: relative;
+		width: 80%;
+		@include change(992px) {
+			width: 100%;	
+		}
+		img.position-right {
+			position: absolute;
+			right: -40%;
+			top: -15%;
+			opacity: .3;
+			z-index: -1;
+			@include change(992px) {
+				right: -30%;
+				top: -3%;		
+			}
+ 		}
+		.price-row {
+			padding-top: 3rem;
+			font-size: 1.5rem;
+			line-height: 170%;
+			font-weight: 300;
+			justify-content: space-between;
+			align-items: center;
+			position: relative;
+			.title, .price {
+				white-space: nowrap;
+			}
+			.left {
+				position: relative;
+			}
+			.time {
+				font-size: 1rem;
+				white-space: nowrap;
+				position: absolute;
+		    top: 2.5rem;
+			}
+			.decoration {
+				border-bottom-style: solid;
+    		border-bottom-width: 1px;
+    		border-bottom-color: #cecece;
+				width: 100%;
+				margin: 0 3rem;
+			}
+		}
+	}
+}

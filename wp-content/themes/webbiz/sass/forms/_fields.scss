@@ -18,7 +18,10 @@ textarea {
 	border: 1px solid $color__border-input;
 	border-radius: 3px;
 	padding: 3px;
-
+	height: 4rem;
+	padding-left: 1rem !important;
+	width: 100%;
+	margin-bottom: 0rem;
 	&:focus {
 		color: $color__text-input-focus;
 	}
@@ -50,5 +53,24 @@ textarea {
 		z-index: 3;
 		background: transparent;
 		border-radius: 0;
+	}
+}
+
+
+textarea {
+	padding-top: 1rem;
+	padding-left: 1rem !important;
+}
+
+.filter-items.filter-checkbox {
+	input {
+		height: 2rem;
+		padding-left: 0 !important;
+		width: unset !important;
+		margin-right: 1rem;
+	}
+	label {
+		display: flex;
+		align-items: center;
 	}
 }

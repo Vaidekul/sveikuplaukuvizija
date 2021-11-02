@@ -1,7 +1,15 @@
 <?php 
 
+// if( is_front_page()) {
+// 	get_template_part( 'template-parts/rows/signature');
+// }
+
 if( is_front_page()) {
 	get_template_part( 'template-parts/rows/frontpage');
+}
+
+if( !is_front_page()) {
+	get_template_part( 'template-parts/rows/default-top');
 }
 
 // if theres content in default editor

@@ -1,7 +1,7 @@
 # BEGIN WordPress
-# The directives (lines) between "BEGIN WordPress" and "END WordPress" are
-# dynamically generated, and should only be modified via WordPress filters.
-# Any changes to the directives between these markers will be overwritten.
+# Instrukcijos (eilutės) tarp "BEGIN WordPress" ir "END WordPress" yra 
+# generuojamos dinamiškai ir turėtų būti modifikuojamos tik per WordPress filtrus.
+# Bet kokie pakeitimai instrukcijose tarp šių žymiklių bus perrašyti.
 <IfModule mod_rewrite.c>
 RewriteEngine On
 RewriteRule .* - [E=HTTP_AUTHORIZATION:%{HTTP:Authorization}]

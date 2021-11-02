@@ -149,7 +149,7 @@ if ( ! class_exists( 'YITH_WCAN_Filter_Tax' ) ) {
 			$term_options = apply_filters( 'yith_wcan_tax_filter_item_args', $term_options, $term->term_id, $this );
 
 			// specific filtering for attributes.
-			if ( 0 === strpos( $taxonomy, 'pa_' ) && ! $customize_terms ) {
+			if ( 0 === strpos( $taxonomy, 'pa_' ) && ( $use_all_terms || ! $customize_terms ) ) {
 				$term_options = apply_filters( 'yith_wcan_attribute_filter_item_args', $term_options, $term->term_id, $this );
 			}
 
@@ -461,10 +461,12 @@ if ( ! class_exists( 'YITH_WCAN_Filter_Tax' ) ) {
 				array_merge(
 					array(
 						'taxonomy' => $this->get_taxonomy(),
-						'include'  => array_keys( $terms ),
 						'parent'   => $term_id,
 						'order'    => $this->get_order(),
 						'fields'   => 'ids',
+					),
+					$this->use_all_terms() ? array() : array(
+						'include' => array_keys( $terms ),
 					),
 					'term_order' === $this->get_order_by() ? array(
 						'orderby' => 'include',
@@ -475,11 +477,11 @@ if ( ! class_exists( 'YITH_WCAN_Filter_Tax' ) ) {
 			);
 
 			foreach ( $child_terms as $child_id ) {
-				if ( ! isset( $terms[ $child_id ] ) ) {
+				if ( ! isset( $terms[ $child_id ] ) && ! $this->use_all_terms() ) {
 					continue;
 				}
 
-				$child = $terms[ $child_id ];
+				$child = isset( $terms[ $child_id ] ) ? $terms[ $child_id ] : $this->get_default_term_options();
 
 				// set hierarchical data.
 				$children_result   = $this->get_term_children( $child_id );

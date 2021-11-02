@@ -141,6 +141,7 @@ if ( ! class_exists( 'YITH_WCAN' ) ) {
 				'yith_wcan_required_files',
 				array(
 					'functions-yith-wcan.php',
+					'class-yith-wcan-cache-helper.php',
 					'class-yith-wcan-query.php',
 					'class-yith-wcan-install.php',
 					'class-yith-wcan-filter.php',
@@ -365,6 +366,9 @@ if ( ! class_exists( 'YITH_WCAN' ) ) {
 					'yith-woocommerce-booking' => array(
 						'check' => array( 'class_exists', array( 'YITH_WCBK' ) ),
 					),
+					'yith-woocommerce-colors-label-variations' => array(
+						'check' => array( 'class_exists', array( 'YITH_WCCL' ) ),
+					),
 				);
 			}
 
@@ -404,4 +408,3 @@ if ( ! function_exists( 'YITH_WCAN' ) ) {
 		return YITH_WCAN::instance();
 	}
 }
-

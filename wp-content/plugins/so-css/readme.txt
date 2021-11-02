@@ -2,8 +2,8 @@
 Tags: css, visual css, css editor, design, customize
 Requires at least: 3.9
 Tested up to: 5.8
-Stable tag: 1.3.2
-Build time: 2021-07-20T20:45:53+02:00
+Stable tag: 1.4.0
+Build time: 2021-10-11T19:53:12+02:00
 License: GPLv2 or later
 Contributors: gpriday, alexgso
 Donate link: https://siteorigin.com/downloads/premium/
@@ -70,6 +70,11 @@ Free support is available on the [SiteOrigin support forums](https://siteorigin.
 SiteOrigin Premium includes access to our professional email support service, perfect for those times when you need fast and effective technical support. We're standing by to assist you in any way we can.
 
 == Changelog ==
+
+= 1.4.0 - 11 October 2021 =
+* Added Ajax saving. Users can now save in the expanded and visual editors without exiting to basic editor.
+* Expanded/Visual toolbar buttons re-ordered for consistency between modes.
+* Removed Font Awesome. Icons are now added via a custom font.
 
 = 1.3.2 - 20 July 2021 =
 * Updated `Tested up to` tag.

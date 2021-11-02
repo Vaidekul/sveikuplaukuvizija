@@ -4,7 +4,7 @@ Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_i
 Tags:  wp popups,popups,wp popup,popup builder,popup maker,twitter,google+,facebook,Popups,twitter follow,facebook like,mailchimp,Activecampaign,Mailpoet,Postmatic,Infusionsoft,mailerlite,constant contact,aweber,google plus,social boost,social splash,postmatic,mailpoet,facebook popup,scroll popups,popups,wordpress popup,wp popups,cf7,gf,gravity forms,contact form 7,ifs,infusion soft,subscribe,login popup,ajax login popups,popupmaker
 Requires at least: 3.6
 Tested up to: 5.8.3
-Stable tag: 2.1.4.4
+Stable tag: 2.1.4.5
 Requires PHP: 5.7
 Text Domain: wp-popups-lite
 License: GPLv2 or later
@@ -122,6 +122,9 @@ Yes you can attach to any of this events . id = Popup id
  jQuery(document).on('wppopups.form_submitted',function(e,id){ ... });`
 
 == Changelog ==
+= 2.1.4.5 = Oct 12, 2021
+* Fixed error with missing license file
+
 = 2.1.4.4 = Aug 30, 2021
 * Fix issue where popups with complex rules are showing for a moment before they are removed.
 

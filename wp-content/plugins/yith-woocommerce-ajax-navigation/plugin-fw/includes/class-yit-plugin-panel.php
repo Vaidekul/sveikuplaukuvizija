@@ -491,7 +491,7 @@ if ( ! class_exists( 'YIT_Plugin_Panel' ) ) {
 			$tabs .= '</ul>';
 			?>
 			<h2 class="<?php echo esc_attr( $wrapper_class ); ?>">
-				<?php echo $tabs; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped ?>
+				<?php echo wp_kses_post( $tabs ); ?>
 			</h2>
 			<?php
 			$this->print_sub_tabs_nav( $args );
@@ -800,7 +800,7 @@ if ( ! class_exists( 'YIT_Plugin_Panel' ) ) {
 					'main_video'         => false,
 					'playlists'          => array(),
 					'hc_url'             => 'https://support.yithemes.com/hc/',
-					'doc_url'            => $this->settings['plugin_slug'] ? 'https://docs.yithemes.com/' . $this->settings['plugin_slug'] : '',
+					'doc_url'            => $this->settings['plugin_slug'] ? 'https://docs.yithemes.com/' . $this->settings['plugin_slug'] . '/' : '',
 					'submit_ticket_url'  => 'https://yithemes.com/my-account/support/submit-a-ticket/',
 					'show_hc_articles'   => true,
 					'show_submit_ticket' => true,

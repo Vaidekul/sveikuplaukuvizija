@@ -4,7 +4,7 @@ Contributors: yithemes
 Tags: woocommerce ajax product filter download, woocommerce, widget, ajax, ajax filtered nav, ajax navigation, ajax filtered navigation, woocommerce layered navigation, woocommerce layered nav, product filter, product filters, ajax product filter, woocommerce ajax product filter, woocommerce filters, sidebar filter, sidebar ajax filter, ajax price filter, price filter, product sorting, woocommerce filter, taxonomy filter, attribute filter, attributes filter, woocommerce product sort, ajax sort, woocommerce ajax product filter, advanced product filters, ajax product filters, filters, woocommerce ajax product filters, woocommerce product filters, woocommerce product filters, category filter, attribute filters, woocommerce products filter, woocommerce price filter, yit, yith, yithemes
 Requires at least: 5.6
 Tested up to: 5.8
-Stable tag: 4.1.1
+Stable tag: 4.3.0
 License: GPLv3 or later
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 
@@ -151,6 +151,39 @@ If none of the previous listed actions helps you solve the problem, then, submit
 14. Gutenberg block
 
 == Changelog ==
+
+= 4.3.0 - Released on 10 October 2021 =
+
+* New: support for WooCommerce 5.8
+* Update: YITH Plugin Framework
+
+= 4.2.1 - Released on 27 September 2021 =
+
+* Update: YITH Plugin Framework
+* Fix: debug info feature removed for all logged in users
+
+= 4.2.0 - Released on 24 September 2021 =
+
+* New: support for WooCommerce 5.7
+* Update: YITH plugin framework
+* Tweak: improved plugin's internal cache management
+* Tweak: improved integration with YITH WooCommerce Color & Label Variations, when showing variations on loop
+* Tweak: suppress plugin's filters when retrieving in-stock products
+* Tweak: better compatibility with products query (supports queries with more than one post type)
+* Tweak: avoid duplicated ID for select filters
+* Tweak: add filtered body class via JS, immediately after filtering action takes place
+* Tweak: improved terms hierarchy appearance on RTL
+* Tweak: delete plugin transients when C&L configuration changes
+* Fix: apply changes to the query even when it retrieves a product taxonomy
+* Fix: set correct 'include' parameter when retrieving terms' children
+* Fix: prevent possible notice when handling terms hierarchy with use_all_terms enabled
+* Fix: allow system to retrieve C&L term configuration, when Use all Terms is enabled
+* Dev: Reset Filters button now has its own set of filters, distinct from ones used for Apply Filters button
+* Dev: added yith_wcan_filter_tax_label_image_size and yith_wcan_filter_tax_color_image_size filters
+* Dev: added yith_wcan_filter_tax_label_image_attr and yith_wcan_filter_tax_color_image_attr filters
+* Dev: added yith_wcan_supported_filters_parameters trigger
+* Dev: added yith_wcan_doing_filters function to check if system is performing filters
+* Dev: added yith_wcan_suppress_cache filter
 
 = 4.1.1 - Released on 04 August 2021 =
 

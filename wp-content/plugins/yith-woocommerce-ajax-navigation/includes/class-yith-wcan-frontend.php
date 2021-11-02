@@ -569,11 +569,12 @@ if ( ! class_exists( 'YITH_WCAN_Frontend' ) ) {
 				'scroll_target'         => false,
 				'modal_on_mobile'       => false,
 				'session_param'         => false,
+				'show_current_children' => false,
+				'loader'                => false,
+				'toggles_open_on_modal' => false,
+				'mobile_media_query'    => 991,
 				'base_url'              => $this->get_base_url( is_shop() ? yit_get_woocommerce_layered_nav_link() : '' ),
 				'terms_per_page'        => apply_filters( 'yith_wcan_dropdown_terms_per_page', 10 ),
-				'loader'                => false,
-				'mobile_media_query'    => 991,
-				'show_current_children' => false,
 				'currency_format'       => apply_filters(
 					'yith_wcan_shortcodes_script_currency_format',
 					array(

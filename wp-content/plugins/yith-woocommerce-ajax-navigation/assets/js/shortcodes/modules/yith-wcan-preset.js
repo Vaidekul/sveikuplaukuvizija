@@ -599,6 +599,21 @@ export default class YITH_WCAN_Preset {
 	}
 
 	// close all collpasable before showing modal
+	_openAllCollapsables() {
+		this.$filters
+			.not( '.no-title' )
+			.not( ( i, v ) => {
+				return this.isFilterActive( $( v ) );
+			} )
+			.find( '.filter-content' )
+			.show()
+			.end()
+			.find( '.filter-title' )
+			.removeClass( 'closed' )
+			.addClass( 'opened' );
+	}
+
+	// close all collpasable before showing modal
 	_closeAllCollapsables() {
 		this.$filters
 			.not( '.no-title' )
@@ -732,7 +747,10 @@ export default class YITH_WCAN_Preset {
 					.length;
 				break;
 			case 'price_slider':
-				const min = parseFloat(
+				const step = parseFloat(
+						$filter.find( '.price-slider' ).data( 'step' )
+					),
+					min = parseFloat(
 						$filter.find( '.price-slider' ).data( 'min' )
 					),
 					max = parseFloat(
@@ -745,7 +763,9 @@ export default class YITH_WCAN_Preset {
 						$filter.find( '.price-slider-max' ).val()
 					);
 
-				active = currentMin > min || currentMax < max;
+				active =
+					Math.abs( currentMin - min ) >= step ||
+					Math.abs( currentMax - max ) >= step;
 				break;
 			case 'orderby':
 				active =
@@ -1403,7 +1423,11 @@ export default class YITH_WCAN_Preset {
 			return;
 		}
 
-		this._closeAllCollapsables();
+		if ( yith_wcan_shortcodes.toggles_open_on_modal ) {
+			this._openAllCollapsables();
+		} else {
+			this._closeAllCollapsables();
+		}
 
 		$( 'body' )
 			.css( 'overflow', 'hidden' )

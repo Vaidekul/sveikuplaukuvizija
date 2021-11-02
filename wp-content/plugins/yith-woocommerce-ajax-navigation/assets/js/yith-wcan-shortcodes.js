@@ -106,6 +106,13 @@ var YITH_WCAN_Filter = /*#__PURE__*/function () {
       $('.woocommerce-ordering').on('change', 'select.orderby', function () {
         $(this).closest('form').submit();
       });
+
+      if (filters && !!Object.keys(filters).length) {
+        $('body').addClass('filtered');
+      } else {
+        $('body').removeClass('filtered');
+      }
+
       $(window).trigger('scroll');
       $(document).trigger('yith-wcan-ajax-filtered', [response, filters]).trigger('yith_wcwl_reload_fragments');
     } // build url to show
@@ -258,7 +265,10 @@ var YITH_WCAN_Filter = /*#__PURE__*/function () {
       }
 
       params = $.extend({
-        url: url
+        url: url,
+        headers: {
+          'X-YITH-WCAN': 1
+        }
       }, params);
       this.xhr = $.ajax(params);
       return this.xhr;
@@ -301,7 +311,16 @@ var YITH_WCAN_Filter = /*#__PURE__*/function () {
   }, {
     key: "isFilterParam",
     value: function isFilterParam(param) {
-      var supportedParams = ['rating_filter', 'min_price', 'max_price', 'price_ranges', 'onsale_filter', 'instock_filter', 'featured_filter', 'orderby', 'product-page', yith_wcan_shortcodes.query_param].concat(yith_wcan_shortcodes.supported_taxonomies.map(function (i) {
+      var supportedParams = ['rating_filter', 'min_price', 'max_price', 'price_ranges', 'onsale_filter', 'instock_filter', 'featured_filter', 'orderby', 'product-page', yith_wcan_shortcodes.query_param],
+          customParams; // filter properties
+
+      customParams = $(document).triggerHandler('yith_wcan_supported_filters_parameters', [supportedParams]);
+
+      if (!!customParams) {
+        supportedParams = customParams;
+      }
+
+      supportedParams = supportedParams.concat(yith_wcan_shortcodes.supported_taxonomies.map(function (i) {
         return i.replace('pa_', 'filter_');
       }));
 
@@ -1548,12 +1567,22 @@ var YITH_WCAN_Preset = /*#__PURE__*/function () {
     } // close all collpasable before showing modal
 
   }, {
-    key: "_closeAllCollapsables",
-    value: function _closeAllCollapsables() {
+    key: "_openAllCollapsables",
+    value: function _openAllCollapsables() {
       var _this5 = this;
 
       this.$filters.not('.no-title').not(function (i, v) {
         return _this5.isFilterActive($(v));
+      }).find('.filter-content').show().end().find('.filter-title').removeClass('closed').addClass('opened');
+    } // close all collpasable before showing modal
+
+  }, {
+    key: "_closeAllCollapsables",
+    value: function _closeAllCollapsables() {
+      var _this6 = this;
+
+      this.$filters.not('.no-title').not(function (i, v) {
+        return _this6.isFilterActive($(v));
       }).find('.filter-content').hide().end().find('.filter-title').addClass('closed').removeClass('opened');
     } // update status change flag, if filters have changed
 
@@ -1591,13 +1620,13 @@ var YITH_WCAN_Preset = /*#__PURE__*/function () {
     value: function filter() {
       var _window,
           _filter$doFilter,
-          _this6 = this;
+          _this7 = this;
 
       var filter = (_window = window) === null || _window === void 0 ? void 0 : _window.product_filter;
       filter === null || filter === void 0 ? void 0 : (_filter$doFilter = filter.doFilter(this.getFiltersProperties(), this.target, this.preset)) === null || _filter$doFilter === void 0 ? void 0 : _filter$doFilter.done(function () {
-        var newPreset = $(_this6.preset);
+        var newPreset = $(_this7.preset);
 
-        if (!_this6.isMobile && newPreset.length && yith_wcan_shortcodes.scroll_top) {
+        if (!_this7.isMobile && newPreset.length && yith_wcan_shortcodes.scroll_top) {
           var targetOffset = newPreset.offset().top;
 
           if (!!yith_wcan_shortcodes.scroll_target) {
@@ -1611,8 +1640,8 @@ var YITH_WCAN_Preset = /*#__PURE__*/function () {
         } // register new filters, clear status flag
 
 
-        _this6.originalFilters = _this6.getFiltersProperties();
-        _this6.dirty = false;
+        _this7.originalFilters = _this7.getFiltersProperties();
+        _this7.dirty = false;
       });
 
       if (this.isMobile) {
@@ -1675,11 +1704,12 @@ var YITH_WCAN_Preset = /*#__PURE__*/function () {
           break;
 
         case 'price_slider':
-          var min = parseFloat($filter.find('.price-slider').data('min')),
+          var step = parseFloat($filter.find('.price-slider').data('step')),
+              min = parseFloat($filter.find('.price-slider').data('min')),
               max = parseFloat($filter.find('.price-slider').data('max')),
               currentMin = parseFloat($filter.find('.price-slider-min').val()),
               currentMax = parseFloat($filter.find('.price-slider-max').val());
-          active = currentMin > min || currentMax < max;
+          active = Math.abs(currentMin - min) >= step || Math.abs(currentMax - max) >= step;
           break;
 
         case 'orderby':
@@ -1941,7 +1971,7 @@ var YITH_WCAN_Preset = /*#__PURE__*/function () {
   }, {
     key: "maybeShowClearFilter",
     value: function maybeShowClearFilter($filter) {
-      var _this7 = this;
+      var _this8 = this;
 
       if (!this.isFilterActive($filter) || !yith_wcan_shortcodes.show_clear_filter) {
         return;
@@ -1957,12 +1987,12 @@ var YITH_WCAN_Preset = /*#__PURE__*/function () {
       }).prependTo($filter.find('.filter-content')).on('click', function (ev) {
         ev.preventDefault();
 
-        _this7.deactivateFilter($filter, false, yith_wcan_shortcodes.instant_filters);
+        _this8.deactivateFilter($filter, false, yith_wcan_shortcodes.instant_filters);
 
-        _this7.maybeHideClearFilter($filter);
+        _this8.maybeHideClearFilter($filter);
 
         if (yith_wcan_shortcodes.instant_filters) {
-          _this7.closeModal();
+          _this8.closeModal();
         }
       });
     } // show clearAll anchor, when on mobile layout
@@ -1970,7 +2000,7 @@ var YITH_WCAN_Preset = /*#__PURE__*/function () {
   }, {
     key: "maybeShowClearAllFilters",
     value: function maybeShowClearAllFilters() {
-      var _this8 = this;
+      var _this9 = this;
 
       if (!this.isAnyFilterActive() || !this.isMobile) {
         return;
@@ -1986,12 +2016,12 @@ var YITH_WCAN_Preset = /*#__PURE__*/function () {
       }).prependTo(this.$preset.find('.filters-container')).on('click', function (ev) {
         ev.preventDefault();
 
-        _this8.deactivateAllFilters(yith_wcan_shortcodes.instant_filters);
+        _this9.deactivateAllFilters(yith_wcan_shortcodes.instant_filters);
 
-        _this8.maybeHideClearAllFilters();
+        _this9.maybeHideClearAllFilters();
 
         if (yith_wcan_shortcodes.instant_filters) {
-          _this8.closeModal();
+          _this9.closeModal();
         }
       });
     } // hide clear selection anchor
@@ -2221,25 +2251,29 @@ var YITH_WCAN_Preset = /*#__PURE__*/function () {
   }, {
     key: "openModal",
     value: function openModal() {
-      var _this9 = this;
+      var _this10 = this;
 
       if (!this.isMobile) {
         return;
       }
 
-      this._closeAllCollapsables();
+      if (yith_wcan_shortcodes.toggles_open_on_modal) {
+        this._openAllCollapsables();
+      } else {
+        this._closeAllCollapsables();
+      }
 
       $('body').css('overflow', 'hidden').addClass('yith-wcan-preset-modal-open');
       this.$preset.show();
       setTimeout(function () {
-        _this9.$preset.addClass('open');
+        _this10.$preset.addClass('open');
       }, 100);
     } // close filters modal, when in mobile layout
 
   }, {
     key: "closeModal",
     value: function closeModal() {
-      var _this10 = this;
+      var _this11 = this;
 
       if (!this.isMobile) {
         return;
@@ -2247,7 +2281,7 @@ var YITH_WCAN_Preset = /*#__PURE__*/function () {
 
       this.$preset.removeClass('open');
       setTimeout(function () {
-        _this10.$preset.hide();
+        _this11.$preset.hide();
 
         $('body').css('overflow', 'auto').removeClass('yith-wcan-preset-modal-open');
       }, 300);

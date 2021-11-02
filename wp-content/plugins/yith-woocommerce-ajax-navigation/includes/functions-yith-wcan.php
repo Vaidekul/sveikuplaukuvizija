@@ -878,6 +878,21 @@ if ( ! function_exists( 'yith_wcan_add_rel_nofollow_to_url' ) ) {
 	}
 }
 
+if ( ! function_exists( 'yith_wcan_doing_filters' ) ) {
+	/**
+	 * Checks is current page was requested by filter plugin
+	 *
+	 * @return bool Whether current page is requested by filter plugin
+	 */
+	function yith_wcan_doing_filters() {
+		if ( ! isset( $_SERVER['HTTP_X_YITH_WCAN'] ) ) {
+			return false;
+		}
+
+		return ! ! sanitize_text_field( wp_unslash( $_SERVER['HTTP_X_YITH_WCAN'] ) );
+	}
+}
+
 if ( ! function_exists( 'yith_wcan_get_preset' ) ) {
 	/**
 	 * Wrapper for YITH_WCAN_Preset_Factory::get_preset( $preset ) static function

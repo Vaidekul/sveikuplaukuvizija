@@ -96,6 +96,12 @@ export default class YITH_WCAN_Filter {
 			}
 		);
 
+		if ( filters && !! Object.keys( filters ).length ) {
+			$( 'body' ).addClass( 'filtered' );
+		} else {
+			$( 'body' ).removeClass( 'filtered' );
+		}
+
 		$( window ).trigger( 'scroll' );
 
 		$( document )
@@ -277,6 +283,9 @@ export default class YITH_WCAN_Filter {
 		params = $.extend(
 			{
 				url,
+				headers: {
+					'X-YITH-WCAN': 1,
+				},
 			},
 			params
 		);
@@ -319,17 +328,31 @@ export default class YITH_WCAN_Filter {
 	// checks if param is one used by layared nav to filter products.
 	isFilterParam( param ) {
 		let supportedParams = [
-			'rating_filter',
-			'min_price',
-			'max_price',
-			'price_ranges',
-			'onsale_filter',
-			'instock_filter',
-			'featured_filter',
-			'orderby',
-			'product-page',
-			yith_wcan_shortcodes.query_param,
-		].concat(
+				'rating_filter',
+				'min_price',
+				'max_price',
+				'price_ranges',
+				'onsale_filter',
+				'instock_filter',
+				'featured_filter',
+				'orderby',
+				'product-page',
+				yith_wcan_shortcodes.query_param,
+			],
+			customParams;
+
+		// filter properties
+		customParams = $(
+			document
+		).triggerHandler( 'yith_wcan_supported_filters_parameters', [
+			supportedParams,
+		] );
+
+		if ( !! customParams ) {
+			supportedParams = customParams;
+		}
+
+		supportedParams = supportedParams.concat(
 			yith_wcan_shortcodes.supported_taxonomies.map( ( i ) =>
 				i.replace( 'pa_', 'filter_' )
 			)

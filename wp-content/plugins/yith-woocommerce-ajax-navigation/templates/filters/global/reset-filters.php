@@ -21,5 +21,5 @@ $button_class = apply_filters( 'yith_wcan_filter_reset_button_class', 'btn btn-p
 ?>
 
 <button class="<?php echo esc_attr( $button_class ); ?>">
-	<?php echo esc_html( apply_filters( 'yith_wcan_filter_button', _x( 'Reset filters', '[FRONTEND] Reset button for preset shortcode', 'yith-woocommerce-ajax-navigation' ) ) ); ?>
+	<?php echo esc_html( apply_filters( 'yith_wcan_filter_reset_button', _x( 'Reset filters', '[FRONTEND] Reset button for preset shortcode', 'yith-woocommerce-ajax-navigation' ) ) ); ?>
 </button>

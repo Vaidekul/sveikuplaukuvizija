@@ -5,7 +5,7 @@
  * Description: Beginner friendly WordPress popup builder plugin.
  * Author:      timersys
  * Author URI:  https://timersys.com
- * Version:     2.1.4.4
+ * Version:     2.1.4.5
  * Text Domain: wp-popups-lite
  * Domain Path: languages
  *
@@ -145,7 +145,7 @@ if ( class_exists( 'WPPopups' ) ) {
 		 *
 		 * @var string
 		 */
-		public $version = '2.1.4.4';
+		public $version = '2.1.4.5';
 
 		/**
 		 * The Popup handler instance.
@@ -324,11 +324,11 @@ if ( class_exists( 'WPPopups' ) ) {
 			require_once WPPOPUPS_PLUGIN_DIR . 'includes/providers/class-base.php';
 			require_once WPPOPUPS_PLUGIN_DIR . 'includes/providers/class-optin-fields.php';
 			require_once WPPOPUPS_PLUGIN_DIR . 'includes/providers/class-optin-submission.php';
+			require_once WPPOPUPS_PLUGIN_DIR . 'includes/admin/class-license.php';
 
 			// Admin/Dashboard only includes.
 			if ( is_admin() ) {
 				require_once WPPOPUPS_PLUGIN_DIR . 'includes/admin/class-updater.php';
-				require_once WPPOPUPS_PLUGIN_DIR . 'includes/admin/class-license.php';
 				require_once WPPOPUPS_PLUGIN_DIR . 'includes/admin/common.php';
 				require_once WPPOPUPS_PLUGIN_DIR . 'includes/admin/builder/class-builder.php';
 				require_once WPPOPUPS_PLUGIN_DIR . 'includes/admin/builder/functions.php';
@@ -353,13 +353,11 @@ if ( class_exists( 'WPPopups' ) ) {
 
 			// Global objects.
 			$this->popups   = new WPPopups_Popup_Handler();
-			$this->printer = new WPPopups_Printer();
+			$this->printer  = new WPPopups_Printer();
 			$this->preview  = new WPPopups_Preview();
-			$this->logs       = new WPPopups_Logging;
+			$this->logs     = new WPPopups_Logging;
+			$this->license  = new WPPopups_License();
 
-			if( is_admin() ) {
-				$this->license    = new WPPopups_License();
-			}
 			
 			// All Loaded
 			do_action( 'wppopups_loaded' );

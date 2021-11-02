@@ -20,26 +20,6 @@ if ( ! class_exists( 'YITH_WCAN_Query' ) ) {
 	 * @since 4.0.0
 	 */
 	class YITH_WCAN_Query {
-		/**
-		 * Base name for queried-products transient
-		 *
-		 * @const string
-		 */
-		const QUERIED_PRODUCTS_TRANSIENT = 'yith_wcan_queried_products_';
-
-		/**
-		 * Base name for object-in-terms transient
-		 *
-		 * @const string
-		 */
-		const OBJECT_IN_TERMS_TRANSIENT = 'yith_wcan_object_in_terms_';
-
-		/**
-		 * Base name for products-in-stock transient
-		 *
-		 * @const string
-		 */
-		const PRODUCTS_IN_STOCK_TRANSIENT = 'yith_wcan_products_instock_';
 
 		/**
 		 * Query parameter added to any filtered page url
@@ -417,13 +397,10 @@ if ( ! class_exists( 'YITH_WCAN_Query' ) ) {
 				$query_vars['lang'] = $current_lang;
 			}
 
-			$calculate_hash  = md5( http_build_query( $query_vars ) );
-			$cache_name      = $this->get_queried_products_transient_name();
-			$stored_products = get_transient( $cache_name );
+			$calculate_hash = md5( http_build_query( $query_vars ) );
+			$product_ids    = YITH_WCAN_Cache_Helper::get( 'queried_products', $calculate_hash );
 
-			if ( is_array( $stored_products ) && isset( $stored_products[ $calculate_hash ] ) ) {
-				$product_ids = $stored_products[ $calculate_hash ];
-			} else {
+			if ( ! $product_ids ) {
 				// store original query values, and switch to current context.
 				$tmp_query_vars          = $this->query_vars;
 				$tmp_chosen_attributes   = $this->chosen_attributes;
@@ -432,11 +409,14 @@ if ( ! class_exists( 'YITH_WCAN_Query' ) ) {
 
 				// create query to retrieve products.
 				$query = new WP_Query(
-					array(
-						'post_type'      => 'product',
-						'post_status'    => 'publish',
-						'posts_per_page' => '-1',
-						'fields'         => 'ids',
+					apply_filters(
+						'yith_wcan_filtered_products_query',
+						array(
+							'post_type'      => 'product',
+							'post_status'    => 'publish',
+							'posts_per_page' => '-1',
+							'fields'         => 'ids',
+						)
 					)
 				);
 
@@ -450,8 +430,7 @@ if ( ! class_exists( 'YITH_WCAN_Query' ) ) {
 				$product_ids = $query->get_posts();
 
 				// save result set to stored queries.
-				$stored_products[ $calculate_hash ] = $product_ids;
-				set_transient( $cache_name, $stored_products, apply_filters( 'yith_wcan_queried_products_expiration', 30 * DAY_IN_SECONDS ) );
+				YITH_WCAN_Cache_Helper::set( 'queried_products', $product_ids, $calculate_hash );
 
 				// reset original query values.
 				$this->query_vars        = $tmp_query_vars;
@@ -484,7 +463,7 @@ if ( ! class_exists( 'YITH_WCAN_Query' ) ) {
 			if ( ! $query instanceof WP_Query ) {
 				// skip if wrong parameter.
 				$result = false;
-			} elseif ( 'product' !== $query->get( 'post_type' ) ) {
+			} elseif ( ! in_array( 'product', (array) $query->get( 'post_type' ), true ) && ! in_array( $query->get( 'taxonomy' ), array_keys( $this->get_supported_taxonomies() ), true ) ) {
 				// skip if we're not querying products.
 				$result = false;
 			} elseif ( $query->is_main_query() && ! $query->get( 'wc_query' ) ) {
@@ -1029,17 +1008,13 @@ if ( ! class_exists( 'YITH_WCAN_Query' ) ) {
 			if ( isset( $this->products_per_filter[ $taxonomy ][ $term_id ] ) ) {
 				return $this->products_per_filter[ $taxonomy ][ $term_id ];
 			} else {
-				$cache_name   = $this->get_object_in_terms_transient_name();
-				$stored_items = get_transient( $cache_name );
+				$posts = YITH_WCAN_Cache_Helper::get( 'object_in_terms', $term_id );
 
-				if ( is_array( $stored_items ) && isset( $stored_items[ $term_id ] ) ) {
-					$posts = $stored_items[ $term_id ];
-				} else {
+				if ( ! $posts ) {
 					$posts = get_objects_in_term( $term_id, $taxonomy );
 
 					// save result set to stored queries.
-					$stored_items[ $term_id ] = $posts;
-					set_transient( $cache_name, $stored_items, apply_filters( 'yith_wcan_object_in_terms_expiration', 30 * DAY_IN_SECONDS ) );
+					YITH_WCAN_Cache_Helper::set( 'object_in_terms', $posts, $term_id );
 				}
 
 				if ( is_wp_error( $posts ) ) {
@@ -1071,109 +1046,6 @@ if ( ! class_exists( 'YITH_WCAN_Query' ) ) {
 			}
 		}
 
-		/* === TRANSIENT === */
-
-		/**
-		 * Returns name of the transient used to cache queried products
-		 *
-		 * @return string Transient name.
-		 */
-		public function get_queried_products_transient_name() {
-			$cache_version = WC_Cache_Helper::get_transient_version( 'product' );
-			$cache_name    = self::QUERIED_PRODUCTS_TRANSIENT . $cache_version;
-
-			// WPML support.
-			$current_lang = apply_filters( 'wpml_current_language', null );
-
-			if ( ! empty( $current_lang ) ) {
-				$cache_name .= "_{$current_lang}";
-			}
-
-			return apply_filters( 'yith_wcan_queried_products_name', $cache_name );
-		}
-
-		/**
-		 * Returns name of the transient used to cache object in terms
-		 *
-		 * @return string Transient name.
-		 */
-		public function get_object_in_terms_transient_name() {
-			$cache_version = WC_Cache_Helper::get_transient_version( 'product' );
-			$cache_name    = self::OBJECT_IN_TERMS_TRANSIENT . $cache_version;
-
-			return apply_filters( 'yith_wcan_object_in_terms_name', $cache_name );
-		}
-
-		/**
-		 * Returns name of the transient used to cache "in stock" products
-		 *
-		 * @return string Transient name.
-		 */
-		public function get_in_stock_products_transient_name() {
-			$cache_version = WC_Cache_Helper::get_transient_version( 'product' );
-			$cache_name    = self::PRODUCTS_IN_STOCK_TRANSIENT . $cache_version;
-
-			// WPML support.
-			$current_lang = apply_filters( 'wpml_current_language', null );
-
-			if ( ! empty( $current_lang ) ) {
-				$cache_name .= "_{$current_lang}";
-			}
-
-			return apply_filters( 'yith_wcan_products_instock_name', $cache_name );
-		}
-
-		/**
-		 * Delete transient used to cache queried products
-		 *
-		 * @return void
-		 */
-		public function delete_transients() {
-			delete_transient( $this->get_queried_products_transient_name() );
-			delete_transient( $this->get_in_stock_products_transient_name() );
-			delete_transient( $this->get_object_in_terms_transient_name() );
-
-			delete_transient( 'yith_wcan_exclude_from_catalog_product_ids' );
-		}
-
-		/**
-		 * Delete transient used to cache queried products
-		 *
-		 * @return void
-		 */
-		public function delete_expired_transients() {
-			global $wpdb;
-
-			$cache_version = WC_Cache_Helper::get_transient_version( 'product' );
-			$to_delete     = array(
-				self::QUERIED_PRODUCTS_TRANSIENT,
-				self::OBJECT_IN_TERMS_TRANSIENT,
-				self::PRODUCTS_IN_STOCK_TRANSIENT,
-			);
-
-			$query = "DELETE FROM {$wpdb->options} WHERE 1=1";
-			$args  = array();
-
-			$query .= ' AND ( ';
-			$first  = true;
-			foreach ( $to_delete as $transient_name ) {
-				if ( ! $first ) {
-					$query .= ' OR ';
-				}
-
-				$args[] = "%{$transient_name}%";
-
-				$query .= 'option_name LIKE %s';
-				$first  = false;
-			}
-			$query .= ')';
-
-			$query .= ' AND option_name NOT LIKE %s';
-			$args[] = "%{$cache_version}%";
-
-			$wpdb->query( $wpdb->prepare( $query, $args ) ); // phpcs:ignore WordPress.DB
-		}
-
 		/* === UTILS === */
 
 		/**
@@ -1182,9 +1054,9 @@ if ( ! class_exists( 'YITH_WCAN_Query' ) ) {
 		 * @return array Array of product ids
 		 */
 		public function get_product_ids_in_stock() {
+
 			// Load from cache.
-			$transient_name       = $this->get_in_stock_products_transient_name();
-			$product_ids_in_stock = get_transient( $transient_name );
+			$product_ids_in_stock = YITH_WCAN_Cache_Helper::get( 'products_instock' );
 
 			// Valid cache found.
 			if ( false !== $product_ids_in_stock ) {
@@ -1192,15 +1064,19 @@ if ( ! class_exists( 'YITH_WCAN_Query' ) ) {
 			}
 
 			$product_ids_in_stock = wc_get_products(
-				array(
-					'status'       => 'publish',
-					'stock_status' => 'instock',
-					'limit'        => -1,
-					'return'       => 'ids',
+				apply_filters(
+					'yith_wcan_product_ids_in_stock_args',
+					array(
+						'status'                     => 'publish',
+						'stock_status'               => 'instock',
+						'limit'                      => - 1,
+						'return'                     => 'ids',
+						'yith_wcan_suppress_filters' => true,
+					)
 				)
 			);
 
-			set_transient( $transient_name, $product_ids_in_stock, DAY_IN_SECONDS * 30 );
+			YITH_WCAN_Cache_Helper::set( 'products_instock', $product_ids_in_stock );
 
 			return $product_ids_in_stock;
 		}

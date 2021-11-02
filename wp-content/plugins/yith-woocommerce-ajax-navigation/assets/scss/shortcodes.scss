@@ -1039,7 +1039,7 @@ $z-index: 1001; // value is this high since modal must be on top of Proteo's sti
 			}
 
 			// filter items
-			.filter-items {
+			.filter-content > .filter-items {
 				max-height: 200px;
 				overflow-y: scroll;
 				overflow-x: hidden;
@@ -1094,6 +1094,19 @@ body.yith-wcan-preset-modal-open:after {
 
 	&.admin-bar {
 		top: 32px;
+	}
+}
+
+body.rtl .yith-wcan-filters {
+	.yith-wcan-filter {
+		.filter-items {
+			&.level-0 {
+				ul {
+					padding-left: 0;
+					padding-right: 15px;
+				}
+			}
+		}
 	}
 }
 

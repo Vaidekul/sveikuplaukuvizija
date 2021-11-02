@@ -5,7 +5,7 @@ msgstr ""
 "Project-Id-Version: YITH WooCommerce Ajax Navigation\n"
 "Report-Msgid-Bugs-To: "
 "https://wordpress.org/support/plugin/yith-woocommerce-ajax-product-filter\n"
-"POT-Creation-Date: 2021-08-04 13:51:11+00:00\n"
+"POT-Creation-Date: 2021-10-11 13:52:03+00:00\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -201,11 +201,6 @@ msgstr ""
 #: includes/class-yith-wcan-admin.php:191
 msgctxt "[Admin] tab name"
 msgid "Legacy"
-msgstr ""
-
-#: includes/class-yith-wcan-admin.php:198
-msgctxt "[Admin] Menu title"
-msgid "Ajax Product Filter"
 msgstr ""
 
 #: includes/class-yith-wcan-admin.php:199
@@ -500,51 +495,51 @@ msgctxt "[Admin] Default filter title"
 msgid "New filter"
 msgstr ""
 
-#: includes/class-yith-wcan-frontend.php:590
+#: includes/class-yith-wcan-frontend.php:591
 #: includes/filters/class-yith-wcan-filter-tax.php:62
 msgctxt "[FRONTEND] \"All\" label shown when no term is selected"
 msgid "All"
 msgstr ""
 
-#: includes/class-yith-wcan-frontend.php:591
+#: includes/class-yith-wcan-frontend.php:592
 msgctxt "[FRONTEND] Search placeholder shown in terms dropdown"
 msgid "Search..."
 msgstr ""
 
-#: includes/class-yith-wcan-frontend.php:592
+#: includes/class-yith-wcan-frontend.php:593
 msgctxt "[FRONTEND] Empty items list in the dropdown"
 msgid "No item found"
 msgstr ""
 
-#: includes/class-yith-wcan-frontend.php:594
+#: includes/class-yith-wcan-frontend.php:595
 #. translators: 1. Number of items to show.
 msgctxt "[FRONTEND] Show more link on terms dropdown"
 msgid "Show %d more"
 msgstr ""
 
-#: includes/class-yith-wcan-frontend.php:595
+#: includes/class-yith-wcan-frontend.php:596
 msgctxt "[FRONTEND] Alt text for modal close button on mobile"
 msgid "Close"
 msgstr ""
 
-#: includes/class-yith-wcan-frontend.php:596
+#: includes/class-yith-wcan-frontend.php:597
 msgctxt "[FRONTEND] Label for filter button, on horizontal layout"
 msgid "Save"
 msgstr ""
 
-#: includes/class-yith-wcan-frontend.php:597
+#: includes/class-yith-wcan-frontend.php:598
 msgctxt "[FRONTEND] Label for filter button, on mobile modal"
 msgid "Show results"
 msgstr ""
 
-#: includes/class-yith-wcan-frontend.php:598
+#: includes/class-yith-wcan-frontend.php:599
 msgctxt ""
 "[FRONTEND] Label for clear selection link, that appears above filter after "
 "selection"
 msgid "Clear"
 msgstr ""
 
-#: includes/class-yith-wcan-frontend.php:599
+#: includes/class-yith-wcan-frontend.php:600
 msgctxt ""
 "[FRONTEND] Label for clear selection link, that appears above filter after "
 "selection"
@@ -676,14 +671,14 @@ msgctxt "For multicolor: I.E. white and red T-Shirt"
 msgid "Color 2"
 msgstr ""
 
-#: includes/functions-yith-wcan.php:1011
+#: includes/functions-yith-wcan.php:1026
 msgctxt "[FRONTEND] Star rating template"
 msgid "star"
 msgid_plural "stars"
 msgstr[0] ""
 msgstr[1] ""
 
-#: includes/functions-yith-wcan.php:1026
+#: includes/functions-yith-wcan.php:1041
 #. translators: 1. Rating.
 msgctxt "[FRONTEND] Star rating label"
 msgid "Rated %s out of 5"

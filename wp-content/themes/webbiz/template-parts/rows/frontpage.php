@@ -13,10 +13,9 @@
 				$heading = get_sub_field('heading');
 				$subheading = get_sub_field('subheading'); 
 				$color = get_sub_field('color');
-				$color = $color['choices']['value'];
 			?>
 			<div class="img-slide">
-				<div class="content <?= $color; ?>" style="background-image:url(<?= $img; ?>)">
+				<div class="content <?php echo esc_attr($color['value']); ?>" style="background-image:url(<?= $img; ?>)">
 					<?php if($heading) : ?>
 						<h1 class="heading"><?= $heading; ?></h1>
 					<?php endif; ?>

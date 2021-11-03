@@ -6,11 +6,11 @@
 	$img = get_sub_field('image');
 ?>
 
-<div class="img-txt">
+<div class="img-txt <?= $padding . ' ' . $margin; ?>">
 	<div class="container">
 		<div class="row">
-			<div class="col-lg-7"><div class="content"><?= $txt; ?></div></div>
-			<div class="col-lg-5"><div class="img-contai"><img src="<?= $img['url']; ?>" alt="<?= $img['alt']; ?>"></div></div>
+			<div data-aos="fade-up" data-aos-easing="ease"  data-aos-delay="300" data-aos-duration="200" class="col-lg-7 col-md-6 pt-4 column"><div class="content"><?= $txt; ?></div></div>
+			<div data-aos="fade-up" data-aos-easing="ease"  data-aos-delay="300" data-aos-duration="400" class="col-lg-5 col-md-6 pt-4 column"><div class="img-container" style="background-image:url(<?= $img['url']; ?>);"></div></div>
 		</div>
 	</div>
 </div>

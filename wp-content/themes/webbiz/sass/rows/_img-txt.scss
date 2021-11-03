@@ -1,0 +1,33 @@
+.img-txt {
+	background: #481417;
+	.column {
+		height: 25rem;
+		overflow: hidden;
+		position: relative;
+		border-radius: .6rem;
+		// margin: 1rem;
+		.img-container {
+			object-fit: cover;
+			// transform: scale(1.1);
+			transition: all .2s linear;
+			height: 100%;
+			width: 100%;
+			background-position: center center;
+			background-size: cover;
+			border-radius: .6rem;
+		}
+		.content {
+			background: white;
+			height: 100%;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			flex-direction: column;
+			padding: 2rem 2.5rem;
+			border-radius: .6rem;
+			.logo-about {
+				height: 100px;
+			}
+		}
+	}
+}

@@ -26,9 +26,9 @@
 					$button_link = get_sub_field('button_link');
 					$button_text = get_sub_field('button_text');
 					if($i == 1 || $i == 4) {
-						$size = 8;
+						$size = 7;
 					} else {
-						$size = 4;
+						$size = 5;
 					}
 
 					?>

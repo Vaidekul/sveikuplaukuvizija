@@ -146,8 +146,8 @@ function webbiz_scripts() {
 	
 	wp_enqueue_style( 'fontawesome', get_template_directory_uri() . '/fontawesome/css/fontawesome.css' );
 	wp_enqueue_style( 'fontawesome-all', get_template_directory_uri() . '/fontawesome/css/fontawesome-all.css' );
-	// wp_enqueue_style( 'slick', '//cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css' );
-	// wp_enqueue_style( 'slick_theme', '//cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css' );
+	wp_enqueue_style( 'slick', '//cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css' );
+	wp_enqueue_style( 'slick_theme', '//cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css' );
 	wp_enqueue_style( 'aos', '//cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css' );
 	// Styles
 	if ( defined( 'WP_LOCAL_DEV' ) && WP_LOCAL_DEV ) {

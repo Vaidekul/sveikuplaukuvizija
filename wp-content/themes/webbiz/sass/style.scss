@@ -27,12 +27,12 @@ Text Domain: webbiz
 	## Captions
 	## Galleries
 --------------------------------------------------------------*/
-@import "./node_modules/bootstrap/scss/bootstrap.scss";
+@import "../node_modules/bootstrap/scss/bootstrap.scss";
 @import "variables-site/variables-site";
 @import "components/hamburger-settings";
 @import "node_modules/hamburgers/_sass/hamburgers/hamburgers";
-@import "./node_modules/slick-carousel/slick/slick.css";
-@import "./node_modules/slick-carousel/slick/slick-theme.css";
+// @import "../node_modules/slick-carousel/slick/slick.css";
+// @import "./node_modules/slick-carousel/slick/slick-theme.css";
 @import "mixins/mixins-master";
 
 /*--------------------------------------------------------------

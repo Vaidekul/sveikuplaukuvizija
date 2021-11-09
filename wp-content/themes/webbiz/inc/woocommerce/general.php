@@ -200,7 +200,7 @@ function header_wrapper_close() {
 add_action('woocommerce_before_shop_loop', 'shop_loop_open_div', 5);
 
 function shop_loop_open_div() {
-  echo '<div class="col-lg-9">';
+  echo '<div class="col-lg-9 customised-product-page">';
 }
 
 /**

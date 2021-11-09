@@ -27,21 +27,18 @@
 		padding-right: 3rem;
 	}
 	h2.woocommerce-loop-product__title {
-		font-size: 1.5rem !important;
+		font-size: 1rem !important;
 		color: black !important;
 		font-weight: 300;
+		margin-top: 1rem;
 		&:hover {
 			text-decoration: none !important;
 			color: #4b190f !important;
 		}
 	}
 	.price {
-		// font-size: 1rem!important;
-    // color: #000!important;
-    // position: absolute;
-    // bottom: 3.2rem;
 		color: #000 !important;
-    font-size: 1.5rem !important;
+    font-size: 1rem !important;
 	}
 	.woocommerce-LoopProduct-link.woocommerce-loop-product__link:hover {
 		text-decoration: none !important;
@@ -52,6 +49,12 @@
 		.price {
 			text-decoration: none !important;
 		}
+	}
+	a.button.add_to_cart_button {
+		position: absolute;
+		left: 2rem;
+		top: 20rem;
+		border-radius: 3px;
 	}
 	.slick-next {
 		right: 6rem !important;

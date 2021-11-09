@@ -76,7 +76,7 @@
     left: -2%;
     bottom: 0%;
     font-size: 1.5rem;
-		@include change(770px){
+		@include change(768px){
 			font-size: 1rem;
 		}
 	}
@@ -86,7 +86,7 @@
 		position: relative;
 		transform: translateZ(25px);
 		transform-origin: 50% 50% 25px;
-		@include change(770px){
+		@include change(768px){
 			min-width: 4px;
 		}
 	}

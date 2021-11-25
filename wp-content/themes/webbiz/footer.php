@@ -19,13 +19,15 @@
 		<div class="footer-container pb-3">
 			<div class="container">
 				<div class="row d-fex mb-5">
-					<div class="col-lg-5 col-m4-6 mb-3 d-flex flex-column">
-						<h4 class="footer-title">Kontaktai</h4>
+					<div class="col-lg-5 col-m4-6 mt-3 mb-3 d-flex flex-column">
+							<img class="footer-logo" src="<?= $img['url']; ?>" alt="<?= $img['alt']; ?>">
+							<div class="slogan">Sveikų Plaukų Vizija - kai sveiki plaukai vis dar tik vizija, mes pasiruošę padėti.</div>
+							<div class="copy-right">&copy; SPV - Sveikų Plaukų Vizija 2014 - <?php echo date('Y'); ?> </div>
+							<h4 class="footer-title">Kontaktai</h4>
 							<a class="mr-4 phone-link" href="tel:<?= get_field('phone', 'option'); ?>"> <?= get_field('phone_decorated', 'option'); ?></a>
 							<a class="mr-4 email-link" href="mailto:<?= get_field('email', 'option'); ?>"> <?= get_field('email', 'option'); ?></a>
 							<a class="address"><?= get_field('address', 'option'); ?></a>
 							<?php webbiz_social_function(); ?>
-							<div class="copy-right mt-5">&copy; SPV - Sveikų Plaukų Vizija 2014 - <?php echo date('Y'); ?> </div>
 					</div>
 					<div class="col-lg-3 col-md-6 mb-3 mt-3">
 						<h4 class="footer-title">Sveikų Plaukų Vizija</h4>

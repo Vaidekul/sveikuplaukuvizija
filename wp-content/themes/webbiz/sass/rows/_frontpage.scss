@@ -68,9 +68,9 @@ body.mobile-menu-open {
 				opacity: .8;
 				letter-spacing: .5px;
 				position: relative;
-
+				width: 85%;
 				animation:fadeOutRight 1s both;
-
+				
 				&::before {
 					position: absolute;
 					top: -40px;

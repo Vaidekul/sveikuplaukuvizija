@@ -20,11 +20,12 @@
 				'container'		 => false
 			) );
 			?>
+			<?php webbiz_social_function(); ?>
 		</div>
 	</div>
 	<?php get_template_part('./template-parts/components/mobile-menu');  ?>
 </div>
-<header id="header" class="header navbar-light d-sm-block d-md-mode">
+<header id="header" class="header navbar-light d-sm-block d-md-none">
 	<div class="container">
 		<div class="row">
 			<div class="col-12">

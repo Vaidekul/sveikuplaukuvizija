@@ -21,6 +21,9 @@
 	.subtitle {
 		font-size: 1.8rem;
     margin-top: 1rem;
+		@include change(992px) {
+			font-size: 1.2rem;
+		}
 
 	}
 	.slider {

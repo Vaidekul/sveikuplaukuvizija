@@ -1,8 +1,20 @@
 #colophon {
-  // background: #f0f0f0;
 	padding-top: 50px;
 
   .footer-container {
+		.footer-logo {
+			height: 2.5rem;
+			width: fit-content;
+			margin-bottom: 1rem;
+		}
+		.slogan {
+			width: 80%;
+			margin-bottom: .5rem;
+		}
+		.copy-right {
+			margin-bottom: 2rem;
+			font-size: .6rem;
+		}
     .footer-title{
       padding-bottom: 20px;
 			font-size: 1.6rem;
@@ -17,17 +29,47 @@
       li{
         margin : 0;
         padding-top: 5px;
+				width: fit-content;
       }
     }
-    a{
+    a:not(.fab){
+			width: fit-content;
       padding-top: 10px;
       color: black;
 			font-size: 1rem;
       font-weight: 300;	
       line-height: 28px;
       transition: all .2s linear;
+			position: relative;
+			&:before, &:after {
+				content: '';
+				position: absolute;
+				width: 0%;
+				height: 1px;
+				top: 110%;
+				background: black;
+			}
+			:before {
+				left: -2.5px;
+			}
+			:after {
+				right: 2.5px;
+				background: black;
+				transition: width 0.8s cubic-bezier(0.22, 0.61, 0.36, 1);
+			}
       &:hover{
         opacity: .8;
+				text-decoration: none;
+				&:before {
+					background: black;
+					width: 100%;
+					transition: width 0.5s cubic-bezier(0.22, 0.61, 0.36, 1);
+				}
+				&:after {
+					background: transparent;
+					width: 100%;
+					transition: 0s;
+				}
       }
     }
   }
@@ -42,7 +84,6 @@
     padding-top: 20px;
     background: #242424;
     .copy-right {
-      font-size: 16px;	
       font-weight: 300;	
       line-height: 23px;
       color: white;
@@ -84,7 +125,12 @@
     margin-top: 30px;
     a {
       margin-right: 15px;
-      font-size: 22px;
+      font-size: 1.4rem;
+			color: black;
+			&:hover {
+				text-decoration: none;
+				opacity: .6;
+			}
     }
   }
   a.follow-us {

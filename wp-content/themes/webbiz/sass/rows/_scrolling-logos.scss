@@ -2,8 +2,13 @@
 	background: black;
 	padding: 2rem 0;
 	.logo-block {
+		a {
+			width: 100%;
+			display: flex;
+			justify-content: center;
+		}
 		img {
-			height: 80px;
+			height: 40px;
 			object-fit: contain;
 		}
 	}

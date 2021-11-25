@@ -17,8 +17,8 @@
 		<div class="row">
 			<div class="col-lg-8" style="min-height:400px;">
 				<div class="text">
-					<h2>Susipažinkite su mūsų komanda</h2>
-					<p>Mūsų meistrai nuolatos tobulinasi įvairiuose seminaruose, mokymuose. Nuolatos ieško individualaus geriausio sprendimo Jūsų plaukams.</p>
+					<h2>Susipažinkite su </br> SPV komanda</h2>
+					<p>Mūsų meistrai nuolatos tobulinasi įvairiuose seminaruose ir mokymuose. Nuolatos esame geriausio sprendimo Jūsų plaukams paieškoje.</p>
 				</div>
 			</div>
 			<?php while( $query->have_posts() ) : $query->the_post(); ?>          

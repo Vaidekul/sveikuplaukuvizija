@@ -24,15 +24,17 @@
 		<div class="subheading">
 			<?= $subheading; ?>
 			<?php if( $query->have_posts() ) : ?>
-				<?php while( $query->have_posts() ) : $query->the_post(); ?>          
-					<?php $title = get_the_title();
-					$id = strtolower($title);
-					$id = str_replace(' ', '', $id);
-					?>
-				<div class="filter">
-					<a class="mt-5" href="#<?= $id; ?>"><?= $title ?></a>
+				<div class="sub-filters ">
+					<?php while( $query->have_posts() ) : $query->the_post(); ?>          
+						<?php $title = get_the_title();
+						$id = strtolower($title);
+						$id = str_replace(' ', '', $id);
+						?>
+					<div class="filter">
+						<a class="" href="#<?= $id; ?>"><?= $title ?></a>
+					</div>
+					<?php endwhile; ?>
 				</div>
-				<?php endwhile; ?>
 			<?php endif;?>
 			<?php wp_reset_postdata(); ?>
 		</div>

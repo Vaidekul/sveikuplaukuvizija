@@ -12,7 +12,7 @@
         echo "</div>";
       endif;
     ?>
-    <a class="post-link" href="<?php the_permalink() ?>">
+    <a class="post-link" href="<?php the_permalink(); ?>">
       <div class="thumbnail">
         <?php 
           $bg = get_field('backup_img', 'option');

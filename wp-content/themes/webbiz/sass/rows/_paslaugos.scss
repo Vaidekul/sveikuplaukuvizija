@@ -1,5 +1,6 @@
 .section-services {
 	overflow: hidden;
+	
 	h2 {
 		// text-align: center;
 		font-size: 4rem;
@@ -15,27 +16,59 @@
 		@include change(992px) {
 			width: 100%;	
 		}
+		&.top-spacing {
+			padding-top: 7rem;
+			@include change(768px) {
+				padding-top: 4rem;
+			}
+			img {
+				top: 2rem !important;
+			}
+		}
 		img.position-right {
 			position: absolute;
 			right: -40%;
-			top: -15%;
+			top: -5%;
 			opacity: .3;
 			z-index: -1;
+			height: 50vh;
+			width: 100%;
+			object-fit: cover;
 			@include change(992px) {
 				right: -30%;
 				top: -3%;		
 			}
  		}
+		 &.right-positioning {
+			margin-left: auto;
+			img.position-right {
+				position: absolute;
+				left: -40%;
+				opacity: .3;
+				z-index: -1;
+				@include change(992px) {
+					left: -30%;
+					top: -3%;		
+				}
+			 }
+		}
 		.price-row {
-			padding-top: 3rem;
+			padding-top: 1rem;
 			font-size: 1.5rem;
 			line-height: 170%;
 			font-weight: 300;
 			justify-content: space-between;
-			align-items: center;
+			align-items: flex-start;
 			position: relative;
+			@include change(768px) {
+				flex-direction: column;
+			}
 			.title, .price {
 				white-space: nowrap;
+				@include change(768px) {
+					font-size: 1.2rem;
+					white-space: wrap;
+				}
 			}
 			.left {
 				position: relative;
@@ -43,8 +76,14 @@
 			.time {
 				font-size: 1rem;
 				white-space: nowrap;
-				position: absolute;
-		    top: 2.5rem;
+				position: relative;
+				line-height: 1.5;
+				margin-top: .5rem;
+				margin-bottom: .5rem;
+				@include change(768px) {
+					font-size: 1rem;
+					white-space: wrap;
+				}
 			}
 			.decoration {
 				border-bottom-style: solid;
@@ -52,6 +91,9 @@
     		border-bottom-color: #cecece;
 				width: 100%;
 				margin: 0 3rem;
+				@include change(768px) {
+				display: none;
+				}
 			}
 		}
 	}

@@ -1,5 +1,6 @@
 // imports
 @import 'buttons';
+@import 'single-product-page';
 
 
 .header-cart-count {
@@ -136,9 +137,10 @@ ul.woocommerce-thankyou-order-details {
 
 .woocommerce a.add_to_wishlist.button.alt {
 	border: none !important;
-	background-color: rgb(255,255,255) !important;
-	background: rgb(255,255,255) !important;
+	background-color:transparent !important;
+	background: transparent !important;
 	color: rgb(0,0,0) !important;
 	border-color: rgb(255,255,255) !important;
 }
+
 

@@ -15,11 +15,14 @@
 						'container'     => false
 					));
 					?>
-
-					<button class="mobile-menu-toggle hamburger hamburger--collapse d-lg-none" type="button">
-						<img class="open" src="<?php echo get_template_directory_uri(); ?>/images/dist/menu-close.svg" />
-						<img class="closed" src="<?php echo get_template_directory_uri(); ?>/images/dist/menu-open.svg" />
-					</button>
+					<div class="shopping-tabs d-lg-none">
+						<?php $shop_cart = get_field('shopping_cart_url', 'options'); ?>
+						<a href="<?= $shop_cart; ?>"><i class="fas fa-shopping-bag"></i></a>
+						<button class="mobile-menu-toggle-2 hamburger hamburger--collapse " type="button">
+							<img class="open" src="<?php echo get_template_directory_uri(); ?>/images/dist/menu-close.svg" />
+							<img class="closed" src="<?php echo get_template_directory_uri(); ?>/images/dist/menu-open.svg" />
+						</button>
+					</div>
 				</div>
 			</div>
 		</div>

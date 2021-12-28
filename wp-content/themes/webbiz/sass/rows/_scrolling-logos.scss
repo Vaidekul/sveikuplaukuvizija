@@ -1,6 +1,7 @@
 .scrolling-logos {
 	background: black;
 	padding: 2rem 0;
+	overflow-x: hidden;
 	.logo-block {
 		a {
 			width: 100%;

@@ -1,5 +1,6 @@
 .img-txt {
 	background: #481417;
+	overflow-x: hidden;
 	.column {
 		height: 25rem;
 		overflow: hidden;
@@ -28,6 +29,11 @@
 			.logo-about {
 				height: 100px;
 			}
+		}
+	}
+	@include change(768px) {
+		.column .content .logo-about {
+			height:50px;
 		}
 	}
 }

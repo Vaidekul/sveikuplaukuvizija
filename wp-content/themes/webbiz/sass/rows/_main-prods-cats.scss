@@ -1,6 +1,11 @@
 .main-prod-cat {
 	padding-left: 3rem;
 	position: relative;
+	overflow-x: hidden;
+	div.shop-product-thumbnail {
+		height: 25rem;
+		margin-bottom: 1rem;
+	}
 	.overlay {
 		position: absolute;
 		z-index: -1;

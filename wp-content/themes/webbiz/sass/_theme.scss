@@ -14,6 +14,10 @@ body.mobile-menu-open {
 	overflow:hidden;
 }
 
+body.mobile-fix {
+	overflow: hidden;
+}
+
 // html, body {
 // 	font-size : .69444444vw;
 // 	cursor: default;
@@ -213,8 +217,8 @@ body.mobile-menu-open {
 }
 
 .padding-med {
-	padding-top: 80px;
-  padding-bottom: 80px;
+	padding-top: 4rem;
+  padding-bottom: 4rem;
   @include change(992px) {
     padding-top: 60px;
     padding-bottom: 60px;
@@ -226,8 +230,8 @@ body.mobile-menu-open {
 }
 
 .padding-max {
-	padding-top: 150px;
-  padding-bottom: 150px;
+	padding-top: 5rem;
+  padding-bottom: 5rem;
   @include change(992px) {
     padding-top: 110px;
     padding-bottom: 110px;
@@ -244,8 +248,8 @@ body.mobile-menu-open {
 }
 
 .margin-min {
-	margin-top: 25px;
-  margin-bottom: 25px;
+	margin-top: 3rem;
+  margin-bottom: 3rem;
   
   @include change(768px) {
     margin-top: 15px;
@@ -475,13 +479,12 @@ h2.widget-title {
 
 .fa-heart-o:before {
 	font-size: 30px;
-	content: "♡" !important;
+	// content: "♡" !important;
 	color: black !important;
 }
 
 .fa-heart:before {
 	font-size: 30px;
-	content: "♥" !important;
 	color: black !important;
 	transition: all .3s linear;
 }
@@ -499,12 +502,13 @@ h2.widget-title {
 				margin: 0 !important;
 			}
 			&:hover {
-				.fa-heart-o:before {
-					font-size: 30px;
-					content: "♥" !important;
-					color: black !important;
-					opacity: .7;
-				}
+				// .fa-heart-o:before {
+				// 	font-size: 30px;
+				// 	// content: "♥" !important;
+				// 	content: "\2665";
+				// 	color: black !important;
+				// 	opacity: .7;
+				// }
 			}
 		}
 		.yith-wcwl-wishlistexistsbrowse, .yith-wcwl-wishlistaddedbrowse {
@@ -518,17 +522,6 @@ h2.widget-title {
 				border: none !important;
 			}
 		}
-	}
-}
-
-
-.product-template-default .single-product {
-	.yith-wcwl-add-to-wishlist {
-		position: relative !important;
-		bottom: auto !important;
-		right: auto !important;
-		padding-left: 0 !important;
-		border: none !important;
 	}
 }
 
@@ -562,4 +555,50 @@ h2.widget-title {
 }
 .woocommerce-result-count, .woocommerce-ordering {
 	display: none !important;
+}
+
+.color-white {
+	color: white;
+}
+
+.bg-black {
+	background: #4c0c13 !important;
+}
+
+
+.yith-wcwl-add-to-wishlist .yith-wcwl-wishlistaddedbrowse {
+	.fa-heart:before {
+		content: url(../webbiz/images/dist/heart-solid.svg) !important;
+		height: 30px;
+		width: 30px;
+		display: block;
+	}
+}
+
+.yith-wcwl-add-to-wishlist .yith-wcwl-wishlistexistsbrowse {
+	.fa-heart:before {
+		content: url(../webbiz/images/dist/heart-solid.svg) !important;
+		height: 30px;
+		width: 30px;
+		display: block;
+	}
+}
+
+.yith-wcwl-add-to-wishlist .yith-wcwl-add-button {
+	.fa-heart-o:before {
+		content: url(../webbiz/images/dist/heart-regular.svg) !important;
+		height: 30px;
+		width: 30px;
+		display: block;
+	}
+}
+
+
+.woocommerce-page a.button, .woocommerce-page a.button.alt.add_to_wishlist:hover, .woocommerce-page a.button.add_to_wishlist:hover {
+	background: none !important;
+	background-color: none !important;
+}
+
+.woocommerce ul.products li.product .button.add_to_wishlist {
+	margin-top: 0 !important;
 }

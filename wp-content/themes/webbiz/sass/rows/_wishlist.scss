@@ -19,3 +19,52 @@
 	line-height: 1.4;
 	color: black;
  }
+ .wishlist_table .product-add-to-cart span.dateadded {
+	display: none;
+}
+
+.wishlist_table .product-add-to-cart a.button {
+	color: transparent !important;
+	position: relative;
+}
+.wishlist_table .product-add-to-cart a.button:after {
+	content: "Pašalinti";
+	color: white;
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+}
+.woocommerce #content table.wishlist_table.cart a.remove:hover {
+    background-color: transparent !important;
+}
+.wishlist_table .product-add-to-cart a.product_type_simple {
+		color: transparent !important;
+	position: relative;
+}
+ .wishlist_table .product-add-to-cart a.product_type_simple:after {
+	content: "Į krepšelį";
+	color: black;
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+	width: 100%;
+}
+.wishlist_table .product-add-to-cart a {
+	color: black;
+}
+ .wishlist_table .product-add-to-cart a.button {
+	border: 1px solid #4c0c13 !important;
+	background: #4c0c13 !important;
+ }
+ .wishlist_table .product-add-to-cart a.product_type_simple:after {
+	content: "Į krepšelį";
+	color: white;
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+	width: 100%;
+}
+
+.woocommerce-wishlist.woocommerce table.shop_table td.product-name a {
+	font-size: 1.2rem;
+}

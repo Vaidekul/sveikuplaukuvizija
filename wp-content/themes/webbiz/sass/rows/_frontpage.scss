@@ -52,6 +52,20 @@ body.mobile-menu-open {
 
 		.slick-list, .slick-track, .img-slider, .content{
 			height: 100%;
+			.img-slide {
+				position: relative;
+				&:before {
+					content: '';
+					position: absolute;
+					height: 100%;
+					width: 100%;
+					background: black;
+					opacity: .3;
+					top: 0;
+					left: 0;
+
+				}
+			}
 		}
 		.content {
 			background-position: center;
@@ -63,13 +77,14 @@ body.mobile-menu-open {
 			justify-content: center;
 			
 			h1 {
-				text-transform: uppercase;
+				// text-transform: uppercase;
 				font-family: $font__main !important;
 				opacity: .8;
 				letter-spacing: .5px;
 				position: relative;
 				width: 85%;
 				animation:fadeOutRight 1s both;
+				color: white;
 				
 				&::before {
 					position: absolute;
@@ -90,6 +105,7 @@ body.mobile-menu-open {
 				
 				p {
 					// font-size: 2rem;
+					color: white;
 					margin-bottom: 0;
 					font-weight: 400;
 				}

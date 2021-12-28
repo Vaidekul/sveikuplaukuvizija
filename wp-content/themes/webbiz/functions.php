@@ -50,6 +50,7 @@ if ( ! function_exists( 'webbiz_setup' ) ) :
 			'menu-4' => esc_html__( 'Sveiku Plauku Vizija', 'webbiz' ),
 			'menu-5' => esc_html__( 'Darbo Laikas', 'webbiz' ),
 			'menu-6' => esc_html__( 'Informacija', 'webbiz' ),
+			'menu-7' => esc_html__( 'Pilnas Mobile Menu', 'webbiz' ),
 		) );
 
 		/*
@@ -233,7 +234,7 @@ if ( defined( 'JETPACK__VERSION' ) ) {
 
 // Load Woocommerce customisations
 if ( class_exists( 'WooCommerce' ) ) {
-	require get_template_directory() . '/inc/woocommerce/general.php';
+require get_template_directory() . '/inc/woocommerce/general.php';
 }
 
 // DIV SHORTCODE. Usage: [div id="ID" class="CLASS"]xxxx[/div]
@@ -313,3 +314,55 @@ function remove_image_zoom_support() {
 	remove_theme_support( 'wc-product-gallery-zoom' );
 }
 add_action( 'wp', 'remove_image_zoom_support', 100 );
+
+
+
+
+// add_filter( 'yith_wcan_ajax_frontend_classes', 'uncode_yith_ajax_filters' );
+
+// function uncode_yith_ajax_filters( $opts ){
+// 	$opts['container'] = '.isotope-container';
+// 	$opts['pagination'] = '.pagination';
+// 	$opts['result_count'] = '.woocommerce-result-count';
+// 	$opts['scroll_top'] = '.isotope-system';
+// 	return $opts;
+// }
+
+// function action_woocommerce_shortcode_products_loop_no_results( $attributes ) {
+// 	echo __( 'My custom message', 'woocommerce' );
+// }
+// add_action( 'woocommerce_shortcode_products_loop_no_results', 'action_woocommerce_shortcode_products_loop_no_results', 10, 1 );
+
+// add_action( 'woocommerce_no_products_found', function(){
+// 	remove_action( 'woocommerce_no_products_found', 'wc_no_products_found', 10 );
+
+// 	// HERE change your message below
+// 	$message = __( 'No products were found matching your selection.', 'woocommerce' );
+
+// 	echo '<p class="woocommerce-info error">' . $message .'</p>';
+
+// }, 9 );
+
+/** Remove product data tabs */
+ 
+add_filter( 'woocommerce_product_tabs', 'my_remove_product_tabs', 98 );
+ 
+function my_remove_product_tabs( $tabs ) {
+  unset( $tabs['additional_information'] ); // To remove the additional information tab
+  return $tabs;
+}
+
+
+add_filter('woocommerce_dropdown_variation_attribute_options_args', 'custom_dropdown_choice', 10);
+function custom_dropdown_choice( $args ){
+	$args['selected'] = $args['options'][0];
+	// echo "<pre>";
+	// print_r($args);
+	// echo "</pre>";
+  // $args['show_option_none'] = "-- Select an option --";
+	// echo '<select name="" id="">	<option value="">My name</option></select>';
+
+
+  return $args;
+  
+}

@@ -83,12 +83,28 @@ function mobileMenu() {
 
 mobileMenu();
 
-function selectField() {
-  $("select").wrap('<div class="select-wrapper fas fa-chevron-down"></div>');
-  //$('.select-wrapper').prepend('<i class="fas fa-chevron-down"></i>');
+function mobileMenu2() {
+  // mobile menu toggle
+  $(".mobile-menu-toggle-2").click(function () {
+    $(".mobile-container").toggleClass("active");
+
+    // $("html,body").animate({ scrollTop: $(this.hash).offset().top }, 350);
+    // toggle icon style
+    $(this).toggleClass("is-active");
+    // switch logos
+    // lock scroll
+    $("body").toggleClass("mobile-fix");
+  });
 }
 
-selectField();
+mobileMenu2();
+
+// function selectField() {
+//   $("select").wrap('<div class="select-wrapper fas fa-chevron-down"></div>');
+//   //$('.select-wrapper').prepend('<i class="fas fa-chevron-down"></i>');
+// }
+
+// selectField();
 
 $(".frontpage-slider .slider").slick({
   arrows: false,
@@ -98,6 +114,14 @@ $(".frontpage-slider .slider").slick({
   infinite: true,
   speed: 300,
 });
+
+// $(".related.products .products").slick({
+//   arrows: true,
+//   dots: false,
+//   autoplay: true,
+//   slidesToShow: 3,
+//   slidesToScroll: 1,
+// });
 
 $(".main-prod-cat .slider").slick({
   arrows: false,
@@ -176,3 +200,15 @@ $(".scrolling-logos .container").slick({
     },
   ],
 });
+
+/* eslint-disable */
+$(document).on("yith-wcan-ajax-filtered", function () {
+  UNCODE.isotopeLayout();
+});
+
+$(".active-filters-container").click(function () {
+  $(".widget-area #block-2").toggleClass("active");
+});
+
+$(".woocommerce-info.error").parent().css("display", "block");
+$(".default-top .sub-filters").parent().parent().parent().css("height", "60vh");

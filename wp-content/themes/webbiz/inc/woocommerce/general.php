@@ -52,7 +52,7 @@ if ( ! function_exists( 'webbiz_woocommerce_wrapper_before' ) ) {
 		<div id="primary" class="content-area">
 			<main id="main" class="site-main" role="main">
 				<div class="container padding-med">
-					<div class="row">
+					<div class="row justify-content-center">
 		<?php
 	}
 }
@@ -180,7 +180,7 @@ add_action('woocommerce_before_shop_loop', 'woocommerce_get_sidebar', 3);
 add_action('woocommerce_before_main_content', 'header_wrapper_open', 50);
 
 function header_wrapper_open() {
-  echo '<div class="col-12">';
+  echo '<div class="col-lg-10 col-md-12 mt-5 pt-5 woocommerce-wrapper">';
 }
 
 /**

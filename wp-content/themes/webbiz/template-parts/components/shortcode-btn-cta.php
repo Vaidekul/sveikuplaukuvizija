@@ -49,3 +49,19 @@ function custom_link_black($atts) {
 }   
 
 add_shortcode( 'custom-link-black', 'custom_link_black' );
+
+
+// function that runs when shortcode is called
+function wpb_demo_shortcode() { 
+ 
+	// Things that you want to do. 
+	
+	$message = '<a class="active-filters-container d-flex align-items-center d-block d-lg-none" href="">Filtrai<i class="ml-3 fas fa-chevron-down"></i></a>';
+	
+	 
+	// Output needs to be return
+	return $message;
+	} 
+	// register shortcode
+	add_shortcode('greeting', 'wpb_demo_shortcode'); 
+	

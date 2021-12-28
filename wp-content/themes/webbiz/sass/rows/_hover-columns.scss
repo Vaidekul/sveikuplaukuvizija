@@ -1,5 +1,7 @@
 .hover-columns {
 	// background-color: #4c0c13;
+	max-width: 100vw;
+	overflow-x: hidden;
 	.columns {
 		display: flex;
 		justify-content: space-between;

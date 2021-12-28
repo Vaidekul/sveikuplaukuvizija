@@ -1,0 +1,134 @@
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: WPB Related Products Slider for WooCommerce\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-12-12 14:29+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: \n"
+"Language: \n"
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Loco https://localise.biz/\n"
+"X-Loco-Version: 2.5.5; wp-5.8.2\n"
+"X-Domain: wpb-wrps"
+
+#: admin/settings-config.php:70
+msgid "Box Theme"
+msgstr ""
+
+#: admin/settings-config.php:65
+msgid ""
+"Choose a theme for related products slider, Default: Hover Effect Theme."
+msgstr ""
+
+#: admin/settings-config.php:108
+msgid "Default: 1 columns."
+msgstr ""
+
+#: admin/settings-config.php:100
+msgid "Default: 2 columns."
+msgstr ""
+
+#: admin/settings-config.php:84 admin/settings-config.php:92
+msgid "Default: 3 columns."
+msgstr ""
+
+#: main.php:89
+msgid "Dismiss"
+msgstr ""
+
+#: admin/settings-config.php:47
+msgid "General Settings"
+msgstr ""
+
+#: main.php:89
+#, php-format
+msgid "Get a 10% exclusive discount on the premium version of the"
+msgstr ""
+
+#. Description of the plugin
+msgid "Highly customizable related product slider plugin for WooCommerce."
+msgstr ""
+
+#: admin/settings-config.php:69
+msgid "Hover Effect Theme"
+msgstr ""
+
+#. Author URI of the plugin
+msgid "http://wpbean.com"
+msgstr ""
+
+#. URI of the plugin
+msgid "http://wpbean.com/plugins/"
+msgstr ""
+
+#: admin/settings-config.php:83
+msgid "Number of columns in Slider"
+msgstr ""
+
+#: admin/settings-config.php:91
+msgid "Number of Columns in Slider [ Desktop Small 980px ]"
+msgstr ""
+
+#: admin/settings-config.php:107
+msgid "Number of Columns in Slider [ Mobile 479px ]"
+msgstr ""
+
+#: admin/settings-config.php:99
+msgid "Number of Columns in Slider [ Tablet 768px ]"
+msgstr ""
+
+#: admin/settings-config.php:75
+msgid "Number of Related Products"
+msgstr ""
+
+#: admin/settings-config.php:76
+msgid "Number of Related Products to show in this slider."
+msgstr ""
+
+#: inc/wpb-wrps-functions.php:76
+msgid "Related Products"
+msgstr ""
+
+#: inc/wpb-wrps-functions.php:91
+msgid "Sale!"
+msgstr ""
+
+#: admin/settings-config.php:64
+msgid "Slider Theme"
+msgstr ""
+
+#: inc/wpb-wrps-functions.php:142
+msgid "Support"
+msgstr ""
+
+#: main.php:89
+msgid "Use discount code - "
+msgstr ""
+
+#: admin/settings-config.php:39
+msgid "WPB Related Products Slider"
+msgstr ""
+
+#. Name of the plugin
+#: main.php:89
+msgid "WPB Related Products Slider for WooCommerce"
+msgstr ""
+
+#: admin/settings-config.php:39
+msgid "WPB WooCommerce Related Products Slider"
+msgstr ""
+
+#. Author of the plugin
+msgid "wpbean"
+msgstr ""
+
+#: main.php:44
+msgid ""
+"You can't activate the free version of WPB Related Products Slider for "
+"WooCommerce while you are using the premium one."
+msgstr ""

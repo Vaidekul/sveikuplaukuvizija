@@ -1,12 +1,23 @@
 {
     "name": "paysera/wordpress-paysera-module",
-    "description": "Paysera Payments module for Wordpress",
+    "description": "Paysera module for Wordpress",
+    "autoload": {
+        "psr-4": {
+            "Paysera\\Includes\\": "includes"
+        }
+    },
     "require": {
+        "php": ">=7.1",
         "webtopay/libwebtopay": "^1.6",
+        "symfony/polyfill-intl-idn": "1.20.0",
+        "symfony/polyfill-intl-normalizer": "1.20.0",
+        "paysera/lib-delivery-api-merchant-client": "^0.7.0"
+    },
+    "require-dev": {
         "paysera/lib-php-cs-fixer-config": "^2.2"
     },
     "type": "wordpress-module",
-    "version": "2.6.7",
+    "version": "3.1.4",
     "license": [
         "GPL-3.0"
     ],

@@ -63,7 +63,7 @@ if ( $mch_tool_autoupdate === '0' or  $mch_tool_autoupdate ==='1' ) {
         <td>
           <fieldset><legend class="screen-reader-text"><span>Required Acceptance</span></legend><label for="wpcf7-mailchimp-cfactive">
           <input type="text" id="wpcf7-mailchimp-accept" name="wpcf7-mailchimp[accept]" class="regular-text ltr" placeholder="[my-optin] <= Leave Empty if you are NOT using the checkbox or read the link above" value="<?php echo (isset($cf7_mch['accept'])) ? $cf7_mch['accept'] : '';?>" />
-           <small class="description"><?php echo mce_mail_tags(); ?>  <a href="<?php echo MC_URL ?>/mailchimp-opt-in-checkbox<?php echo vc_utm() ?>MC-opt-in-checkbox" class="helping-field" target="_blank" title="get help with Subscriber name:"> Learn More </a></small></label>
+           <small class="description"><?php echo mce_mail_tags(); ?>  <a href="<?php echo MC_URL ?>/help/mailchimp-opt-in-checkbox<?php echo vc_utm() ?>MC-opt-in-checkbox" class="helping-field" target="_blank" title="get help with Subscriber name:"> Learn More </a></small></label>
           </fieldset>
         </td>
       </tr>

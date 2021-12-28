@@ -1,22 +1,22 @@
-Paysera for WooCommerce
+WooCommerce Payment Gateway - Paysera
 =======================
 
-Version: 2.6.7
+Version: 3.1.4
 
-Date: 2021-08-12
+Date: 2021-12-08
 
 Contributors: Paysera
 
 Tags: online payment, payment, payment gateway, SMS payments, international payments, mobile payment, sms pay, payment 
-by sms, billing system, payment institution, macro payments, micro payments, sms bank
+by sms, billing system, payment institution, macro payments, micro payments, sms bank, shipping, delivery, parcels
 
 Requires at least: 4.0
 
-Tested up to: 5.8
+Tested up to: 5.8.2
 
-Stable tag: 2.6.7
+Stable tag: 3.1.4
 
-Requires PHP: 5.4
+Requires PHP: 7.1
 
 Minimum requirements: WooCommerce 3.0
 
@@ -44,6 +44,11 @@ To use Paysera payment gateway, register at paysera.com and create your project.
 https://bank.paysera.com/en/registration#/registration. Our extension, your account and support is free. 
 Only for selling a transaction fee is charged. For further information regarding the Paysera fees please visit: 
 https://www.paysera.com/v2/en-GB/fees. 
+
+All popular couriers in one place. No more separate agreements with each and every delivery company. Offer your buyers
+to choose delivery by the most popular couriers in the country with almost no additional effort for you as an e-shop owner.
+For further information regarding the Paysera fees please visit:
+https://www.paysera.com/v2/en-GB/fees/checkout-delivery
 
 == Benefits and possibilities of using Paysera checkout ==
 
@@ -83,17 +88,18 @@ https://www.youtube.com/watch?v=ojNf_P4gwPQ
 2. Connect to server and go to Wordpress base directory.
 
 3. Create New Folder and name it 'Paysera' in:
-     /wp-content/plugins
+    /wp-content/plugins
 
 4. Extract files and directories from zip file to newly created 'Paysera' folder.
 
-5. Activate Paysera payment method:
-    Plugins -> Installed Plugins -> WooCommerce Payment Gateway - Paysera -> Activate
+5. Activate Paysera plugin:
+    Plugins -> Installed Plugins -> Paysera Payment And Delivery -> Activate
 
 6. Configure Paysera plugin in:
-    WooCommerce -> Settings -> Checkout
-    
-   Choice Paysera and enter paysera.com project ID code, password and etc.
+    Paysera -> Payments
+    Paysera -> Delivery
+
+    Enter checkout project id, password and etc.
 
 7. Save changes.
 
@@ -105,15 +111,16 @@ https://www.youtube.com/watch?v=ojNf_P4gwPQ
 2. Connect to Wordpress admin panel.
 
 3. Install Paysera plugin to Wordpress:
-    Choice Plugins -> Add New -> Upload Plugin -> Choice File -> Choice downloaded zip -> Install Now
+    Plugins -> Add New -> Upload Plugin -> Choose File -> Choose downloaded zip -> Install Now
 
-4. Activate Paysera payment method:
-    Plugins -> Installed Plugins -> WooCommerce Payment Gateway - Paysera -> Activate
+4. Activate Paysera plugin:
+    Plugins -> Installed Plugins -> Paysera Payment And Delivery -> Activate
 
 5. Configure Paysera plugin in:
-    WooCommerce -> Settings -> Checkout
-    
-   Choice Paysera and enter paysera.com project ID code, password and etc.
+    Paysera -> Payments
+    Paysera -> Delivery
+
+    Enter checkout project id, password and etc.
 
 6. Save changes.
 
@@ -124,24 +131,91 @@ https://www.youtube.com/watch?v=ojNf_P4gwPQ
 
 2. Install Paysera plugin to Wordpress:
     
-    2.1. Choice Plugins -> Add New;
+    2.1. Plugins -> Add New;
     
-    2.2. Find "Paysera for WooCommerce";
+    2.2. Find 'Paysera Payment And Delivery';
     
     2.3. Install.
     
-4. Activate Paysera payment method:
-    Plugins -> Installed Plugins -> WooCommerce Payment Gateway - Paysera -> Activate
+4. Activate Paysera plugin:
+    Plugins -> Installed Plugins -> Paysera Payment And Delivery -> Activate
 
 5. Configure Paysera plugin in:
-    WooCommerce -> Settings -> Checkout
-    
-   Choice Paysera and enter paysera.com project ID code, password and etc.
+    Paysera -> Payments
+    Paysera -> Delivery
+
+    Enter checkout project id, password and etc.
 
 6. Save changes.
 
 Changelog
 ---------
+= 3.1.4 =
+* Update - Additional error logging
+* Fix - Lang parameter fix
+
+= 3.1.3 =
+* Update - Additional order notes
+* Fix - some old settings were loaded incorrectly
+* Update - composer requirements cleanup
+
+= 3.1.2 =
+* Update - Settings backwards compatibility
+* Update - Additional check for duplicate plugins
+* Fix - Payment logo fix
+* Update - Composer improvement
+
+= 3.1.1 =
+* Update - Payment methods style improvements
+* Fix - Delivery dimensions fix
+
+= 3.1.0 =
+* Fix - Plugin name fix
+
+= 3.0.9 =
+* Update - Composer file
+
+= 3.0.8 =
+* Update - Payment enable/disable functionality improvement
+
+= 3.0.7 =
+* Fix - Checkout logo size fix
+
+= 3.0.6 =
+* Fix - Order creation error fix
+* Update - Terminal fields improvement
+* Update - Order notes improvements
+
+= 3.0.5 =
+* Fix - Delivery validation error fix
+* Update - Payment settings functionality improvements
+
+= 3.0.4 =
+* Update - Hooks and naming update
+
+= 3.0.3 =
+* Update - Translations refactor
+* Fix - Weight validation
+* Update - Image lazy loading
+
+= 3.0.2 =
+* Update - Delivery library update
+* Update - Terminal country selection improvement
+* Update - Composer improvements
+
+= 3.0.1 =
+* Update - Payment settings menu refactor
+* Update - Strict types
+* Update - Code style updates
+
+= 3.0.0 =
+* Update - New admin section
+* Update - Min requirements raised to PHP 7.1
+* Update - Delivery service addition
+
+= 2.6.8 =
+* Update - Notice box addition
+
 = 2.6.7 =
 * Fix - Composer fix
 
@@ -234,7 +308,72 @@ Changelog
 
 Upgrade Notice
 --------------
+= 3.1.4 =
+
+Additional error logging, lang parameter fix
+
+= 3.1.3 =
+
+Old settings load fix, composer requirements cleanup, additional order notes
+
+= 3.1.2 =
+
+Payment logo fix, composer improvement, additional check for duplicate plugins, settings backwards compatibility
+
+= 3.1.1 =
+
+Payment methods style improvements, delivery dimensions fix
+
+= 3.1.0 =
+
+Plugin name fix
+
+= 3.0.9 =
+
+Composer file update
+
+= 3.0.8 =
+
+Payment enable/disable functionality improvement
+
+= 3.0.7 =
+
+Checkout logo size fix
+
+= 3.0.6 =
+
+Order creation error fix, terminal fields improvement, order notes improvements
+
+= 3.0.5 =
+
+Delivery validation error fix, payment settings functionality improvements
+
+= 3.0.4 =
+
+Hooks and naming update
+
+= 3.0.3 =
+
+Translations refactor, fixed weight validation, image lazy loading
+
+= 3.0.2 =
+
+Delivery library update, terminal country selection improvement, composer improvements
+
+= 3.0.1 =
+
+Payment settings menu refactor, strict types, code style updates
+
+= 3.0.0 =
+
+New admin section, min requirements raised to PHP 7.1, delivery service addition
+
+= 2.6.8 =
+
+Notice box addition
+
 = 2.6.7 =
+
 Composer fix
 
 = 2.6.6 =

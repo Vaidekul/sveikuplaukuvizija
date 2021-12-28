@@ -1,0 +1,556 @@
+# Copyright (C) 2021 Paysera Payment And Delivery
+msgid ""
+msgstr ""
+"Project-Id-Version: Paysera Payment And Delivery\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-09-21 10:03+0000\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"PO-Revision-Date: 2021-12-07 10:33+0000\n"
+"Last-Translator: \n"
+"Language-Team: Lietuvių kalba\n"
+"Language: lt_LT\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10 >= 2 "
+"&&(n%100<10||n%100 >= 20)? 1 : 2);\n"
+"X-Generator: Loco https://localise.biz/\n"
+"X-Loco-Version: 2.5.5; wp-5.8.2"
+
+#: includes/Entity/abstract-paysera-delivery-gateway.php:86
+msgid "Method title"
+msgstr "Metodo pavadinimas"
+
+#: includes/Entity/abstract-paysera-delivery-gateway.php:90
+msgid "This controls the title which the user sees during shipping selection."
+msgstr ""
+"Šis nustatymas kontroliuoja pavadinimą, kurį pirkėjas mato pristatymo "
+"pasirinkime."
+
+#: includes/Entity/abstract-paysera-delivery-gateway.php:97
+#: includes/Entity/abstract-paysera-delivery-gateway.php:188
+msgid "Delivery Fee"
+msgstr "Pristatymo Kaina"
+
+#: includes/Entity/abstract-paysera-delivery-gateway.php:105
+msgid "Minimum weight"
+msgstr "Minimalus svoris"
+
+#: includes/Entity/abstract-paysera-delivery-gateway.php:113
+msgid "Maximum weight"
+msgstr "Maximalus svoris"
+
+#: includes/Entity/abstract-paysera-delivery-gateway.php:109
+#: includes/Entity/abstract-paysera-delivery-gateway.php:117
+msgid "Kilograms"
+msgstr "Kilogramai"
+
+#: includes/Entity/abstract-paysera-delivery-gateway.php:121
+#: includes/Entity/abstract-paysera-delivery-gateway.php:196
+msgid "Preferred pickup type"
+msgstr "Pageidaujamas paėmimo būdas"
+
+#: includes/Entity/abstract-paysera-delivery-gateway.php:223
+#: includes/Entity/abstract-paysera-delivery-gateway.php:235
+msgid "Courier"
+msgstr "Kurjeris"
+
+#: includes/Entity/abstract-paysera-delivery-gateway.php:221
+#: includes/Entity/abstract-paysera-delivery-gateway.php:233
+msgid "Parcel locker"
+msgstr "Paštomatas"
+
+#: includes/Entity/abstract-paysera-delivery-gateway.php:128
+msgid "Minimum order amount for free shipping"
+msgstr "Minimali užsakymo suma nemokam pristatymui"
+
+#: includes/Entity/abstract-paysera-delivery-gateway.php:132
+msgid "Users will need to spend this amount to get free shipping."
+msgstr ""
+"Pirkėjas turės išleisti nurodytą sumą, norėdamas gauti nemokamą pristatymą."
+
+#: includes/PayseraInit.php:291
+msgid "%s courier will deliver the parcel right to the customer's hands."
+msgstr "%s kurjeris pristatys jūsų siuntinį tiesiai klientui į rankas."
+
+#: includes/PayseraInit.php:288
+msgid ""
+"%s courier will deliver the parcel to the selected parcel terminal for "
+"customer to pickup any time."
+msgstr ""
+"%s kurjeris pristatys jūsų siuntinį  į pasirinktą paštomatą, iš kurio "
+"klientas galės betkada pasiimti siuntinį."
+
+#: includes/Entity/abstract-paysera-delivery-gateway.php:179
+msgid "Allowed weight:"
+msgstr "Galimas svoris:"
+
+#: includes/Entity/abstract-paysera-delivery-gateway.php:188
+msgid "Delivery Fee:"
+msgstr "Pristatymo Kaina:"
+
+#: includes/Entity/abstract-paysera-delivery-gateway.php:196
+msgid "Preferred pickup type:"
+msgstr "Pageidaujamas paėmimo būdas:"
+
+#: includes/PayseraInit.php:110
+msgid "Documentation"
+msgstr "Dokumentacija"
+
+#: includes/PayseraInit.php:115
+msgid "Settings"
+msgstr "Nustatymai"
+
+#: includes/PayseraInit.php:53 includes/PayseraInit.php:118
+msgid "WooCommerce is not active"
+msgstr "WooCommerce įskiepis nėra aktyvuotas"
+
+#: includes/PayseraDeliveryAdmin.php:292
+msgid "Paysera: Delivery order created - %s"
+msgstr "Paysera: Pristatymo užsakymas sukurtas - %s"
+
+#: includes/PayseraAdmin.php:42
+msgid "About"
+msgstr "Apie"
+
+#: includes/PayseraAdmin.php:50
+msgid "Delivery"
+msgstr "Pristatymas"
+
+#: includes/PayseraAdmin.php:58
+msgid "Payments"
+msgstr "Mokėjimai"
+
+#: includes/PayseraDeliveryAdmin.php:74 includes/PayseraPaymentAdmin.php:97
+msgid "Project ID"
+msgstr "Projekto ID"
+
+#: includes/PayseraDeliveryAdmin.php:81 includes/PayseraPaymentAdmin.php:104
+msgid "Project password"
+msgstr "Projekto slaptažodis"
+
+#: includes/PayseraDeliveryAdmin.php:88 includes/PayseraPaymentAdmin.php:111
+msgid "Test mode"
+msgstr "Testinis rėžimas"
+
+#: includes/PayseraDeliveryAdmin.php:95
+msgid "House number field"
+msgstr "Namo numerio laukas"
+
+#: includes/PayseraDeliveryAdmin.php:189
+msgid "Either project id or project password is incorrect"
+msgstr "Projekto id ir/arba projekto slaptažodis nėra teisingi"
+
+#: includes/PayseraAdminHtml.php:122
+msgid "Enabled"
+msgstr "Įjungta"
+
+#: includes/PayseraAdminHtml.php:124
+msgid "Disabled"
+msgstr "Išjungta"
+
+#: includes/PayseraAdminHtml.php:129
+msgid "Settings saved."
+msgstr "Nustatymai išsaugoti."
+
+#: includes/PayseraDeliveryAdminHtml.php:53
+msgid "Delivery Gateway List"
+msgstr "Pristatymo Tiekėjų Sąrašas"
+
+#: includes/PayseraDeliveryAdminHtml.php:106
+msgid "Shipping zones"
+msgstr "Pristatymo zonos"
+
+#: includes/PayseraDeliveryAdminHtml.php:115
+#: includes/PayseraPaymentAdmin.php:90
+msgid "Enable"
+msgstr "Įjungti"
+
+#: includes/PayseraDeliveryAdminHtml.php:110
+msgid "Disable"
+msgstr "Išjungti"
+
+#: includes/PayseraDeliveryFrontHtml.php:44
+#: includes/PayseraDeliveryFrontHtml.php:45
+#: includes/PayseraDeliveryFrontHtml.php:52
+#: includes/PayseraDeliveryFrontHtml.php:53
+msgid "House Number"
+msgstr "Namo Numeris"
+
+#: includes/PayseraDeliveryFrontHtml.php:83
+#: includes/PayseraDeliveryFrontHtml.php:113
+#: includes/PayseraDeliveryFrontHtml.php:207
+msgid "Please select the terminal location"
+msgstr "Prašome pasirinkti paštomato adresą"
+
+#: includes/PayseraDeliveryFrontHtml.php:91
+#: includes/PayseraDeliveryFrontHtml.php:201
+msgid "Please select the city/municipality"
+msgstr "Prašome pasirinkti miestą/savivaldybę"
+
+#: includes/PayseraDeliveryFrontHtml.php:147
+msgid "Sorry, %d kg exceeds the maximum weight of %d kg for %s"
+msgstr ""
+"Atsiprašome, %d kg svoris yra per didelis. Maksimalus svoris - %d kg. Būdas -"
+" %s."
+
+#: includes/PayseraDeliveryFrontHtml.php:161
+msgid "Sorry, %d kg is not enough for the minimum weight of %d kg for %s"
+msgstr ""
+"Atsiprašome, %d kg svoris yra per mažas. Minimalus svoris - %d kg. Būdas - "
+"%s."
+
+#: includes/PayseraDeliveryFrontHtml.php:192
+msgid "Terminal country"
+msgstr "Paštomato šalis"
+
+#: includes/PayseraDeliveryFrontHtml.php:199
+msgid "Terminal city"
+msgstr "Paštomato miestas"
+
+#: includes/PayseraDeliveryFrontHtml.php:205
+msgid "Terminal location"
+msgstr "Paštomato vieta"
+
+#: includes/PayseraDeliveryFrontHtml.php:194
+msgid "Please select the country"
+msgstr "Prašome pasirinkti šalį"
+
+#: includes/PayseraAdminHtml.php:17
+msgid "About Paysera"
+msgstr "Apie Paysera"
+
+#: includes/PayseraAdminHtml.php:19
+msgid ""
+"%s is a global fintech company providing financial and related services to "
+"clients from all over the world since 2004."
+msgstr ""
+"%s yra tarptautinė „fintech“ įmonė, teikianti finansines ir susijusias "
+"paslaugas klientams visame pasaulyje nuo 2004 m."
+
+#: includes/PayseraAdminHtml.php:20
+msgid "https://www.paysera.com/v2/en-GB/paysera-account"
+msgstr "https://www.paysera.lt/v2/lt-LT/paysera-saskaita"
+
+#: includes/PayseraAdminHtml.php:21
+msgid "Getting started"
+msgstr "Kaip pradėti"
+
+#: includes/PayseraAdminHtml.php:22
+msgid ""
+"In order to receive full benefits of both Paysera Payment and Delivery "
+"plugins, please use the outlined links to access our detailed how-to "
+"instructions."
+msgstr ""
+"Norėdami pradėti naudotis visais Paysera Mokėjimai, bei Paysera Pristatymas "
+"papildinių privalumais, pasinaudokite nuorodomis į išsamias instrukcijas."
+
+#: includes/PayseraAdminHtml.php:24
+msgid "Paysera Payments"
+msgstr "Paysera mokėjimai"
+
+#: includes/PayseraAdminHtml.php:26
+msgid "Paysera Delivery"
+msgstr "Paysera pristatymas"
+
+#: includes/PayseraAdminHtml.php:28
+msgid ""
+"This plugin enables you to accept online payments via cards, SMS, or the "
+"most popular banks in your country. It is easy to install and is used by "
+"thousands of online merchants across Europe."
+msgstr ""
+"Šis papildinys suteikia galimybę priimti mokėjimus internetu kortelėmis, SMS "
+"žinutėmis ar per populiariausius jūsų šalies bankus. Papildinys lengvai "
+"įdiegiamas ir naudojamas tūkstančių e. parduotuvių visoje Europoje."
+
+#: includes/PayseraAdminHtml.php:30
+msgid ""
+"This plugin displays several different delivery companies that your buyers "
+"can choose from when ordering your products. No need to sign separate "
+"agreements with the courier companies – we have done it for you. Enjoy low "
+"delivery prices and quick support when needed."
+msgstr ""
+"Šis papildinys rodo pristatymo tarnybas, kurias pirkėjai gali rinktis "
+"užsisakydami prekes jūsų e. parduotuvėje. Jums nereikia atskirai "
+"pasirašinėti sutarčių su kurjeriais – mes tai padarėme už jus. Mėgaukitės "
+"žemomis pristatymo kainomis ir operatyvia pagalba prireikus."
+
+#: includes/PayseraAdminHtml.php:32
+msgid "https://www.paysera.com/v2/en-GB/payment-gateway-checkout"
+msgstr "https://www.paysera.lt/v2/lt-LT/imoku-surinkimas-checkout"
+
+#: includes/PayseraAdminHtml.php:33 includes/PayseraAdminHtml.php:38
+msgid "Read more about it >"
+msgstr "Skaitykite daugiau >"
+
+#: includes/PayseraAdminHtml.php:34
+msgid "https://developers.paysera.com/en/checkout/basic"
+msgstr "https://developers.paysera.com/lt/checkout/basic"
+
+#: includes/PayseraAdminHtml.php:35 includes/PayseraAdminHtml.php:40
+msgid "Instructions >"
+msgstr "Instrukcijos >"
+
+#: includes/PayseraAdminHtml.php:37
+msgid "https://www.paysera.com/v2/en-GB/checkout-delivery-service"
+msgstr "https://www.paysera.lt/v2/lt-LT/checkout-pristatymas"
+
+#: includes/PayseraAdminHtml.php:39
+msgid "https://developers.paysera.com/en/delivery"
+msgstr "https://developers.paysera.com/lt/delivery"
+
+#: includes/PayseraAdminHtml.php:41
+msgid "Need assistance?"
+msgstr "Reikia pagalbos?"
+
+#: includes/PayseraAdminHtml.php:42
+msgid "Paysera client support in English is available 24/7!"
+msgstr ""
+"Paysera klientus anglų kalba aptarnauja visą parą, 7 dienas per savaitę!"
+
+#: includes/PayseraAdminHtml.php:44
+msgid "During working hours the support is available in 12 languages."
+msgstr "Darbo metu klientai aptarnaujami 12 kalbų."
+
+#: includes/PayseraAdminHtml.php:45
+msgid "https://www.paysera.com/v2/en-GB/contacts"
+msgstr "https://www.paysera.lt/v2/lt-LT/kontaktai"
+
+#: includes/PayseraAdminHtml.php:46
+msgid "Contact us >"
+msgstr "Susisiekite su mumis >"
+
+#: includes/PayseraAdminHtml.php:48
+msgid ""
+"For the latest news about the Paysera services and status updates – follow "
+"us on %s and %s."
+msgstr ""
+"Norėdami sužinoti paskutines naujienas apie Paysera paslaugas, sekite mus %s "
+"ir %s socialiniuose tinkluose."
+
+#: includes/PayseraAdminHtml.php:52
+msgid "Explore other services of Paysera"
+msgstr "Susipažinkite su kitomis „Paysera“ paslaugomis"
+
+#: includes/PayseraAdminHtml.php:53
+msgid "Alongside its' most popular services, Paysera also offers:"
+msgstr "Kartu su populiariausiomis paslaugomis Paysera taip pat siūlo:"
+
+#: includes/PayseraAdminHtml.php:54
+msgid "Currency exchange at competitive rates"
+msgstr "Palankius valiutos konvertavimo kursus"
+
+#: includes/PayseraAdminHtml.php:55
+msgid "Enables instant Euro and cheap international transfers"
+msgstr "Momentinius mokėjimus eurais ir pigius tarptautinius pervedimus"
+
+#: includes/PayseraAdminHtml.php:57
+msgid "Provides LT, BGN, and RON %s for business and private clients"
+msgstr "LT, BG ir RO %s sąskaitas verslo ir privatiems klientams"
+
+#: includes/PayseraAdminHtml.php:58
+msgid "https://www.paysera.com/v2/en/blog/iban-account"
+msgstr "https://www.paysera.com/v2/lt/blog/iban-saskaita"
+
+#: includes/PayseraAdminHtml.php:62
+msgid "Issues %s that are compatible with %s and %s, and so much more."
+msgstr "%s, kurias galima susieti su %s ir %s bei dar daugiau."
+
+#: includes/PayseraAdminHtml.php:63
+msgid "https://www.paysera.com/v2/en-GB/payment-card-visa"
+msgstr "https://www.paysera.lt/v2/lt-LT/mokejimo-kortele-visa"
+
+#: includes/PayseraAdminHtml.php:64
+msgid "Visa cards"
+msgstr "Visa korteles"
+
+#: includes/PayseraAdminHtml.php:65
+msgid "https://www.paysera.com/v2/en-GB/blog/googlepay-samsungpay"
+msgstr "https://www.paysera.lt/v2/lt-LT/blog/googlepay-samsungpay"
+
+#: includes/PayseraAdminHtml.php:66
+msgid "https://www.paysera.com/v2/en-GB/apple-pay"
+msgstr "https://www.paysera.lt/v2/lt-LT/apple-pay"
+
+#: includes/PayseraAdminHtml.php:69
+msgid ""
+"All the main services can be easily managed via the %s which is available "
+"for download from the App Store, Google Play, and Huawei AppGallery."
+msgstr ""
+"Visas pagrindines paslaugas galima lengvai valdyti %s, kurią galima "
+"atsisiųsti iš „App Store“, „Google Play“ ir „Huawei AppGallery“."
+
+#: includes/PayseraAdminHtml.php:70
+msgid "https://www.paysera.com/v2/en-GB/mobile-application"
+msgstr "https://www.paysera.lt/v2/lt-LT/mobili-programele-paysera"
+
+#: includes/PayseraAdminHtml.php:71
+msgid "Paysera mobile app"
+msgstr "Paysera mobiliąją programėlę"
+
+#: includes/PayseraAdminHtml.php:73
+msgid "Thank you for choosing our services!"
+msgstr "Dėkojame, kad renkatės mūsų paslaugas!"
+
+#: includes/PayseraPaymentAdmin.php:119
+msgid "Title"
+msgstr "Pavadinimas"
+
+#: includes/PayseraPaymentSettings.php:35
+msgid "All popular payment methods"
+msgstr "Visi populiariausi mokėjimo būdai"
+
+#: includes/PayseraPaymentSettings.php:36
+msgid "Choose a payment method on the Paysera page"
+msgstr "Pasirinkite mokėjimo būdą Paysera svetainėje"
+
+#: includes/PayseraPaymentAdmin.php:126
+msgid "Description"
+msgstr "Aprašymas"
+
+#: includes/PayseraPaymentAdmin.php:133
+msgid "List of payments"
+msgstr "Mokėjimų sąrašas"
+
+#: includes/PayseraPaymentAdmin.php:140
+msgid "Specific countries"
+msgstr "Konkrečios šalys"
+
+#: includes/PayseraPaymentAdmin.php:147
+msgid "Grid view"
+msgstr "Atvaizdavimas tinkleliu"
+
+#: includes/PayseraPaymentAdmins.php:162
+msgid "New Order Status"
+msgstr "Naujo užsakymo būsena"
+
+#: includes/PayseraPaymentAdmin.php:169
+msgid "Paid Order Status"
+msgstr "Apmokėto užsakymo būsena"
+
+#: includes/PayseraPaymentAdmin.php:176
+msgid "Pending Checkout"
+msgstr "Laukiantys apmokėjimo"
+
+#: includes/PayseraPaymentAdmin.php:154
+msgid "Buyer consent"
+msgstr "Pirkėjo sutikimas"
+
+#: includes/PayseraPaymentFrontHtml.php:51
+msgid ""
+"Please be informed that the account information and payment initiation "
+"services will be provided to you by Paysera in accordance with these %s. By "
+"proceeding with this payment, you agree to receive this service and the "
+"service terms and conditions."
+msgstr ""
+"Informuojame, kad sąskaitos informacijos ir mokėjimo inicijavimo paslaugas "
+"Jums suteiks Paysera vadovaudamasi šių paslaugų teikimo %s. Tęsdami "
+"apmokėjimą patvirtinate, kad sutinkate su šių paslaugų suteikimu ir jų "
+"teikimo sąlygomis."
+
+#: includes/PayseraPaymentFrontHtml.php:55
+msgid "https://www.paysera.com/v2/en-GB/legal/pis-rules-2020"
+msgstr "https://www.paysera.lt/v2/lt-LT/sutartys/mip-taisykles-2020"
+
+#: includes/PayseraPaymentFrontHtml.php:57
+msgid "rules"
+msgstr "taisyklėmis"
+
+#: includes/PayseraPaymentAdmin.php:184
+msgid "Ownership code"
+msgstr "Patvirtinimo kodas"
+
+#: includes/PayseraPaymentAdmin.php:191
+msgid "Write your ownership code"
+msgstr "Įrašykite patvirtinimo kodą"
+
+#: includes/PayseraPaymentAdmin.php:198
+msgid "Quality sign"
+msgstr "Kokybės ženklas"
+
+#: includes/PayseraPaymentAdminHtml.php:39
+msgid "Main Settings"
+msgstr "Pagrindiniai nustatymai"
+
+#: includes/PayseraPaymentAdminHtml.php:52
+msgid "Extra Settings"
+msgstr "Papildomi nustatymai"
+
+#: includes/PayseraPaymentAdminHtml.php:63
+msgid "Order Status"
+msgstr "Užsakymo būsena"
+
+#: includes/PayseraPaymentAdminHtml.php:74
+msgid "Project Additions"
+msgstr "Projekto priedai"
+
+#: includes/Entity/class-paysera-payment-gateway.php:66
+msgid "Paysera: Order checkout process is started"
+msgstr "Paysera: Neapmokėto užsakymo būsena"
+
+#: includes/Entity/class-paysera-payment-gateway.php:93
+msgid "Paysera: Customer came back to page"
+msgstr "Paysera: Naujo užsakymo kūrimo būsena"
+
+#: includes/Entity/class-paysera-payment-gateway.php:121
+msgid "Paysera: Callback order payment completed"
+msgstr "Paysera: Užsakymo būsena po apmokėjimo"
+
+#: includes/Entity/class-paysera-payment-gateway.php:172
+msgid "Paysera: Status changed to "
+msgstr "Paysera: Apmokėjimo būsena pakeista į"
+
+#. includes/PayseraInit.php:63
+msgid "Paysera Payment And Delivery"
+msgstr "Paysera Payment And Delivery"
+
+#: includes/Entity/class-paysera-payment-gateway.php:116
+msgid "Payment confirmed with a callback"
+msgstr "Užsakymas patvirtintas"
+
+#: includes/Entity/class-paysera-payment-gateway.php:143
+msgid "Amounts do not match"
+msgstr "Neatitinka sumos"
+
+#: includes/Entity/class-paysera-payment-gateway.php:149
+msgid "Currencies do not match"
+msgstr "Neatitinka valiutos"
+
+#: paysera.php:64
+msgid "Paysera plugin requires at least PHP "
+msgstr "Minimali Paysera įskiepio PHP versija "
+
+#. includes/PayseraInit.php:299
+msgid "Terminals"
+msgstr "Paštomatai"
+
+#. includes/PayseraInit.php:65
+msgid "Plugin & Services."
+msgstr "įskiepį ir paslaugas."
+
+#. includes/PayseraInit.php:60
+msgid ""
+"NEW! With the latest version, you can integrate delivery options into your e-"
+"shop. More about the %s "
+msgstr ""
+"NAUJIENA! Su naujausia versija galite integruoti pristatymo būdus savo e-"
+"parduotuvėje. Daugiau apie %s "
+
+#: includes/PayseraDeliveryAdmin.php:290
+msgid ""
+"Paysera: Delivery order creation failed, please create order manually in "
+"Paysera system"
+msgstr ""
+"Paysera: Nepavyko sukurti pristatymo užsakymo, prašome sukurti rankiniu būdu "
+"Paysera sistemoje"
+
+#: includes/PayseraInit.php:70
+msgid "More than 1 Paysera plugin active"
+msgstr "Aktyvuoti keli Paysera įskiepiai"
+
+#: includes/PayseraDeliveryLibraryHelper.php:272
+msgid "Paysera: Chosen terminal location - %s, %s, %s"
+msgstr "Paysera: Pasirinktas terminalas - %s, %s, %s"
+
+#: includes/PayseraDeliveryAdmin.php:303
+msgid "Error:"
+msgstr "Klaida:"

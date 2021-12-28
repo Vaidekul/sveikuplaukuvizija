@@ -3,7 +3,7 @@
   Plugin Name: Contact Form 7 MailChimp Extension
   Plugin URI: http://renzojohnson.com/contributions/contact-form-7-mailchimp-extension
 
-  Copyright 2013-2021 Renzo Johnson (email: renzojohnson at gmail.com)
+  Copyright 2013-2022 Renzo Johnson (email: renzojohnson at gmail.com)
 
   This program is free software; you can redistribute it and/or modify
   it under the terms of the GNU General Public License as published by
@@ -192,6 +192,11 @@
     border-color: #008b1d;
 }
 
+#wpcf7-mailchimp-list {
+  max-width: unset;
+}
+
+#chm_panel_principal .spinner,
 .mce-custom-fields .spinner {
   float: none;
   margin-top: 0;
@@ -243,6 +248,12 @@
   clear: both;
 }
 
+#chm_panel_camposformagroup label {
+  display: inline-block;
+  vertical-align: bottom;
+}
+
+.mce-red,
 .mce-required {
   color: #dd3d36;
   font-weight: 900;
@@ -391,6 +402,64 @@ div#section-holder {
 }
 
 
+.holder-img {
+  position: relative;
+  background-color: rgba(0, 0, 0, 0.05);
+}
+
+.audience-name a {
+  text-decoration: none;
+}
+
+.lin-to-pro {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: -99;
+  color: #ddd;
+  text-align: center;
+  text-decoration: none;
+  background-color: rgba(0, 0, 0, 0.45);
+  box-sizing: border-box;
+  opacity: 0;
+  color: #fff !important;
+  border-radius: 3px;
+}
+
+.lin-to-pro span {
+  margin: auto;
+  padding: 1rem 3rem;
+  text-align: center;
+  font-size: 4em;
+
+}
+
+.lin-to-pro span span {
+  font-size: 0.45em;
+  display: block;
+  margin-top: 25px;
+  line-height: 1.2em;
+  background: #00be28;
+
+  border: 1px solid #00a523;
+  border-width: 1px 1px 2px;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  flex-shrink: 0;
+  padding: 5px 20px 5px;
+  border-radius: 3px;
+      font-size: 14px;
+    line-height: 21px;
+    font-weight: 500;
+}
+
+.holder-img:hover .lin-to-pro{
+  top: 0;
+  left: 0;
+  z-index: 999;
+  opacity: 1;
+  display: flex;
+}
 
 /* // *======================================================================================================================================================= */
 /* //             Bootstrap 3 Media Queries */

@@ -2,8 +2,8 @@
 Tags: css, visual css, css editor, design, customize
 Requires at least: 3.9
 Tested up to: 5.8
-Stable tag: 1.4.0
-Build time: 2021-10-11T19:53:12+02:00
+Stable tag: 1.4.3
+Build time: 2021-11-29T21:56:11+02:00
 License: GPLv2 or later
 Contributors: gpriday, alexgso
 Donate link: https://siteorigin.com/downloads/premium/
@@ -70,6 +70,17 @@ Free support is available on the [SiteOrigin support forums](https://siteorigin.
 SiteOrigin Premium includes access to our professional email support service, perfect for those times when you need fast and effective technical support. We're standing by to assist you in any way we can.
 
 == Changelog ==
+
+= 1.4.3 - 29 November 2021 =
+* Restored editor scrollbar.
+* Added a fixed editor height.
+
+= 1.4.2 - 08 November 2021 =
+* Fixed string translation functions.
+
+= 1.4.1 - 02 November 2021 =
+* Removed Save button rounding.
+* Fixed Visual Editor `Navigate To` link functionality.
 
 = 1.4.0 - 11 October 2021 =
 * Added Ajax saving. Users can now save in the expanded and visual editors without exiting to basic editor.

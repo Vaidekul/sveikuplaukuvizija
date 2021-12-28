@@ -6,6 +6,7 @@ $vendorDir = dirname(dirname(__FILE__));
 $baseDir = dirname($vendorDir);
 
 return array(
+    'Normalizer' => $vendorDir . '/symfony/polyfill-intl-normalizer/Resources/stubs/Normalizer.php',
     'WebToPay' => $vendorDir . '/webtopay/libwebtopay/src/WebToPay.php',
     'WebToPayException' => $vendorDir . '/webtopay/libwebtopay/src/WebToPayException.php',
     'WebToPay_CallbackValidator' => $vendorDir . '/webtopay/libwebtopay/src/WebToPay/CallbackValidator.php',

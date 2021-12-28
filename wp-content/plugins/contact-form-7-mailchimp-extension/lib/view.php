@@ -1,5 +1,5 @@
 <?php
-/*  Copyright 2013-2021 Renzo Johnson (email: renzojohnson at gmail.com)
+/*  Copyright 2013-2022 Renzo Johnson (email: renzojohnson at gmail.com)
 
     This program is free software; you can redistribute it and/or modify
     it under the terms of the GNU General Public License as published by
@@ -41,7 +41,7 @@ function mce_panel_gen ($apivalid,$listdata,$cf7_mch,$listatags,$mce_txcomodin) 
             <?php mce_html_panel_listmail( $apivalid, $listdata, $cf7_mch); // Get listas ?>
 
         </div>
-        <small class="description">Hit the Connect button to load your lists <a href="https://chimpmatic.com/how-to-find-your-mailchimp-api-key<?php echo vc_utm() ?>MC-list-id" class="helping-field" target="_blank" title="get help with MailChimp List ID:"> Learn More</a></small>
+        <small class="description">Hit the Connect button to load your lists <a href="https://chimpmatic.com/help/how-to-get-your-mailchimp-api-key<?php echo vc_utm() ?>MC-list-id" class="helping-field" target="_blank" title="get help with MailChimp List ID:"> Learn More</a></small>
       </div>
     </div>
 
@@ -59,13 +59,116 @@ function mce_panel_gen ($apivalid,$listdata,$cf7_mch,$listatags,$mce_txcomodin) 
       </div>
     </div>
 
+
+
     <div class="mce-custom-fields holder-img">
-      <a href="<?php echo CHIMPL_URL ?>?utm_source=ChimpMatic&utm_campaign=Groups-img" target="_blank" title="ChimpMatic Pro Options"><img src="/wp-content/plugins/contact-form-7-mailchimp-extension/assets/images/ChimpMatic-lite-tags-options.png" alt="ChimpMatic Pro Options" title="ChimpMatic Pro Options"></a>
+      <h3 class="title">Audience TAGs - <span class="audience-name"><a href="<?php echo CHIMPL_URL ?>?utm_source=ChimpMatic&utm_campaign=Tags-img" target="_blank" title="ChimpMatic Pro Options">PRO Feature</a></span></h3>
+      <p>You can add these as your contacts tags:</p>
+      <div class="col-6">
+              <div id="chm_panel_camposformatags">
+
+    <label class="pr10"><input type="checkbox" id="wpcf7-mailchimp-labeltags-1" name="wpcf7-mailchimp[labeltags][your-name]" value="1">
+             [your-name] <span class="mce-type">text</span></label>
+
+
+
+    <label class="pr10"><input type="checkbox" id="wpcf7-mailchimp-labeltags-3" name="wpcf7-mailchimp[labeltags][your-number]" value="1">
+             [your-number] <span class="mce-type">number</span></label>
+
+
+
+    <label class="pr10"><input type="checkbox" id="wpcf7-mailchimp-labeltags-4" name="wpcf7-mailchimp[labeltags][your-height]" value="1" checked="checked">
+             [your-car] <span class="mce-type">text</span></label>
+
+                    <label class="atags"><b>Arbitrary Tags Here:</b> <input type="text" id="wpcf7-mailchimp-labeltags_cm-tag" name="wpcf7-mailchimp[labeltags_cm-tag]" value="genre, [card-brand]" placeholder="comma, separated, texts, or [mail-tags]">
+                  <p class="description">You can type in your tags here. Comma separated text or [mail-tags]</p>
+                </label>
+              </div>
+          </div>
+
+      <a class="lin-to-pro" href="<?php echo CHIMPL_URL ?>?utm_source=ChimpMatic&utm_campaign=TAGs-link" target="_blank" title="ChimpMatic Pro Options"><span>PRO Feature <span>Learn More...</span></span></a>
+    </div>
+
+
+
+
+    <div class="mce-custom-fields holder-img">
+      <h3 class="title">Audience GROUPs - <span class="audience-name"><a href="<?php echo CHIMPL_URL ?>?utm_source=ChimpMatic&utm_campaign=Tags-img" target="_blank" title="ChimpMatic Pro Options">PRO Feature</a></span></h3>
+      <p>Match them to your Contact Form checkboxes or radio buttons:</p>
+
+      <div class="col-6">
+              <div id="chm_panel_camposformagroup">
+                            <div class="mcee-container">
+            <label> <span class="gname">Car Brand</span> <span class="mce-type">id: 4ce1c8eff2 - type :checkboxes</span>               <input type="hidden" id="wpcf7-mailchimp-ggCustomKey1" value="4ce1c8eff2" style="width:0%" name="wpcf7-mailchimp[ggCustomKey1]">
+            </label>
+            <label class="glocks"><span class="dashicons dashicons-lock blue"></span>
+                <input type="checkbox" class="chimp-gg-arbirary" tag="1" id="wpcf7-mailchimp-ggCheck1" name="wpcf7-mailchimp[ggCheck1]" value="1">
+            </label>
+            <div id="gg-select1">
+                <select class="chm-select" id="wpcf7-mailchimp-ggCustomValue1" name="wpcf7-mailchimp[ggCustomValue1]" style="width:95%">
+                  <option value=" ">Choose.. </option>
+                  <option value="my-gdpr1" selected="selected">[car-brand]  - type :checkbox </option>
+                  <option value="my-gdpr2">[car-color]  - type :checkbox </option>
+                  <option value="my-gdpr3">[my-size]  - type :checkbox </option>
+                </select>
+              </div>
+      </div>
+                  </div>
+      </div>
+<a class="lin-to-pro" href="<?php echo CHIMPL_URL ?>?utm_source=ChimpMatic&utm_campaign=GROUPs-link" target="_blank" title="ChimpMatic Pro Options"><span>PRO Feature  <span>Learn More...</span></span></a>
     </div>
 
     <div class="mce-custom-fields holder-img">
-      <a href="<?php echo CHIMPL_URL ?>?utm_source=ChimpMatic&utm_campaign=Tags-img" target="_blank" title="ChimpMatic Pro Options"><img src="/wp-content/plugins/contact-form-7-mailchimp-extension/assets/images/ChimpMatic-lite-groups-options.png" alt="ChimpMatic Pro Options" title="ChimpMatic Pro Options"></a>
+      <h3 class="title">Audience GDPR Marketing Preferences - <span class="audience-name"><a href="<?php echo CHIMPL_URL ?>?utm_source=ChimpMatic&utm_campaign=Tags-img" target="_blank" title="ChimpMatic Pro Options">PRO Feature</a></span></h3>
+      <p>Match them to your Contact Form checkboxes:</p>
+      <div class="col-6">
+              <div id="chm_panel_camposformaGDPR">
+                            <div class="mcee-container">
+            <label>Email <span class="mce-type">id: 74de728e79</span>               <input type="hidden" id="wpcf7-mailchimp-GDPRcustomKey1" value="74de728e79" style="width:0%" name="wpcf7-mailchimp[GDPRcustomKey1]">
+            </label>
+            <div id="GDPR-select1">
+                    <select class="chm-select" id="wpcf7-mailchimp-GDPRCustomValue1" name="wpcf7-mailchimp[GDPRCustomValue1]" style="width:95%">
+              <option value=" ">
+          Choose.. </option>
+                 <option value="my-gdpr1"  selected="selected">
+              [my-gdpr1]  - type :checkbox </option>
+                        <option value="my-gdpr2">
+              [my-gdpr2]  - type :checkbox </option>
+                        <option value="my-gdpr3">
+              [my-gdpr3]  - type :checkbox </option>
+                        <option value="my-gdpr4">
+              [my-gdpr4]  - type :checkbox </option>
+                        <option value="mi-radio">
+              [mi-radio]  - type :radio </option>
+                </select>
+              </div>
+      </div>
+          <div class="mcee-container">
+            <label>Direct Mail <span class="mce-type">id: 701c19a03b</span>               <input type="hidden" id="wpcf7-mailchimp-GDPRcustomKey2" value="701c19a03b" style="width:0%" name="wpcf7-mailchimp[GDPRcustomKey2]">
+            </label>
+            <div id="GDPR-select2">
+                    <select class="chm-select" id="wpcf7-mailchimp-GDPRCustomValue2" name="wpcf7-mailchimp[GDPRCustomValue2]" style="width:95%">
+              <option value=" ">
+          Choose.. </option>
+                 <option value="my-gdpr1">
+              [my-gdpr1]  - type :checkbox </option>
+                        <option value="my-gdpr2" selected="selected">
+              [my-gdpr2]  - type :checkbox </option>
+                        <option value="my-gdpr3">
+              [my-gdpr3]  - type :checkbox </option>
+                        <option value="my-gdpr4">
+              [my-gdpr4]  - type :checkbox </option>
+                        <option value="mi-radio">
+              [mi-radio]  - type :radio </option>
+                </select>
+              </div>
+      </div>
+
+                  </div>
+          </div>
+<a class="lin-to-pro" href="<?php echo CHIMPL_URL ?>?utm_source=ChimpMatic&utm_campaign=GDPRs-link" target="_blank" title="ChimpMatic Pro Options"><span>PRO Feature <span>Learn More...</span></span></a>
     </div>
+
 
   </div>
 
@@ -90,9 +193,9 @@ function mce_panel_gen ($apivalid,$listdata,$cf7_mch,$listatags,$mce_txcomodin) 
     <label for="wpcf7-mailchimp-api"><?php echo esc_html( __( 'MailChimp API Key:', 'wpcf7' ) ); ?> </label><br />
     <input type="text" id="wpcf7-mailchimp-api" name="wpcf7-mailchimp[api]" class="wide" size="50" data-chimp="1ed6d4f4abc3e9" data-matic="deecf086af7f04b3a3-us4" placeholder="Enter Your Mailchimp API key Here" value="<?php echo (isset($cf7_mch['api']) ) ? esc_attr( $cf7_mch['api'] ) : ''; ?>" />
 
-    <span><input id="mce_activalist" type="button" value="Connect and Fetch Your Mailing Lists" class="button button-primary" style="width:35%;" /><span class="spinner"></span></span>
+    <span><input id="mce_activalist" type="button" value="Connect and Fetch Your Audiences" class="button button-primary" style="width:35%;" /><span class="spinner"></span></span>
 
-    <small class="description need-api"><a href="<?php echo CHIMPHELP_URL ?>/how-to-get-your-mailchimp-api-key<?php echo vc_utm() ?>MC-api" class="helping-field" target="_blank" title="get help with MailChimp API Key:"> Find your Mailchimp API here <span class="red-icon dashicons dashicons-arrow-right"></span><span class="red-icon dashicons dashicons-arrow-right"></span></a></small>
+    <small class="description need-api"><a href="<?php echo CHIMPHELP_URL ?>/help/how-to-get-your-mailchimp-api-key<?php echo vc_utm() ?>MC-api" class="helping-field" target="_blank" title="get help with MailChimp API Key:"> Find your Mailchimp API here <span class="red-icon dashicons dashicons-arrow-right"></span><span class="red-icon dashicons dashicons-arrow-right"></span></a></small>
 
 
     <div id="chmp-new-user" class="new-user <?php echo ( ( $apivalid == 1  ) ? 'chmp-inactive' : 'chmp-active' ) ;  ?>">

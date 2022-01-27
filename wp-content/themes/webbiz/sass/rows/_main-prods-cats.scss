@@ -1,4 +1,4 @@
-.main-prod-cat {
+.main-prod-cat, .products-section-row {
 	padding-left: 3rem;
 	position: relative;
 	overflow-x: hidden;
@@ -81,5 +81,14 @@
 			font-size: 50px;
 			opacity: 1;
 		}
+	}
+}
+
+
+.products-section-row {
+	padding-left: 0rem;
+	.subheading {
+		font-size: 1.2rem;
+		margin-bottom: 3rem;
 	}
 }

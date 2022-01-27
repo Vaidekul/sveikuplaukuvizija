@@ -17,7 +17,8 @@ get_header();
 
 
 // dahz_framework_get_template_part( 'global/global-wrapper', 'open' );
-
+?><h1>kuku</h1>
+<?php
 while ( have_posts() ) : the_post();
 
 	get_template_part( 'template-parts/components/testas' );

@@ -10,3 +10,4 @@ import "./modules/load-more-blog";
 import "./modules/aos";
 import "./modules/rotate";
 // import "bxslider";
+// import "./modules/custom-maps";

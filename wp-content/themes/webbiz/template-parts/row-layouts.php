@@ -27,5 +27,7 @@ while (have_rows('rows')) {
     get_template_part( 'template-parts/rows/paslaugos' );
   } elseif( get_row_layout() === 'image_text' ) {
     get_template_part( 'template-parts/rows/img-txt' );
+  } elseif( get_row_layout() === 'produktai' ) {
+    get_template_part( 'template-parts/rows/produktai' );
   } 
 }

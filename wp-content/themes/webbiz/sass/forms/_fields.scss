@@ -18,7 +18,7 @@ textarea {
 	border: 1px solid $color__border-input;
 	border-radius: 3px;
 	padding: 3px;
-	height: 4rem;
+	height: 3rem;
 	padding-left: 1rem !important;
 	width: 100%;
 	margin-bottom: 0rem;
@@ -58,7 +58,7 @@ textarea {
 
 
 textarea {
-	padding-top: 1rem;
+	padding-top: .7rem;
 	padding-left: 1rem !important;
 }
 
@@ -72,5 +72,27 @@ textarea {
 	label {
 		display: flex;
 		align-items: center;
+	}
+}
+
+
+form.wpcf7-form input[type=submit] {
+	margin-top: 0;
+	display: inline-block;
+	font-weight: 300 !important;
+	padding: 1.6rem 1rem !important;
+	font-size: 1rem;
+	transition: all .3s linear;
+	height: unset;
+	width: unset;
+	border: 1px solid #4c0c13 !important;
+	background: #4c0c13 !important;
+	color: white !important;
+	&:hover {
+		border: 1px solid #4c0c13 !important;
+		background: #4c0c13;
+		color: white;
+		text-decoration: none;
+		transform: scale(.98);
 	}
 }

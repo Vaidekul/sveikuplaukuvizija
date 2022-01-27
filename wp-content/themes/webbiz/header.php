@@ -24,6 +24,7 @@
 	
 	<?php wp_head(); ?>
 	<?= get_field('scripts_content' , 'options'); ?>
+	
 </head>
 
 <body <?php body_class(); ?>>

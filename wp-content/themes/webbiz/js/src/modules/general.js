@@ -137,7 +137,7 @@ $(".main-prod-cat .slider").slick({
   draggable: true,
   responsive: [
     {
-      breakpoint: 1224,
+      breakpoint: 1420,
       settings: {
         slidesToShow: 3,
         // slidesToScroll: 3,

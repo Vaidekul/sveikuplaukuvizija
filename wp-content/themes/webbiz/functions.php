@@ -144,7 +144,6 @@ add_action( 'widgets_init', 'webbiz_widgets_init' );
  * Enqueue scripts and styles.
  */
 function webbiz_scripts() {
-	
 	wp_enqueue_style( 'fontawesome', get_template_directory_uri() . '/fontawesome/css/fontawesome.css' );
 	wp_enqueue_style( 'fontawesome-all', get_template_directory_uri() . '/fontawesome/css/fontawesome-all.css' );
 	wp_enqueue_style( 'slick', '//cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css' );
@@ -365,4 +364,44 @@ function custom_dropdown_choice( $args ){
 
   return $args;
   
+}
+
+/* Register AJAX call */
+add_action( 'wp_ajax_quiz_results', 'quiz_results' );
+add_action( 'wp_ajax_nopriv_quiz_results', 'quiz_results' );
+
+function quiz_results(){
+	$e = [];
+	$key = return_keys();
+
+		$args = [
+		'post_type' => 'product',
+		'post_status' => 'publish',
+		'posts_per_page' => -1,
+		'tax_query' => array(
+			array(
+				'taxonomy' => 'pa_testas',
+				'field' => 'slug',
+				'terms' => $key,
+			),
+		)
+		];
+		$the_query = new WP_Query( $args );
+		if ( $the_query->have_posts() ) {
+			echo '<ul class="products de-product uk-grid uk-child-width-1-2 uk-child-width-1-2@s uk-child-width-1-3@m uk-child-width-1-5@l" data-layout="elaina" data-uk-grid="">';
+		
+			while ( $the_query->have_posts() ) {
+				$the_query->the_post();
+				// wc_get_template_part( 'content', 'product' );
+				get_template_part( 'template-parts/components/card-product' );
+			}
+
+			echo '</ul>';
+		} else {
+			echo '<ul class="products de-product uk-grid uk-child-width-1-2 uk-child-width-1-2@s uk-child-width-1-3@m uk-child-width-1-5@l" data-layout="elaina" data-uk-grid="">
+				<li>Nerasta produktų pagal pasirinktus atsakymus.</li>
+			</ul>';
+		}
+		
+		wp_die();
 }

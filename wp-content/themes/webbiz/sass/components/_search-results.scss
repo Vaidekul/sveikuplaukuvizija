@@ -59,6 +59,9 @@ article.product {
 	width: 80%;
 	margin: auto;
 	margin-top: 3rem;
+	@include change(992px) {
+		width: 100%;
+	}
 	.nav-previous {
 		font-size: 1rem;
 		display: inline-block;
@@ -114,7 +117,7 @@ article.product {
 }
 
 .search-page {
-	background: rgba($color: #d85151, $alpha: 0.05);
+	background: rgba($color: #d85151, $alpha: 0.01);
 }
 .search-pr-block {
 	margin-bottom: 2rem;
@@ -123,14 +126,33 @@ article.product {
 	padding-bottom: 4rem;
 	display: flex;
 	align-items: center;
-	img {
+	@include change(992px) {
+		flex-wrap: wrap;
+		flex-direction: column;
+	}
+	.img-link {
 		height: 15rem;
 		width: 50%;
-		object-fit: contain;
+		display: flex;
+		justify-content: center;
+		img {
+			object-fit: contain;
+			width: fit-content;
+			height: 15rem;
+		}
+		@include change(992px) {
+			margin-right: auto;
+			width: fit-content;
+			justify-content: flex-start;
+		}
 	}
+
 	.text {
+		margin-top: 1.5rem;
 		width: 50%;
-	
+		@include change(992px) {
+			width: 100%;
+		}
 		h2 {
 			font-size: 25px;
 			color: black !important;
@@ -147,6 +169,5 @@ article.product {
 			padding-top: .5rem;
 			padding-bottom: .5rem;
 		}
-		
 	}
 }

@@ -79,15 +79,7 @@ form.checkout_coupon {
   }
 }
 
-// all text inputs
-.woocommerce input.input-text, .woocommerce #coupon_code, .woocommerce textarea.input-text {
-  border-color: red;
-}
 
-
-.woocommerce label {
-  color: red;
-}
 
 ul.woocommerce-thankyou-order-details {
   padding-left: 0;
@@ -144,3 +136,14 @@ ul.woocommerce-thankyou-order-details {
 }
 
 
+
+
+//card
+
+.woocommerce #content table.cart td.actions .coupon, .woocommerce table.cart td.actions .coupon, .woocommerce-page #content table.cart td.actions .coupon, .woocommerce-page table.cart td.actions .coupon {
+	margin-right: 1rem;
+}
+
+.payment_box.payment_method_opay {
+	color: black;
+}

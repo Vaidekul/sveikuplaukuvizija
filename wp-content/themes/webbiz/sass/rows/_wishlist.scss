@@ -68,3 +68,27 @@
 .woocommerce-wishlist.woocommerce table.shop_table td.product-name a {
 	font-size: 1.2rem;
 }
+
+.wishlist_table.mobile li .item-wrapper .product-thumbnail {
+	height: 260px;	
+}
+
+.wishlist_table.mobile .product-add-to-cart a {
+margin: 0;
+}
+
+.wishlist_table.images_grid li .item-details table.item-details-table, .wishlist_table.mobile li .item-details table.item-details-table, .wishlist_table.mobile li table.additional-info, .wishlist_table.modern_grid li .item-details table.item-details-table {
+	display: none;
+}
+.wishlist_table.mobile li .additional-info-wrapper .product-remove{
+	display: block !important;
+	text-align: left;
+}
+
+.single-prod-border .yith-wcwl-wishlistaddedbrowse a {
+	height: 100px;
+	display: block;
+	position: absolute;
+	width: 100px;
+	top: 0;
+}

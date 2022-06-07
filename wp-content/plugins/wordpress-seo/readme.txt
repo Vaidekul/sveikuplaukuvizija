@@ -4,8 +4,8 @@ Donate link: https://yoa.st/1up
 License: GPLv3
 License URI: http://www.gnu.org/licenses/gpl.html
 Tags: SEO, XML sitemap, Content analysis, Readability, Schema
-Tested up to: 5.8
-Stable tag: 17.7.1
+Tested up to: 5.9
+Stable tag: 18.2
 Requires PHP: 5.6.20
 
 Improve your WordPress SEO: Write better content and have a fully optimized WordPress site using the Yoast SEO plugin.
@@ -126,7 +126,7 @@ Want more information on search engine optimization and Yoast SEO? Have a look a
 * Also follow Yoast on [Facebook](https://facebook.com/yoast), [Instagram](https://www.instagram.com/yoast/) & [Twitter](https://twitter.com/yoast).
 
 == Installation ==
-Starting with Yoast SEO consists of just two steps: installing and setting up the plugin. Yoast SEO is designed to work with your site’s specific needs, so don’t forget to go through the Yoast SEO configuration wizard as explained in the ‘after activation’ step!
+Starting with Yoast SEO consists of just two steps: installing and setting up the plugin. Yoast SEO is designed to work with your site’s specific needs, so don’t forget to go through the Yoast SEO configuration workout as explained in the ‘after activation’ step!
 
 ### INSTALL YOAST SEO FROM WITHIN WORDPRESS
 
@@ -143,8 +143,8 @@ Starting with Yoast SEO consists of just two steps: installing and setting up th
 
 ### AFTER ACTIVATION
 
-1. You should see (a notice to start) the Yoast SEO configuration wizard;
-1. Go through the configuration wizard and set up the plugin for your site;
+1. You should see (a notice to start) the Yoast SEO configuration workout;
+1. Go through the configuration workout and set up the plugin for your site;
 1. You’re done!
 
 == Frequently Asked Questions ==
@@ -236,52 +236,44 @@ Your question has most likely been answered on our help center: [yoast.com/help/
 
 == Changelog ==
 
-= 17.7.1 =
-Release Date: December 1st, 2021
+= 18.2 =
+Release Date: February 22nd, 2022
 
-Bugfixes:
-
-* Fixes a bug where the notification to start configuring Yoast SEO would also been shown on existing installations.
-* Fixes a bug where Yoast addons would not inherit the auto-update settings from Yoast SEO.
-* Fixes a bug where changing the auto-update settings of another plugin could stop Yoast addons from being auto-updated.
-
-= 17.7 =
-Release Date: November 30th, 2021
-
-Meet Yoast SEO 17.7! This release introduces a new configuration workout to help you set up the Yoast SEO plugin properly from the get-go. Get the basic settings right in Yoast SEO and create a solid foundation for your SEO! Read more about what's new in Yoast SEO 17.7 in [our release post in English](https://yoa.st/release-17-7) or [our release post in Spanish](https://yoa.st/release-17-7-spanish)!
+Yoast SEO 18.2 is out today! This release includes more fixes and enhancements to enjoy. We improved the workings of the FAQ and How-to blocks. Happy optimizing! Read more about what's new in Yoast SEO 18.2 in [our release post in English](https://yoa.st/release-22-2-22) or [our release post in Spanish](https://yoa.st/release-22-2-22-spanish)!
 
 Enhancements:
 
-* Replaces the configuration wizard with a configuration workout, which makes it easier to configure Yoast SEO for your website.
-* Adds a link to the archive page for the content types in the Search Appearance settings. Props to [felipelousantos](https://github.com/felipelousantos).
-* Adds a few more French transition words to be recognised by the transition words assessment. Props to [Cellophile](https://github.com/Cellophile).
+* Optimizes the images in FAQ and HowTo blocks to be more responsive and load faster.
 
 Bugfixes:
 
-* Fixes a bug where non-passive Greek words ending in -ου or -είτε were previously recognized as passive. Props to [artemidaspatanews](https://github.com/artemidaspatanews).
-* Fixes a bug where some post types would cause a PHP warning about custom fields.
-* Fixes a bug where memory issues could occur when indexing a site with large amounts of terms assigned to many posts.
-
-= 17.6 =
-Release Date: November 16th, 2021
-
-Yoast SEO 17.6 is out today! This new release brings several fixes and enhancements to improve how the plugin works. And we’re getting it ready for the upcoming WordPress 5.9 release. Go check it out! Read more about what's new in Yoast SEO 17.6 in [our release post in English](https://yoa.st/release-17-6) or [our release post in Spanish](https://yoa.st/release-17-6-spanish)!
-
-Enhancements:
-
-* Enhances the upgrade flow for add-ons by considering the minimum required WP version before showing any available updates.
-* Enables the Schema Article type for any post type supporting authors.
-* Removes the placeholder texts for title and description inputs in the Google preview and Social preview since they have no semantic value.
-
-Bugfixes:
-
-* Fixes a bug where the `page` post type wasn't allowed to display an `Article` piece in the Schema.
-* Fixes a bug where the content inside of reusable blocks would not be analyzed correctly.
+* Fixes a bug where the "Save changes" button would overlap with the admin sidebar on WordPress.com. Props to @DustyReagan.
+* Fixes a bug where a (debug) deprecation message would show in the widget editor on WordPress 5.8 and above.
+* Fixes a bug where a console warning would be thrown when adding a structured data block in the block editor, FSE editor or widget editor.
 
 Other:
 
-* The plugin will no longer block installation on PHP 8.0+ when installed via Composer.
-* Deprecates the `wpseo_schema_article_post_types` filter.
+* Adds a filter to enable/disable creating indexables: `Yoast\WP\SEO\should_index_indexables`
+* Adds an `__isset` magic method to ease working with helper surfaces. Props to @nlemoine.
+
+= 18.1 =
+Release Date: February 8th, 2022
+
+Yoast SEO 18.1 is out today! This new release brings another round of bug fixes, plus a new way for us to handle the translations in our plugin — leading to a smaller plugin size for you to install. Read more about what's new in Yoast SEO 18.1 in [our release post in English](https://yoa.st/release-8-2-22) or [our release post in Spanish](https://yoa.st/release-8-2-22-spanish)!
+
+Enhancements:
+
+* Changes the overall SEO score color on the post type overview pages to red when no keyphrase is set.
+
+Bugfixes:
+
+* Fixes a bug where images inserted into our FAQ or HowTo blocks would be rendered wider then their respective container when using a Block Theme.
+* Fixes a bug where plugins that would initialize after our plugin would be unable to register certain plugin information or utilize certain hooks.
+* Fixes a bug where capitalized keyphrases would show up twice in the Wincher SEO performance tracking modal. 
+
+Other:
+
+* Switches from packaged script translations to those from wordpress.org in order to reduce ZIP size and disk usage.
 
 = Earlier versions =
 For the changelog of earlier versions, please refer to [the changelog on yoast.com](https://yoa.st/yoast-seo-changelog).

@@ -107,3 +107,14 @@
 		// transition: transform 0.6s cubic-bezier(0, 0, 1, 1);
 	}
 }
+
+.rinkiai-card {
+	@include change(780px) {
+		div.shop-product-thumbnail {
+			height: 15rem !important;
+		}
+		a.button.add_to_cart_button {
+			top: 10rem !important;
+		}
+	}
+}

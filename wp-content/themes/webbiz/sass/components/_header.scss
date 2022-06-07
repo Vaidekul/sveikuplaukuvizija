@@ -499,3 +499,56 @@
 	transition: all .5s linear;
   opacity: 1;
 }
+
+.cart-icon {
+	position: relative;
+	display: flex;
+	justify-content: center;
+	a {
+		color: transparent !important;
+	}
+	&:before {
+		position: absolute;
+		font-family: "Font Awesome 5 Free"; 
+		font-weight: 900; 
+		content: "\f290";
+		font-size: 20px;
+		display: block;
+		color: white;
+		text-align: center;
+	}
+}
+
+#masthead .side-nav .inner-container .bottom-nav ul li.cart-icon a {
+	color: transparent !important;
+}
+
+#mobile-menu li.cart-icon{
+	display: none !important;
+}
+#masthead-floating #header .header-container .primary-menu li.cart-icon {
+	opacity: .6;
+	transition: all .3s linear;
+	&:hover {
+		opacity: 1;
+	}
+}
+#masthead-floating #header .header-container .primary-menu li.cart-icon a{
+	width: 20px;
+	&:before {
+		display: none !important;
+	}
+	&:after {
+		display: none !important;
+	}
+}
+
+#masthead #header .header-container .primary-menu li.current-menu-item.cart-icon a {
+	width: 20px;
+	&:before {
+		display: none !important;
+	}
+	&:after {
+		display: none !important;
+	}
+}

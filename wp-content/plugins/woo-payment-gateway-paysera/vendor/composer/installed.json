@@ -786,8 +786,8 @@
     },
     {
         "name": "symfony/polyfill-php72",
-        "version": "v1.23.0",
-        "version_normalized": "1.23.0.0",
+        "version": "v1.24.0",
+        "version_normalized": "1.24.0.0",
         "source": {
             "type": "git",
             "url": "https://github.com/symfony/polyfill-php72.git",
@@ -844,6 +844,9 @@
             "portable",
             "shim"
         ],
+        "support": {
+            "source": "https://github.com/symfony/polyfill-php72/tree/v1.24.0"
+        },
         "funding": [
             {
                 "url": "https://symfony.com/sponsor",

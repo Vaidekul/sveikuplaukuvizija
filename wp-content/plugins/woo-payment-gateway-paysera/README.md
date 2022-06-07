@@ -1,9 +1,9 @@
 WooCommerce Payment Gateway - Paysera
 =======================
 
-Version: 3.1.4
+Version: 3.2.0
 
-Date: 2021-12-08
+Date: 2022-02-22
 
 Contributors: Paysera
 
@@ -12,9 +12,9 @@ by sms, billing system, payment institution, macro payments, micro payments, sms
 
 Requires at least: 4.0
 
-Tested up to: 5.8.2
+Tested up to: 5.9
 
-Stable tag: 3.1.4
+Stable tag: 3.2.0
 
 Requires PHP: 7.1
 
@@ -26,66 +26,72 @@ License URL: http://www.gnu.org/licenses/gpl-3.0.html
 
 Description
 -----------
+Paysera payments + delivery
 
-Collecting payments with Paysera is simple, fast and secure. It is enough to open Paysera account, install the plug-in 
-to your store, and you will be able to use all of the most popular ways of payment collection in one place.
-No need for complicated programming or integration work. With Paysera you will receive real time notifications 
-about successful transactions in your online store, and the money will reach you sooner. No monthly, registration 
-or connection fee.
+With this one plugin you will receive everything your e-shop needs in one place – payment gateway to accept online payments and delivery options via all popular couriers displayed on your website.
 
-It is simple to use and administer payment collection, and you can monitor movement of funds in your smartphone.
-Client services and consultation takes place 7 days a week, from 8:00 till 20:00 (EET)
-Payments are made in real time.
+In order to receive full benefits of both Paysera Payment and Delivery plugins, please use the outlined links to access our detailed how-to instructions.
 
-Paysera applies the lowest fees on the market, and payments from foreign banks and systems are converted 
-at best possible rates.
+1. Paysera Payments
+   This service included in the plugin enables you to accept online payments via cards, SMS, or the most popular banks in your country. It is used by thousands of online merchants across Europe, and is easy to integrate and manage.
+   Read more about Paysera Checkout - https://www.paysera.com/v2/en/payment-gateway-checkout
+   Instructions - https://developers.paysera.com/en/checkout/basic
 
-To use Paysera payment gateway, register at paysera.com and create your project. To apply for Paysera go to this link: 
-https://bank.paysera.com/en/registration#/registration. Our extension, your account and support is free. 
-Only for selling a transaction fee is charged. For further information regarding the Paysera fees please visit: 
-https://www.paysera.com/v2/en-GB/fees. 
+2. Paysera Delivery
+   This service, that is also included in this plugin displays different delivery companies that your buyers can choose from when ordering your products. No need to sign separate agreements with couriers or overcome several different integrations – we have done it for you. Enjoy low delivery prices and quick support when needed.
+   Read more about Paysera Delivery - https://www.paysera.com/v2/en/checkout-delivery-service
+   Instructions - https://developers.paysera.com/en/delivery/
 
-All popular couriers in one place. No more separate agreements with each and every delivery company. Offer your buyers
-to choose delivery by the most popular couriers in the country with almost no additional effort for you as an e-shop owner.
-For further information regarding the Paysera fees please visit:
-https://www.paysera.com/v2/en-GB/fees/checkout-delivery
+Features and benefits
+-----------
+- One plugin for integration of several different payment methods: cards, SMS, online banking, more.
+- One plugin for integration of several different courier services: Omniva, Venipak, LP Express, TNT, and others.
+- Integration takes up to 5 min (if you are already a Paysera client).
+- One agreement for all the couriers and all banks.
+- Easy to manage: turn couriers and payment methods ON and OFF as you like.
+- Everything in one place – Paysera system: see all the deliveries by different couriers, receive payments via different banks and payment methods in the same system.
 
-== Benefits and possibilities of using Paysera checkout ==
+Fees
+-----------
+For information regarding Paysera fees please visit:
+Paysera Delivery fees - https://www.paysera.com/v2/en/fees/checkout-delivery
+Paysera Checkout fees - https://www.paysera.com/v2/en/fees/payment-gateway-fees
 
- - Plenty of payment methods. Payments via more than 10 000 local and foreign banks, and with Visa, MasterCard, 
- Maestro cards. Payments via international payments systems, in cash and directly via Paysera.
- - Plenty of countries and currencies. Service your clients from all over the world. Paysera operates in 184 
- countries and supports more than 30 currencies. The payment window is translated to 18 languages. Let your clients 
- pay you conveniently and provide information the language they can understand.
- - Convenient administration. It is easy to manage one or several e-payment projects, as the account can be accessed 
- at any time of the day and from anywhere by logging in to Paysera e-payments system. 
- - Perhaps the lowest price on the market. Save money with Paysera Checkout. Our prices are among the best on the 
- market, and we apply very favorable currency exchanges rates when executing transfers from foreign banks and systems.
- - Real-time notifications. Receive information about a successful payment immediately and issue purchases to 
- clients faster. Be informed about a payment error instantly and return money with a click of a button.
- - All income to one account. It is easy to monitor and manage income when you do not have many accounts in 
- different banks. Income is collected to one Paysera account, which makes it even easier to see 
- the detailed statistics and form reports.
- - Safe payments online. Place the special sign "Safe payment online" and let your clients know that it is safe 
- to purchase goods or services on your website, as you are using Paysera solution for safe payments.
- - Leasing services. Provide your clients with the possibility of hire purchase. Along with payment methods, offer 
- leasing services provided by General Financing and MokiLizingas.
- 
- Client services and consultation takes place 7 days a week, from 8:00 till 20:00 (EET).
+Support
+-----------
+Paysera Client Support in English is available 24/7!
++44 20 80996963
+support@paysera.com
 
+During working hours support is available in 12 languages.
+Contact us - https://www.paysera.lt/v2/en/contacts
+
+For the latest news about the Paysera services – follow us on Facebook (https://www.facebook.com/paysera.international/) and Twitter (https://twitter.com/paysera.
+Get notifications about our operational status – subscribe to our status page (https://paysera.freshstatus.io/).
+
+About Paysera
+-----------
+Paysera (https://www.paysera.com/v2/en-GB/paysera-account) is a global fintech company providing financial and related services to clients from all over the world since 2004.
+
+Explore other Paysera services:
+- currency exchange (https://www.paysera.com/v2/en/fees/currency-conversion-calculator#/) at competitive rates;
+- instant euro and cheap international transfers (https://www.paysera.com/v2/en/international-transfers);
+- LT, BG, and RO IBANs (https://www.paysera.com/v2/en/blog/iban-account) for business and private clients;
+- visa cards (https://www.paysera.com/v2/en/payment-card-visa) that are compatible with Google Play (https://www.paysera.com/v2/en/blog/googlepay-samsungpay) and Apple Pay (https://www.paysera.com/v2/en/apple-pay), and so much more.
+
+All the main services can be easily managed via the Paysera mobile app (https://www.paysera.com/v2/en-GB/mobile-application), which is available to download from the App Store (https://apps.apple.com/us/app/paysera-mobile-wallet/id737308884), Google Play (https://play.google.com/store/apps/details?id=lt.lemonlabs.android.paysera), and Huawei AppGallery (https://appgallery.huawei.com/#/app/C103007513).
 
 Installation
 ------------
-
 Follow video tutorial or instructions below.
 
 https://www.youtube.com/watch?v=ojNf_P4gwPQ
 
--= Installation by FTP =-
+Installation by FTP:
 
 1. Download Paysera plugin zip.
 
-2. Connect to server and go to Wordpress base directory.
+2. Connect to server and go to WordPress base directory.
 
 3. Create New Folder and name it 'Paysera' in:
     /wp-content/plugins
@@ -99,18 +105,18 @@ https://www.youtube.com/watch?v=ojNf_P4gwPQ
     Paysera -> Payments
     Paysera -> Delivery
 
-    Enter checkout project id, password and etc.
+    Enter checkout project id, password and other required information.
 
 7. Save changes.
 
 
--= Installation from admin panel =-
+Installation from admin panel:
 
 1. Download Paysera plugin zip.
 
-2. Connect to Wordpress admin panel.
+2. Connect to WordPress admin panel.
 
-3. Install Paysera plugin to Wordpress:
+3. Install Paysera plugin to WordPress:
     Plugins -> Add New -> Upload Plugin -> Choose File -> Choose downloaded zip -> Install Now
 
 4. Activate Paysera plugin:
@@ -120,20 +126,20 @@ https://www.youtube.com/watch?v=ojNf_P4gwPQ
     Paysera -> Payments
     Paysera -> Delivery
 
-    Enter checkout project id, password and etc.
+   Enter checkout project id, password and other required information.
 
 6. Save changes.
 
 
--= Installation from admin panel (marketplace)=-
+Installation from admin panel (marketplace):
 
-1. Connect to Wordpress admin panel.
+1. Connect to WordPress admin panel.
 
-2. Install Paysera plugin to Wordpress:
+2. Install Paysera plugin to WordPress:
     
     2.1. Plugins -> Add New;
     
-    2.2. Find 'Paysera Payment And Delivery';
+    2.2. Find 'WooCommerce Payment Gateway - Paysera';
     
     2.3. Install.
     
@@ -144,20 +150,54 @@ https://www.youtube.com/watch?v=ojNf_P4gwPQ
     Paysera -> Payments
     Paysera -> Delivery
 
-    Enter checkout project id, password and etc.
+   Enter checkout project id, password and other required information.
 
 6. Save changes.
 
 Changelog
 ---------
+= 3.2.0 =
+* Update - General improvements
+* Fix - Code style fixes
+* Update - Hide shipping methods functionality
+* Update - Delivery methods error rework
+* Update - Payment List enabled by default
+
+= 3.1.9 =
+* Fix - Delivery terminal and payment method selection fixes
+* Update - Payment methods css fix
+* Update - Plugin description improvements
+
+= 3.1.8 =
+* Update - Product weight and dimensions calculation improvements
+
+= 3.1.7 =
+* Fix - Notice dismiss button fix
+* Fix - Unsupported operand types fix
+* Fix - Foreach usage fix
+* Update - Auto select delivery terminal country and city
+
+= 3.1.6 =
+* Update - Prefixing namespaces to avoid conflicts
+* Update - Eshop order id addition to delivery order
+* Fix - Delivery order receiver address updates for terminal delivery methods
+* Fix - Notice dismiss button rework
+* Update - Delivery methods grid view option
+
+= 3.1.5 =
+* Fix - Payment methods grid display fix
+* Update - Terminal country selection improvement
+* Update - Legal name addition to delivery order
+* Fix - Delivery calls not made if delivery is not enabled
+
 = 3.1.4 =
 * Update - Additional error logging
 * Fix - Lang parameter fix
 
 = 3.1.3 =
 * Update - Additional order notes
-* Fix - some old settings were loaded incorrectly
-* Update - composer requirements cleanup
+* Fix - Some old settings were loaded incorrectly
+* Update - Composer requirements cleanup
 
 = 3.1.2 =
 * Update - Settings backwards compatibility
@@ -225,180 +265,204 @@ Changelog
 * Update - Composer implementation
 
 = 2.6.5 =
-* Fix - link fix, version update
+* Fix - Link fix, version update
 
 = 2.6.4 =
-* Fix - settings link fix
+* Fix - Settings link fix
 
 = 2.6.3 =
-* Fix - translations fix
-* Update - woocommerce versions update
+* Fix - Translations fix
+* Update - Woocommerce versions update
 
 = 2.6.2 =
-* Fix - bug fix
+* Fix - Bug fix
 
 = 2.6.1 =
-* Update - ownership code, quality sign functionality
+* Update - Ownership code, quality sign functionality
 
 = 2.6.0 =
-* Fix - translations fix
+* Fix - Translations fix
 
 = 2.5.9 =
-* Fix - payment display fix
-* Fix - incorrect error logging
-* Update - documentation link change
-* Update - change of the method to reduce stock level
-* Update - add additional payment parameter usage
-* Update - translations
+* Fix - Payment display fix
+* Fix - Incorrect error logging
+* Update - Documentation link change
+* Update - Change of the method to reduce stock level
+* Update - Add additional payment parameter usage
+* Update - Translations
 
 = 2.5.8 =
 * Update - WebToPay library
 
 = 2.5.7 =
-* Update - readme information update
+* Update - Readme information update
 
 = 2.5.6 =
-* Update - readme information update
+* Update - Readme information update
 
 = 2.5.5 =
-* Fix - mistype in readme
-* Fix - incorrect display when order is created by admin
+* Fix - Mistype in readme
+* Fix - Incorrect display when order is created by admin
 
 = 2.5.4 =
-* Update - changed variables naming
-* Update - code improvements
+* Update - Changed variables naming
+* Update - Code improvements
 
 = 2.5.3 =
 * Update - WebToPay library
-* Update - default order status establish
-* Fix - project ID input validator
+* Update - Default order status establish
+* Fix - Project ID input validator
 * Fix - Estonian language
 
 = 2.5.2 =
 * Update - URL special chars decode
 
 = 2.5.1 =
-* Fix - incorrect stylesheet file url 
-* Update - change order of plugin links
-* Update - active payment method border color change
+* Fix - Incorrect stylesheet file url 
+* Update - Change order of plugin links
+* Update - Active payment method border color change
 
 = 2.5.0 =
-* Fix - compatibility with older PHP versions
-* Fix - file accessibility
+* Fix - Compatibility with older PHP versions
+* Fix - File accessibility
 
 = 2.4.9 =
-* Fix - plugin settings not displaying in new woocommerce
-* Update - plugin links
-* Update - callback logic improvement
-* Update - add plugin description
-* Update - improved plugin init 
-* Update - added Admin error text
+* Fix - Plugin settings not displaying in new woocommerce
+* Update - Plugin links
+* Update - Callback logic improvement
+* Update - Add plugin description
+* Update - Improved plugin init 
+* Update - Added Admin error text
 
 = 2.4.8 =
-* Update - readme information update
-* Update - links update
+* Update - Readme information update
+* Update - Links update
 
 = 2.4.7 =
-* Update - readme information update
+* Update - Readme information update
 
 = 2.4.6 =
-* Multilanguage fix
-* Added languages: LT, LV, RU, PL, ES
-* Admin textfield fix
+* Fix - Multilanguage fix
+* Update - Languages: LT, LV, RU, PL, ES
+* Fix - Admin textfield fix
 
 Upgrade Notice
 --------------
+= 3.2.0 =
+
+General improvements, code style fixes, hide shipping methods functionality, delivery methods error rework, payment list enabled by default.
+
+= 3.1.9 =
+
+Delivery terminal and payment method selection fixes, payment methods css fix, plugin description improvements.
+
+= 3.1.8 =
+
+Product weight and dimensions calculation improvements.
+
+= 3.1.7 =
+
+Notice dismiss button fix, unsupported operand types fix, foreach usage fix, auto select delivery terminal country and city.
+
+= 3.1.6 =
+
+Eshop order id addition to delivery order, delivery order receiver address updates for terminal delivery methods, notice dismiss button rework, delivery methods grid view option, prefixing namespaces to avoid conflicts.
+
+= 3.1.5 =
+
+Payment methods grid display fix, terminal country selection improvement, legal name addition to delivery order, delivery calls not made if delivery is not enabled.
+
 = 3.1.4 =
 
-Additional error logging, lang parameter fix
+Additional error logging, lang parameter fix.
 
 = 3.1.3 =
 
-Old settings load fix, composer requirements cleanup, additional order notes
+Old settings load fix, composer requirements cleanup, additional order notes.
 
 = 3.1.2 =
 
-Payment logo fix, composer improvement, additional check for duplicate plugins, settings backwards compatibility
+Payment logo fix, composer improvement, additional check for duplicate plugins, settings backwards compatibility.
 
 = 3.1.1 =
 
-Payment methods style improvements, delivery dimensions fix
+Payment methods style improvements, delivery dimensions fix.
 
 = 3.1.0 =
 
-Plugin name fix
+Plugin name fix.
 
 = 3.0.9 =
 
-Composer file update
+Composer file update.
 
 = 3.0.8 =
 
-Payment enable/disable functionality improvement
+Payment enable/disable functionality improvement.
 
 = 3.0.7 =
 
-Checkout logo size fix
+Checkout logo size fix.
 
 = 3.0.6 =
 
-Order creation error fix, terminal fields improvement, order notes improvements
+Order creation error fix, terminal fields improvement, order notes improvements.
 
 = 3.0.5 =
 
-Delivery validation error fix, payment settings functionality improvements
+Delivery validation error fix, payment settings functionality improvements.
 
 = 3.0.4 =
 
-Hooks and naming update
+Hooks and naming update.
 
 = 3.0.3 =
 
-Translations refactor, fixed weight validation, image lazy loading
+Translations refactor, fixed weight validation, image lazy loading.
 
 = 3.0.2 =
 
-Delivery library update, terminal country selection improvement, composer improvements
+Delivery library update, terminal country selection improvement, composer improvements.
 
 = 3.0.1 =
 
-Payment settings menu refactor, strict types, code style updates
+Payment settings menu refactor, strict types, code style updates.
 
 = 3.0.0 =
 
-New admin section, min requirements raised to PHP 7.1, delivery service addition
+New admin section, min requirements raised to PHP 7.1, delivery service addition.
 
 = 2.6.8 =
 
-Notice box addition
+Notice box addition.
 
 = 2.6.7 =
 
-Composer fix
+Composer fix.
 
 = 2.6.6 =
 
-Code style updates, security improvements, composer implementation
+Code style updates, security improvements, composer implementation.
 
 = 2.6.5 =
 
-Link fix, version update
+Link fix, version update.
 
 = 2.6.4 =
 
-Settings link fix
+Settings link fix.
 
 = 2.6.3 =
 
-Translations fix, woocommerce versions update
+Translations fix, woocommerce versions update.
 
 = 2.6.2 =
 
-Bug fix
+Bug fix.
 
 = 2.6.1 =
 
-Ownership code, quality sign functionality
+Ownership code, quality sign functionality.
 
 = 2.6.0 =
 
@@ -459,12 +523,3 @@ Readme information update.
 = 2.4.6 =
 
 Multilanguage implementation and other fix.
-
-
-Support
--------
-
-For any questions, please look for the answers at https://support.paysera.com or contact customer support center 
-by email  support@paysera.com or by phone +44 20 80996963 | +370 700 17217.
-
-For technical documentation visit: https://developers.paysera.com/

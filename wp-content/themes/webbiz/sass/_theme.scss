@@ -8,6 +8,7 @@
 	width: 100%;
 	top: 0;
 	left: 0;
+	opacity: 1 !important;
 }
 
 body.mobile-menu-open {
@@ -36,7 +37,7 @@ body {
 	}
 
 	@media screen and (min-width: 992px) and (max-width: 1420px) {
-		font-size: 20px;
+		font-size: 18px;
 	}
 
 	@media screen and (min-width: 1421px) and (max-width: 1680px) {
@@ -488,7 +489,7 @@ h2.widget-title {
 	color: black !important;
 	transition: all .3s linear;
 }
-.products, .main-prod-cat .product, .products-section-row .product {
+.products, .main-prod-cat .product, .products-section-row .product, .test-result .product {
 	.yith-wcwl-add-to-wishlist {
     background: transparent;
     position: absolute!important;

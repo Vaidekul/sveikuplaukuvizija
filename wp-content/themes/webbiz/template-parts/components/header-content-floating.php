@@ -16,6 +16,7 @@
 					));
 					?>
 					<div class="shopping-tabs d-lg-none">
+						<a class="mr-3" href="" style="margin-top: 5px;"><div class="open" style="width: 150px; color: white !important;"><?php echo do_shortcode('[smart_search id="1"]'); ?></div></a>
 						<?php $shop_cart = get_field('shopping_cart_url', 'options'); ?>
 						<a href="<?= $shop_cart; ?>"><i class="fas fa-shopping-bag"></i></a>
 						<button class="mobile-menu-toggle-2 hamburger hamburger--collapse " type="button">

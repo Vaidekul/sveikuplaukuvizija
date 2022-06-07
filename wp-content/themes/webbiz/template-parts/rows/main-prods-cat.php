@@ -20,7 +20,7 @@
 <div class="overlay" style="background-image:url(<?= $bg['url'];?>);"></div>
 	<div class="container-fluid">
 		<div class="row align-items-center justify-content-center">
-			<div class="col-lg-12 mb-4 pb-4" data-aos="fade-up">
+			<div class="col-lg-12" data-aos="fade-up">
 				<h2 class="title"><?= $title; ?></h2>
 				<div class="subtitle"><?= $subtitle; ?></div>
 			</div>

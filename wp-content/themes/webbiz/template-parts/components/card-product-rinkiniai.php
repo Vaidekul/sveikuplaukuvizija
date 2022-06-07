@@ -21,7 +21,7 @@ if ( empty( $product ) || ! $product->is_visible() ) {
 	return;
 }
 ?>
-<div class="col-lg-4 col-md-3 col-sm-6 col-6 mb-4 custom-product-card">
+<div class="col-lg-4 col-md-4 col-6 mb-4 custom-product-card rinkiai-card">
   <div <?php wc_product_class(); ?>>
     <?php
     /**

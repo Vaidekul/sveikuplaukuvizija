@@ -1,9 +1,9 @@
 === SiteOrigin CSS ===
 Tags: css, visual css, css editor, design, customize
 Requires at least: 3.9
-Tested up to: 5.8
-Stable tag: 1.4.3
-Build time: 2021-11-29T21:56:11+02:00
+Tested up to: 5.9
+Stable tag: 1.5.2
+Build time: 2022-01-27T15:43:38+02:00
 License: GPLv2 or later
 Contributors: gpriday, alexgso
 Donate link: https://siteorigin.com/downloads/premium/
@@ -70,6 +70,16 @@ Free support is available on the [SiteOrigin support forums](https://siteorigin.
 SiteOrigin Premium includes access to our professional email support service, perfect for those times when you need fast and effective technical support. We're standing by to assist you in any way we can.
 
 == Changelog ==
+
+= 1.5.2 - 27 January 2022 =
+* Updated `Tested up to` tag to `5.9`.
+
+= 1.5.1 - 30 December 2021 =
+* Basic Editor Theme Setting: Updated field to show selected option.
+
+= 1.5.0 - 16 December 2021 =
+* Basic Editor: Added a dark theme option.
+* Ajax Saving: Resolved unintended slashes added during escaping.
 
 = 1.4.3 - 29 November 2021 =
 * Restored editor scrollbar.

@@ -365,6 +365,312 @@ function custom_dropdown_choice( $args ){
   return $args;
   
 }
+/* Return all keys for product search */
+function return_keys(){
+	$key = $e = [];
+	$data = $_GET['data'];
+	
+	foreach($data as $item){
+		$key[] = strtoupper($item['name'] . intval($item['value']));
+	}
+		
+	if(in_array('A1', $key) and in_array('B4', $key) and in_array('C2', $key) and in_array('D1', $key)){ $key = ['A1', 'B4']; }
+	elseif(in_array('A1', $key) and in_array('B4', $key) and in_array('C3', $key) and in_array('D1', $key)){ $key = ['A1', 'B4']; }
+	elseif(in_array('A1', $key) and in_array('B4', $key) and in_array('C4', $key) and in_array('D1', $key)){ $key = ['C4', 'B4']; }
+	elseif(in_array('A1', $key) and in_array('B4', $key) and in_array('C4', $key) and in_array('D1', $key)){ $key = ['C5', 'B4']; }
+	elseif(in_array('A1', $key) and in_array('B4', $key) and in_array('C6', $key) and in_array('D1', $key)){ $key = ['C6', 'B4']; }
+	elseif(in_array('A1', $key) and in_array('B1', $key) and in_array('C1', $key) and in_array('D2', $key)){ $key = ['C1', 'B1', 'D2']; }
+	elseif(in_array('A1', $key) and in_array('B2', $key) and in_array('C1', $key) and in_array('D2', $key)){ $key = ['C1', 'B2', 'D2']; }
+	elseif(in_array('A1', $key) and in_array('B3', $key) and in_array('C1', $key) and in_array('D2', $key)){ $key = ['C1', 'B3', 'D2']; }
+	elseif(in_array('A1', $key) and in_array('B4', $key) and in_array('C1', $key) and in_array('D2', $key)){ $key = ['C1', 'B4', 'D2']; }
+	elseif(in_array('A1', $key) and in_array('B1', $key) and in_array('C2', $key) and in_array('D2', $key)){ $key = ['C2', 'B1', 'D2']; }
+	elseif(in_array('A1', $key) and in_array('B1', $key) and in_array('C3', $key) and in_array('D2', $key)){ $key = ['A1', 'B1', 'D2']; }
+	elseif(in_array('A1', $key) and in_array('B1', $key) and in_array('C4', $key) and in_array('D2', $key)){ $key = ['C4', 'B1', 'D2']; }
+	elseif(in_array('A1', $key) and in_array('B1', $key) and in_array('C5', $key) and in_array('D2', $key)){ $key = ['C5', 'B1', 'D2']; }
+	elseif(in_array('A1', $key) and in_array('B1', $key) and in_array('C6', $key) and in_array('D2', $key)){ $key = ['C6', 'B1', 'D2']; }
+	elseif(in_array('A1', $key) and in_array('B2', $key) and in_array('C2', $key) and in_array('D2', $key)){ $key = ['C2', 'B2', 'D2']; }
+	elseif(in_array('A1', $key) and in_array('B2', $key) and in_array('C3', $key) and in_array('D2', $key)){ $key = ['A1', 'B2', 'D2']; }
+	elseif(in_array('A1', $key) and in_array('B2', $key) and in_array('C4', $key) and in_array('D2', $key)){ $key = ['C4', 'B2', 'D2']; }
+	elseif(in_array('A1', $key) and in_array('B1', $key) and in_array('C5', $key) and in_array('D2', $key)){ $key = ['C5', 'B2', 'D2']; }
+	elseif(in_array('A1', $key) and in_array('B2', $key) and in_array('C6', $key) and in_array('D2', $key)){ $key = ['C6', 'B2', 'D2']; }
+	elseif(in_array('A1', $key) and in_array('B3', $key) and in_array('C2', $key) and in_array('D2', $key)){ $key = ['B3', 'C2', 'D2']; }
+	elseif(in_array('A1', $key) and in_array('B3', $key) and in_array('C3', $key) and in_array('D2', $key)){ $key = ['A1', 'C3', 'D2']; }
+	elseif(in_array('A1', $key) and in_array('B3', $key) and in_array('C4', $key) and in_array('D2', $key)){ $key = ['B3', 'C4', 'D2']; }
+	elseif(in_array('A1', $key) and in_array('B3', $key) and in_array('C3', $key) and in_array('D2', $key)){ $key = ['C5', 'B3', 'D2']; }
+	elseif(in_array('A1', $key) and in_array('B1', $key) and in_array('C1', $key) and in_array('D1', $key)){ $key = ['B1', 'C1']; }
+	elseif(in_array('A2', $key) and in_array('B1', $key) and in_array('C1', $key) and in_array('D1', $key)){ $key = ['A2', 'B1']; }
+	elseif(in_array('A3', $key) and in_array('B1', $key) and in_array('C1', $key) and in_array('D1', $key)){ $key = ['A3']; }
+	elseif(in_array('A4', $key) and in_array('B1', $key) and in_array('C1', $key) and in_array('D1', $key)){ $key = ['A4']; }
+	elseif(in_array('A1', $key) and in_array('B2', $key) and in_array('C2', $key) and in_array('D1', $key)){ $key = ['C1', 'B2']; }
+	elseif(in_array('A1', $key) and in_array('B3', $key) and in_array('C1', $key) and in_array('D1', $key)){ $key = ['A1', 'B3']; }
+	elseif(in_array('A1', $key) and in_array('B4', $key) and in_array('C1', $key) and in_array('D1', $key)){ $key = ['A1', 'B4']; }
+	elseif(in_array('A1', $key) and in_array('B1', $key) and in_array('C2', $key) and in_array('D1', $key)){ $key = ['B1', 'C2']; }
+	elseif(in_array('A1', $key) and in_array('B1', $key) and in_array('C3', $key) and in_array('D1', $key)){ $key = ['A1', 'B1']; }
+	elseif(in_array('A1', $key) and in_array('B1', $key) and in_array('C4', $key) and in_array('D1', $key)){ $key = ['C4', 'B1']; }
+	elseif(in_array('A1', $key) and in_array('B1', $key) and in_array('C5', $key) and in_array('D1', $key)){ $key = ['C5', 'B1']; }
+	elseif(in_array('A1', $key) and in_array('B1', $key) and in_array('C6', $key) and in_array('D1', $key)){ $key = ['C6', 'B1']; }
+	elseif(in_array('A1', $key) and in_array('B2', $key) and in_array('C2', $key) and in_array('D1', $key)){ $key = ['C2', 'B2']; }
+	elseif(in_array('A1', $key) and in_array('B2', $key) and in_array('C3', $key) and in_array('D1', $key)){ $key = ['A1', 'B2']; }
+	elseif(in_array('A1', $key) and in_array('B2', $key) and in_array('C4', $key) and in_array('D1', $key)){ $key = ['C4', 'B2']; }
+	elseif(in_array('A1', $key) and in_array('B2', $key) and in_array('C5', $key) and in_array('D1', $key)){ $key = ['C5', 'B2']; }
+	elseif(in_array('A1', $key) and in_array('B2', $key) and in_array('C6', $key) and in_array('D1', $key)){ $key = ['C6', 'B2']; }
+	elseif(in_array('A1', $key) and in_array('B3', $key) and in_array('C2', $key) and in_array('D1', $key)){ $key = ['C2', 'B3']; }
+	elseif(in_array('A1', $key) and in_array('B3', $key) and in_array('C3', $key) and in_array('D1', $key)){ $key = ['A1', 'B3']; }
+	elseif(in_array('A1', $key) and in_array('B3', $key) and in_array('C4', $key) and in_array('D1', $key)){ $key = ['C4', 'B3']; }
+	elseif(in_array('A1', $key) and in_array('B3', $key) and in_array('C3', $key) and in_array('D1', $key)){ $key = ['C5', 'B3']; }
+	elseif(in_array('A1', $key) and in_array('B3', $key) and in_array('C6', $key) and in_array('D1', $key)){ $key = ['C6', 'B3']; }
+	elseif(in_array('A1', $key) and in_array('B3', $key) and in_array('C6', $key) and in_array('D2', $key)){ $key = ['B3', 'C6', 'D2']; }
+	elseif(in_array('A1', $key) and in_array('B4', $key) and in_array('C2', $key) and in_array('D2', $key)){ $key = ['C2', 'B4', 'D2']; }
+	elseif(in_array('A1', $key) and in_array('B4', $key) and in_array('C3', $key) and in_array('D2', $key)){ $key = ['A1', 'B4', 'D2']; }
+	elseif(in_array('A1', $key) and in_array('B4', $key) and in_array('C4', $key) and in_array('D2', $key)){ $key = ['C4', 'B4', 'D2']; }
+	elseif(in_array('A1', $key) and in_array('B4', $key) and in_array('C5', $key) and in_array('D2', $key)){ $key = ['C5', 'B4', 'D2']; }
+	elseif(in_array('A1', $key) and in_array('B4', $key) and in_array('C6', $key) and in_array('D2', $key)){ $key = ['C6', 'B4', 'D2']; }
+	elseif(in_array('A2', $key) and in_array('B1', $key) and in_array('C1', $key) and in_array('D1', $key)){ $key = ['A2', 'B1']; }
+	elseif(in_array('A2', $key) and in_array('B2', $key) and in_array('C1', $key) and in_array('D1', $key)){ $key = ['A2', 'B2']; }
+	elseif(in_array('A2', $key) and in_array('B3', $key) and in_array('C1', $key) and in_array('D1', $key)){ $key = ['B3', 'C1']; }
+	elseif(in_array('A2', $key) and in_array('B4', $key) and in_array('C1', $key) and in_array('D1', $key)){ $key = ['A2', 'B4']; }
+	elseif(in_array('A2', $key) and in_array('B1', $key) and in_array('C2', $key) and in_array('D1', $key)){ $key = ['B1', 'C2']; }
+	elseif(in_array('A2', $key) and in_array('B1', $key) and in_array('C3', $key) and in_array('D1', $key)){ $key = ['A2', 'B1']; }
+	elseif(in_array('A2', $key) and in_array('B1', $key) and in_array('C4', $key) and in_array('D1', $key)){ $key = ['C4', 'B1']; }
+	elseif(in_array('A2', $key) and in_array('B1', $key) and in_array('C3', $key) and in_array('D1', $key)){ $key = ['C5', 'B1']; }
+	elseif(in_array('A2', $key) and in_array('B1', $key) and in_array('C6', $key) and in_array('D1', $key)){ $key = ['B1', 'C6']; }
+	elseif(in_array('A2', $key) and in_array('B2', $key) and in_array('C2', $key) and in_array('D1', $key)){ $key = ['C2', 'B2']; }
+	elseif(in_array('A2', $key) and in_array('B2', $key) and in_array('C3', $key) and in_array('D1', $key)){ $key = ['B2', 'C3']; }
+	elseif(in_array('A2', $key) and in_array('B2', $key) and in_array('C4', $key) and in_array('D1', $key)){ $key = ['C4', 'B2']; }
+	elseif(in_array('A2', $key) and in_array('B2', $key) and in_array('C5', $key) and in_array('D1', $key)){ $key = ['C5', 'B2']; }
+	elseif(in_array('A2', $key) and in_array('B2', $key) and in_array('C6', $key) and in_array('D1', $key)){ $key = ['C6', 'B2']; }
+	elseif(in_array('A2', $key) and in_array('B3', $key) and in_array('C1', $key) and in_array('D1', $key)){ $key = ['A2', 'B3']; }
+	elseif(in_array('A2', $key) and in_array('B3', $key) and in_array('C2', $key) and in_array('D1', $key)){ $key = ['B3', 'C2']; }
+	elseif(in_array('A2', $key) and in_array('B3', $key) and in_array('C3', $key) and in_array('D1', $key)){ $key = ['B3', 'C3']; }
+	elseif(in_array('A2', $key) and in_array('B3', $key) and in_array('C4', $key) and in_array('D1', $key)){ $key = ['C4', 'B3']; }
+	elseif(in_array('A2', $key) and in_array('B3', $key) and in_array('C5', $key) and in_array('D1', $key)){ $key = ['B3', 'C5']; }
+	elseif(in_array('A2', $key) and in_array('B3', $key) and in_array('C6', $key) and in_array('D1', $key)){ $key = ['B3', 'C6']; }
+	elseif(in_array('A2', $key) and in_array('B4', $key) and in_array('C1', $key) and in_array('D1', $key)){ $key = ['C1', 'B4']; }
+	elseif(in_array('A2', $key) and in_array('B4', $key) and in_array('C2', $key) and in_array('D1', $key)){ $key = ['C2', 'B4']; }
+	elseif(in_array('A2', $key) and in_array('B4', $key) and in_array('C3', $key) and in_array('D1', $key)){ $key = ['A2', 'B3']; }
+	elseif(in_array('A2', $key) and in_array('B4', $key) and in_array('C4', $key) and in_array('D1', $key)){ $key = ['B4', 'C4']; }
+	elseif(in_array('A2', $key) and in_array('B4', $key) and in_array('C5', $key) and in_array('D1', $key)){ $key = ['B4', 'C5']; }
+	elseif(in_array('A2', $key) and in_array('B4', $key) and in_array('C6', $key) and in_array('D1', $key)){ $key = ['B4', 'C6']; }
+	elseif(in_array('A2', $key) and in_array('B1', $key) and in_array('C1', $key) and in_array('D2', $key)){ $key = ['C1', 'B1', 'D2']; }
+	elseif(in_array('A2', $key) and in_array('B2', $key) and in_array('C1', $key) and in_array('D2', $key)){ $key = ['C1', 'B2', 'D2']; }
+	elseif(in_array('A2', $key) and in_array('B3', $key) and in_array('C1', $key) and in_array('D2', $key)){ $key = ['C1', 'B3', 'D2']; }
+	elseif(in_array('A2', $key) and in_array('B4', $key) and in_array('C1', $key) and in_array('D2', $key)){ $key = ['C1', 'B4', 'D2']; }
+	elseif(in_array('A2', $key) and in_array('B2', $key) and in_array('C2', $key) and in_array('D2', $key)){ $key = ['C2', 'B2', 'D2']; }
+	elseif(in_array('A2', $key) and in_array('B2', $key) and in_array('C3', $key) and in_array('D2', $key)){ $key = ['A2', 'B2', 'D2']; }
+	elseif(in_array('A2', $key) and in_array('B2', $key) and in_array('C4', $key) and in_array('D2', $key)){ $key = ['B2', 'C4', 'D2']; }
+	elseif(in_array('A2', $key) and in_array('B2', $key) and in_array('C5', $key) and in_array('D2', $key)){ $key = ['C5', 'B2', 'D2']; }
+	elseif(in_array('A2', $key) and in_array('B2', $key) and in_array('C6', $key) and in_array('D2', $key)){ $key = ['C6', 'B2', 'D2']; }
+	elseif(in_array('A2', $key) and in_array('B3', $key) and in_array('C1', $key) and in_array('D2', $key)){ $key = ['C1', 'B3', 'D2']; }
+	elseif(in_array('A2', $key) and in_array('B3', $key) and in_array('C2', $key) and in_array('D2', $key)){ $key = ['B3', 'C2', 'D2']; }
+	elseif(in_array('A2', $key) and in_array('B3', $key) and in_array('C3', $key) and in_array('D2', $key)){ $key = ['A2', 'B3', 'D2']; }
+	elseif(in_array('A2', $key) and in_array('B3', $key) and in_array('C4', $key) and in_array('D2', $key)){ $key = ['B3', 'C4', 'D2']; }
+	elseif(in_array('A2', $key) and in_array('B3', $key) and in_array('C5', $key) and in_array('D2', $key)){ $key = ['B3', 'C5', 'D2']; }
+	elseif(in_array('A2', $key) and in_array('B3', $key) and in_array('C6', $key) and in_array('D2', $key)){ $key = ['B3', 'C6', 'D2']; }
+	elseif(in_array('A2', $key) and in_array('B1', $key) and in_array('C1', $key) and in_array('D1', $key)){ $key = ['C1', 'D3']; }
+	elseif(in_array('A2', $key) and in_array('B1', $key) and in_array('C2', $key) and in_array('D3', $key)){ $key = ['C2', 'D3']; }
+	elseif(in_array('A2', $key) and in_array('B1', $key) and in_array('C3', $key) and in_array('D3', $key)){ $key = ['A2', 'D3']; }
+	elseif(in_array('A2', $key) and in_array('B1', $key) and in_array('C4', $key) and in_array('D3', $key)){ $key = ['C4', 'D3']; }
+	elseif(in_array('A2', $key) and in_array('B1', $key) and in_array('C5', $key) and in_array('D3', $key)){ $key = ['C5', 'D3']; }
+	elseif(in_array('A2', $key) and in_array('B1', $key) and in_array('C6', $key) and in_array('D3', $key)){ $key = ['A2', 'C6', 'D3']; }
+	elseif(in_array('A2', $key) and in_array('B2', $key) and in_array('C1', $key) and in_array('D3', $key)){ $key = ['A2', 'D3']; }
+	elseif(in_array('A2', $key) and in_array('B2', $key) and in_array('C2', $key) and in_array('D3', $key)){ $key = ['C2', 'D3']; }
+	elseif(in_array('A2', $key) and in_array('B2', $key) and in_array('C3', $key) and in_array('D3', $key)){ $key = ['A2', 'B2', 'D3']; }
+	elseif(in_array('A2', $key) and in_array('B2', $key) and in_array('C4', $key) and in_array('D3', $key)){ $key = ['C4', 'D3']; }
+	elseif(in_array('A2', $key) and in_array('B2', $key) and in_array('C5', $key) and in_array('D3', $key)){ $key = ['C5', 'B2', 'D3']; }
+	elseif(in_array('A2', $key) and in_array('B2', $key) and in_array('C6', $key) and in_array('D3', $key)){ $key = ['C6', 'A2', 'D3']; }
+	elseif(in_array('A2', $key) and in_array('B3', $key) and in_array('C1', $key) and in_array('D3', $key)){ $key = ['A2', 'B3', 'D3']; }
+	elseif(in_array('A2', $key) and in_array('B3', $key) and in_array('C2', $key) and in_array('D3', $key)){ $key = ['B3', 'C2', 'D3']; }
+	elseif(in_array('A2', $key) and in_array('B3', $key) and in_array('C3', $key) and in_array('D3', $key)){ $key = ['A2', 'B3', 'D3']; }
+	elseif(in_array('A2', $key) and in_array('B3', $key) and in_array('C4', $key) and in_array('D4', $key)){ $key = ['C4', 'B3', 'D4']; }
+	elseif(in_array('A2', $key) and in_array('B3', $key) and in_array('C5', $key) and in_array('D3', $key)){ $key = ['B3', 'C5', 'D3']; }
+	elseif(in_array('A2', $key) and in_array('B3', $key) and in_array('C6', $key) and in_array('D3', $key)){ $key = ['B3', 'A2', 'D3']; }
+	elseif(in_array('A2', $key) and in_array('B4', $key) and in_array('C1', $key) and in_array('D3', $key)){ $key = ['A2', 'B4', 'D3']; }
+	elseif(in_array('A2', $key) and in_array('B4', $key) and in_array('C2', $key) and in_array('D3', $key)){ $key = ['B4', 'C2', 'D3']; }
+	elseif(in_array('A2', $key) and in_array('B4', $key) and in_array('C3', $key) and in_array('D3', $key)){ $key = ['B4', 'C3', 'D3']; }
+	elseif(in_array('A2', $key) and in_array('B4', $key) and in_array('C4', $key) and in_array('D3', $key)){ $key = ['B4', 'C4', 'D3']; }
+	elseif(in_array('A2', $key) and in_array('B4', $key) and in_array('C5', $key) and in_array('D3', $key)){ $key = ['B4', 'C5', 'D3']; }
+	elseif(in_array('A2', $key) and in_array('B4', $key) and in_array('C6', $key) and in_array('D3', $key)){ $key = ['C6', 'B4', 'D3']; }
+	elseif(in_array('A1', $key) and in_array('B1', $key) and in_array('C1', $key) and in_array('D3', $key)){ $key = ['C1', 'D3']; }
+	elseif(in_array('A1', $key) and in_array('B2', $key) and in_array('C1', $key) and in_array('D3', $key)){ $key = ['A1', 'D3']; }
+	elseif(in_array('A1', $key) and in_array('B3', $key) and in_array('C1', $key) and in_array('D3', $key)){ $key = ['A1', 'B3', 'D3']; }
+	elseif(in_array('A1', $key) and in_array('B4', $key) and in_array('C1', $key) and in_array('D3', $key)){ $key = ['A1', 'B4', 'D3']; }
+	elseif(in_array('A1', $key) and in_array('B1', $key) and in_array('C2', $key) and in_array('D3', $key)){ $key = ['C2', 'D3']; }
+	elseif(in_array('A1', $key) and in_array('B1', $key) and in_array('C3', $key) and in_array('D3', $key)){ $key = ['A1', 'D3']; }
+	elseif(in_array('A1', $key) and in_array('B1', $key) and in_array('C4', $key) and in_array('D3', $key)){ $key = ['C4', 'D3']; }
+	elseif(in_array('A1', $key) and in_array('B1', $key) and in_array('C5', $key) and in_array('D3', $key)){ $key = ['C5', 'D3']; }
+	elseif(in_array('AI', $key) and in_array('B1', $key) and in_array('C6', $key) and in_array('D3', $key)){ $key = ['C6', 'D3']; }
+	elseif(in_array('A1', $key) and in_array('B2', $key) and in_array('C2', $key) and in_array('D3', $key)){ $key = ['C2', 'D3']; }
+	elseif(in_array('A1', $key) and in_array('B2', $key) and in_array('C3', $key) and in_array('D3', $key)){ $key = ['A1', 'B2', 'D3']; }
+	elseif(in_array('A1', $key) and in_array('B2', $key) and in_array('C4', $key) and in_array('D3', $key)){ $key = ['B2', 'C4', 'D3']; }
+	elseif(in_array('A1', $key) and in_array('B2', $key) and in_array('C5', $key) and in_array('D3', $key)){ $key = ['C5', 'D3']; }
+	elseif(in_array('A1', $key) and in_array('B2', $key) and in_array('C6', $key) and in_array('D3', $key)){ $key = ['A1', 'D3']; }
+	elseif(in_array('A1', $key) and in_array('B3', $key) and in_array('C2', $key) and in_array('D3', $key)){ $key = ['C2', 'B3', 'D3']; }
+	elseif(in_array('A1', $key) and in_array('B3', $key) and in_array('C3', $key) and in_array('D3', $key)){ $key = ['B3', 'C3', 'D3']; }
+	elseif(in_array('A1', $key) and in_array('B3', $key) and in_array('C4', $key) and in_array('D3', $key)){ $key = ['C4', 'D3', 'B3']; }
+	elseif(in_array('A1', $key) and in_array('B3', $key) and in_array('C5', $key) and in_array('D3', $key)){ $key = ['C5', 'D3']; }
+	elseif(in_array('A1', $key) and in_array('B3', $key) and in_array('C6', $key) and in_array('D3', $key)){ $key = ['A1', 'D3', 'B3']; }
+	elseif(in_array('A1', $key) and in_array('B4', $key) and in_array('C1', $key) and in_array('D3', $key)){ $key = ['A1', 'B4', 'D3']; }
+	elseif(in_array('A1', $key) and in_array('B4', $key) and in_array('C2', $key) and in_array('D3', $key)){ $key = ['B4', 'C2', 'D3']; }
+	elseif(in_array('A1', $key) and in_array('B4', $key) and in_array('C3', $key) and in_array('D3', $key)){ $key = ['A1', 'B4', 'D3']; }
+	elseif(in_array('A1', $key) and in_array('B4', $key) and in_array('C4', $key) and in_array('D3', $key)){ $key = ['B4', 'C4', 'D3']; }
+	elseif(in_array('A1', $key) and in_array('B4', $key) and in_array('C5', $key) and in_array('D3', $key)){ $key = ['C5', 'B4', 'D3']; }
+	elseif(in_array('A1', $key) and in_array('B4', $key) and in_array('C6', $key) and in_array('D3', $key)){ $key = ['A1', 'B4', 'D3']; }
+	elseif(in_array('A3', $key) and in_array('B1', $key) and in_array('C1', $key) and in_array('D1', $key)){ $key = ['A3']; }
+	elseif(in_array('A3', $key) and in_array('B2', $key) and in_array('C1', $key) and in_array('D1', $key)){ $key = ['A3', 'B2']; }
+	elseif(in_array('A3', $key) and in_array('B3', $key) and in_array('C1', $key) and in_array('D1', $key)){ $key = ['A3', 'B3']; }
+	elseif(in_array('A3', $key) and in_array('B4', $key) and in_array('C1', $key) and in_array('D1', $key)){ $key = ['A3', 'B4']; }
+	elseif(in_array('A3', $key) and in_array('B1', $key) and in_array('C2', $key) and in_array('D1', $key)){ $key = ['A3', 'D1']; }
+	elseif(in_array('A3', $key) and in_array('B1', $key) and in_array('C3', $key) and in_array('D1', $key)){ $key = ['A3', 'D1']; }
+	elseif(in_array('A3', $key) and in_array('B1', $key) and in_array('C4', $key) and in_array('D1', $key)){ $key = ['A3', 'C4']; }
+	elseif(in_array('A3', $key) and in_array('B1', $key) and in_array('C5', $key) and in_array('D1', $key)){ $key = ['A3']; }
+	elseif(in_array('A3', $key) and in_array('B1', $key) and in_array('C6', $key) and in_array('D1', $key)){ $key = ['A3', 'C6']; }
+	elseif(in_array('A3', $key) and in_array('B2', $key) and in_array('C1', $key) and in_array('D1', $key)){ $key = ['A3']; }
+	elseif(in_array('A3', $key) and in_array('B2', $key) and in_array('C2', $key) and in_array('D1', $key)){ $key = ['A3', 'C2']; }
+	elseif(in_array('A3', $key) and in_array('B2', $key) and in_array('C3', $key) and in_array('D1', $key)){ $key = ['A3', 'D1']; }
+	elseif(in_array('A3', $key) and in_array('B2', $key) and in_array('C4', $key) and in_array('D1', $key)){ $key = ['A3', 'C4']; }
+	elseif(in_array('A3', $key) and in_array('B2', $key) and in_array('C5', $key) and in_array('D1', $key)){ $key = ['A3']; }
+	elseif(in_array('A3', $key) and in_array('B2', $key) and in_array('C6', $key) and in_array('D1', $key)){ $key = ['A3']; }
+	elseif(in_array('A3', $key) and in_array('B3', $key) and in_array('C1', $key) and in_array('D1', $key)){ $key = ['A3', 'B3']; }
+	elseif(in_array('A3', $key) and in_array('B3', $key) and in_array('C2', $key) and in_array('D1', $key)){ $key = ['A3', 'B3']; }
+	elseif(in_array('A3', $key) and in_array('B3', $key) and in_array('C3', $key) and in_array('D1', $key)){ $key = ['A3', 'B3']; }
+	elseif(in_array('A3', $key) and in_array('B3', $key) and in_array('C4', $key) and in_array('D1', $key)){ $key = ['A3', 'D4']; }
+	elseif(in_array('A3', $key) and in_array('B3', $key) and in_array('C5', $key) and in_array('D1', $key)){ $key = ['A3', 'B3']; }
+	elseif(in_array('A3', $key) and in_array('B3', $key) and in_array('C6', $key) and in_array('D1', $key)){ $key = ['A3', 'B3']; }
+	elseif(in_array('A3', $key) and in_array('B4', $key) and in_array('C1', $key) and in_array('D1', $key)){ $key = ['A3', 'B4']; }
+	elseif(in_array('A3', $key) and in_array('B4', $key) and in_array('C2', $key) and in_array('D1', $key)){ $key = ['A3', 'B4']; }
+	elseif(in_array('A3', $key) and in_array('B4', $key) and in_array('C3', $key) and in_array('D1', $key)){ $key = ['A3', 'B4']; }
+	elseif(in_array('A3', $key) and in_array('B4', $key) and in_array('C4', $key) and in_array('D1', $key)){ $key = ['A3', 'C4']; }
+	elseif(in_array('A3', $key) and in_array('B4', $key) and in_array('C5', $key) and in_array('D1', $key)){ $key = ['A3', 'B4']; }
+	elseif(in_array('A3', $key) and in_array('B4', $key) and in_array('C6', $key) and in_array('D1', $key)){ $key = ['A3', 'D1']; }
+	elseif(in_array('A3', $key) and in_array('B1', $key) and in_array('C1', $key) and in_array('D2', $key)){ $key = ['A3', 'D2']; }
+	elseif(in_array('A3', $key) and in_array('B1', $key) and in_array('C2', $key) and in_array('D2', $key)){ $key = ['A3', 'D2']; }
+	elseif(in_array('A3', $key) and in_array('B1', $key) and in_array('C3', $key) and in_array('D2', $key)){ $key = ['A3', 'D2']; }
+	elseif(in_array('A3', $key) and in_array('B1', $key) and in_array('C4', $key) and in_array('D2', $key)){ $key = ['A3', 'C4', 'D2']; }
+	elseif(in_array('A3', $key) and in_array('B1', $key) and in_array('C5', $key) and in_array('D2', $key)){ $key = ['A3', 'D2']; }
+	elseif(in_array('A3', $key) and in_array('B1', $key) and in_array('C6', $key) and in_array('D2', $key)){ $key = ['A3', 'D2']; }
+	elseif(in_array('A3', $key) and in_array('B2', $key) and in_array('C1', $key) and in_array('D2', $key)){ $key = ['A3', 'D2']; }
+	elseif(in_array('A3', $key) and in_array('B2', $key) and in_array('C2', $key) and in_array('D2', $key)){ $key = ['A3', 'D2']; }
+	elseif(in_array('A3', $key) and in_array('B2', $key) and in_array('C3', $key) and in_array('D2', $key)){ $key = ['A3', 'D2']; }
+	elseif(in_array('A3', $key) and in_array('B2', $key) and in_array('C4', $key) and in_array('D2', $key)){ $key = ['A3', 'C4', 'D2']; }
+	elseif(in_array('A3', $key) and in_array('B2', $key) and in_array('C5', $key) and in_array('D2', $key)){ $key = ['A3', 'D2']; }
+	elseif(in_array('A3', $key) and in_array('B2', $key) and in_array('C6', $key) and in_array('D2', $key)){ $key = ['A3', 'D2']; }
+	elseif(in_array('A3', $key) and in_array('B3', $key) and in_array('C1', $key) and in_array('D2', $key)){ $key = ['A3', 'B3', 'D2']; }
+	elseif(in_array('A3', $key) and in_array('B3', $key) and in_array('C2', $key) and in_array('D2', $key)){ $key = ['A3', 'B3', 'D2']; }
+	elseif(in_array('A3', $key) and in_array('B3', $key) and in_array('C3', $key) and in_array('D2', $key)){ $key = ['A3', 'B3', 'D2']; }
+	elseif(in_array('A3', $key) and in_array('B3', $key) and in_array('C4', $key) and in_array('D2', $key)){ $key = ['A3', 'C4', 'D2']; }
+	elseif(in_array('A3', $key) and in_array('B3', $key) and in_array('C5', $key) and in_array('D2', $key)){ $key = ['A3', 'B3', 'D2']; }
+	elseif(in_array('A3', $key) and in_array('B3', $key) and in_array('C6', $key) and in_array('D2', $key)){ $key = ['A3', 'B3', 'D2']; }
+	elseif(in_array('A3', $key) and in_array('B4', $key) and in_array('C1', $key) and in_array('D2', $key)){ $key = ['A3', 'B4', 'D2']; }
+	elseif(in_array('A3', $key) and in_array('B4', $key) and in_array('C2', $key) and in_array('D2', $key)){ $key = ['A4', 'B4', 'D2']; }
+	elseif(in_array('A3', $key) and in_array('B4', $key) and in_array('C3', $key) and in_array('D2', $key)){ $key = ['A3', 'B4', 'D2']; }
+	elseif(in_array('A3', $key) and in_array('B4', $key) and in_array('C4', $key) and in_array('D2', $key)){ $key = ['A3', 'C4', 'D2']; }
+	elseif(in_array('A3', $key) and in_array('B4', $key) and in_array('C5', $key) and in_array('D2', $key)){ $key = ['A3', 'B4', 'D2']; }
+	elseif(in_array('A3', $key) and in_array('B4', $key) and in_array('C6', $key) and in_array('D2', $key)){ $key = ['A3', 'B4', 'D2']; }
+	elseif(in_array('A3', $key) and in_array('B1', $key) and in_array('C1', $key) and in_array('D3', $key)){ $key = ['A3', 'D3']; }
+	elseif(in_array('A3', $key) and in_array('B1', $key) and in_array('C2', $key) and in_array('D3', $key)){ $key = ['A3', 'D3']; }
+	elseif(in_array('A3', $key) and in_array('B1', $key) and in_array('C3', $key) and in_array('D3', $key)){ $key = ['A3', 'D3']; }
+	elseif(in_array('A3', $key) and in_array('B1', $key) and in_array('C4', $key) and in_array('D3', $key)){ $key = ['A3', 'C4', 'D3']; }
+	elseif(in_array('A3', $key) and in_array('B1', $key) and in_array('C5', $key) and in_array('D3', $key)){ $key = ['A3', 'D3']; }
+	elseif(in_array('A3', $key) and in_array('B1', $key) and in_array('C6', $key) and in_array('D3', $key)){ $key = ['A3', 'D3']; }
+	elseif(in_array('A3', $key) and in_array('B2', $key) and in_array('C1', $key) and in_array('D3', $key)){ $key = ['A3', 'D3']; }
+	elseif(in_array('A3', $key) and in_array('B2', $key) and in_array('C2', $key) and in_array('D3', $key)){ $key = ['A3', 'D3']; }
+	elseif(in_array('A3', $key) and in_array('B2', $key) and in_array('C3', $key) and in_array('D3', $key)){ $key = ['A3', 'D3']; }
+	elseif(in_array('A3', $key) and in_array('B2', $key) and in_array('C4', $key) and in_array('D3', $key)){ $key = ['A3', 'C4', 'D3']; }
+	elseif(in_array('A3', $key) and in_array('B2', $key) and in_array('C5', $key) and in_array('D3', $key)){ $key = ['A3', 'D3']; }
+	elseif(in_array('A3', $key) and in_array('B2', $key) and in_array('C6', $key) and in_array('D3', $key)){ $key = ['A3', 'D3']; }
+	elseif(in_array('A3', $key) and in_array('B3', $key) and in_array('C1', $key) and in_array('D3', $key)){ $key = ['A3', 'D3']; }
+	elseif(in_array('A3', $key) and in_array('B3', $key) and in_array('C2', $key) and in_array('D3', $key)){ $key = ['A3', 'D3']; }
+	elseif(in_array('A3', $key) and in_array('B3', $key) and in_array('C3', $key) and in_array('D3', $key)){ $key = ['A3', 'D3']; }
+	elseif(in_array('A3', $key) and in_array('B3', $key) and in_array('C4', $key) and in_array('D3', $key)){ $key = ['A3', 'C4', 'D3']; }
+	elseif(in_array('A3', $key) and in_array('B3', $key) and in_array('C5', $key) and in_array('D3', $key)){ $key = ['A3', 'D3']; }
+	elseif(in_array('A3', $key) and in_array('B3', $key) and in_array('C6', $key) and in_array('D3', $key)){ $key = ['A3', 'D3']; }
+	elseif(in_array('A3', $key) and in_array('B4', $key) and in_array('C1', $key) and in_array('D3', $key)){ $key = ['A3', 'B4', 'D3']; }
+	elseif(in_array('A3', $key) and in_array('B4', $key) and in_array('C2', $key) and in_array('D3', $key)){ $key = ['A3', 'B4', 'D3']; }
+	elseif(in_array('A3', $key) and in_array('B4', $key) and in_array('C3', $key) and in_array('D3', $key)){ $key = ['A3', 'B4', 'D3']; }
+	elseif(in_array('A3', $key) and in_array('B4', $key) and in_array('C4', $key) and in_array('D3', $key)){ $key = ['A3', 'C4', 'D3']; }
+	elseif(in_array('A3', $key) and in_array('B4', $key) and in_array('C5', $key) and in_array('D3', $key)){ $key = ['A3', 'B4', 'D3']; }
+	elseif(in_array('A3', $key) and in_array('B4', $key) and in_array('C6', $key) and in_array('D3', $key)){ $key = ['A3', 'B4', 'D3']; }
+	elseif(in_array('A4', $key) and in_array('B1', $key) and in_array('C1', $key) and in_array('D1', $key)){ $key = ['A4']; }
+	elseif(in_array('A4', $key) and in_array('B1', $key) and in_array('C2', $key) and in_array('D1', $key)){ $key = ['A4', 'C2']; }
+	elseif(in_array('A4', $key) and in_array('B1', $key) and in_array('C3', $key) and in_array('D1', $key)){ $key = ['A4']; }
+	elseif(in_array('A4', $key) and in_array('B1', $key) and in_array('C4', $key) and in_array('D1', $key)){ $key = ['A4', 'C4']; }
+	elseif(in_array('A4', $key) and in_array('B1', $key) and in_array('C5', $key) and in_array('D1', $key)){ $key = ['A4']; }
+	elseif(in_array('A4', $key) and in_array('B1', $key) and in_array('C6', $key) and in_array('D1', $key)){ $key = ['A4']; }
+	elseif(in_array('A4', $key) and in_array('B2', $key) and in_array('C1', $key) and in_array('D1', $key)){ $key = ['A4']; }
+	elseif(in_array('A4', $key) and in_array('B2', $key) and in_array('C2', $key) and in_array('D1', $key)){ $key = ['A4']; }
+	elseif(in_array('A4', $key) and in_array('B2', $key) and in_array('C3', $key) and in_array('D1', $key)){ $key = ['A4']; }
+	elseif(in_array('A4', $key) and in_array('B2', $key) and in_array('C4', $key) and in_array('D1', $key)){ $key = ['A4', 'C4']; }
+	elseif(in_array('A4', $key) and in_array('B2', $key) and in_array('C5', $key) and in_array('D1', $key)){ $key = ['A4']; }
+	elseif(in_array('A4', $key) and in_array('B2', $key) and in_array('C6', $key) and in_array('D1', $key)){ $key = ['A4']; }
+	elseif(in_array('A4', $key) and in_array('B3', $key) and in_array('C1', $key) and in_array('D1', $key)){ $key = ['A4', 'B3']; }
+	elseif(in_array('A4', $key) and in_array('B3', $key) and in_array('C2', $key) and in_array('D1', $key)){ $key = ['A4', 'B3']; }
+	elseif(in_array('A4', $key) and in_array('B3', $key) and in_array('C3', $key) and in_array('D1', $key)){ $key = ['A4', 'B3']; }
+	elseif(in_array('A4', $key) and in_array('B3', $key) and in_array('C4', $key) and in_array('D1', $key)){ $key = ['A4', 'C4']; }
+	elseif(in_array('A4', $key) and in_array('B3', $key) and in_array('C5', $key) and in_array('D1', $key)){ $key = ['A4', 'B3']; }
+	elseif(in_array('A4', $key) and in_array('B3', $key) and in_array('C6', $key) and in_array('D1', $key)){ $key = ['A4', 'B3']; }
+	elseif(in_array('A4', $key) and in_array('B4', $key) and in_array('C1', $key) and in_array('D1', $key)){ $key = ['A4', 'B4']; }
+	elseif(in_array('A4', $key) and in_array('B4', $key) and in_array('C2', $key) and in_array('D1', $key)){ $key = ['A4', 'B4']; }
+	elseif(in_array('A4', $key) and in_array('B4', $key) and in_array('C3', $key) and in_array('D1', $key)){ $key = ['A4', 'B4']; }
+	elseif(in_array('A4', $key) and in_array('B4', $key) and in_array('C4', $key) and in_array('D1', $key)){ $key = ['A4', 'C4']; }
+	elseif(in_array('A4', $key) and in_array('B4', $key) and in_array('C5', $key) and in_array('D1', $key)){ $key = ['A4', 'B4']; }
+	elseif(in_array('A4', $key) and in_array('B4', $key) and in_array('C6', $key) and in_array('D1', $key)){ $key = ['A4', 'B4']; }
+	elseif(in_array('A4', $key) and in_array('B1', $key) and in_array('C1', $key) and in_array('D2', $key)){ $key = ['A4', 'D2']; }
+	elseif(in_array('A4', $key) and in_array('B1', $key) and in_array('C2', $key) and in_array('D2', $key)){ $key = ['A4', 'D2']; }
+	elseif(in_array('A4', $key) and in_array('B1', $key) and in_array('C3', $key) and in_array('D2', $key)){ $key = ['A4', 'D2']; }
+	elseif(in_array('A4', $key) and in_array('B1', $key) and in_array('C4', $key) and in_array('D2', $key)){ $key = ['A4', 'C4', 'D2']; }
+	elseif(in_array('A4', $key) and in_array('B1', $key) and in_array('C5', $key) and in_array('D2', $key)){ $key = ['A4', 'D2']; }
+	elseif(in_array('A4', $key) and in_array('B1', $key) and in_array('C6', $key) and in_array('D2', $key)){ $key = ['A4', 'D2']; }
+	elseif(in_array('A4', $key) and in_array('B2', $key) and in_array('C1', $key) and in_array('D2', $key)){ $key = ['A4', 'D2']; }
+	elseif(in_array('A4', $key) and in_array('B2', $key) and in_array('C2', $key) and in_array('D2', $key)){ $key = ['A4', 'D2']; }
+	elseif(in_array('A4', $key) and in_array('B2', $key) and in_array('C3', $key) and in_array('D2', $key)){ $key = ['A4', 'D2']; }
+	elseif(in_array('A4', $key) and in_array('B2', $key) and in_array('C4', $key) and in_array('D2', $key)){ $key = ['A4', 'C4', 'D2']; }
+	elseif(in_array('A4', $key) and in_array('B2', $key) and in_array('C5', $key) and in_array('D2', $key)){ $key = ['A4', 'D2']; }
+	elseif(in_array('A4', $key) and in_array('B2', $key) and in_array('C6', $key) and in_array('D2', $key)){ $key = ['A4', 'D2']; }
+	elseif(in_array('A4', $key) and in_array('B3', $key) and in_array('C1', $key) and in_array('D2', $key)){ $key = ['A4', 'D2', 'B3']; }
+	elseif(in_array('A4', $key) and in_array('B3', $key) and in_array('C2', $key) and in_array('D2', $key)){ $key = ['A4', 'B3', 'D2']; }
+	elseif(in_array('A4', $key) and in_array('B3', $key) and in_array('C3', $key) and in_array('D2', $key)){ $key = ['A4', 'B3', 'D2']; }
+	elseif(in_array('A4', $key) and in_array('B3', $key) and in_array('C4', $key) and in_array('D2', $key)){ $key = ['A4', 'C4', 'D2']; }
+	elseif(in_array('A4', $key) and in_array('B3', $key) and in_array('C5', $key) and in_array('D2', $key)){ $key = ['A4', 'B3', 'D2']; }
+	elseif(in_array('A4', $key) and in_array('B3', $key) and in_array('C6', $key) and in_array('D2', $key)){ $key = ['A4', 'B3', 'D2']; }
+	elseif(in_array('A4', $key) and in_array('B4', $key) and in_array('C1', $key) and in_array('D2', $key)){ $key = ['A4', 'B4', 'D2']; }
+	elseif(in_array('A4', $key) and in_array('B4', $key) and in_array('C2', $key) and in_array('D2', $key)){ $key = ['A4', 'B4', 'D2']; }
+	elseif(in_array('A4', $key) and in_array('B4', $key) and in_array('C3', $key) and in_array('D2', $key)){ $key = ['A4', 'B4', 'D2']; }
+	elseif(in_array('A4', $key) and in_array('B4', $key) and in_array('C4', $key) and in_array('D2', $key)){ $key = ['A4', 'B4', 'C4']; }
+	elseif(in_array('A4', $key) and in_array('B4', $key) and in_array('C5', $key) and in_array('D2', $key)){ $key = ['A4', 'B4', 'D2']; }
+	elseif(in_array('A4', $key) and in_array('B4', $key) and in_array('C6', $key) and in_array('D2', $key)){ $key = ['A4', 'B4', 'D2']; }
+	elseif(in_array('A4', $key) and in_array('B1', $key) and in_array('C1', $key) and in_array('D3', $key)){ $key = ['A4', 'D3']; }
+	elseif(in_array('A4', $key) and in_array('B1', $key) and in_array('C2', $key) and in_array('D3', $key)){ $key = ['A4', 'D3']; }
+	elseif(in_array('A4', $key) and in_array('B1', $key) and in_array('C3', $key) and in_array('D3', $key)){ $key = ['A4', 'D3']; }
+	elseif(in_array('A4', $key) and in_array('B1', $key) and in_array('C4', $key) and in_array('D3', $key)){ $key = ['A4', 'C4', 'D3']; }
+	elseif(in_array('A4', $key) and in_array('B1', $key) and in_array('C5', $key) and in_array('D3', $key)){ $key = ['A4', 'D3']; }
+	elseif(in_array('A4', $key) and in_array('B1', $key) and in_array('C6', $key) and in_array('D3', $key)){ $key = ['A4', 'D3']; }
+	elseif(in_array('A4', $key) and in_array('B2', $key) and in_array('C1', $key) and in_array('D3', $key)){ $key = ['A4', 'D3']; }
+	elseif(in_array('A4', $key) and in_array('B2', $key) and in_array('C2', $key) and in_array('D3', $key)){ $key = ['A4', 'D3']; }
+	elseif(in_array('A4', $key) and in_array('B2', $key) and in_array('C3', $key) and in_array('D3', $key)){ $key = ['A4', 'D3']; }
+	elseif(in_array('A4', $key) and in_array('B2', $key) and in_array('C4', $key) and in_array('D3', $key)){ $key = ['A4', 'C4', 'D3']; }
+	elseif(in_array('A4', $key) and in_array('B2', $key) and in_array('C5', $key) and in_array('D3', $key)){ $key = ['A4', 'D3']; }
+	elseif(in_array('A4', $key) and in_array('B2', $key) and in_array('C6', $key) and in_array('D3', $key)){ $key = ['A4', 'D3']; }
+	elseif(in_array('A4', $key) and in_array('B3', $key) and in_array('C1', $key) and in_array('D3', $key)){ $key = ['A4', 'B3', 'D3']; }
+	elseif(in_array('A4', $key) and in_array('B3', $key) and in_array('C2', $key) and in_array('D3', $key)){ $key = ['A4', 'B3', 'D3']; }
+	elseif(in_array('A4', $key) and in_array('B3', $key) and in_array('C3', $key) and in_array('D3', $key)){ $key = ['A4', 'D3', 'B3']; }
+	elseif(in_array('A4', $key) and in_array('B3', $key) and in_array('C4', $key) and in_array('D3', $key)){ $key = ['A4', 'C4', 'D3']; }
+	elseif(in_array('A4', $key) and in_array('B3', $key) and in_array('C5', $key) and in_array('D3', $key)){ $key = ['A4', 'B3', 'D3']; }
+	elseif(in_array('A4', $key) and in_array('B3', $key) and in_array('C6', $key) and in_array('D3', $key)){ $key = ['A4', 'B3', 'D3']; }
+	elseif(in_array('A4', $key) and in_array('B4', $key) and in_array('C1', $key) and in_array('D3', $key)){ $key = ['A4', 'B4', 'D3']; }
+	elseif(in_array('A4', $key) and in_array('B4', $key) and in_array('C2', $key) and in_array('D3', $key)){ $key = ['A4', 'B4', 'D3']; }
+	elseif(in_array('A4', $key) and in_array('B4', $key) and in_array('C3', $key) and in_array('D3', $key)){ $key = ['A4', 'D3', 'B4']; }
+	elseif(in_array('A4', $key) and in_array('B4', $key) and in_array('C4', $key) and in_array('D3', $key)){ $key = ['A4', 'C4', 'B4', 'D3']; }
+	elseif(in_array('A4', $key) and in_array('B4', $key) and in_array('C5', $key) and in_array('D3', $key)){ $key = ['A4', 'B4', 'D3']; }
+	elseif(in_array('A4', $key) and in_array('B4', $key) and in_array('C6', $key) and in_array('D3', $key)){ $key = ['A4', 'D3', 'B4']; }
+
+	foreach($data as $item){
+		if($item['name'] == 'e' or $item['name'] == 'E'){
+			$key[] = strtoupper($item['name'] . intval($item['value']));
+		}
+	}
+
+	return $key;
+}
 
 /* Register AJAX call */
 add_action( 'wp_ajax_quiz_results', 'quiz_results' );
@@ -388,20 +694,68 @@ function quiz_results(){
 		];
 		$the_query = new WP_Query( $args );
 		if ( $the_query->have_posts() ) {
-			echo '<ul class="products de-product uk-grid uk-child-width-1-2 uk-child-width-1-2@s uk-child-width-1-3@m uk-child-width-1-5@l" data-layout="elaina" data-uk-grid="">';
+			// echo '<div class="container">';
+			echo '<h2 class="mb-5" style="style="width: 100%;"">Jums tinkami produktai:</h2>';
+			echo '<ul class="products row test-result ">';
+			
+
+	
 		
 			while ( $the_query->have_posts() ) {
 				$the_query->the_post();
-				// wc_get_template_part( 'content', 'product' );
-				get_template_part( 'template-parts/components/card-product' );
+				get_template_part( 'template-parts/components/card-product-test' );
 			}
 
 			echo '</ul>';
+			// echo '</div>';
 		} else {
-			echo '<ul class="products de-product uk-grid uk-child-width-1-2 uk-child-width-1-2@s uk-child-width-1-3@m uk-child-width-1-5@l" data-layout="elaina" data-uk-grid="">
-				<li>Nerasta produktų pagal pasirinktus atsakymus.</li>
-			</ul>';
+			echo '<ul class="products row" data-layout="elaina" data-uk-grid="">
+			<li>Nerasta produktų pagal pasirinktus atsakymus.</li>
+		</ul>';
 		}
 		
 		wp_die();
+}
+
+function custom_track_product_view() {
+	if ( ! is_singular( 'product' ) ) {
+			return;
+	}
+
+	global $post;
+
+	if ( empty( $_COOKIE['woocommerce_recently_viewed'] ) )
+			$viewed_products = array();
+	else
+			$viewed_products = (array) explode( '|', $_COOKIE['woocommerce_recently_viewed'] );
+
+	if ( ! in_array( $post->ID, $viewed_products ) ) {
+			$viewed_products[] = $post->ID;
+	}
+
+	if ( sizeof( $viewed_products ) > 15 ) {
+			array_shift( $viewed_products );
+	}
+
+	// Store for session only
+	wc_setcookie( 'woocommerce_recently_viewed', implode( '|', $viewed_products ) );
+}
+
+add_action( 'template_redirect', 'custom_track_product_view', 20 );
+
+add_shortcode( 'recently_viewed_products', 'bbloomer_recently_viewed_shortcode' );
+ 
+function bbloomer_recently_viewed_shortcode() {
+ 
+   $viewed_products = ! empty( $_COOKIE['woocommerce_recently_viewed'] ) ? (array) explode( '|', wp_unslash( $_COOKIE['woocommerce_recently_viewed'] ) ) : array();
+   $viewed_products = array_reverse( array_filter( array_map( 'absint', $viewed_products ) ) );
+ 
+   if ( empty( $viewed_products ) ) return;
+    
+   $title = '<div class="last-seen"><h4 class="mt-4 pt-5">Taip pat žiūrėjote</h4>';
+   $product_ids = implode( ",", $viewed_products );
+	 $close = '</div>';
+ 
+   return $title . do_shortcode("[products limit='4' columns='4' ids='$product_ids']") . $close;
+   
 }

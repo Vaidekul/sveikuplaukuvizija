@@ -154,7 +154,7 @@ add_filter( 'woocommerce_product_thumbnails_columns', 'webbiz_woocommerce_thumbn
 add_action('woocommerce_before_shop_loop_item_title', 'wrap_product_thumbnail_open', 9);
 
 function wrap_product_thumbnail_open() {
-  echo '<div class="shop-product-thumbnail">';
+  echo '<div class="shop-product-thumbnail custom-product-card">';
 }
 
 /**
@@ -189,6 +189,7 @@ function header_wrapper_open() {
 add_action('woocommerce_before_shop_loop', 'header_wrapper_close', 1);
 
 function header_wrapper_close() {
+
   echo '</div>';
 }
 

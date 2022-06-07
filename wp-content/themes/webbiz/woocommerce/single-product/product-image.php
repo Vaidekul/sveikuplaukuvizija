@@ -62,5 +62,5 @@ $wrapper_classes   = apply_filters(
 		?>
 		
 	</figure>
-	<h1 class="d-block d-md-none wishlist-heart-mobile"><?php echo do_shortcode('[yith_wcwl_add_to_wishlist]'); ?></h1>
+	<!-- <h1 class="d-block d-md-none wishlist-heart-mobile"><?php// echo do_shortcode('[yith_wcwl_add_to_wishlist]'); ?></h1> -->
 </div>

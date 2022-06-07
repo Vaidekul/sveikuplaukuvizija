@@ -111,3 +111,8 @@
 .paysera-delivery-small-paragraph {
     line-height: 0.7;
 }
+
+.paysera-delivery-error {
+    color: #a00;
+    margin-bottom: 0;
+}

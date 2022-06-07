@@ -11,489 +11,365 @@ msgstr ""
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 
-#: includes/Entity/abstract-paysera-delivery-gateway.php:86
 msgid "Method title"
 msgstr ""
 
-#: includes/Entity/abstract-paysera-delivery-gateway.php:90
 msgid "This controls the title which the user sees during shipping selection."
 msgstr ""
 
-#: includes/Entity/abstract-paysera-delivery-gateway.php:97
-#: includes/Entity/abstract-paysera-delivery-gateway.php:188
 msgid "Delivery Fee"
 msgstr ""
 
-#: includes/Entity/abstract-paysera-delivery-gateway.php:105
 msgid "Minimum weight"
 msgstr ""
 
-#: includes/Entity/abstract-paysera-delivery-gateway.php:113
 msgid "Maximum weight"
 msgstr ""
 
-#: includes/Entity/abstract-paysera-delivery-gateway.php:109
-#: includes/Entity/abstract-paysera-delivery-gateway.php:117
 msgid "Kilograms"
 msgstr ""
 
-#: includes/Entity/abstract-paysera-delivery-gateway.php:121
-#: includes/Entity/abstract-paysera-delivery-gateway.php:196
 msgid "Preferred pickup type"
 msgstr ""
 
-#: includes/Entity/abstract-paysera-delivery-gateway.php:223
-#: includes/Entity/abstract-paysera-delivery-gateway.php:235
 msgid "Courier"
 msgstr ""
 
-#: includes/Entity/abstract-paysera-delivery-gateway.php:221
-#: includes/Entity/abstract-paysera-delivery-gateway.php:233
 msgid "Parcel locker"
 msgstr ""
 
-#: includes/Entity/abstract-paysera-delivery-gateway.php:128
 msgid "Minimum order amount for free shipping"
 msgstr ""
 
-#: includes/Entity/abstract-paysera-delivery-gateway.php:132
 msgid "Users will need to spend this amount to get free shipping."
 msgstr ""
 
-#: includes/PayseraInit.php:291
 msgid "%s courier will deliver the parcel right to the customer\'s hands."
 msgstr ""
 
-#: includes/PayseraInit.php:288
 msgid "%s courier will deliver the parcel to the selected parcel terminal for customer to pickup any time."
 msgstr ""
 
-#: includes/Entity/abstract-paysera-delivery-gateway.php:179
 msgid "Allowed weight:"
 msgstr ""
 
-#: includes/Entity/abstract-paysera-delivery-gateway.php:188
 msgid "Delivery Fee:"
 msgstr ""
 
-#: includes/Entity/abstract-paysera-delivery-gateway.php:196
 msgid "Preferred pickup type:"
 msgstr ""
 
-#: includes/PayseraInit.php:110
 msgid "Documentation"
 msgstr ""
 
-#: includes/PayseraInit.php:115
 msgid "Settings"
 msgstr ""
 
-#: includes/PayseraInit.php:53
-#: includes/PayseraInit.php:118
 msgid "WooCommerce is not active"
 msgstr ""
 
-#: includes/PayseraDeliveryAdmin.php:292
 msgid "Paysera: Delivery order created - %s"
 msgstr ""
 
-#: includes/PayseraAdmin.php:42
 msgid "About"
 msgstr ""
 
-#: includes/PayseraAdmin.php:50
 msgid "Delivery"
 msgstr ""
 
-#: includes/PayseraAdmin.php:58
 msgid "Payments"
 msgstr ""
 
-#: includes/PayseraDeliveryAdmin.php:74
-#: includes/PayseraPaymentAdmin.php:97
 msgid "Project ID"
 msgstr ""
 
-#: includes/PayseraDeliveryAdmin.php:81
-#: includes/PayseraPaymentAdmin.php:104
 msgid "Project password"
 msgstr ""
 
-#: includes/PayseraDeliveryAdmin.php:88
-#: includes/PayseraPaymentAdmin.php:111
 msgid "Test mode"
 msgstr ""
 
-#: includes/PayseraDeliveryAdmin.php:95
 msgid "House number field"
 msgstr ""
 
-#: includes/PayseraDeliveryAdmin.php:189
 msgid "Either project id or project password is incorrect"
 msgstr ""
 
-#: includes/PayseraAdminHtml.php:122
 msgid "Enabled"
 msgstr ""
 
-#: includes/PayseraAdminHtml.php:124
 msgid "Disabled"
 msgstr ""
 
-#: includes/PayseraAdminHtml.php:129
 msgid "Settings saved."
 msgstr ""
 
-#: includes/PayseraDeliveryAdminHtml.php:53
 msgid "Delivery Gateway List"
 msgstr ""
 
-#: includes/PayseraDeliveryAdminHtml.php:106
 msgid "Shipping zones"
 msgstr ""
 
-#: includes/PayseraDeliveryAdminHtml.php:115
-#: includes/PayseraPaymentAdmin.php:90
 msgid "Enable"
 msgstr ""
 
-#: includes/PayseraDeliveryAdminHtml.php:110
 msgid "Disable"
 msgstr ""
 
-#: includes/PayseraDeliveryFrontHtml.php:44
-#: includes/PayseraDeliveryFrontHtml.php:45
-#: includes/PayseraDeliveryFrontHtml.php:52
-#: includes/PayseraDeliveryFrontHtml.php:53
 msgid "House Number"
 msgstr ""
 
-#: includes/PayseraDeliveryFrontHtml.php:83
-#: includes/PayseraDeliveryFrontHtml.php:113
-#: includes/PayseraDeliveryFrontHtml.php:207
 msgid "Please select the terminal location"
 msgstr ""
 
-#: includes/PayseraDeliveryFrontHtml.php:91
-#: includes/PayseraDeliveryFrontHtml.php:201
 msgid "Please select the city/municipality"
 msgstr ""
 
-#: includes/PayseraDeliveryFrontHtml.php:147
 msgid "Sorry, %d kg exceeds the maximum weight of %d kg for %s"
 msgstr ""
 
-#: includes/PayseraDeliveryFrontHtml.php:161
 msgid "Sorry, %d kg is not enough for the minimum weight of %d kg for %s"
 msgstr ""
 
-#: includes/PayseraDeliveryFrontHtml.php:192
 msgid "Terminal country"
 msgstr ""
 
-#: includes/PayseraDeliveryFrontHtml.php:199
 msgid "Terminal city"
 msgstr ""
 
-#: includes/PayseraDeliveryFrontHtml.php:205
 msgid "Terminal location"
 msgstr ""
 
-#: includes/PayseraDeliveryFrontHtml.php:194
 msgid "Please select the country"
 msgstr ""
 
-#: includes/PayseraAdminHtml.php:17
 msgid "About Paysera"
 msgstr ""
 
-#: includes/PayseraAdminHtml.php:19
 msgid "%s is a global fintech company providing financial and related services to clients from all over the world since 2004."
 msgstr ""
 
-#: includes/PayseraAdminHtml.php:20
 msgid "https://www.paysera.com/v2/en-GB/paysera-account"
 msgstr ""
 
-#: includes/PayseraAdminHtml.php:21
 msgid "Getting started"
 msgstr ""
 
-#: includes/PayseraAdminHtml.php:22
 msgid "In order to receive full benefits of both Paysera Payment and Delivery plugins, please use the outlined links to access our detailed how-to instructions."
 msgstr ""
 
-#: includes/PayseraAdminHtml.php:24
 msgid "Paysera Payments"
 msgstr ""
 
-#: includes/PayseraAdminHtml.php:26
 msgid "Paysera Delivery"
 msgstr ""
 
-#: includes/PayseraAdminHtml.php:28
 msgid "This plugin enables you to accept online payments via cards, SMS, or the most popular banks in your country. It is easy to install and is used by thousands of online merchants across Europe."
 msgstr ""
 
-#: includes/PayseraAdminHtml.php:30
 msgid "This plugin displays several different delivery companies that your buyers can choose from when ordering your products. No need to sign separate agreements with the courier companies – we have done it for you. Enjoy low delivery prices and quick support when needed."
 msgstr ""
 
-#: includes/PayseraAdminHtml.php:32
 msgid "https://www.paysera.com/v2/en-GB/payment-gateway-checkout"
 msgstr ""
 
-#: includes/PayseraAdminHtml.php:33
-#: includes/PayseraAdminHtml.php:38
 msgid "Read more about it >"
 msgstr ""
 
-#: includes/PayseraAdminHtml.php:34
 msgid "https://developers.paysera.com/en/checkout/basic"
 msgstr ""
 
-#: includes/PayseraAdminHtml.php:35
-#: includes/PayseraAdminHtml.php:40
 msgid "Instructions >"
 msgstr ""
 
-#: includes/PayseraAdminHtml.php:37
 msgid "https://www.paysera.com/v2/en-GB/checkout-delivery-service"
 msgstr ""
 
-#: includes/PayseraAdminHtml.php:39
 msgid "https://developers.paysera.com/en/delivery"
 msgstr ""
 
-#: includes/PayseraAdminHtml.php:41
 msgid "Need assistance?"
 msgstr ""
 
-#: includes/PayseraAdminHtml.php:42
 msgid "Paysera client support in English is available 24/7!"
 msgstr ""
 
-#: includes/PayseraAdminHtml.php:44
 msgid "During working hours the support is available in 12 languages."
 msgstr ""
 
-#: includes/PayseraAdminHtml.php:45
 msgid "https://www.paysera.com/v2/en-GB/contacts"
 msgstr ""
 
-#: includes/PayseraAdminHtml.php:46
 msgid "Contact us >"
 msgstr ""
 
-#: includes/PayseraAdminHtml.php:48
 msgid "For the latest news about the Paysera services and status updates – follow us on %s and %s."
 msgstr ""
 
-#: includes/PayseraAdminHtml.php:52
 msgid "Explore other services of Paysera"
 msgstr ""
 
-#: includes/PayseraAdminHtml.php:53
 msgid "Alongside its\' most popular services, Paysera also offers:"
 msgstr ""
 
-#: includes/PayseraAdminHtml.php:54
 msgid "Currency exchange at competitive rates"
 msgstr ""
 
-#: includes/PayseraAdminHtml.php:55
 msgid "Enables instant Euro and cheap international transfers"
 msgstr ""
 
-#: includes/PayseraAdminHtml.php:57
 msgid "Provides LT, BGN, and RON %s for business and private clients"
 msgstr ""
 
-#: includes/PayseraAdminHtml.php:58
 msgid "https://www.paysera.com/v2/en/blog/iban-account"
 msgstr ""
 
-#: includes/PayseraAdminHtml.php:62
 msgid "Issues %s that are compatible with %s and %s, and so much more."
 msgstr ""
 
-#: includes/PayseraAdminHtml.php:63
 msgid "https://www.paysera.com/v2/en-GB/payment-card-visa"
 msgstr ""
 
-#: includes/PayseraAdminHtml.php:64
 msgid "Visa cards"
 msgstr ""
 
-#: includes/PayseraAdminHtml.php:65
 msgid "https://www.paysera.com/v2/en-GB/blog/googlepay-samsungpay"
 msgstr ""
 
-#: includes/PayseraAdminHtml.php:66
 msgid "https://www.paysera.com/v2/en-GB/apple-pay"
 msgstr ""
 
-#: includes/PayseraAdminHtml.php:69
 msgid "All the main services can be easily managed via the %s which is available for download from the App Store, Google Play, and Huawei AppGallery."
 msgstr ""
 
-#: includes/PayseraAdminHtml.php:70
 msgid "https://www.paysera.com/v2/en-GB/mobile-application"
 msgstr ""
 
-#: includes/PayseraAdminHtml.php:71
 msgid "Paysera mobile app"
 msgstr ""
 
-#: includes/PayseraAdminHtml.php:73
 msgid "Thank you for choosing our services!"
 msgstr ""
 
-#: includes/PayseraPaymentAdmin.php:119
 msgid "Title"
 msgstr ""
 
-#: includes/PayseraPaymentSettings.php:35
 msgid "All popular payment methods"
 msgstr ""
 
-#: includes/PayseraPaymentSettings.php:36
 msgid "Choose a payment method on the Paysera page"
 msgstr ""
 
-#: includes/PayseraPaymentAdmin.php:126
 msgid "Description"
 msgstr ""
 
-#: includes/PayseraPaymentAdmin.php:133
 msgid "List of payments"
 msgstr ""
 
-#: includes/PayseraPaymentAdmin.php:140
 msgid "Specific countries"
 msgstr ""
 
-#: includes/PayseraPaymentAdmin.php:147
 msgid "Grid view"
 msgstr ""
 
-#: includes/PayseraPaymentAdmins.php:162
 msgid "New Order Status"
 msgstr ""
 
-#: includes/PayseraPaymentAdmin.php:169
 msgid "Paid Order Status"
 msgstr ""
 
-#: includes/PayseraPaymentAdmin.php:176
 msgid "Pending Checkout"
 msgstr ""
 
-#: includes/PayseraPaymentAdmin.php:154
 msgid "Buyer consent"
 msgstr ""
 
-#: includes/PayseraPaymentFrontHtml.php:51
 msgid "Please be informed that the account information and payment initiation services will be provided to you by Paysera in accordance with these %s. By proceeding with this payment, you agree to receive this service and the service terms and conditions."
 msgstr ""
 
-#: includes/PayseraPaymentFrontHtml.php:55
 msgid "https://www.paysera.com/v2/en-GB/legal/pis-rules-2020"
 msgstr ""
 
-#: includes/PayseraPaymentFrontHtml.php:57
 msgid "rules"
 msgstr ""
 
-#: includes/PayseraPaymentAdmin.php:184
 msgid "Ownership code"
 msgstr ""
 
-#: includes/PayseraPaymentAdmin.php:191
 msgid "Write your ownership code"
 msgstr ""
 
-#: includes/PayseraPaymentAdmin.php:198
 msgid "Quality sign"
 msgstr ""
 
-#: includes/PayseraPaymentAdminHtml.php:39
-#: includes/PayseraDeliveryAdminHtml.php:38
 msgid "Main Settings"
 msgstr ""
 
-#: includes/PayseraPaymentAdminHtml.php:52
 msgid "Extra Settings"
 msgstr ""
 
-#: includes/PayseraPaymentAdminHtml.php:63
 msgid "Order Status"
 msgstr ""
 
-#: includes/PayseraPaymentAdminHtml.php:74
 msgid "Project Additions"
 msgstr ""
 
-#: includes/Entity/class-paysera-payment-gateway.php:66
 msgid "Paysera: Order checkout process is started"
 msgstr ""
 
-#: includes/Entity/class-paysera-payment-gateway.php:93
 msgid "Paysera: Customer came back to page"
 msgstr ""
 
-#: includes/Entity/class-paysera-payment-gateway.php:121
 msgid "Paysera: Callback order payment completed"
 msgstr ""
 
-#: includes/Entity/class-paysera-payment-gateway.php:172
 msgid "Paysera: Status changed to "
 msgstr ""
 
-#. includes/PayseraInit.php:63
 msgid "Paysera Payment And Delivery"
 msgstr ""
 
-#: includes/Entity/class-paysera-payment-gateway.php:116
 msgid "Payment confirmed with a callback"
 msgstr ""
 
-#: includes/Entity/class-paysera-payment-gateway.php:143
 msgid "Amounts do not match"
 msgstr ""
 
-#: includes/Entity/class-paysera-payment-gateway.php:149
 msgid "Currencies do not match"
 msgstr ""
 
-#: paysera.php:64
 msgid "Paysera plugin requires at least PHP "
 msgstr ""
 
-#. includes/PayseraInit.php:299
 msgid "Terminals"
 msgstr ""
 
-#. includes/PayseraInit.php:65
 msgid "Plugin & Services."
 msgstr ""
 
-#. includes/PayseraInit.php:60
 msgid "NEW! With the latest version, you can integrate delivery options into your e-shop. More about the %s "
 msgstr ""
 
-#: includes/PayseraDeliveryAdmin.php:290
 msgid "Paysera: Delivery order creation failed, please create order manually in Paysera system"
 msgstr ""
 
-#: includes/PayseraInit.php:70
 msgid "More than 1 Paysera plugin active"
 msgstr ""
 
-#: includes/PayseraDeliveryLibraryHelper.php:272
 msgid "Paysera: Chosen terminal location - %s, %s, %s"
 msgstr ""
 
-#: includes/PayseraDeliveryAdmin.php:303
 msgid "Error:"
+msgstr ""
+
+msgid "Hide shipping methods"
+msgstr ""
+
+msgid "Hide shipping methods that are above or under set weight limits"
+msgstr ""
+
+msgid "Cart weight is exceeded"
+msgstr ""
+
+msgid "Cart weight is not sufficient"
 msgstr ""

@@ -3,8 +3,16 @@
     "description": "Paysera module for Wordpress",
     "autoload": {
         "psr-4": {
-            "Paysera\\Includes\\": "includes"
-        }
+            "Paysera\\": "src/",
+            "GuzzleHttp6\\": "vendor/guzzlehttp/guzzle/src/",
+            "GuzzleHttp6\\Psr7\\": "vendor/guzzlehttp/psr7/src/",
+            "GuzzleHttp6\\Promise\\": "vendor/guzzlehttp/promises/src/"
+        },
+        "files": [
+            "vendor/guzzlehttp/guzzle/src/functions_include.php",
+            "vendor/guzzlehttp/psr7/src/functions_include.php",
+            "vendor/guzzlehttp/promises/src/functions_include.php"
+        ]
     },
     "require": {
         "php": ">=7.1",
@@ -17,7 +25,7 @@
         "paysera/lib-php-cs-fixer-config": "^2.2"
     },
     "type": "wordpress-module",
-    "version": "3.1.4",
+    "version": "3.2.0",
     "license": [
         "GPL-3.0"
     ],

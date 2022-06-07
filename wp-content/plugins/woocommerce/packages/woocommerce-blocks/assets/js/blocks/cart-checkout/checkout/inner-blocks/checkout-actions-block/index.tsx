@@ -13,8 +13,12 @@ import metadata from './block.json';
 
 registerFeaturePluginBlockType( metadata, {
 	icon: {
-		src: <Icon icon={ button } />,
-		foreground: '#874FB9',
+		src: (
+			<Icon
+				icon={ button }
+				className="wc-block-editor-components-block-icon"
+			/>
+		),
 	},
 	attributes,
 	edit: Edit,

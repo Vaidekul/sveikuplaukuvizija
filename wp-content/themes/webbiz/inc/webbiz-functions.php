@@ -157,3 +157,4 @@ require get_template_directory() . '/inc/cpt/cpt-komanda.php';
 require get_template_directory() . '/inc/cpt/cpt-prices.php';
 require get_template_directory() . '/inc/cpt/cpt-prekiuzenklai.php';
 require get_template_directory() . '/template-parts/components/shortcode-btn-cta.php';
+require get_template_directory() . '/inc/last-view-products.php';

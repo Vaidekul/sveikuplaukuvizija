@@ -53,6 +53,7 @@
 	// search window
 	//get_template_part('./template-parts/components/search-window') 
 	// get_template_part('./template-parts/components/header-content');
+	get_template_part('./template-parts/components/favourites-popup');
 	?>
 
 	<div id="content" class="site-content">

@@ -24,7 +24,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 the_title( '<h1 class="product_title entry-title">', '</h1>' );
 
 ?>
-<h1><?php echo do_shortcode('[yith_wcwl_add_to_wishlist]'); ?></h1>
+<h1><?php //echo do_shortcode('[yith_wcwl_add_to_wishlist]'); ?></h1>
 </div>
 
 <?php

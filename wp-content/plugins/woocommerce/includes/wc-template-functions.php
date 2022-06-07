@@ -1579,7 +1579,7 @@ function wc_get_gallery_image_html( $attachment_id, $main_image = false ) {
 		)
 	);
 
-	return '<div data-thumb="' . esc_url( $thumbnail_src[0] ) . '" data-thumb-alt="' . esc_attr( $alt_text ) . '" class="woocommerce-product-gallery__image"><a class="new-style" href="' . esc_url( $full_src[0] ) . '">' . $image . '</a></div>';
+	return '<div data-thumb="' . esc_url( $thumbnail_src[0] ) . '" data-thumb-alt="' . esc_attr( $alt_text ) . '" class="woocommerce-product-gallery__image"><a href="' . esc_url( $full_src[0] ) . '">' . $image . '</a></div>';
 }
 
 if ( ! function_exists( 'woocommerce_output_product_data_tabs' ) ) {
@@ -1773,6 +1773,9 @@ if ( ! function_exists( 'woocommerce_quantity_input' ) ) {
 			'inputmode'    => apply_filters( 'woocommerce_quantity_input_inputmode', has_filter( 'woocommerce_stock_amount', 'intval' ) ? 'numeric' : '' ),
 			'product_name' => $product ? $product->get_title() : '',
 			'placeholder'  => apply_filters( 'woocommerce_quantity_input_placeholder', '', $product ),
+			// When autocomplete is enabled in firefox, it will overwrite actual value with what user entered last. So we default to off.
+			// See @link https://github.com/woocommerce/woocommerce/issues/30733.
+			'autocomplete' => apply_filters( 'woocommerce_quantity_input_autocomplete', 'off', $product ),
 		);
 
 		$args = apply_filters( 'woocommerce_quantity_input_args', wp_parse_args( $args, $defaults ), $product );
@@ -3044,11 +3047,11 @@ if ( ! function_exists( 'wc_dropdown_variation_attribute_options' ) ) {
 		$args = wp_parse_args(
 			apply_filters( 'woocommerce_dropdown_variation_attribute_options_args', $args ),
 			array(
-				'options'          => true,
-				'attribute'        => true,
-				'product'          => true,
-				'selected'         => true,
-				'name'             => __( 'Choose an option', 'woocommerce' ),
+				'options'          => false,
+				'attribute'        => false,
+				'product'          => false,
+				'selected'         => false,
+				'name'             => '',
 				'id'               => '',
 				'class'            => '',
 				'show_option_none' => __( 'Choose an option', 'woocommerce' ),
@@ -3077,10 +3080,8 @@ if ( ! function_exists( 'wc_dropdown_variation_attribute_options' ) ) {
 			$options    = $attributes[ $attribute ];
 		}
 
-	
-		$html  .= '<select id="' . esc_attr( $id ) . '" class="' . esc_attr( $class ) . '" name="' . esc_attr( $name ) . '" data-attribute_name="attribute_' . esc_attr( sanitize_title( $attribute ) ) . '" data-show_option_none="' . ( $show_option_none ? 'yes' : 'no' ) . '">';
-		$html .= '<option value="" >' . esc_html( $show_option_none_text ) . '</option>';
-		
+		$html  = '<select id="' . esc_attr( $id ) . '" class="' . esc_attr( $class ) . '" name="' . esc_attr( $name ) . '" data-attribute_name="attribute_' . esc_attr( sanitize_title( $attribute ) ) . '" data-show_option_none="' . ( $show_option_none ? 'yes' : 'no' ) . '">';
+		$html .= '<option value="">' . esc_html( $show_option_none_text ) . '</option>';
 
 		if ( ! empty( $options ) ) {
 			if ( $product && taxonomy_exists( $attribute ) ) {

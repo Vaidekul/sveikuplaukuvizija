@@ -1,0 +1,110 @@
+.favourites-popup-container {
+	background: white;
+	position: fixed;
+	top: 0;
+	right: 0;
+	width: 35%;
+	height: 100%;
+	padding: 3rem;
+	z-index: 950;
+	transition: all .3s linear;
+	opacity: 0;
+    transform: translateX(100%);
+    @include change(1024px){
+        width: 100%;
+    }
+	&.active {
+		opacity: 1;
+		transform: translateX(0%);
+    }
+    .favourites-popup-toggle.close-btn{
+        font-size: 28px;
+        margin-bottom: 10px !important;
+        margin: 0 auto;
+        font-weight: 300;
+        padding: .45rem .01rem;
+        @include change(362px){
+            line-height: 24px;
+        }
+        line-height: 16px;
+        width: 40px;
+        height: 40px;
+        text-align: center;
+        border: 1px solid #305C97;
+        color: #305C97;
+        border-radius: 50%;
+        cursor: pointer;
+    }
+    h2{
+        font-family: IvyMode;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 32px;
+        line-height: 44px;
+        text-transform: uppercase;
+        // color: $color__blue;
+        text-align: center;
+    }
+    table{
+        tr{
+            td:first-child{
+                width:30%;
+            }
+            td:last-child{
+                padding-left: 10px;
+                position: relative;
+                button.pull-right{
+                    line-height: 22px;
+                    font-size: 22px;
+                    padding: 0;
+                    float: right;
+                    position: absolute;
+                    right: 0;
+                    top: 50%;
+                    transform: translateY(-50%);
+                }
+            }
+            td{
+                .title{
+                    font-family: IvyMode;
+                    font-style: normal;
+                    font-weight: normal;
+                    font-size: 16px;
+                    line-height: 24px;
+                    text-transform: uppercase;
+                    color: #000000;
+                }
+                .icons{
+                    display: flex;
+                    i,.number{
+                        color: #305C97;
+                        font-size: .8rem;
+                    }
+                    .number{
+                        margin-right: .5rem;
+                        margin-left: .5rem;
+                    }
+                }
+                .price{
+                    font-family: IvyMode;
+                    font-style: normal;
+                    font-weight: normal;
+                    font-size: 16px;
+                    line-height: 24px;
+                    text-transform: uppercase;
+                    color: #305C97;
+                }
+                .ref{
+                    font-family: Interstate;
+                    font-style: normal;
+                    font-weight: 300;
+                    font-size: 10px;
+                    line-height: 12px;
+                    text-align: right;
+                    text-transform: uppercase;
+                    color: #000000;
+                }
+            }
+        }
+    }
+}

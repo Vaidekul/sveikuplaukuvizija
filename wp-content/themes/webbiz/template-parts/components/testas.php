@@ -1,82 +1,4 @@
-<style>
-.QUIZ-slides {
-	display:none;
-	width: 100%;
-	text-align: center;
-}
-.QUIZ-Answers{
-	text-align: center;
-}
-.QUIZ-Answers > div{ 
-	display: inline-block;
-	width: 100%;
-	text-align: left;
-}
-@media (min-width: 480px){
-	.QUIZ-Answers > div{
-		width: 49%;
-	}
-}
-@media (min-width: 768px ){
-	.QUIZ-Answers > div{
-		width: 32%;
-	}
-}
-@media (min-width: 960px  ){
-	.QUIZ-Answers > div{
-		width: 24%;
-	}
-}
-.QUIZ-Answers label{
-	cursor: pointer;
-	padding: 5px;
-	font-size: 16px;
-}
-.QUIZ-navigator{
-	display: block;
-	margin-top: 25px;
-	width: calc(100% + 30px) !important;
-	text-align: center !important;
-	margin-left: -15px;
-}
-.QUIZ-title{
-	font-size: 30px;
-	line-height: 35px;
-}
-@media (min-width: 480px){
-	.QUIZ-Answers > div{
-		font-size: 45px;
-		line-height: 50px;
-	}
-}
-@media (min-width: 768px ){
-	.QUIZ-Answers > div{
-		font-size: 60px;
-		line-height: 65px;
-	}
-}
-@media (min-width: 960px  ){
-	.QUIZ-Answers > div{
-		font-size: 72px;
-		line-height: 72px;
-	}
-}
-.QUIZ-RESULTS .de-product-thumbnail__action--add-to-cart{
-	
-}
-input[type="checkbox"], input[type="radio"]{
-	display: none
-}
-input[type="checkbox"] + span, input[type="radio"] + span{
-	padding: 15px;
-	border: 1px solid #aaa;
-	width: calc(100% - 30px) !important;
-	display: inline-block;
-}
-input[type="checkbox"]:checked + span, input[type="radio"]:checked + span{
-	background: #eee
-}
-</style>
+
 <script>
 var slideIndex = 1;
 function plusDivs() {
@@ -105,7 +27,11 @@ jQuery(document).ready(function($) {
 		e.preventDefault();
 		
 		$("#QUIZ-FORM").parent().remove();
-		$("#QUIZ-RESULTS").html('Kraunama...').css('display', 'block');
+		$("#QUIZ-RESULTS").html('Kraunama...')
+		.css({
+      "display": "block",
+      "margin-top": "3rem"
+    });
 		
 		$([document.documentElement, document.body]).animate({
 			scrollTop: $("#QUIZ-RESULTS").offset().top
@@ -150,16 +76,32 @@ jQuery(document).ready(function($) {
 								<h3 class="QUIZ-title">Koks yra Jūsų plaukų tipas?</h3>
 								<div class="QUIZ-Answers">
 									<div>
-									<label><input type="radio" name="a" value="1"> <span>Tiesūs</span></label>
+										<label>
+											<input type="radio" name="a" value="1">
+											<img class="test-class" src="<?php echo get_template_directory_uri(); ?>/images/dist/testas/tiesus big.svg" alt="">
+									 		<span>Tiesūs</span>
+										</label>   
 									</div>
 									<div>
-									<label><input type="radio" name="a" value="2"> <span>Banguoti</span></label>
+										<label>
+											<input type="radio" name="a" value="2">   
+											<img class="test-class" src="<?php echo get_template_directory_uri(); ?>/images/dist/testas/banguoti big.png" alt="">
+											<span>Banguoti</span>
+										</label>
 									</div>
 									<div>
-									<label><input type="radio" name="a" value="3"> <span>Garbanoti</span></label>
+										<label>
+											<input type="radio" name="a" value="3"> 
+											<img class="test-class" src="<?php echo get_template_directory_uri(); ?>/images/dist/testas/garbanoti2.png" alt="">
+											<span>Garbanoti</span>
+										</label>
 									</div>
 									<div>
-									<label><input type="radio" name="a" value="4"> <span>Stipriai garbanoti</span></label>
+										<label>
+											<input type="radio" name="a" value="4"> 
+											<img class="test-class" src="<?php echo get_template_directory_uri(); ?>/images/dist/testas/lgarbanoti.png" alt="">
+											<span>Stipriai garbanoti</span>
+										</label>
 									</div>
 									<div class="QUIZ-navigator">
 										<button type="button" class="wpcf7-form-control wpcf7-submit uk-button uk-button-primary" onclick="plusDivs()">Kitas</button>
@@ -173,16 +115,28 @@ jQuery(document).ready(function($) {
 								<h3 class="QUIZ-title">Kokia yra Jūsų plaukų struktūra?</h3>
 								<div class="QUIZ-Answers">
 									<div>
-									<label><input type="radio" name="b" value="1"> <span>Plona</span></label>
+										<label>
+											<input type="radio" name="b" value="1">
+											<img class="test-class" src="<?php echo get_template_directory_uri(); ?>/images/dist/testas/ploni.png" alt="">
+											<span>Plona</span>
+										</label>
 									</div>
 									<div>
-									<label><input type="radio" name="b" value="2"> <span>Vidutinio storumo</span></label>
+										<label>
+											<input type="radio" name="b" value="2"> 
+											<img class="test-class" src="<?php echo get_template_directory_uri(); ?>/images/dist/testas/vidutinio storumo.png" alt="">
+											<span>Vidutinio storumo</span>
+											</label>
 									</div>
 									<div>
-									<label><input type="radio" name="b" value="3"> <span>Stori</span></label>
+									<label><input type="radio" name="b" value="3">
+									<img class="test-class" src="<?php echo get_template_directory_uri(); ?>/images/dist/testas/stori.png" alt="">
+									<span>Stori</span></label>
 									</div>
 									<div>
-									<label><input type="radio" name="b" value="4"> <span>Stori porėti</span></label>
+									<label><input type="radio" name="b" value="4">
+									<img class="test-class" src="<?php echo get_template_directory_uri(); ?>/images/dist/testas/poreti.png" alt="">
+									<span>Stori porėti</span></label>
 									</div>
 									<div class="QUIZ-navigator">
 										<button type="button" class="wpcf7-form-control wpcf7-submit uk-button uk-button-primary" onclick="minusDivs()">Atgal</button>
@@ -197,22 +151,31 @@ jQuery(document).ready(function($) {
 								<h3 class="QUIZ-title">Kokio tipo yra Jūsų galvos oda?</h3>
 								<div class="QUIZ-Answers">
 									<div>
-									<label><input type="radio" name="c" value="1"> <span>Riebi</span></label>
+									<label><input type="radio" name="c" value="1">
+									<img class="test-class" src="<?php echo get_template_directory_uri(); ?>/images/dist/testas/riebi.png" alt="">
+									<span>Riebi</span></label>
 									</div>
 									<div>
-									<label><input type="radio" name="c" value="2"> <span>Sausa</span></label>
+									<label><input type="radio" name="c" value="2">
+									<img class="test-class" src="<?php echo get_template_directory_uri(); ?>/images/dist/testas/sausa.png" alt=""><span>Sausa</span></label>
 									</div>
 									<div>
-									<label><input type="radio" name="c" value="3"> <span>Normali</span></label>
+									<label><input type="radio" name="c" value="3">
+									<img class="test-class" src="<?php echo get_template_directory_uri(); ?>/images/dist/testas/normali.svg" alt=""><span>Normali</span></label>
 									</div>
 									<div>
-									<label><input type="radio" name="c" value="4"> <span>Linkus pleiskanoti</span></label>
+									<label><input type="radio" name="c" value="4">
+									<img class="test-class" src="<?php echo get_template_directory_uri(); ?>/images/dist/testas/pleiskanota.png" alt="">
+									<span>Linkus pleiskanoti</span></label>
 									</div>
 									<div>
-									<label><input type="radio" name="c" value="5"> <span>Linkus riebaluotis</span></label>
+									<label><input type="radio" name="c" value="5">
+									<img class="test-class" src="<?php echo get_template_directory_uri(); ?>/images/dist/testas/linkusriebaluotis.png" alt=""><span>Linkus riebaluotis</span></label>
 									</div>
 									<div>
-									<label><input type="radio" name="c" value="6"> <span>Jautri</span></label>
+									<label><input type="radio" name="c" value="6">
+									<img class="test-class" src="<?php echo get_template_directory_uri(); ?>/images/dist/testas/jautri.png" alt="">
+									<span>Jautri</span></label>
 									</div>
 									<div class="QUIZ-navigator">
 										<button type="button" class="wpcf7-form-control wpcf7-submit uk-button uk-button-primary" onclick="minusDivs()">Atgal</button>
@@ -227,13 +190,19 @@ jQuery(document).ready(function($) {
 								<h3 class="QUIZ-title">Ar Jūsų plaukai dažyti?</h3>
 								<div class="QUIZ-Answers">
 									<div>
-									<label><input type="radio" name="d" value="1"> <span>Dažyti viena spalva (tamsinti)</span></label>
+									<label><input type="radio" name="d" value="1">
+									<img class="test-class" src="<?php echo get_template_directory_uri(); ?>/images/dist/testas/tamsinti.png" alt="">
+									<span>Dažyti viena spalva (tamsinti)</span></label>
 									</div>
 									<div>
-									<label><input type="radio" name="d" value="2"> <span>Ne, jie naturalūs</span></label>
+									<label><input type="radio" name="d" value="2">
+									<img class="test-class" src="<?php echo get_template_directory_uri(); ?>/images/dist/testas/normali.png" alt="">
+									<span>Ne, jie naturalūs</span></label>
 									</div>
 									<div>
-									<label><input type="radio" name="d" value="3"> <span>Šviesinti</span></label>
+									<label><input type="radio" name="d" value="3"> 
+									<img class="test-class" src="<?php echo get_template_directory_uri(); ?>/images/dist/testas/sviesinti.png" alt="">
+									<span>Šviesinti</span></label>
 									</div>
 									<div class="QUIZ-navigator">
 										<button type="button" class="wpcf7-form-control wpcf7-submit uk-button uk-button-primary" onclick="minusDivs()">Atgal</button>
@@ -245,46 +214,73 @@ jQuery(document).ready(function($) {
 
 							<!-- Klausimas NR5 -->
 							<div class="QUIZ-slides">
-								<h3 class="QUIZ-title">Noriu kad mano plaukai būtų:</h3>
+								<h3 class="QUIZ-title">Norite kad Jūsų plaukai būtų:</h3>
+								<p>(galimi 2 variantai)</p>
 								<div class="QUIZ-Answers">
 									<div>
-									<label><input type="checkbox" name="e" value="1"> <span>Tiesesni</span></label>
+									<label><input type="checkbox" name="e" value="1">
+									<img class="test-class" src="<?php echo get_template_directory_uri(); ?>/images/dist/testas/tiesesni.png" alt="">
+									<span>Tiesesni</span></label>
 									</div>
 									<div>
-									<label><input type="checkbox" name="e" value="2"> <span>Turėtų daugiau drėgmės</span></label>
+									<label><input type="checkbox" name="e" value="2">
+									<img class="test-class" src="<?php echo get_template_directory_uri(); ?>/images/dist/testas/dregmes.png" alt="">
+									<span>Turėtų daugiau drėgmės</span></label>
 									</div>
 									<div>
-									<label><input type="checkbox" name="e" value="3"> <span>Būtų švelnesni</span></label>
+									<label><input type="checkbox" name="e" value="3">
+									<img class="test-class" src="<?php echo get_template_directory_uri(); ?>/images/dist/testas/svelnus.png" alt="">
+									<span>Būtų švelnesni</span></label>
 									</div>
 									<div>
-									<label><input type="checkbox" name="e" value="4"> <span>Apsaugoti nuo karščio (mechaninio poveikio)</span></label>
+									<label><input type="checkbox" name="e" value="4">
+									<img class="test-class" src="<?php echo get_template_directory_uri(); ?>/images/dist/testas/karstis.png" alt="">
+									<span>Apsaugoti nuo karščio</span></label>
 									</div>
 									<div>
-									<label><input type="checkbox" name="e" value="5"> <span>Apsaugoti nuo UV spindulių</span></label>
+									<label><input type="checkbox" name="e" value="5">
+									<img class="test-class" src="<?php echo get_template_directory_uri(); ?>/images/dist/testas/uv.png" alt="">
+									<span>Apsaugoti nuo UV spindulių</span></label>
 									</div>
 									<div>
-									<label><input type="checkbox" name="e" value="6"> <span>Stilingiau banguotūsi</span></label>
+									<label><input type="checkbox" name="e" value="6">
+									<img class="test-class" src="<?php echo get_template_directory_uri(); ?>/images/dist/testas/stilingai.png" alt="">
+									<span>Stilingiau banguotu</span></label>
 									</div>
 									<div>
-									<label><input type="checkbox" name="e" value="7"> <span>Būtų minkštesni</span></label>
+									<label><input type="checkbox" name="e" value="7">
+									<img class="test-class" src="<?php echo get_template_directory_uri(); ?>/images/dist/testas/svelnesni.png" alt="">
+									<span>Būtų minkštesni</span></label>
 									</div>
 									<div>
-									<label><input type="checkbox" name="e" value="8"> <span>Būtų ilgesni</span></label>
+									<label><input type="checkbox" name="e" value="8">
+									<img class="test-class" src="<?php echo get_template_directory_uri(); ?>/images/dist/testas/ilgesni.png" alt="">
+									<span>Būtų ilgesni</span></label>
 									</div>
 									<div>
-									<label><input type="checkbox" name="e" value="9"> <span>Neskiltų plaukų galiukai</span></label>
+									<label><input type="checkbox" name="e" value="9">
+									<img class="test-class" src="<?php echo get_template_directory_uri(); ?>/images/dist/testas/galiukai.png" alt="">
+									<span>Neskiltų plaukų galiukai</span></label>
 									</div>
 									<div>
-									<label><input type="checkbox" name="e" value="10"> <span>Labiau blizgėtų</span></label>
+									<label><input type="checkbox" name="e" value="10">
+									<img class="test-class" src="<?php echo get_template_directory_uri(); ?>/images/dist/testas/zvilga.png" alt="">
+									<span>Labiau blizgėtų</span></label>
 									</div>
 									<div>
-									<label><input type="checkbox" name="e" value="11"> <span>Turėtų daugiau apimties</span></label>
+									<label><input type="checkbox" name="e" value="11">
+									<img class="test-class" src="<?php echo get_template_directory_uri(); ?>/images/dist/testas/tankumas.png" alt="">
+									<span>Turėtų daugiau apimties</span></label>
 									</div>
 									<div>
-									<label><input type="checkbox" name="e" value="12"> <span>Nesielektrintu</span></label>
+									<label><input type="checkbox" name="e" value="12">
+									<img class="test-class" src="<?php echo get_template_directory_uri(); ?>/images/dist/testas/elektrinti.png" alt="">
+									<span>Nesielektrintu</span></label>
 									</div>
 									<div>
-									<label><input type="checkbox" name="e" value="13"> <span>Būtų lengviau kontroliuojami</span></label>
+									<label><input type="checkbox" name="e" value="13">
+									<img class="test-class" src="<?php echo get_template_directory_uri(); ?>/images/dist/testas/control.png" alt="">
+									<span>Būtų lengviau kontroliuojami</span></label>
 									</div>
 									<div class="QUIZ-navigator">
 										<button type="button" class="wpcf7-form-control wpcf7-submit uk-button uk-button-primary" onclick="minusDivs()">Atgal</button>
@@ -304,6 +300,21 @@ jQuery(document).ready(function($) {
     <div></div>
 </div>
 </div>
-
+<div class="row justify-content-center">
+<div class="container">
 <div style="padding-bottom: 70px; padding-top: 40px; clear: both; display: none" id="QUIZ-RESULTS" class="woocommerce-page woocommerce">
+</div>
+<?php 
+$cta_bg = get_field('cta_background', 'options');
+$text = get_field('cta_text', 'options');
+?>
+<div class="cta-newsletter">
+	<div class="bg-cta" style="background-image:url(<?= $cta_bg['url'];?>);">
+
+	</div>
+	<div class="text">
+		<?= $text ?>
+	</div>
+</div>
+</div>
 </div>

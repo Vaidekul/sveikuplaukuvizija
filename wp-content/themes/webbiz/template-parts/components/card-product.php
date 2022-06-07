@@ -20,8 +20,9 @@ global $product;
 if ( empty( $product ) || ! $product->is_visible() ) {
 	return;
 }
+$internal_id = $product->get_id();
 ?>
-<div class="col-lg-3 col-md-3 col-sm-6 col-6 mb-4 custom-product-card">
+<div class="col-lg-3 col-md-3 col-sm-6 col-6 mb-4 custom-product-card" data-reference="<?=$internal_id;?>">
   <div <?php wc_product_class(); ?>>
     <?php
     /**
@@ -58,7 +59,6 @@ if ( empty( $product ) || ! $product->is_visible() ) {
      */
 		// do_action('woocommerce_add_to_cart');
 
-    do_action( 'woocommerce_after_shop_loop_item' );
-    ?>
+    do_action( 'woocommerce_after_shop_loop_item' );?>
   </div>
 </div>

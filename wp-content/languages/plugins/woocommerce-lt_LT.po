@@ -24278,7 +24278,7 @@ msgstr "Vietinis pristatymas"
 #: packages/woocommerce-blocks/build/cart.js:43
 #: packages/woocommerce-blocks/build/checkout.js:37
 msgid "Local pickup"
-msgstr "Atsiėmimas vietoje"
+msgstr "Atsiėmimas salone (Smailininkų g. 2, Kaunas)"
 
 #. translators: 1: GitHub issues URL 2: GitHub contribution guide URL 3: System
 #. status report URL

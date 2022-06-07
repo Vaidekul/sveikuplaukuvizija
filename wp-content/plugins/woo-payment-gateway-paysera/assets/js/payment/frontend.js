@@ -5,19 +5,19 @@ jQuery(document).ready(function($) {
         $('.payment-countries').hide('slow');
         countryBilling = $('#billing_country');
         countryOption = countryBilling.find('option');
+        id = countryBilling.val().toLowerCase();
 
         if (typeof countryBilling.val() === 'undefined' || countryBilling.val() === null) {
             id = countryOption.eq(1).val();
-        } else {
-            id = countryBilling.val().toLowerCase();
         }
 
-        idcheck = $('#' + id).attr('class');
+        let idCheck = $('#' + id).attr('class');
 
-        if(!idcheck){
+        if (!idCheck) {
             id = 'other';
-            idcheck = $('#' + id).attr('class');
-            if(!idcheck) {
+            idCheck = $('#' + id).attr('class');
+
+            if (!idCheck) {
                 id = countryOption.eq(1).val();
             }
         }
@@ -33,7 +33,7 @@ jQuery(document).ready(function($) {
     });
 
     $(document).on('change', 'input[name="payment[pay_type]"]' ,function() {
-        $('.payment').removeClass('activePayseraPayment');
-        $(this).parent().parent().addClass('activePayseraPayment');
+        $('.paysera-payment-method-label').removeClass('paysera-payment-active');
+        $(this).parent().parent().addClass('paysera-payment-active');
     });
 });

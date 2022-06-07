@@ -1,5 +1,5 @@
 <?php
-/*  Copyright 2013-2022 Renzo Johnson (email: renzojohnson at gmail.com)
+/*  Copyright 2010-2022 Renzo Johnson (email: renzo.johnson at gmail.com)
 
     This program is free software; you can redistribute it and/or modify
     it under the terms of the GNU General Public License as published by
@@ -15,6 +15,7 @@
     along with this program; if not, write to the Free Software
     Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
 */
+
 
 
 function vc_utm() {
@@ -239,9 +240,7 @@ function mce_panel_gen ($apivalid,$listdata,$cf7_mch,$listatags,$mce_txcomodin) 
    </div>
 
 
-  <div class="<?php echo ( ( $apivalid == 1  ) ? 'chmp-active' : 'chmp-inactive' ) ;  ?>">
-  <p class="p-author"><a type="button" aria-expanded="false" class="mce-trigger a-support ">Show Advanced Settings</a> &nbsp; <a class="cme-trigger-sys a-support ">Get System Information</a> &nbsp; <a class="cme-trigger-log a-support ">View Debug Logger</a></p>
-  </div>
+  <p class="p-author"><a type="button" aria-expanded="false" class="mce-trigger a-support ">Show Advanced Settings</a> &nbsp; <a class="cme-trigger-sys a-support ">Server Environment</a> &nbsp; <a class="cme-trigger-log a-support ">View Debug Logs</a></p>
 
   <?php include SPARTAN_MCE_PLUGIN_DIR . '/lib/system.php'; ?>
 

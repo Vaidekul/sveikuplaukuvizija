@@ -1,5 +1,5 @@
 <?php
-/*  Copyright 2013-2022 Renzo Johnson (email: renzojohnson at gmail.com)
+/*  Copyright 2010-2022 Renzo Johnson (email: renzo.johnson at gmail.com)
 
     This program is free software; you can redistribute it and/or modify
     it under the terms of the GNU General Public License as published by
@@ -90,10 +90,10 @@ if ( !is_admin() ) {
 
 function mce_init_constants(){
 
-  define( 'MCE_URL', '//renzojohnson.com/contributions/contact-form-7-mailchimp-extension' );
+  define( 'MCE_URL', '//chimpmatic.com/help' );
   define( 'MC_URL', '//chimpmatic.com/help' );
   define( 'MCE_AUTH', '//renzojohnson.com' );
-  define( 'MCE_AUTH_COMM', '<!-- campaignmonitor extension by Renzo Johnson -->' );
+  define( 'MCE_AUTH_COMM', '<!-- Chimpmatic -->' );
   define( 'MCE_NAME', 'MailChimp Contact Form 7 Extension' );
   define( 'MCE_SETT', admin_url( 'admin.php?page=wpcf7' ) );
   define( 'MCE_DON', 'https://www.paypal.me/renzojohnson' );

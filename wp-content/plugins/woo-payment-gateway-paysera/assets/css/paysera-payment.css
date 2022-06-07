@@ -19,14 +19,16 @@ div.paysera-payments.grid div.paysera-payment-method {
     text-align: center;
 }
 
-div.paysera-payments.grid div.paysera-payment-method.activePayseraPayment {
-    border: 2px outset #e7ebff;
+.paysera-payment-active {
+    border-color: #e7ebff !important;
 }
 
 .paysera-payment-method-label {
     display: flex;
     justify-content: space-between;
+    padding: 6px;
     width: 100%;
+    border: 2px outset transparent;
 }
 
 .paysera-payment-method-label input {
@@ -53,12 +55,6 @@ div.paysera-payments.grid div.paysera-image {
     display:inline-block;
 }
 
-.paysera-error-link {
-    color: #a00;
-    cursor: default;
-    pointer-events: none;
-}
-
 .paysera-button {
     color: #2c3338 !important;
     border-color: #8c8f94 !important;
@@ -79,4 +75,11 @@ div.paysera-payments.grid div.paysera-image {
 
 label[for='payment_method_paysera'] img {
     max-height: 24px;
+}
+
+.paysera-notice-dismiss {
+    text-decoration: none !important;
+    position: static;
+    float: right;
+    padding: 0 15px 10px 28px;
 }

@@ -113,6 +113,7 @@ $(".frontpage-slider .slider").slick({
   autoplay: true,
   infinite: true,
   speed: 300,
+	autoplaySpeed: 5000,
 });
 
 // $(".related.products .products").slick({
@@ -207,8 +208,17 @@ $(document).on("yith-wcan-ajax-filtered", function () {
 });
 
 $(".active-filters-container").click(function () {
-  $(".widget-area #block-2").toggleClass("active");
+  $(".widget-area #text-4").toggleClass("active");
 });
 
 $(".woocommerce-info.error").parent().css("display", "block");
 $(".default-top .sub-filters").parent().parent().parent().css("height", "60vh");
+
+
+function favouritePopup(){
+	$('.favourites-popup-toggle').click(function () {
+		$('.favourites-popup-container').toggleClass('active');
+		$('body').toggleClass('favourites-menu-open');
+	});
+}
+favouritePopup();

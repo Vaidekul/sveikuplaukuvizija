@@ -59,6 +59,11 @@
 		.flip-box-front {
 			background-color: #4c0c13;;
 			color: black;
+			img {
+				height: 100%;
+				width: 100%;
+				object-fit: cover;
+			}
 		}
 		
 		.flip-box-back {

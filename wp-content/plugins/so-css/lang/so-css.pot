@@ -1,4 +1,4 @@
-# Copyright (C) 2021 so-css
+# Copyright (C) 2022 so-css
 # This file is distributed under the same license as the so-css package.
 msgid ""
 msgstr ""
@@ -16,7 +16,7 @@ msgstr ""
 "X-Poedit-SourceCharset: UTF-8\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-#: so-css.php:3, so-css.php:448
+#: so-css.php:3, so-css.php:457
 msgid "SiteOrigin CSS"
 msgstr ""
 
@@ -36,87 +36,87 @@ msgstr ""
 msgid "https://siteorigin.com/css/"
 msgstr ""
 
-#: so-css.php:264, so-css.php:264, so-css.php:295
+#: so-css.php:264, so-css.php:264, so-css.php:303
 msgid "Custom CSS"
 msgstr ""
 
-#: so-css.php:297
+#: so-css.php:305
 msgid "SiteOrigin CSS adds any custom CSS you enter here into your site's header. "
 msgstr ""
 
-#: so-css.php:298
+#: so-css.php:306
 msgid "These changes will persist across updates so it's best to make all your changes here. "
 msgstr ""
 
-#: so-css.php:362
+#: so-css.php:371
 msgid "Unchanged"
 msgstr ""
 
-#: so-css.php:363
+#: so-css.php:372
 msgid "Select"
 msgstr ""
 
-#: so-css.php:364
+#: so-css.php:373
 msgid "Select Image"
 msgstr ""
 
-#: so-css.php:365
+#: so-css.php:374
 msgid "Are you sure you want to leave without saving?"
 msgstr ""
 
-#: so-css.php:434
+#: so-css.php:443
 msgid "CSS Editor"
 msgstr ""
 
-#: so-css.php:435
+#: so-css.php:444
 msgid "Support"
 msgstr ""
 
-#: so-css.php:437
+#: so-css.php:446
 msgid "Addons"
 msgstr ""
 
-#: so-css.php:451
+#: so-css.php:460
 msgid "Changes apply to %s and its child themes"
 msgstr ""
 
-#: so-css.php:452, tpl/page.php:99, tpl/page.php:131
+#: so-css.php:461, tpl/page.php:114, tpl/page.php:144
 msgid "Save CSS"
 msgstr ""
 
-#: so-css.php:459
+#: so-css.php:468
 msgid "Editing CSS for: %s"
 msgstr ""
 
-#: so-css.php:464
+#: so-css.php:473
 msgid "Changes apply to the %s %s when the current theme is %s or its child themes"
 msgstr ""
 
-#: so-css.php:471
+#: so-css.php:480
 msgid "Save %s CSS"
 msgstr ""
 
-#: so-css.php:484
+#: so-css.php:493
 msgid "Revert to this revision"
 msgstr ""
 
-#: so-css.php:537, so-css.php:558, so-css.php:577
+#: so-css.php:548, so-css.php:569, so-css.php:588
 msgid "The supplied nonce is invalid."
 msgstr ""
 
-#: so-css.php:538, so-css.php:559, so-css.php:578
+#: so-css.php:549, so-css.php:570, so-css.php:589
 msgid "Invalid nonce."
 msgstr ""
 
-#: so-css.php:624
+#: so-css.php:635
 msgid "%d chars"
 msgstr ""
 
-#: so-css.php:624
+#: so-css.php:635
 msgid "Latest"
 msgstr ""
 
-#: so-css.php:630
+#: so-css.php:641
 msgid "No revisions yet."
 msgstr ""
 
@@ -548,42 +548,54 @@ msgstr ""
 msgid "Editing revision dated %s. Click %sRevert to this revision%s to keep using it."
 msgstr ""
 
-#: tpl/page.php:45
+#: tpl/page.php:47
 msgid "Get The Full Experience"
 msgstr ""
 
-#: tpl/page.php:47
+#: tpl/page.php:49
 msgid "%sSiteOrigin Premium%s adds a <strong>Google Web Font</strong> selector to SiteOrigin CSS so you can easily change any font."
 msgstr ""
 
-#: tpl/page.php:55
+#: tpl/page.php:57
 msgid "Getting Started Video"
 msgstr ""
 
-#: tpl/page.php:56
+#: tpl/page.php:58
 msgid "Dismiss"
 msgstr ""
 
-#: tpl/page.php:65
+#: tpl/page.php:67
 msgid "CSS Revisions"
 msgstr ""
 
-#: tpl/page.php:67
+#: tpl/page.php:69
 msgid "Are you sure you want to load this revision?"
 msgstr ""
 
-#: tpl/page.php:91
+#: tpl/page.php:78
+msgid "Editor Theme"
+msgstr ""
+
+#: tpl/page.php:81
+msgid "Light"
+msgstr ""
+
+#: tpl/page.php:82
+msgid "Dark"
+msgstr ""
+
+#: tpl/page.php:106
 msgid "Open Expanded Mode"
 msgstr ""
 
-#: tpl/page.php:92
+#: tpl/page.php:107
 msgid "Close Expanded Mode"
 msgstr ""
 
-#: tpl/page.php:95
+#: tpl/page.php:110
 msgid "Open Visual Mode"
 msgstr ""
 
-#: tpl/page.php:128
+#: tpl/page.php:141
 msgid "Close"
 msgstr ""

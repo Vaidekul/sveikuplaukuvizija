@@ -4,35 +4,35 @@
   Plugin URI: https://www.paysera.com
   Text Domain: paysera
   Description: Paysera offers payment and delivery gateway services for your e-shops
-  Version: 3.1.4
+  Version: 3.2.0
   Requires PHP: 7.1
   Author: Paysera
   Author URI: https://www.paysera.com
   License: GPL version 3 or later - http://www.gnu.org/licenses/gpl-3.0.html
 
   WC requires at least: 3.0.0
-  WC tested up to: 5.9.0
+  WC tested up to: 6.2.0
 
   @package WordPress
   @author Paysera (https://www.paysera.com)
   @since 2.0.0
  */
 
-defined('ABSPATH') or exit;
+defined('ABSPATH') || exit;
 
 define('PayseraPluginUrl', plugin_dir_url(__FILE__));
 define('PayseraPluginPath', basename(dirname( __FILE__ )));
 
-use Paysera\Includes\PayseraDeliveryAdmin;
-use Paysera\Includes\PayseraDeliveryActions;
-use Paysera\Includes\PayseraDeliveryFrontHtml;
-use Paysera\Includes\PayseraDeliverySettings;
-use Paysera\Includes\PayseraInit;
-use Paysera\Includes\PayseraAdmin;
-use Paysera\Includes\PayseraPaymentAdmin;
-use Paysera\Includes\PayseraPaymentSettings;
-use Paysera\Includes\PayseraPaths;
-use Paysera\Includes\PayseraPaymentActions;
+use Paysera\Admin\PayseraDeliveryAdmin;
+use Paysera\Action\PayseraDeliveryActions;
+use Paysera\Front\PayseraDeliveryFrontHtml;
+use Paysera\Entity\PayseraDeliverySettings;
+use Paysera\PayseraInit;
+use Paysera\Admin\PayseraAdmin;
+use Paysera\Admin\PayseraPaymentAdmin;
+use Paysera\Entity\PayseraPaymentSettings;
+use Paysera\Entity\PayseraPaths;
+use Paysera\Action\PayseraPaymentActions;
 
 require_once 'vendor/autoload.php';
 
@@ -46,13 +46,13 @@ if (version_compare(PHP_VERSION, PAYSERA_MIN_REQUIRED_PHP_VERSION, '>=')) {
     (new PayseraDeliveryActions())->build();
     (new PayseraDeliveryFrontHtml())->build();
     (new PayseraPaymentActions())->build();
-    register_deactivation_hook(__FILE__, 'removePayseraPluginSettings');
-    register_uninstall_hook(__FILE__, 'removePayseraPluginSettings');
+    register_deactivation_hook(__FILE__, 'removePayseraSettings');
+    register_uninstall_hook(__FILE__, 'removePayseraSettings');
 } else {
     add_action('admin_notices', 'payseraPhpNotice');
 }
 
-function removePayseraPluginSettings()
+function removePayseraSettings()
 {
     delete_option(PayseraPaymentSettings::MAIN_SETTINGS_NAME);
     delete_option(PayseraPaymentSettings::EXTRA_SETTINGS_NAME);
